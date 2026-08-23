@@ -1,0 +1,6 @@
+# Copyrighted textbook — 61 MB, not redistributable
+schacter-psychology.pdf
+*.pdf
+
+# macOS
+.DS_Store

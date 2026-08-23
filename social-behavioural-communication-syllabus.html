@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social · Behavioural · Communication — Syllabus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e0a16;
+    --bg-alt: #171122;
+    --card: #1e1729;
+    --border: #302542;
+    --text: #ece7f5;
+    --text-dim: #a396bb;
+    --accent: #b98cff;
+    --accent-2: #ff8fb0;
+    --good: #6ee7a8;
+    --ring: rgba(185,140,255,0.16);
+    --display: "Fraunces", Georgia, "Times New Roman", serif;
+    --maxw: 920px;
+  }
+  body.light {
+    --bg: #fbf8ff;
+    --bg-alt: #f3eefb;
+    --card: #ffffff;
+    --border: #e0d6f0;
+    --text: #1d1528;
+    --text-dim: #6b5c85;
+    --accent: #7c3aed;
+    --accent-2: #db2777;
+    --good: #0f9d63;
+    --ring: rgba(124,58,237,0.14);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:
+      radial-gradient(1000px 700px at 88% -10%, rgba(185,140,255,0.13), transparent 62%),
+      radial-gradient(820px 620px at -6% 8%, rgba(255,143,176,0.10), transparent 60%),
+      var(--bg);
+    background-attachment: fixed;
+    color: var(--text);
+    line-height: 1.75;
+    font-size: var(--fs, 19px);
+    -webkit-font-smoothing: antialiased;
+  }
+  body.light {
+    background:
+      radial-gradient(1000px 700px at 88% -10%, rgba(124,58,237,0.10), transparent 62%),
+      radial-gradient(820px 620px at -6% 8%, rgba(219,39,119,0.08), transparent 60%),
+      var(--bg);
+    background-attachment: fixed;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 120px; position: relative; z-index: 1; }
+
+  /* ---------- DECORATION ---------- */
+  .deco { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .deco .grid {
+    position: absolute; inset: -10%;
+    background-image: radial-gradient(rgba(185,140,255,0.16) 1px, transparent 1px);
+    background-size: 26px 26px;
+    mask-image: radial-gradient(circle at 50% 30%, #000 20%, transparent 78%);
+    -webkit-mask-image: radial-gradient(circle at 50% 30%, #000 20%, transparent 78%);
+    opacity: 0.55;
+  }
+  .deco .blob { position: absolute; border-radius: 46% 54% 62% 38% / 55% 42% 58% 45%; filter: blur(46px); opacity: 0.42; animation: drift 24s ease-in-out infinite; }
+  .deco .blob.a { width: 300px; height: 300px; top: 10%; left: -120px; background: radial-gradient(circle, rgba(185,140,255,0.55), transparent 70%); }
+  .deco .blob.b { width: 340px; height: 340px; top: 54%; right: -140px; background: radial-gradient(circle, rgba(255,143,176,0.45), transparent 70%); animation-delay: -8s; }
+  .deco .blob.c { width: 240px; height: 240px; bottom: 4%; left: -90px; background: radial-gradient(circle, rgba(110,231,168,0.28), transparent 70%); animation-delay: -15s; }
+  @keyframes drift { 0%,100% { transform: translate(0,0) scale(1) rotate(0deg); } 50% { transform: translate(24px,-30px) scale(1.1) rotate(12deg); } }
+  body.light .deco .blob { opacity: 0.28; }
+  body.light .deco .grid { background-image: radial-gradient(rgba(124,58,237,0.18) 1px, transparent 1px); opacity: 0.4; }
+  @media (prefers-reduced-motion: reduce) { .deco .blob { animation: none; } }
+
+  /* ---------- PROGRESS RAIL ---------- */
+  .rail { position: fixed; top: 0; left: 0; right: 0; z-index: 60; height: 4px; background: rgba(128,128,128,0.14); }
+  .rail > span {
+    display: block; height: 100%; width: 0;
+    background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    box-shadow: 0 0 14px rgba(185,140,255,0.7);
+    transition: width 0.5s cubic-bezier(0.2,0.8,0.3,1);
+  }
+  .rail-tag {
+    position: fixed; top: 12px; right: 16px; z-index: 61;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-dim); background: var(--bg-alt); border: 1px solid var(--border);
+    padding: 4px 12px; border-radius: 999px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
+  .rail-tag b { color: var(--accent); }
+  @media (max-width: 720px) { .rail-tag { display: none; } }
+
+  /* ---------- HERO ---------- */
+  .hero { text-align: center; padding: 74px 0 18px; }
+  .hero .kicker { font-size: 11.5px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-2); margin-bottom: 14px; }
+  .hero h1 {
+    font-family: var(--display); font-optical-sizing: auto;
+    font-size: 54px; line-height: 1.04; letter-spacing: -0.03em; margin: 0 0 16px; font-weight: 600;
+    background: linear-gradient(105deg, var(--text) 4%, var(--accent-2) 46%, var(--accent) 96%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .hero h1 em { font-style: italic; font-weight: 400; }
+  .hero p { font-size: 17px; color: var(--text-dim); max-width: 680px; margin: 0 auto; }
+  .hero p strong { color: var(--text); }
+  .hero-rule { width: 62px; height: 2px; margin: 22px auto 18px; background: linear-gradient(90deg, transparent, var(--accent), transparent); }
+  .hero-tags { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .hero-tags span { font-size: 12px; font-weight: 600; color: var(--text-dim); background: var(--bg-alt); border: 1px solid var(--border); border-radius: 6px; padding: 5px 13px; }
+  @media (max-width: 620px) { .hero h1 { font-size: 38px; } }
+
+  /* ---------- TOOLBAR ---------- */
+  .controls-wrap { text-align: center; margin: 24px 0 30px; }
+  .controls {
+    display: inline-flex; align-items: center; flex-wrap: wrap; gap: 3px;
+    padding: 7px; background: var(--bg-alt); border: 1px solid var(--border);
+    border-radius: 14px; box-shadow: 0 18px 44px -24px rgba(0,0,0,0.7);
+  }
+  .ctrl-div { width: 1px; align-self: stretch; background: var(--border); margin: 5px 5px; }
+  .tbtn {
+    display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+    background: transparent; border: none; color: var(--text-dim);
+    padding: 8px 12px; border-radius: 8px; cursor: pointer; font: inherit; font-size: 13px; font-weight: 600;
+    transition: background 0.15s, color 0.15s;
+  }
+  .tbtn:hover { background: var(--card); color: var(--text); }
+  .tbtn.danger:hover { color: #f87171; }
+  .search {
+    background: var(--card); border: 1px solid var(--border); color: var(--text); font: inherit;
+    font-size: 13px; padding: 8px 13px; border-radius: 8px; width: 190px;
+  }
+  .search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--ring); }
+
+  /* ---------- TRACK BANNER ---------- */
+  .track-head {
+    display: flex; align-items: center; gap: 14px; margin: 46px 0 6px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .track-head .tk-badge {
+    font-size: 10.5px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-2); background: rgba(255,143,176,0.10); border: 1px solid rgba(255,143,176,0.3);
+    padding: 4px 11px; border-radius: 999px; white-space: nowrap;
+  }
+  .track-head h2 { font-family: var(--display); font-size: 1.35em; font-weight: 600; letter-spacing: -0.02em; margin: 0; }
+  .track-head .tk-meta { margin-left: auto; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); white-space: nowrap; }
+  .track-blurb { color: var(--text-dim); font-size: 0.88em; margin: 10px 0 16px; max-width: 70ch; }
+
+  /* ---------- PART ---------- */
+  details.part {
+    position: relative; border: 1px solid var(--border); border-radius: 4px 18px 18px 4px;
+    margin: 14px 0; background: var(--bg-alt); overflow: hidden; scroll-margin-top: 24px;
+    box-shadow: 0 10px 34px -26px rgba(0,0,0,0.9);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  details.part::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+    background: linear-gradient(180deg, var(--accent), var(--accent-2));
+    opacity: 0.5; transition: opacity 0.25s;
+  }
+  details.part:hover::before, details.part[open]::before { opacity: 1; }
+  details.part > summary {
+    list-style: none; cursor: pointer; padding: 18px 22px 18px 20px;
+    font-size: 1.14em; font-weight: 700; letter-spacing: -0.01em;
+    display: flex; align-items: center; gap: 15px; user-select: none; transition: background 0.18s;
+  }
+  details.part > summary::-webkit-details-marker { display: none; }
+  details.part > summary:hover { background: linear-gradient(90deg, rgba(185,140,255,0.07), transparent 65%); }
+  .pnum {
+    flex: none; display: inline-grid; place-items: center; min-width: 46px; height: 34px; padding: 0 8px;
+    font-family: var(--display); font-size: 15px; font-weight: 600; font-variant: small-caps; letter-spacing: 0.06em;
+    color: var(--accent); background: rgba(185,140,255,0.10);
+    border: 1px solid rgba(185,140,255,0.28); border-radius: 8px;
+  }
+  .ptitle { font-family: var(--display); font-weight: 600; font-size: 1.02em; letter-spacing: -0.015em; }
+  details.part > summary .part-label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-dim); font-weight: 700;
+    margin-left: auto; white-space: nowrap; padding-right: 4px; font-variant-numeric: tabular-nums;
+  }
+  details.part > summary::after { content: '▾'; flex: none; color: var(--text-dim); font-size: 13px; transition: transform 0.25s ease; }
+  details.part[open] > summary::after { transform: rotate(180deg); color: var(--accent); }
+  .part-body { padding: 2px 22px 22px 20px; border-top: 1px solid var(--border); }
+  .part-intro { color: var(--text-dim); font-size: 0.88em; margin: 15px 0 4px; max-width: 68ch; }
+  details.part.section-complete { border-color: rgba(110,231,168,0.45); }
+  details.part.section-complete::before { background: linear-gradient(180deg, var(--good), #34d399); opacity: 1; }
+  details.part.section-complete .pnum { color: var(--good); background: rgba(110,231,168,0.12); border-color: rgba(110,231,168,0.35); }
+  details.part.section-complete > summary .part-label { color: var(--good); }
+
+  /* ---------- TOPIC ---------- */
+  .topic {
+    position: relative; margin: 15px 0; padding: 17px 19px 15px; border-radius: 12px;
+    background: var(--card); border: 1px solid var(--border); overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .topic::after {
+    content: attr(data-n); position: absolute; top: -18px; right: 6px;
+    font-family: var(--display); font-size: 76px; font-weight: 700; line-height: 1;
+    color: rgba(185,140,255,0.055); pointer-events: none;
+  }
+  body.light .topic::after { color: rgba(124,58,237,0.06); }
+  .topic h3 {
+    font-family: var(--display); font-size: 1.1em; font-weight: 600; letter-spacing: -0.015em;
+    margin: 0 0 4px; color: var(--text); scroll-margin-top: 24px;
+    display: flex; align-items: center; gap: 11px; position: relative; z-index: 1;
+  }
+  .topic h3 .tnum { flex: none; font-family: "Inter", sans-serif; font-size: 0.62em; font-weight: 800; letter-spacing: 0.08em; color: var(--accent-2); }
+  .topic .desc { color: var(--text-dim); font-size: 0.82em; margin: 0 0 11px; padding-left: 30px; }
+  .topic ul.subs { list-style: none; padding: 0; margin: 0; }
+  .topic ul.subs li {
+    padding: 7px 0; border-bottom: 1px solid rgba(128,128,128,0.10);
+    font-size: 0.88em; display: flex; align-items: flex-start; gap: 11px;
+  }
+  .topic ul.subs li:last-child { border-bottom: none; }
+  .topic ul.subs li .txt { flex: 1; min-width: 0; }
+  .topic ul.subs li .num { color: var(--text-dim); font-weight: 700; margin-right: 8px; font-size: 0.82em; font-variant-numeric: tabular-nums; }
+  .count-badge {
+    font-family: "Inter", sans-serif; font-size: 0.56em; font-weight: 700; margin-left: auto;
+    letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; color: var(--text-dim);
+    font-variant-numeric: tabular-nums;
+  }
+  .topic.complete { border-color: rgba(110,231,168,0.4); }
+  .topic.complete .count-badge { color: var(--good); }
+  .tick {
+    appearance: none; -webkit-appearance: none; flex: none;
+    width: 19px; height: 19px; margin: 3px 0 0; cursor: pointer; position: relative;
+    border: 2px solid var(--border); border-radius: 6px; background: transparent; transition: all 0.18s;
+  }
+  .tick:hover { border-color: var(--accent); box-shadow: 0 0 0 4px var(--ring); }
+  .tick:checked { background: linear-gradient(140deg, var(--good), #10b981); border-color: var(--good); }
+  .tick:checked::after { content: "✓"; position: absolute; inset: 0; display: grid; place-items: center; color: #06210f; font-size: 12px; font-weight: 900; }
+  li.done .txt { color: var(--text-dim); text-decoration: line-through; }
+  .tag {
+    display: inline-block; font-size: 0.72em; font-weight: 700; letter-spacing: 0.04em;
+    padding: 1px 7px; border-radius: 5px; margin-left: 7px; vertical-align: 1px; white-space: nowrap;
+  }
+  .tag.core { color: var(--accent); background: rgba(185,140,255,0.13); border: 1px solid rgba(185,140,255,0.3); }
+  .tag.caution { color: #fbbf24; background: rgba(251,191,36,0.12); border: 1px solid rgba(251,191,36,0.3); }
+  body.light .tag.caution { color: #b45309; background: rgba(180,83,9,0.10); border-color: rgba(180,83,9,0.28); }
+
+  /* ---------- CALLOUTS ---------- */
+  .lab { margin: 13px 0 2px; padding: 12px 16px; background: rgba(110,231,168,0.05); border: 1px solid rgba(110,231,168,0.26); border-radius: 10px; }
+  .lab-label { font-size: 0.68em; text-transform: uppercase; letter-spacing: 0.09em; font-weight: 800; color: var(--good); margin-bottom: 6px; }
+  .lab p { margin: 0; font-size: 0.84em; color: var(--text); }
+  .note-box { margin: 14px 0; padding: 14px 18px; background: rgba(185,140,255,0.06); border: 1px solid rgba(185,140,255,0.26); border-radius: 12px; }
+  .note-box .nb-label { font-size: 0.68em; text-transform: uppercase; letter-spacing: 0.09em; font-weight: 800; color: var(--accent); margin-bottom: 6px; }
+  .note-box p { margin: 0 0 8px; font-size: 0.86em; color: var(--text-dim); }
+  .note-box p:last-child { margin-bottom: 0; }
+  .note-box b { color: var(--text); }
+
+  /* ---------- PLAIN SECTIONS ---------- */
+  .plain { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 16px; padding: 24px 26px; margin: 16px 0; }
+  .plain h3 { font-family: var(--display); font-size: 1.22em; font-weight: 600; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .plain h4 { font-size: 0.9em; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent-2); margin: 20px 0 8px; }
+  .plain p, .plain li { font-size: 0.88em; color: var(--text-dim); }
+  .plain b { color: var(--text); }
+  .plain ul { padding-left: 20px; margin: 8px 0; }
+  .plain li { margin: 5px 0; }
+
+  table.sched { width: 100%; border-collapse: collapse; margin: 10px 0 4px; font-size: 0.82em; }
+  table.sched th, table.sched td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  table.sched th { font-size: 0.86em; text-transform: uppercase; letter-spacing: 0.07em; color: var(--accent); font-weight: 800; }
+  table.sched td:first-child { white-space: nowrap; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
+  table.sched td { color: var(--text-dim); }
+  .tbl-wrap { overflow-x: auto; }
+
+  .reading { list-style: none; padding: 0; margin: 8px 0 0; }
+  .reading li { padding: 9px 0; border-bottom: 1px solid rgba(128,128,128,0.12); font-size: 0.86em; color: var(--text-dim); }
+  .reading li:last-child { border-bottom: none; }
+  .reading b { color: var(--text); }
+
+  .hidden { display: none !important; }
+  footer { text-align: center; color: var(--text-dim); font-size: 0.78em; margin-top: 50px; }
+</style>
+</head>
+<body>
+
+<div class="deco" aria-hidden="true">
+  <div class="grid"></div>
+  <div class="blob a"></div><div class="blob b"></div><div class="blob c"></div>
+</div>
+
+<div class="rail"><span id="railbar"></span></div>
+<div class="rail-tag"><b id="railpct">0%</b> &nbsp;·&nbsp; <span id="railcount">0 / 0</span></div>
+
+<div class="container">
+
+  <header class="hero">
+    <div class="kicker">Self-study syllabus · three linked fields</div>
+    <h1>Social, Behavioural<br>&amp; <em>Communication</em> Psychology</h1>
+    <div class="hero-rule"></div>
+    <p>One curriculum, three tracks. <strong>Social psychology</strong> explains how other people change what you think and do. <strong>Behavioural psychology</strong> explains how consequences change what you do next. <strong>Communication</strong> is the machinery both run on — and the one you can practise daily.</p>
+    <div class="hero-tags">
+      <span>14 parts</span><span>42 topics</span><span id="tagsubs">— subtopics</span><span>24-week plan</span><span>Progress saved locally</span>
+    </div>
+  </header>
+
+  <div class="controls-wrap">
+    <div class="controls">
+      <input type="search" class="search" id="search" placeholder="Filter topics…" aria-label="Filter topics">
+      <div class="ctrl-div"></div>
+      <button class="tbtn" id="expandAll">⊞ Expand all</button>
+      <button class="tbtn" id="collapseAll">⊟ Collapse</button>
+      <div class="ctrl-div"></div>
+      <button class="tbtn" id="themeBtn">◐ Theme</button>
+      <button class="tbtn danger" id="resetBtn">↺ Reset ticks</button>
+    </div>
+  </div>
+
+  <div class="note-box">
+    <div class="nb-label">How to use this</div>
+    <p><b>Tick a line only after you can explain it out loud, without notes, to someone who hasn't read it.</b> Recognition feels like learning and isn't. Every part ends with a <b>Lab</b> — a small real-world exercise. The labs are the point; the reading is scaffolding.</p>
+    <p>Lines marked <span class="tag core">core</span> are the load-bearing ideas — if you only get 20% through, get those. Lines marked <span class="tag caution">contested</span> are famous findings that have failed, shrunk, or been reinterpreted since. Learn them <i>and</i> learn why they're disputed; that's the actual skill.</p>
+  </div>
+
+  <!-- ================= TRACK A ================= -->
+  <div class="track-head">
+    <span class="tk-badge">Track A</span>
+    <h2>Social Psychology</h2>
+    <span class="tk-meta">Parts I–V</span>
+  </div>
+  <p class="track-blurb">How the real, imagined, or implied presence of other people shapes thought, feeling and action. The field with the most spectacular findings — and the most spectacular replication failures, which is exactly why methods come first.</p>
+
+  <!-- PART I -->
+  <details class="part" id="part1">
+    <summary><span class="pnum">I</span><span class="ptitle">Foundations &amp; Methods</span><span class="part-label">3 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">Before any content: how these fields decide what's true, and why a headline finding from 2005 might be worth nothing today. This part is short and non-negotiable — it's the filter you'll run every later claim through.</p>
+
+      <div class="topic" data-n="01">
+        <h3><span class="tnum">01</span><span class="ttl">What These Three Fields Are</span><span class="count-badge"></span></h3>
+        <p class="desc">Three overlapping answers to "why did that person just do that?"</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">1.1</span> Social psychology: the person in the situation — Lewin's B = f(P, E) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">1.2</span> Behavioural psychology: behaviour as a function of its consequences and antecedents <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">1.3</span> Communication studies: meaning as something built between people, not transmitted intact</span></li>
+          <li><span class="txt"><span class="num">1.4</span> Where they overlap — persuasion, norms, habit, group decision-making</span></li>
+          <li><span class="txt"><span class="num">1.5</span> The neighbours: sociology, behavioural economics, anthropology, linguistics</span></li>
+          <li><span class="txt"><span class="num">1.6</span> Levels of explanation, and the error of collapsing one into another</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="02">
+        <h3><span class="tnum">02</span><span class="ttl">Methods &amp; Measurement</span><span class="count-badge"></span></h3>
+        <p class="desc">The toolkit: what each design can and cannot tell you.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">2.1</span> Experiment, quasi-experiment, correlational, observational, archival</span></li>
+          <li><span class="txt"><span class="num">2.2</span> Random assignment and why it (and only it) licenses causal claims <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">2.3</span> Independent/dependent variables, confounds, mediators, moderators <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">2.4</span> Internal vs external validity — the standing trade-off</span></li>
+          <li><span class="txt"><span class="num">2.5</span> Self-report and its failures: social desirability, demand characteristics, introspective limits</span></li>
+          <li><span class="txt"><span class="num">2.6</span> Behavioural and implicit measures — reaction time, IAT, observation coding</span></li>
+          <li><span class="txt"><span class="num">2.7</span> Field experiments, A/B tests, and single-case designs</span></li>
+          <li><span class="txt"><span class="num">2.8</span> Research ethics: informed consent, deception, debriefing, IRB/BPS codes</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="03">
+        <h3><span class="tnum">03</span><span class="ttl">Evidence Quality &amp; the Replication Crisis</span><span class="count-badge"></span></h3>
+        <p class="desc">Why a large fraction of textbook social psychology didn't survive the 2010s.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">3.1</span> p-values, what they don't mean, and the 0.05 convention <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">3.2</span> Effect sizes (d, r) and confidence intervals — read these, not the p <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">3.3</span> Statistical power, small-N studies, and the winner's curse</span></li>
+          <li><span class="txt"><span class="num">3.4</span> p-hacking, HARKing, researcher degrees of freedom, the garden of forking paths</span></li>
+          <li><span class="txt"><span class="num">3.5</span> Publication bias and the file drawer; funnel plots</span></li>
+          <li><span class="txt"><span class="num">3.6</span> The Open Science Collaboration (2015) and Many Labs replications <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">3.7</span> Fixes: preregistration, registered reports, open data, adversarial collaboration</span></li>
+          <li><span class="txt"><span class="num">3.8</span> WEIRD samples — how narrow the evidence base actually is (Henrich et al.)</span></li>
+          <li><span class="txt"><span class="num">3.9</span> Casualties and survivors: which classic effects held up</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab I</div>
+        <p>Pick a psychology claim you already believe. Find the original study, then search for a replication and a meta-analysis. Write 200 words on whether you still believe it and at what effect size.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- PART II -->
+  <details class="part" id="part2">
+    <summary><span class="pnum">II</span><span class="ptitle">Social Cognition &amp; the Social Self</span><span class="part-label">4 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">How people build models of themselves and others out of thin, biased data — and act on those models as if they were the world.</p>
+
+      <div class="topic" data-n="04">
+        <h3><span class="tnum">04</span><span class="ttl">The Social Self</span><span class="count-badge"></span></h3>
+        <p class="desc">Identity as something partly constructed by, and performed for, other people.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">4.1</span> Self-concept, self-schemas, possible selves</span></li>
+          <li><span class="txt"><span class="num">4.2</span> Social comparison theory — upward, downward, and lateral (Festinger) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">4.3</span> Self-esteem: trait vs state, contingencies of self-worth, the self-esteem movement's failure</span></li>
+          <li><span class="txt"><span class="num">4.4</span> Self-efficacy and locus of control (Bandura, Rotter) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">4.5</span> Self-presentation and impression management (Goffman's dramaturgy)</span></li>
+          <li><span class="txt"><span class="num">4.6</span> Self-handicapping, spotlight effect, illusion of transparency</span></li>
+          <li><span class="txt"><span class="num">4.7</span> Self-regulation and the ego-depletion story <span class="tag caution">contested</span></span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="05">
+        <h3><span class="tnum">05</span><span class="ttl">Attribution — Explaining Behaviour</span><span class="count-badge"></span></h3>
+        <p class="desc">The everyday causal reasoning that decides whether you forgive someone or write them off.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">5.1</span> Internal vs external attribution; Heider's naive scientist</span></li>
+          <li><span class="txt"><span class="num">5.2</span> Kelley's covariation model — consensus, distinctiveness, consistency <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">5.3</span> Correspondence bias / fundamental attribution error — and its cultural limits <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">5.4</span> Actor–observer asymmetry <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">5.5</span> Self-serving bias and defensive attribution</span></li>
+          <li><span class="txt"><span class="num">5.6</span> Just-world beliefs and victim blaming</span></li>
+          <li><span class="txt"><span class="num">5.7</span> Attributional style, explanatory style and depression (Seligman, Abramson)</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="06">
+        <h3><span class="tnum">06</span><span class="ttl">Social Cognition &amp; Heuristics</span><span class="count-badge"></span></h3>
+        <p class="desc">Fast, frugal, mostly-adequate thinking — and where it reliably breaks.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">6.1</span> Schemas, scripts, categories — the cognitive miser and the motivated tactician</span></li>
+          <li><span class="txt"><span class="num">6.2</span> Dual-process models: System 1 / System 2, and honest criticism of the framing <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">6.3</span> Availability, representativeness, anchoring &amp; adjustment <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">6.4</span> Framing effects, prospect theory, loss aversion <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">6.5</span> Confirmation bias, motivated reasoning, identity-protective cognition</span></li>
+          <li><span class="txt"><span class="num">6.6</span> Counterfactual thinking, hindsight bias, the planning fallacy</span></li>
+          <li><span class="txt"><span class="num">6.7</span> Priming: what survived (semantic) and what didn't (behavioural/"elderly walking") <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">6.8</span> Affective forecasting and impact bias (Gilbert &amp; Wilson)</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="07">
+        <h3><span class="tnum">07</span><span class="ttl">Attitudes &amp; Dissonance</span><span class="count-badge"></span></h3>
+        <p class="desc">Why what people say they believe predicts what they do so much worse than you'd expect.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">7.1</span> Attitude structure: affective, behavioural, cognitive components</span></li>
+          <li><span class="txt"><span class="num">7.2</span> Explicit vs implicit attitudes; the IAT and its predictive-validity debate <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">7.3</span> The attitude–behaviour gap; LaPiere's 1934 study <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">7.4</span> Theory of Planned Behaviour and its predictive ceiling <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">7.5</span> Cognitive dissonance: Festinger &amp; Carlsmith, insufficient justification, effort justification <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">7.6</span> Alternative readings: self-perception theory (Bem), self-affirmation</span></li>
+          <li><span class="txt"><span class="num">7.7</span> Attitude change through behaviour — the foot-in-the-door mechanism</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab II</div>
+        <p>For one week, log every time you explain someone else's annoying behaviour. Mark each explanation internal or external. Then re-run each one asking "what situation would make a reasonable person do this?" Note how often that alternative was available and ignored.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- PART III -->
+  <details class="part" id="part3">
+    <summary><span class="pnum">III</span><span class="ptitle">Social Influence</span><span class="part-label">3 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">Conformity, compliance, obedience — three different mechanisms usually taught as one. Distinguishing them is most of the value here.</p>
+
+      <div class="topic" data-n="08">
+        <h3><span class="tnum">08</span><span class="ttl">Conformity &amp; Social Norms</span><span class="count-badge"></span></h3>
+        <p class="desc">Going along with the group, for two very different reasons.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">8.1</span> Sherif's autokinetic studies — norm formation from ambiguity</span></li>
+          <li><span class="txt"><span class="num">8.2</span> Asch's line studies: the actual numbers, and what varies them <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">8.3</span> Informational vs normative influence <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">8.4</span> Compliance, identification, internalisation (Kelman)</span></li>
+          <li><span class="txt"><span class="num">8.5</span> Descriptive vs injunctive norms — and why mixing them backfires <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">8.6</span> Pluralistic ignorance and norm misperception</span></li>
+          <li><span class="txt"><span class="num">8.7</span> Social norms interventions: energy use, drinking, tax letters — effect sizes</span></li>
+          <li><span class="txt"><span class="num">8.8</span> Cultural and situational moderators of conformity</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="09">
+        <h3><span class="tnum">09</span><span class="ttl">Compliance &amp; Influence Tactics</span><span class="count-badge"></span></h3>
+        <p class="desc">The applied, salesroom-tested end of social psychology.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">9.1</span> Cialdini's six: reciprocity, commitment/consistency, social proof, authority, liking, scarcity <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">9.2</span> Unity — the seventh principle, and shared-identity appeals</span></li>
+          <li><span class="txt"><span class="num">9.3</span> Sequential techniques: foot-in-the-door, door-in-the-face, low-ball, that's-not-all</span></li>
+          <li><span class="txt"><span class="num">9.4</span> Reciprocity and the obligation of the unrequested gift</span></li>
+          <li><span class="txt"><span class="num">9.5</span> Scarcity, deadlines, and psychological reactance</span></li>
+          <li><span class="txt"><span class="num">9.6</span> Dark patterns and manipulative design — the same principles, weaponised</span></li>
+          <li><span class="txt"><span class="num">9.7</span> Ethics: influence vs manipulation vs coercion, and where the line sits <span class="tag core">core</span></span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="10">
+        <h3><span class="tnum">10</span><span class="ttl">Obedience &amp; Authority</span><span class="count-badge"></span></h3>
+        <p class="desc">The most cited, most misremembered studies in the discipline.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">10.1</span> Milgram's paradigm, the variations, and the real obedience rates <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">10.2</span> Milgram reconsidered: archive analyses, engaged followership, prod-by-prod data <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">10.3</span> Agentic state vs identification with the experimenter's mission</span></li>
+          <li><span class="txt"><span class="num">10.4</span> The Stanford Prison Experiment and why it is not evidence <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">10.5</span> The BBC Prison Study and social identity accounts (Reicher &amp; Haslam)</span></li>
+          <li><span class="txt"><span class="num">10.6</span> Situationism vs the banality-of-evil reading; Arendt in light of the evidence</span></li>
+          <li><span class="txt"><span class="num">10.7</span> Resisting: dissenting allies, moral disengagement, whistleblowing</span></li>
+          <li><span class="txt"><span class="num">10.8</span> Minority influence and social change (Moscovici); consistency as the mechanism</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab III</div>
+        <p>Collect five real persuasion attempts aimed at you this week (ads, emails, a checkout flow, a colleague). Name the principle each uses and rewrite one to be equally effective but non-manipulative. If you can't, say why.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- PART IV -->
+  <details class="part" id="part4">
+    <summary><span class="pnum">IV</span><span class="ptitle">Groups &amp; Intergroup Relations</span><span class="part-label">4 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">What changes when people act as members of a group rather than as individuals — including the mechanisms behind prejudice and its reduction.</p>
+
+      <div class="topic" data-n="11">
+        <h3><span class="tnum">11</span><span class="ttl">Group Processes &amp; Performance</span><span class="count-badge"></span></h3>
+        <p class="desc">Why groups outperform individuals at some tasks and reliably underperform at others.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">11.1</span> Social facilitation and inhibition; Zajonc's drive theory</span></li>
+          <li><span class="txt"><span class="num">11.2</span> Social loafing, the Ringelmann effect, and identifiability <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">11.3</span> Roles, status, norms and cohesion in groups</span></li>
+          <li><span class="txt"><span class="num">11.4</span> Group polarisation and the risky shift <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">11.5</span> Groupthink: Janis's model, the weak evidence, and what replaced it <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">11.6</span> Hidden profiles and the common knowledge effect — why groups discuss what everyone already knows <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">11.7</span> Deindividuation, and the social identity model of crowd behaviour</span></li>
+          <li><span class="txt"><span class="num">11.8</span> Brainstorming's production blocking; nominal groups and brainwriting</span></li>
+          <li><span class="txt"><span class="num">11.9</span> Collective intelligence: the c-factor, turn-taking, social sensitivity</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="12">
+        <h3><span class="tnum">12</span><span class="ttl">Prejudice, Stereotyping &amp; Discrimination</span><span class="count-badge"></span></h3>
+        <p class="desc">Three separable things — a belief, a feeling, and an act — that don't move together as neatly as assumed.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">12.1</span> Definitions and the cognitive-affective-behavioural split <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">12.2</span> Categorisation, ingroup favouritism, outgroup homogeneity <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">12.3</span> Minimal group paradigm (Tajfel) and Social Identity Theory <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">12.4</span> Realistic conflict theory; Robbers Cave and its methodological problems</span></li>
+          <li><span class="txt"><span class="num">12.5</span> Stereotype content model: warmth × competence</span></li>
+          <li><span class="txt"><span class="num">12.6</span> Stereotype threat — original claims vs replication and meta-analytic record <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">12.7</span> Implicit bias: the IAT, test-retest reliability, and weak behaviour prediction <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">12.8</span> System justification, modern/aversive racism, benevolent sexism</span></li>
+          <li><span class="txt"><span class="num">12.9</span> Self-fulfilling prophecy and behavioural confirmation</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="13">
+        <h3><span class="tnum">13</span><span class="ttl">Reducing Intergroup Conflict</span><span class="count-badge"></span></h3>
+        <p class="desc">The intervention literature — including the honest finding that most diversity training doesn't work.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">13.1</span> Contact hypothesis and Allport's four conditions <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">13.2</span> Pettigrew &amp; Tropp's meta-analysis; extended and imagined contact</span></li>
+          <li><span class="txt"><span class="num">13.3</span> Superordinate goals and recategorisation (common ingroup identity)</span></li>
+          <li><span class="txt"><span class="num">13.4</span> Cooperative learning: the jigsaw classroom</span></li>
+          <li><span class="txt"><span class="num">13.5</span> Perspective-getting vs perspective-taking; deep canvassing evidence</span></li>
+          <li><span class="txt"><span class="num">13.6</span> Why most one-off bias training fails, and what the field-experiment record shows <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">13.7</span> Structural vs attitudinal interventions</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="14">
+        <h3><span class="tnum">14</span><span class="ttl">Helping, Aggression &amp; Cooperation</span><span class="count-badge"></span></h3>
+        <p class="desc">The two directions social behaviour runs, and the situational levers on each.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">14.1</span> Bystander effect and diffusion of responsibility; the Kitty Genovese myth <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">14.2</span> Latané &amp; Darley's five-step decision model</span></li>
+          <li><span class="txt"><span class="num">14.3</span> Recent CCTV evidence: intervention is the norm in real emergencies</span></li>
+          <li><span class="txt"><span class="num">14.4</span> Altruism vs egoism: empathy–altruism hypothesis; kin selection, reciprocal altruism</span></li>
+          <li><span class="txt"><span class="num">14.5</span> Aggression: frustration–aggression, social learning, GAM</span></li>
+          <li><span class="txt"><span class="num">14.6</span> Media violence and the catharsis myth <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">14.7</span> Dehumanisation, moral disengagement, and escalation</span></li>
+          <li><span class="txt"><span class="num">14.8</span> Cooperation games: prisoner's dilemma, public goods, tit-for-tat, punishment</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab IV</div>
+        <p>Sit in on (or recall) a group decision. Track who spoke, for how long, and whether any information known to only one person entered the discussion. Then design one procedural change — silent written input first, assigned devil's advocate, decide-then-discuss — and test it next time.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- PART V -->
+  <details class="part" id="part5">
+    <summary><span class="pnum">V</span><span class="ptitle">Relationships &amp; Culture</span><span class="part-label">2 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">The closest social bonds, and the cultural frame that changes almost every finding above by degree — sometimes by direction.</p>
+
+      <div class="topic" data-n="15">
+        <h3><span class="tnum">15</span><span class="ttl">Attraction &amp; Close Relationships</span><span class="count-badge"></span></h3>
+        <p class="desc">What predicts who you like, and what predicts whether it lasts — two different lists.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">15.1</span> Proximity, mere exposure, similarity, reciprocal liking <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">15.2</span> Physical attractiveness, the halo effect, matching hypothesis</span></li>
+          <li><span class="txt"><span class="num">15.3</span> Self-disclosure and escalating intimacy (Altman &amp; Taylor; Aron's 36 questions)</span></li>
+          <li><span class="txt"><span class="num">15.4</span> Adult attachment styles: secure, anxious, avoidant — and measurement caveats</span></li>
+          <li><span class="txt"><span class="num">15.5</span> Interdependence theory, equity, comparison level and CL-alt</span></li>
+          <li><span class="txt"><span class="num">15.6</span> Gottman's conflict findings: the four horsemen, repair attempts, prediction claims <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">15.7</span> Capitalisation, gratitude, and responsiveness as maintenance mechanisms</span></li>
+          <li><span class="txt"><span class="num">15.8</span> Loneliness and social connection as health outcomes</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="16">
+        <h3><span class="tnum">16</span><span class="ttl">Culture &amp; Social Behaviour</span><span class="count-badge"></span></h3>
+        <p class="desc">The moderator that sits underneath every effect in Track A.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">16.1</span> Individualism–collectivism, independent vs interdependent self-construal <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">16.2</span> Tight vs loose cultures (Gelfand)</span></li>
+          <li><span class="txt"><span class="num">16.3</span> Honour, face and dignity cultures</span></li>
+          <li><span class="txt"><span class="num">16.4</span> Hofstede's dimensions — usefulness and serious methodological criticism <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">16.5</span> Cultural differences in attribution, conformity and emotion display</span></li>
+          <li><span class="txt"><span class="num">16.6</span> Doing cross-cultural research properly: translation, equivalence, reference-group effects</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab V</div>
+        <p>Take three findings you ticked in Parts II–IV and search for a non-WEIRD replication of each. Write one line per finding: does it hold, shrink, or reverse?</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- ================= TRACK B ================= -->
+  <div class="track-head">
+    <span class="tk-badge">Track B</span>
+    <h2>Behavioural Psychology</h2>
+    <span class="tk-meta">Parts VI–IX</span>
+  </div>
+  <p class="track-blurb">Learning theory: the most replicable body of work in psychology, and the one with the highest ratio of practical leverage to fashionable attention. It runs from Pavlov's dogs to your own habits, and the mechanisms are genuinely the same.</p>
+
+  <!-- PART VI -->
+  <details class="part" id="part6">
+    <summary><span class="pnum">VI</span><span class="ptitle">Classical Conditioning</span><span class="part-label">3 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">Learning what predicts what. Deceptively simple; the modern theory is about prediction error, not spit and bells.</p>
+
+      <div class="topic" data-n="17">
+        <h3><span class="tnum">17</span><span class="ttl">Core Mechanisms</span><span class="count-badge"></span></h3>
+        <p class="desc">The vocabulary you need before anything else in Track B makes sense.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">17.1</span> US, UR, CS, CR — and getting the mapping right every time <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">17.2</span> Acquisition, timing, and why delay conditioning beats backward</span></li>
+          <li><span class="txt"><span class="num">17.3</span> Extinction is new learning, not erasure <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">17.4</span> Spontaneous recovery, renewal, reinstatement — why relapse is the default</span></li>
+          <li><span class="txt"><span class="num">17.5</span> Generalisation and discrimination gradients</span></li>
+          <li><span class="txt"><span class="num">17.6</span> Second-order conditioning and sensory preconditioning</span></li>
+          <li><span class="txt"><span class="num">17.7</span> Watson's Little Albert: the claim, the evidence, the ethics <span class="tag caution">contested</span></span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="18">
+        <h3><span class="tnum">18</span><span class="ttl">Prediction Error &amp; Modern Theory</span><span class="count-badge"></span></h3>
+        <p class="desc">The upgrade from contiguity to contingency — and the equation behind reinforcement learning.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">18.1</span> Contiguity is not enough: Rescorla's contingency experiments <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">18.2</span> Blocking (Kamin) and overshadowing <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">18.3</span> The Rescorla–Wagner model and the surprise term <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">18.4</span> Attention-based models (Mackintosh, Pearce–Hall)</span></li>
+          <li><span class="txt"><span class="num">18.5</span> Dopamine as a reward prediction error signal (Schultz)</span></li>
+          <li><span class="txt"><span class="num">18.6</span> Link to temporal-difference learning and modern RL</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="19">
+        <h3><span class="tnum">19</span><span class="ttl">Applications of Respondent Learning</span><span class="count-badge"></span></h3>
+        <p class="desc">Where classical conditioning does real clinical work.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">19.1</span> Taste aversion, one-trial learning, biological preparedness (Garcia) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">19.2</span> Phobia acquisition: conditioning, vicarious, informational pathways</span></li>
+          <li><span class="txt"><span class="num">19.3</span> Systematic desensitisation and graded exposure <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">19.4</span> Inhibitory learning model of exposure — maximise surprise, vary context</span></li>
+          <li><span class="txt"><span class="num">19.5</span> Cue reactivity, craving and drug tolerance as conditioned compensation</span></li>
+          <li><span class="txt"><span class="num">19.6</span> Evaluative conditioning and advertising</span></li>
+          <li><span class="txt"><span class="num">19.7</span> Placebo and nocebo as conditioned responses</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab VI</div>
+        <p>Find one conditioned response in your own life (a notification sound, a location that triggers appetite, a person's tone). Identify CS, US and CR precisely, then run an extinction trial: expose yourself to the CS with the US withheld, ten times, and record the response each time.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- PART VII -->
+  <details class="part" id="part7">
+    <summary><span class="pnum">VII</span><span class="ptitle">Operant Conditioning</span><span class="part-label">4 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">Behaviour selected by its consequences. This is the engine room — the part with the most direct application to changing what you or anyone else actually does.</p>
+
+      <div class="topic" data-n="20">
+        <h3><span class="tnum">20</span><span class="ttl">The Basic Contingency</span><span class="count-badge"></span></h3>
+        <p class="desc">Antecedent → Behaviour → Consequence. Everything else is elaboration.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">20.1</span> Thorndike's law of effect; Skinner's operant chamber</span></li>
+          <li><span class="txt"><span class="num">20.2</span> The ABC three-term contingency <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">20.3</span> The four-way table: positive/negative × reinforcement/punishment <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">20.4</span> Reinforcer identification — it's defined by effect, not by liking <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">20.5</span> Primary, secondary and generalised reinforcers; token economies</span></li>
+          <li><span class="txt"><span class="num">20.6</span> Why punishment suppresses without teaching, and its side effects <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">20.7</span> Immediacy, magnitude, contingency — the three levers on reinforcer power</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="21">
+        <h3><span class="tnum">21</span><span class="ttl">Schedules &amp; Shaping</span><span class="count-badge"></span></h3>
+        <p class="desc">Timing of consequences, which matters more than their size.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">21.1</span> Continuous vs intermittent reinforcement</span></li>
+          <li><span class="txt"><span class="num">21.2</span> FR, VR, FI, VI — response patterns and characteristic curves <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">21.3</span> Why variable ratio resists extinction — slot machines and feeds <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">21.4</span> Extinction bursts and behaviour variability under extinction</span></li>
+          <li><span class="txt"><span class="num">21.5</span> Shaping by successive approximation <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">21.6</span> Chaining, task analysis, prompting and fading</span></li>
+          <li><span class="txt"><span class="num">21.7</span> Differential reinforcement: DRO, DRA, DRI, DRL</span></li>
+          <li><span class="txt"><span class="num">21.8</span> Superstitious behaviour and adventitious reinforcement</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="22">
+        <h3><span class="tnum">22</span><span class="ttl">Stimulus Control &amp; Choice</span><span class="count-badge"></span></h3>
+        <p class="desc">When behaviour happens, and how organisms allocate it between options.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">22.1</span> Discriminative stimuli, S-delta, and stimulus control <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">22.2</span> Building narrow stimulus control deliberately (context as a cue) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">22.3</span> The matching law (Herrnstein)</span></li>
+          <li><span class="txt"><span class="num">22.4</span> Delay discounting and hyperbolic curves <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">22.5</span> Preference reversal, self-control as commitment, Ulysses contracts</span></li>
+          <li><span class="txt"><span class="num">22.6</span> Behavioural momentum and resistance to change</span></li>
+          <li><span class="txt"><span class="num">22.7</span> Motivating operations: deprivation, satiation, abolishing operations</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="23">
+        <h3><span class="tnum">23</span><span class="ttl">Avoidance, Escape &amp; Aversive Control</span><span class="count-badge"></span></h3>
+        <p class="desc">The contingencies that maintain anxiety, procrastination and most stuck behaviour.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">23.1</span> Escape vs avoidance; two-factor theory (Mowrer) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">23.2</span> Why avoidance is self-maintaining and blocks disconfirmation <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">23.3</span> Safety behaviours in anxiety maintenance</span></li>
+          <li><span class="txt"><span class="num">23.4</span> Learned helplessness — original account and Maier &amp; Seligman's 2016 reversal <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">23.5</span> Negative reinforcement traps in everyday life (procrastination, nagging cycles)</span></li>
+          <li><span class="txt"><span class="num">23.6</span> Punishment's ethical and practical limits; least-restrictive alternatives</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab VII</div>
+        <p>Take one behaviour you avoid. Write out the full contingency: what aversive state does avoiding it remove, immediately? Then design a version with the aversive element reduced and an immediate reinforcer attached, and run it for five days.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- PART VIII -->
+  <details class="part" id="part8">
+    <summary><span class="pnum">VIII</span><span class="ptitle">Beyond the Box — Cognition, Biology, Motivation</span><span class="part-label">3 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">Where strict behaviourism broke, and what replaced it. Radical behaviourism's failures are as instructive as its successes.</p>
+
+      <div class="topic" data-n="24">
+        <h3><span class="tnum">24</span><span class="ttl">Observational &amp; Social Learning</span><span class="count-badge"></span></h3>
+        <p class="desc">Learning without doing — the bridge between Tracks A and B.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">24.1</span> Bandura's Bobo doll studies and vicarious reinforcement <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">24.2</span> Attention, retention, reproduction, motivation — the four processes</span></li>
+          <li><span class="txt"><span class="num">24.3</span> Modelling, imitation, and model characteristics that matter</span></li>
+          <li><span class="txt"><span class="num">24.4</span> Social cognitive theory and reciprocal determinism</span></li>
+          <li><span class="txt"><span class="num">24.5</span> Self-efficacy sources: mastery, vicarious, persuasion, physiological state <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">24.6</span> Behavioural skills training: instruct, model, rehearse, feedback</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="25">
+        <h3><span class="tnum">25</span><span class="ttl">Cognitive &amp; Biological Constraints</span><span class="count-badge"></span></h3>
+        <p class="desc">The findings that made "the organism is a blank slate responding to contingencies" untenable.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">25.1</span> Latent learning and cognitive maps (Tolman) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">25.2</span> Insight learning and the limits of trial-and-error accounts</span></li>
+          <li><span class="txt"><span class="num">25.3</span> Instinctive drift (Breland &amp; Breland) and preparedness <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">25.4</span> Autoshaping and sign-tracking</span></li>
+          <li><span class="txt"><span class="num">25.5</span> Habit vs goal-directed systems; outcome devaluation as the test <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">25.6</span> Model-free and model-based control; dorsolateral vs dorsomedial striatum</span></li>
+          <li><span class="txt"><span class="num">25.7</span> Rule-governed behaviour and verbal control (Skinner's <i>Verbal Behavior</i>, Chomsky's critique)</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="26">
+        <h3><span class="tnum">26</span><span class="ttl">Motivation &amp; Reward</span><span class="count-badge"></span></h3>
+        <p class="desc">Why the same reinforcer builds behaviour in one context and destroys it in another.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">26.1</span> Drive reduction, arousal theory, incentive salience</span></li>
+          <li><span class="txt"><span class="num">26.2</span> Wanting vs liking — dissociable systems (Berridge) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">26.3</span> Intrinsic vs extrinsic motivation; the overjustification effect <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">26.4</span> When rewards do and don't undermine — the Deci/Cameron meta-analytic dispute <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">26.5</span> Self-determination theory: autonomy, competence, relatedness <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">26.6</span> Goal setting theory; specificity and difficulty (Locke &amp; Latham)</span></li>
+          <li><span class="txt"><span class="num">26.7</span> Approach/avoidance temperament; behavioural activation and inhibition</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab VIII</div>
+        <p>Pick a behaviour you currently do for an external reward and one you do for its own sake. Predict what removing the reward would do to each. Then check the outcome-devaluation logic: is your behaviour habit or goal-directed? Design a test that would tell you.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- PART IX -->
+  <details class="part" id="part9">
+    <summary><span class="pnum">IX</span><span class="ptitle">Applied Behaviour Change</span><span class="part-label">3 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">Turning Parts VI–VIII into interventions — clinical, organisational, and on yourself. This is where the syllabus earns its keep.</p>
+
+      <div class="topic" data-n="27">
+        <h3><span class="tnum">27</span><span class="ttl">Behaviour Analysis &amp; Clinical Application</span><span class="count-badge"></span></h3>
+        <p class="desc">The formal discipline of changing behaviour, and the therapies built from it.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">27.1</span> Applied behaviour analysis: the seven dimensions (Baer, Wolf &amp; Risley)</span></li>
+          <li><span class="txt"><span class="num">27.2</span> Functional assessment and functional analysis — behaviour serves a function <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">27.3</span> The four common functions: escape, attention, tangible, automatic <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">27.4</span> ABA ethics and the neurodiversity critique <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">27.5</span> Behavioural activation for depression <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">27.6</span> Exposure and response prevention; habit reversal training</span></li>
+          <li><span class="txt"><span class="num">27.7</span> Contingency management in addiction — the strongest evidence in the field</span></li>
+          <li><span class="txt"><span class="num">27.8</span> Third wave: ACT, values-based action, acceptance vs control</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="28">
+        <h3><span class="tnum">28</span><span class="ttl">Habits &amp; Self-Change</span><span class="count-badge"></span></h3>
+        <p class="desc">The popular-science layer, stripped back to what the evidence actually supports.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">28.1</span> Habit defined: context-cued automatic response, not "something you do a lot" <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">28.2</span> Habit formation timelines — Lally's median 66 days and its huge variance</span></li>
+          <li><span class="txt"><span class="num">28.3</span> Implementation intentions: if-then planning (Gollwitzer) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">28.4</span> Mental contrasting and WOOP (Oettingen)</span></li>
+          <li><span class="txt"><span class="num">28.5</span> Friction, choice architecture and the environment as the main lever <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">28.6</span> Habit stacking, temptation bundling, the fresh-start effect</span></li>
+          <li><span class="txt"><span class="num">28.7</span> Context disruption as the best moment to change (habit discontinuity)</span></li>
+          <li><span class="txt"><span class="num">28.8</span> Self-monitoring as an intervention in its own right</span></li>
+          <li><span class="txt"><span class="num">28.9</span> Relapse: lapse vs collapse, abstinence violation effect</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="29">
+        <h3><span class="tnum">29</span><span class="ttl">Behavioural Science in the Wild</span><span class="count-badge"></span></h3>
+        <p class="desc">Nudge units, behavioural economics, and a sober look at effect sizes.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">29.1</span> Choice architecture and defaults — organ donation and pensions <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">29.2</span> EAST and MINDSPACE frameworks (BIT)</span></li>
+          <li><span class="txt"><span class="num">29.3</span> COM-B and the Behaviour Change Wheel <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">29.4</span> The behaviour change technique taxonomy (Michie et al.)</span></li>
+          <li><span class="txt"><span class="num">29.5</span> Nudge effect sizes after publication-bias correction <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">29.6</span> Sludge, dark patterns, and nudging's paternalism debate</span></li>
+          <li><span class="txt"><span class="num">29.7</span> Incentives: crowding out, the Haifa daycare fine, framing of penalties</span></li>
+          <li><span class="txt"><span class="num">29.8</span> Single-case experimental designs: ABAB, multiple baseline, changing criterion <span class="tag core">core</span></span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab IX</div>
+        <p>Run a proper ABAB on yourself. Choose one countable behaviour. Baseline for 5 days with no intervention (A). Apply one specific technique for 5 days (B). Withdraw it for 5 (A). Reapply for 5 (B). Plot it. If the line doesn't move with the phases, your intervention didn't work — say so.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- ================= TRACK C ================= -->
+  <div class="track-head">
+    <span class="tk-badge">Track C</span>
+    <h2>Communication</h2>
+    <span class="tk-meta">Parts X–XIII</span>
+  </div>
+  <p class="track-blurb">The applied surface of both other tracks. Half theory, half skill — and the skill half only develops through recorded, reviewed, repeated practice. Reading this part without doing the labs produces a person who can name the concepts and can't run a difficult conversation.</p>
+
+  <!-- PART X -->
+  <details class="part" id="part10">
+    <summary><span class="pnum">X</span><span class="ptitle">Foundations of Communication</span><span class="part-label">3 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">Models of how meaning moves, why it degrades, and the layer beneath words.</p>
+
+      <div class="topic" data-n="30">
+        <h3><span class="tnum">30</span><span class="ttl">Models &amp; Basic Concepts</span><span class="count-badge"></span></h3>
+        <p class="desc">Four increasingly honest pictures of what happens when two people talk.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">30.1</span> Shannon–Weaver: sender, encoder, channel, noise, decoder <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">30.2</span> Why the transmission model is wrong, and the interactional fix</span></li>
+          <li><span class="txt"><span class="num">30.3</span> The transactional model: simultaneous, co-constructed meaning <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">30.4</span> Encoding/decoding and Hall's dominant, negotiated, oppositional readings</span></li>
+          <li><span class="txt"><span class="num">30.5</span> Noise: physical, physiological, psychological, semantic</span></li>
+          <li><span class="txt"><span class="num">30.6</span> Content vs relational level; Watzlawick's axioms — you cannot not communicate <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">30.7</span> Symmetrical and complementary interaction; metacommunication</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="31">
+        <h3><span class="tnum">31</span><span class="ttl">Language, Meaning &amp; Pragmatics</span><span class="count-badge"></span></h3>
+        <p class="desc">How people mean far more than they say, and how listeners recover it.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">31.1</span> Semantics vs pragmatics; denotation and connotation</span></li>
+          <li><span class="txt"><span class="num">31.2</span> Speech act theory: locution, illocution, perlocution (Austin, Searle) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">31.3</span> Grice's cooperative principle and the four maxims <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">31.4</span> Implicature — meaning conveyed by flouting a maxim <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">31.5</span> Politeness theory, face-threatening acts, positive vs negative face (Brown &amp; Levinson)</span></li>
+          <li><span class="txt"><span class="num">31.6</span> Common ground, audience design, and the curse of knowledge <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">31.7</span> Framing and word choice: loaded language, euphemism, nominalisation</span></li>
+          <li><span class="txt"><span class="num">31.8</span> Linguistic relativity — the strong claim vs what the evidence supports <span class="tag caution">contested</span></span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="32">
+        <h3><span class="tnum">32</span><span class="ttl">Nonverbal Communication</span><span class="count-badge"></span></h3>
+        <p class="desc">The channel most confidently misread — including by professionals.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">32.1</span> Channels: kinesics, proxemics, haptics, chronemics, paralanguage, appearance</span></li>
+          <li><span class="txt"><span class="num">32.2</span> Functions: repeating, contradicting, substituting, regulating, accenting</span></li>
+          <li><span class="txt"><span class="num">32.3</span> Facial expression and the basic emotions debate (Ekman vs Barrett) <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">32.4</span> The 7-38-55 myth — what Mehrabian actually measured <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">32.5</span> Deception detection: near-chance accuracy, and why the cues you trust don't work <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">32.6</span> Power posing: the original claim and the failed replications <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">32.7</span> Turn-taking, backchannels, gaze and interactional synchrony</span></li>
+          <li><span class="txt"><span class="num">32.8</span> Cultural variation in display rules and personal space</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab X</div>
+        <p>Record yourself explaining something technical to a camera for three minutes. Watch it muted, then listen without watching. Note three specific things each channel does that you didn't intend.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- PART XI -->
+  <details class="part" id="part11">
+    <summary><span class="pnum">XI</span><span class="ptitle">Interpersonal Communication</span><span class="part-label">3 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">The skills part. Each topic here has a drill attached; treat them like scales, not like reading.</p>
+
+      <div class="topic" data-n="33">
+        <h3><span class="tnum">33</span><span class="ttl">Listening &amp; Understanding</span><span class="count-badge"></span></h3>
+        <p class="desc">The highest-leverage, least-practised communication skill.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">33.1</span> Hearing vs listening; the stages of the listening process</span></li>
+          <li><span class="txt"><span class="num">33.2</span> Barriers: rehearsing your reply, filtering, advice reflex</span></li>
+          <li><span class="txt"><span class="num">33.3</span> Active/reflective listening: paraphrase, reflect, summarise <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">33.4</span> High-quality listening and its effect on speaker attitude change <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">33.5</span> Empathic accuracy vs sympathy vs projection</span></li>
+          <li><span class="txt"><span class="num">33.6</span> Question types: open, closed, probing, leading, funnel sequencing</span></li>
+          <li><span class="txt"><span class="num">33.7</span> Motivational interviewing: OARS, change talk, rolling with resistance <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">33.8</span> Silence as a tool</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="34">
+        <h3><span class="tnum">34</span><span class="ttl">Disclosure, Feedback &amp; Assertiveness</span><span class="count-badge"></span></h3>
+        <p class="desc">Saying the hard thing, in a form the other person can use.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">34.1</span> Self-disclosure: breadth, depth, reciprocity, timing</span></li>
+          <li><span class="txt"><span class="num">34.2</span> The Johari window as a working model</span></li>
+          <li><span class="txt"><span class="num">34.3</span> Feedback that lands: behaviour-specific, timely, actionable <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">34.4</span> Why the feedback sandwich fails; SBI and radical-candour framings</span></li>
+          <li><span class="txt"><span class="num">34.5</span> Feedback's mixed evidence — a third of interventions reduce performance (Kluger &amp; DeNisi) <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">34.6</span> Passive, aggressive, passive-aggressive, assertive <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">34.7</span> I-statements, DESC scripts, broken-record technique</span></li>
+          <li><span class="txt"><span class="num">34.8</span> Saying no, setting boundaries, and negotiating scope</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="35">
+        <h3><span class="tnum">35</span><span class="ttl">Conflict &amp; Difficult Conversations</span><span class="count-badge"></span></h3>
+        <p class="desc">What to do when both people are activated and the stakes are real.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">35.1</span> Conflict styles: competing, accommodating, avoiding, compromising, collaborating</span></li>
+          <li><span class="txt"><span class="num">35.2</span> Positions vs interests; principled negotiation and BATNA (Fisher &amp; Ury) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">35.3</span> The three conversations: what happened, feelings, identity (Stone et al.) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">35.4</span> Nonviolent Communication: observation, feeling, need, request — and its critics</span></li>
+          <li><span class="txt"><span class="num">35.5</span> De-escalation, physiological flooding, and the value of a break <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">35.6</span> Repair attempts, effective apology components, rebuilding trust</span></li>
+          <li><span class="txt"><span class="num">35.7</span> Mediation basics and third-party roles</span></li>
+          <li><span class="txt"><span class="num">35.8</span> Difficult conversations across a power gradient</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab XI</div>
+        <p>Have one conversation this week where your only goal is to be able to summarise the other person's view so accurately that they say "yes, that's it" before you state your own. Note how long it takes and how much you wanted to interrupt.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- PART XII -->
+  <details class="part" id="part12">
+    <summary><span class="pnum">XII</span><span class="ptitle">Persuasion, Rhetoric &amp; Resistance</span><span class="part-label">3 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">Track A's influence research meets 2,400 years of rhetoric — plus the defensive half, which most courses skip.</p>
+
+      <div class="topic" data-n="36">
+        <h3><span class="tnum">36</span><span class="ttl">Persuasion Theory</span><span class="count-badge"></span></h3>
+        <p class="desc">Two routes, and the conditions that decide which one you're on.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">36.1</span> Yale model: source, message, channel, audience</span></li>
+          <li><span class="txt"><span class="num">36.2</span> Elaboration Likelihood Model — central vs peripheral routes <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">36.3</span> Heuristic-Systematic Model and sufficiency thresholds</span></li>
+          <li><span class="txt"><span class="num">36.4</span> Source credibility, expertise, trustworthiness, the sleeper effect</span></li>
+          <li><span class="txt"><span class="num">36.5</span> One-sided vs two-sided messages; refutational two-sided <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">36.6</span> Fear appeals and the extended parallel process model — efficacy is the hinge <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">36.7</span> Gain vs loss framing and message-matching</span></li>
+          <li><span class="txt"><span class="num">36.8</span> Repetition, fluency, and the illusory truth effect <span class="tag core">core</span></span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="37">
+        <h3><span class="tnum">37</span><span class="ttl">Rhetoric &amp; Argument</span><span class="count-badge"></span></h3>
+        <p class="desc">Structure, appeals, and how to tell a real argument from a well-dressed one.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">37.1</span> Ethos, pathos, logos; kairos and the moment <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">37.2</span> The canons: invention, arrangement, style, memory, delivery</span></li>
+          <li><span class="txt"><span class="num">37.3</span> Toulmin model: claim, data, warrant, backing, qualifier, rebuttal <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">37.4</span> Deductive, inductive, abductive and analogical argument</span></li>
+          <li><span class="txt"><span class="num">37.5</span> Informal fallacies: straw man, ad hominem, false dilemma, motte-and-bailey <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">37.6</span> Steelmanning and the ideological Turing test</span></li>
+          <li><span class="txt"><span class="num">37.7</span> Narrative persuasion, transportation, and the identifiable victim effect</span></li>
+          <li><span class="txt"><span class="num">37.8</span> Metaphor and conceptual framing (Lakoff)</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="38">
+        <h3><span class="tnum">38</span><span class="ttl">Resistance, Misinformation &amp; Defence</span><span class="count-badge"></span></h3>
+        <p class="desc">How to not be persuaded by something false — and how to correct it in others without backfiring.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">38.1</span> Psychological reactance and the boomerang effect <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">38.2</span> Forewarning, counterarguing, attitude strength</span></li>
+          <li><span class="txt"><span class="num">38.3</span> Inoculation theory and prebunking (McGuire; Roozenbeek &amp; van der Linden) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">38.4</span> Continued influence effect — corrections that don't fully take <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">38.5</span> The backfire effect: overstated, hard to replicate <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">38.6</span> The Debunking Handbook approach: fact, warn, fallacy, fact</span></li>
+          <li><span class="txt"><span class="num">38.7</span> Conspiracy belief: epistemic, existential and social motives</span></li>
+          <li><span class="txt"><span class="num">38.8</span> Propaganda techniques and information operations, at a working level</span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab XII</div>
+        <p>Write the strongest possible case for a position you reject — good enough that someone holding it would sign it. Then write a 150-word correction of a false claim you've seen shared, following fact–warn–fallacy–fact.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- PART XIII -->
+  <details class="part" id="part13">
+    <summary><span class="pnum">XIII</span><span class="ptitle">Public, Organisational &amp; Mediated Communication</span><span class="part-label">4 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">Communication at scale — one-to-many, team-to-team, and platform-mediated.</p>
+
+      <div class="topic" data-n="39">
+        <h3><span class="tnum">39</span><span class="ttl">Public Speaking &amp; Presenting</span><span class="count-badge"></span></h3>
+        <p class="desc">A performable skill with a well-defined technique set.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">39.1</span> Audience analysis and purpose: inform, persuade, move to act <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">39.2</span> Structure: thesis, signposting, three-part bodies, the callback close <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">39.3</span> Openings that earn attention; Monroe's motivated sequence</span></li>
+          <li><span class="txt"><span class="num">39.4</span> Delivery: pace, pause, projection, emphasis, eye contact</span></li>
+          <li><span class="txt"><span class="num">39.5</span> Speech anxiety: exposure, reappraisal of arousal, preparation load <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">39.6</span> Visual aids and cognitive load; why slide text competes with your voice</span></li>
+          <li><span class="txt"><span class="num">39.7</span> Handling Q&amp;A, hostile questions, and not knowing</span></li>
+          <li><span class="txt"><span class="num">39.8</span> Deliberate practice: record, review against criteria, re-run</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="40">
+        <h3><span class="tnum">40</span><span class="ttl">Group, Team &amp; Organisational Communication</span><span class="count-badge"></span></h3>
+        <p class="desc">Where Track A's group processes become a communication design problem.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">40.1</span> Meeting design: agenda, roles, decision rules, written pre-reads <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">40.2</span> Facilitation: airtime balance, round-robin, silent generation <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">40.3</span> Psychological safety and voice (Edmondson) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">40.4</span> Communication networks: centralised vs decentralised; information silos</span></li>
+          <li><span class="txt"><span class="num">40.5</span> Upward communication and the mum effect</span></li>
+          <li><span class="txt"><span class="num">40.6</span> Closed-loop communication and structured handoffs (SBAR, read-backs)</span></li>
+          <li><span class="txt"><span class="num">40.7</span> Organisational culture, sensemaking (Weick), and change communication</span></li>
+          <li><span class="txt"><span class="num">40.8</span> Crisis communication: speed, ownership, single voice</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="41">
+        <h3><span class="tnum">41</span><span class="ttl">Written, Digital &amp; Intercultural</span><span class="count-badge"></span></h3>
+        <p class="desc">Most of your communication now happens in text, asynchronously, across cultures.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">41.1</span> Plain language: sentence length, nominalisations, cutting hedges <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">41.2</span> Structure for skimming: BLUF, inverted pyramid, headings, one idea per paragraph <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">41.3</span> Media richness and channel choice — what deserves a call <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">41.4</span> Tone in text: the negativity bias of email; egocentrism in tone judgments</span></li>
+          <li><span class="txt"><span class="num">41.5</span> Async norms, documentation as communication, decision records</span></li>
+          <li><span class="txt"><span class="num">41.6</span> Online disinhibition and the toxic-disinhibition effect</span></li>
+          <li><span class="txt"><span class="num">41.7</span> High- vs low-context cultures (Hall); directness norms across cultures <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">41.8</span> Working through interpreters, in a second language, and accent bias</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="42">
+        <h3><span class="tnum">42</span><span class="ttl">Mass &amp; Networked Communication</span><span class="count-badge"></span></h3>
+        <p class="desc">What media do to what a population thinks about — and what the network layer changed.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">42.1</span> Agenda setting and priming (McCombs &amp; Shaw) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">42.2</span> Framing effects in news; episodic vs thematic framing (Iyengar) <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">42.3</span> Two-step flow, opinion leaders, diffusion of innovations</span></li>
+          <li><span class="txt"><span class="num">42.4</span> Cultivation theory and the spiral of silence <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">42.5</span> Uses and gratifications; selective exposure</span></li>
+          <li><span class="txt"><span class="num">42.6</span> Echo chambers and filter bubbles — weaker than commonly claimed <span class="tag caution">contested</span></span></li>
+          <li><span class="txt"><span class="num">42.7</span> Engagement-optimised feeds, outrage dynamics, moral contagion</span></li>
+          <li><span class="txt"><span class="num">42.8</span> Parasocial relationships and influencer credibility</span></li>
+          <li><span class="txt"><span class="num">42.9</span> Social media and adolescent wellbeing: the state of the evidence <span class="tag caution">contested</span></span></li>
+        </ul>
+      </div>
+
+      <div class="lab">
+        <div class="lab-label">Lab XIII</div>
+        <p>Take your longest recent email or document. Cut it by 50% without losing information, restructure it BLUF-first, and send the short version. Separately, give one five-minute talk to a real audience and get one specific piece of feedback on delivery.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- ================= PART XIV ================= -->
+  <div class="track-head">
+    <span class="tk-badge">Capstone</span>
+    <h2>Integration &amp; Assessment</h2>
+    <span class="tk-meta">Part XIV</span>
+  </div>
+  <p class="track-blurb">The three tracks describe one system. This part is where you prove you can use them together rather than recite them separately.</p>
+
+  <details class="part" id="part14">
+    <summary><span class="pnum">XIV</span><span class="ptitle">Putting It Together</span><span class="part-label">2 topics</span></summary>
+    <div class="part-body">
+      <p class="part-intro">Integration exercises and honest self-assessment. If you can't do these, the ticks above were recognition, not learning.</p>
+
+      <div class="topic" data-n="43">
+        <h3><span class="tnum">43</span><span class="ttl">Integration Cases</span><span class="count-badge"></span></h3>
+        <p class="desc">Problems that need all three tracks at once.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">43.1</span> Design a workplace behaviour-change programme: contingencies (B) + norms (A) + comms plan (C)</span></li>
+          <li><span class="txt"><span class="num">43.2</span> Diagnose a failed team decision using hidden profiles, polarisation and meeting design</span></li>
+          <li><span class="txt"><span class="num">43.3</span> Build a public health message: fear appeal + efficacy + norms + channel choice</span></li>
+          <li><span class="txt"><span class="num">43.4</span> Analyse a manipulative product flow and write an ethical redesign</span></li>
+          <li><span class="txt"><span class="num">43.5</span> Take one personal goal through: functional analysis → implementation intention → social commitment → measurement</span></li>
+        </ul>
+      </div>
+
+      <div class="topic" data-n="44">
+        <h3><span class="tnum">44</span><span class="ttl">Assessment — How to Know You Learned It</span><span class="count-badge"></span></h3>
+        <p class="desc">Standards, not vibes.</p>
+        <ul class="subs">
+          <li><span class="txt"><span class="num">44.1</span> Explain any core term from memory in 60 seconds, with a non-textbook example <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">44.2</span> For any contested finding, state the original claim, the challenge, and your current position <span class="tag core">core</span></span></li>
+          <li><span class="txt"><span class="num">44.3</span> Read a new paper's abstract and predict its weakest methodological point</span></li>
+          <li><span class="txt"><span class="num">44.4</span> Run one behaviour-change intervention on yourself with data that moved</span></li>
+          <li><span class="txt"><span class="num">44.5</span> Handle one genuinely difficult conversation and write an honest post-mortem</span></li>
+          <li><span class="txt"><span class="num">44.6</span> Teach one full part of this syllabus to someone else without notes <span class="tag core">core</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <!-- ================= SCHEDULE ================= -->
+  <div class="plain" style="margin-top:44px">
+    <h3>📅 A 24-Week Plan</h3>
+    <p>Roughly 5–6 hours a week: two study sessions, one lab, one review. The tracks are interleaved on purpose — spacing and interleaving beat blocking, and Track C's labs need weeks to accumulate reps.</p>
+    <div class="tbl-wrap">
+      <table class="sched">
+        <thead><tr><th>Weeks</th><th>Focus</th><th>Deliverable</th></tr></thead>
+        <tbody>
+          <tr><td>1–2</td><td>Part I — foundations &amp; methods</td><td>Lab I write-up</td></tr>
+          <tr><td>3–5</td><td>Part II + start Part VI (classical conditioning)</td><td>Attribution log; CS/US/CR analysis</td></tr>
+          <tr><td>6–7</td><td>Part III + Part X (communication models, nonverbal)</td><td>Influence audit; recorded 3-min explainer</td></tr>
+          <tr><td>8–10</td><td>Part VII (operant) + Part XI (listening, feedback)</td><td>Contingency map; one summarise-first conversation</td></tr>
+          <tr><td>11–12</td><td>Part IV (groups, prejudice)</td><td>Group decision observation</td></tr>
+          <tr><td>13–14</td><td>Part VIII + Part XII (persuasion &amp; rhetoric)</td><td>Steelman essay; 150-word debunk</td></tr>
+          <tr><td>15–17</td><td>Part IX (applied behaviour change)</td><td><b>ABAB self-experiment</b> — 20 days, plotted</td></tr>
+          <tr><td>18–19</td><td>Part V (relationships, culture)</td><td>Three cross-cultural replication checks</td></tr>
+          <tr><td>20–22</td><td>Part XIII (public, organisational, mediated)</td><td>One real talk; one halved document</td></tr>
+          <tr><td>23–24</td><td>Part XIV — integration &amp; assessment</td><td>Teach one part; write the post-mortem</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h4>Weekly rhythm</h4>
+    <ul>
+      <li><b>Session 1 (90 min)</b> — read one topic, take notes in your own words only, close the source and write a summary from memory.</li>
+      <li><b>Session 2 (90 min)</b> — next topic, plus retrieval practice on everything from two weeks ago.</li>
+      <li><b>Lab (60 min+)</b> — the part's exercise, in the real world, with something written down.</li>
+      <li><b>Review (30 min)</b> — self-test on ticked lines chosen at random. Untick anything you can't explain.</li>
+    </ul>
+  </div>
+
+  <!-- ================= READING ================= -->
+  <div class="plain">
+    <h3>📚 Core Reading</h3>
+    <h4>Textbooks — pick one per track</h4>
+    <ul class="reading">
+      <li><b>Aronson, Wilson, Sommers — <i>Social Psychology</i></b> · the standard undergraduate text; readable, good on classic studies.</li>
+      <li><b>Gilovich, Keltner, Nisbett — <i>Social Psychology</i></b> · a stronger alternative if you want more research reasoning.</li>
+      <li><b>Domjan — <i>The Principles of Learning and Behavior</i></b> · the serious learning-theory text; do the Rescorla–Wagner sections properly.</li>
+      <li><b>Miltenberger — <i>Behavior Modification: Principles and Procedures</i></b> · the applied companion; the functional-assessment chapters are the useful ones.</li>
+      <li><b>Adler, Rodman, du Pré — <i>Understanding Human Communication</i></b> · broad and practical.</li>
+      <li><b>Griffin — <i>A First Look at Communication Theory</i></b> · one theory per chapter; best for the theory map.</li>
+    </ul>
+    <h4>Trade books that are actually load-bearing</h4>
+    <ul class="reading">
+      <li><b>Cialdini — <i>Influence</i></b> · Part III's applied layer; read it, then check the effect sizes.</li>
+      <li><b>Kahneman — <i>Thinking, Fast and Slow</i></b> · excellent on judgment, unreliable on priming — read with Part I's filter on.</li>
+      <li><b>Stone, Patton &amp; Heen — <i>Difficult Conversations</i></b> · the best practical book in Track C.</li>
+      <li><b>Fisher &amp; Ury — <i>Getting to Yes</i></b> · short, and the interests/positions distinction is worth the whole book.</li>
+      <li><b>Miller &amp; Rollnick — <i>Motivational Interviewing</i></b> · where Tracks B and C actually merge.</li>
+      <li><b>Wendy Wood — <i>Good Habits, Bad Habits</i></b> · habit science from the researcher, not the influencer.</li>
+      <li><b>Thaler &amp; Sunstein — <i>Nudge: The Final Edition</i></b> · the revised edition; the original oversold several chapters.</li>
+    </ul>
+    <h4>On the evidence base itself</h4>
+    <ul class="reading">
+      <li><b>Open Science Collaboration (2015), <i>Science</i></b> · the replication paper. Read the actual figures.</li>
+      <li><b>Ritchie — <i>Science Fictions</i></b> · fraud, bias, negligence and hype, written by a psychologist.</li>
+      <li><b>Henrich, Heine &amp; Norenzayan (2010), "The weirdest people in the world?"</b> · one paper that recalibrates the whole field.</li>
+      <li><b>Le Texier (2019) on the Stanford Prison Experiment</b> · read alongside 10.4.</li>
+    </ul>
+    <h4>Free courses &amp; primary sources</h4>
+    <ul class="reading">
+      <li><b>Yale — <i>Introduction to Psychology</i> (Paul Bloom)</b>, free on Coursera/YouTube.</li>
+      <li><b>Simply Psychology &amp; Noba Project</b> · reliable summaries for orientation, never as your only source.</li>
+      <li><b>Original papers</b> for every <span class="tag core">core</span> line you can find them for. Textbook summaries of Milgram, Asch and Skinner are all subtly wrong.</li>
+    </ul>
+  </div>
+
+  <div class="note-box" style="margin-top:22px">
+    <div class="nb-label">A standing warning</div>
+    <p>These three fields have the widest gap in psychology between <b>what is popularly repeated</b> and <b>what the evidence supports</b>. Body language "tells", power posing, learning styles, the 7-38-55 rule, most of behavioural priming, the Stanford Prison Experiment, and the tidier versions of stereotype threat and implicit bias are all either dead or much smaller than advertised. If a claim about human behaviour is memorable, tidy, and has a number in it, assume it shrank — then go check.</p>
+  </div>
+
+  <footer>Syllabus · social, behavioural &amp; communication psychology · progress stored in this browser only</footer>
+</div>
+
+<script>
+(function () {
+  var KEY = 'sbc-syllabus-v1';
+  var THEME_KEY = 'sbc-syllabus-theme';
+
+  // ---- give every subtopic a stable id from its number ----
+  var lis = Array.prototype.slice.call(document.querySelectorAll('.topic ul.subs li'));
+  lis.forEach(function (li) {
+    var num = li.querySelector('.num');
+    var id = num ? num.textContent.trim() : null;
+    if (!id) return;
+    var cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.className = 'tick';
+    cb.dataset.id = id;
+    cb.setAttribute('aria-label', 'Mark ' + id + ' complete');
+    li.insertBefore(cb, li.firstChild);
+  });
+
+  var ticks = Array.prototype.slice.call(document.querySelectorAll('.tick'));
+  var total = ticks.length;
+  var tagSubs = document.getElementById('tagsubs');
+  if (tagSubs) tagSubs.textContent = total + ' subtopics';
+
+  // ---- load saved state ----
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { saved = {}; }
+
+  function save() {
+    var out = {};
+    ticks.forEach(function (t) { if (t.checked) out[t.dataset.id] = 1; });
+    try { localStorage.setItem(KEY, JSON.stringify(out)); } catch (e) {}
+  }
+
+  function refresh() {
+    var done = 0;
+    ticks.forEach(function (t) {
+      t.closest('li').classList.toggle('done', t.checked);
+      if (t.checked) done++;
+    });
+
+    document.querySelectorAll('.topic').forEach(function (topic) {
+      var ts = topic.querySelectorAll('.tick');
+      var td = topic.querySelectorAll('.tick:checked').length;
+      var badge = topic.querySelector('.count-badge');
+      if (badge) badge.textContent = td + ' / ' + ts.length;
+      topic.classList.toggle('complete', ts.length > 0 && td === ts.length);
+    });
+
+    document.querySelectorAll('details.part').forEach(function (part) {
+      var ps = part.querySelectorAll('.tick');
+      var pd = part.querySelectorAll('.tick:checked').length;
+      var label = part.querySelector('.part-label');
+      var topics = part.querySelectorAll('.topic').length;
+      if (label) label.textContent = topics + ' topics · ' + pd + '/' + ps.length;
+      part.classList.toggle('section-complete', ps.length > 0 && pd === ps.length);
+    });
+
+    var pct = total ? Math.round((done / total) * 100) : 0;
+    document.getElementById('railbar').style.width = pct + '%';
+    document.getElementById('railpct').textContent = pct + '%';
+    document.getElementById('railcount').textContent = done + ' / ' + total;
+  }
+
+  ticks.forEach(function (t) {
+    if (saved[t.dataset.id]) t.checked = true;
+    t.addEventListener('change', function () { save(); refresh(); });
+  });
+  refresh();
+
+  // ---- controls ----
+  document.getElementById('expandAll').addEventListener('click', function () {
+    document.querySelectorAll('details.part').forEach(function (d) { d.open = true; });
+  });
+  document.getElementById('collapseAll').addEventListener('click', function () {
+    document.querySelectorAll('details.part').forEach(function (d) { d.open = false; });
+  });
+  document.getElementById('resetBtn').addEventListener('click', function () {
+    if (!confirm('Clear every tick? This cannot be undone.')) return;
+    ticks.forEach(function (t) { t.checked = false; });
+    save(); refresh();
+  });
+
+  // ---- theme ----
+  var themeBtn = document.getElementById('themeBtn');
+  function applyTheme(t) {
+    document.body.classList.toggle('light', t === 'light');
+    try { localStorage.setItem(THEME_KEY, t); } catch (e) {}
+  }
+  var storedTheme = null;
+  try { storedTheme = localStorage.getItem(THEME_KEY); } catch (e) {}
+  if (storedTheme) applyTheme(storedTheme);
+  themeBtn.addEventListener('click', function () {
+    applyTheme(document.body.classList.contains('light') ? 'dark' : 'light');
+  });
+
+  // ---- filter ----
+  var search = document.getElementById('search');
+  search.addEventListener('input', function () {
+    var q = search.value.trim().toLowerCase();
+    if (!q) {
+      document.querySelectorAll('.topic, .topic ul.subs li').forEach(function (el) { el.classList.remove('hidden'); });
+      return;
+    }
+    document.querySelectorAll('details.part').forEach(function (part) {
+      var anyTopic = false;
+      part.querySelectorAll('.topic').forEach(function (topic) {
+        var title = (topic.querySelector('.ttl') || {}).textContent || '';
+        var titleHit = title.toLowerCase().indexOf(q) > -1;
+        var anyLi = false;
+        topic.querySelectorAll('ul.subs li').forEach(function (li) {
+          var hit = titleHit || li.textContent.toLowerCase().indexOf(q) > -1;
+          li.classList.toggle('hidden', !hit);
+          if (hit) anyLi = true;
+        });
+        topic.classList.toggle('hidden', !anyLi);
+        if (anyLi) anyTopic = true;
+      });
+      if (anyTopic) part.open = true;
+    });
+  });
+})();
+</script>
+</body>
+</html>
