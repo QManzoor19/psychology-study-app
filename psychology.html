@@ -6662,13 +6662,67 @@
       </div>
 
       <div class="lesson-card">
-        <h4 class="numbered">Why an unreliable measure quietly ruins a study</h4>
-        <p>Say the school wants to know whether maths anxiety is linked to lower grades. There genuinely is a link. But the questionnaire is noisy — half of each score is random wobble.</p>
-        <p>Random wobble can't correlate with anything. It's random. So when you correlate these noisy scores with grades, the real signal is diluted by noise, and the correlation comes out weaker than the truth.</p>
+        <h4 class="numbered">What "error" means, and why it hides real effects</h4>
+        <span class="role">Every measured score is two things added together</span>
+
+        <div class="lesson-def">
+          <span class="term">True score</span> — the amount of the property a person actually has.<br><br>
+          <span class="term">Error</span> — anything that pushes the measurement away from the true score on that occasion and does not repeat.<br><br>
+          <span class="term">Observed score</span> — the number actually recorded. It is the true score plus the error.
+        </div>
+
+        <p>Aisha's 78 is partly her real level of maths anxiety and partly whatever nudged the number on the day she filled the form in.</p>
+
+        <p>Sources of error in this case include: how well she slept; whether she read every item carefully; whether a borderline feeling was rounded up to 4 or down to 3; noise in the room; whether she had just come from a maths lesson; and which particular 20 items ended up on the questionnaire rather than 20 other reasonable ones.</p>
+
         <div class="lesson-plain">
-          <span class="pl">What this means for you</span>
-          A study can find <b>nothing</b> and report "no relationship", when the real story is "our measure was too noisy to see it". The technical word is <b>attenuation</b> — unreliable measurement drags correlations toward zero.<br><br>
-          So when you read a null result, check how the thing was measured before you believe there's no effect.
+          <span class="pl">Error does not mean a mistake was made</span>
+          Nothing has been done incorrectly. Every measurement of anything behaves this way. Standing on bathroom scales three times produces three slightly different numbers, and no one has made an error in the ordinary sense of the word.
+        </div>
+
+        <p><b>The test that identifies error is whether it repeats.</b> If the same influence would push the score in the same direction on every occasion, it is not error. It is <b>bias</b>, and it is a validity problem rather than a reliability one.</p>
+
+        <table class="lesson-table">
+          <tr><th>Influence on Aisha's score</th><th>Repeats?</th><th>What it is</th></tr>
+          <tr><td>She slept badly the night before</td><td>No</td><td><b>Random error</b> — averages out across many measurements</td></tr>
+          <tr><td>She misread one item</td><td>No</td><td><b>Random error</b></td></tr>
+          <tr><td>17 of the 20 items are about tests, and her anxiety is about speaking aloud</td><td>Yes, every time</td><td><b>Bias</b> — never averages out, and no amount of retesting removes it</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">What counts as error depends on what is being measured</span>
+          If the scale is meant to capture a <b>stable disposition</b>, then Aisha's mood on the day is error.<br><br>
+          If it is meant to capture <b>how anxious she feels right now</b>, her mood on the day is the true score — the thing being looked for.<br><br>
+          The same influence is error in one case and signal in the other. Nothing is inherently error; it is error relative to the construct claimed.
+        </div>
+
+        <h4 class="numbered">Noise makes real relationships look smaller</h4>
+        <span class="role">Why a poor measure produces a false negative</span>
+
+        <p>Suppose the school wants to know whether maths anxiety is linked to lower grades, and the two are genuinely related.</p>
+
+        <p>Grades line up with the <b>true score</b> part of each pupil's result. The error part still moves the number up and down, but it is random, and random values correlate with nothing. So the same amount of real pattern is now spread across noisier numbers, and the correlation comes out smaller than the relationship really is.</p>
+
+        <div class="lesson-def">
+          <span class="term">Reliability, stated as a proportion</span> — the share of the variation in a set of scores that comes from real differences between people rather than from error. A reliability of .84 means about 84% of the spread in scores is real.<br><br>
+          <span class="term">Attenuation</span> — the shrinking of an observed correlation caused by unreliable measurement.
+        </div>
+
+        <div class="worked">
+          <span class="wl">Worked example — how much a noisy measure costs</span>
+          The amount of shrinkage can be calculated:<br><br>
+          <b>observed r = true r × √(reliability of measure 1 × reliability of measure 2)</b><br><br>
+          Suppose maths anxiety and grades are genuinely correlated at <b>−.50</b>, the questionnaire has a reliability of <b>.5</b>, and grades have a reliability of <b>.9</b>:<br><br>
+          observed <i>r</i> = .50 × √(.5 × .9) = .50 × √.45 = .50 × .67 = <b>.34</b><br><br>
+          A real relationship of .50 appears in the data as .34. The analysis was done correctly. The measurement was noisy.
+        </div>
+
+        <p>This also sets a ceiling on what any study using that questionnaire could ever find. With a reliability of .5, even a perfect true relationship of 1.0 would appear as about .67.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">What this means when reading a study</span>
+          A study can report <b>"no significant relationship"</b> when the accurate description is <b>"the measure was too noisy to detect one"</b>.<br><br>
+          A null result should therefore be read alongside how the property was measured. Low reliability is a reason to doubt the absence of an effect, not evidence for it.
         </div>
       </div>
 
@@ -6785,7 +6839,11 @@
           <tr><td>Internal consistency</td><td>The degree to which the items of a scale agree with one another.</td></tr>
           <tr><td>Cronbach's alpha</td><td>The usual measure of internal consistency, from 0 to 1. Above about .7 is treated as acceptable.</td></tr>
           <tr><td>Inter-rater reliability</td><td>Agreement between two people scoring the same material independently.</td></tr>
-          <tr><td>Attenuation</td><td>The weakening of an observed correlation caused by unreliable measurement. Noise cannot correlate with anything, so it dilutes the real relationship.</td></tr>
+          <tr><td>True score</td><td>The amount of the property a person actually has.</td></tr>
+          <tr><td>Error</td><td>Anything that pushes a measurement away from the true score on that occasion and does not repeat. It does not mean a mistake was made.</td></tr>
+          <tr><td>Observed score</td><td>The number actually recorded: the true score plus the error.</td></tr>
+          <tr><td>Bias</td><td>An influence that pushes a score in the same direction on every occasion. Because it repeats, it never averages out, and it is a validity problem rather than a reliability one.</td></tr>
+          <tr><td>Attenuation</td><td>The shrinking of an observed correlation caused by unreliable measurement. Noise correlates with nothing, so it dilutes the real relationship: observed <i>r</i> = true <i>r</i> × √(reliability 1 × reliability 2).</td></tr>
           <tr><td>Face validity</td><td>Whether the items look as though they measure the right thing. The weakest form of evidence, and a disadvantage where faking is possible.</td></tr>
           <tr><td>Content validity</td><td>Whether the items cover the whole of the property, rather than one part of it.</td></tr>
           <tr><td>Criterion validity</td><td>Agreement with a standard already trusted. <b>Concurrent</b> compares against a standard now; <b>predictive</b> compares against an outcome later.</td></tr>
@@ -6803,7 +6861,9 @@
           <li><b>Reliable but invalid is the dangerous combination</b>, because a consistent number looks convincing.</li>
           <li><b>Consistency is checked three ways</b>: again later (test–retest), items agreeing with each other (alpha), and raters agreeing (inter-rater).</li>
           <li><b>A high alpha can be manufactured.</b> Asking one question twenty ways produces items that agree beautifully while covering almost none of the property. Adding items raises alpha on its own, so a high alpha does not mean a scale is good, or that it measures only one thing.</li>
-          <li><b>Unreliable measurement hides real effects.</b> A study can report "no relationship" when the truth is that the measure was too noisy to detect one, so a null result should be read alongside how the thing was measured.</li>
+          <li><b>Every observed score is a true score plus error.</b> Error is whatever nudges the number on that occasion and does not repeat; if an influence would push the score the same way every time, it is bias, not error.</li>
+          <li><b>What counts as error depends on the construct claimed.</b> Mood on the day is error when measuring a stable disposition, and is the true score when measuring how someone feels right now.</li>
+          <li><b>Unreliable measurement hides real effects.</b> A study can report "no relationship" when the truth is that the measure was too noisy to detect one, so a null result should be read alongside how the thing was measured. Reliability also caps what a study could ever find: with a reliability of .5, even a perfect relationship would appear as about .67.</li>
           <li><b>Validity is a case, not a number.</b> It is built from face, content, criterion and construct evidence, in increasing order of how demanding they are.</li>
           <li><b>Discriminant validity is the half people skip</b>, and it is where most home-made questionnaires fail.</li>
           <li><b>"Validity" names two different things.</b> Validity of a measure asks whether a questionnaire measures what it claims. Validity of a study asks whether its conclusion is sound. If the sentence is about a test, it is the first; if about a study or conclusion, the second.</li>
