@@ -1161,10 +1161,10 @@
         <ul class="subs">
           <li><span class="txt"><span class="num">5.1</span> Neuron structure, glia &amp; the myelin sheath</span><button class="note-btn" data-note="b-neuron">📖 Notes</button></li>
           <li><span class="txt"><span class="num">5.2</span> Resting potential &amp; the all-or-none action potential</span><button class="note-btn" data-note="b-action">📖 Notes</button></li>
-          <li><span class="txt"><span class="num">5.3</span> The synapse — release, binding, reuptake</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">5.4</span> The major neurotransmitters &amp; what they do</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">5.5</span> Excitation, inhibition &amp; how neurons code information</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">5.6</span> Drugs at the synapse — agonists &amp; antagonists</span><span class="placeholder">notes soon</span></li>
+          <li><span class="txt"><span class="num">5.3</span> The synapse — release, binding, reuptake</span><button class="note-btn" data-note="b-synapse">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">5.4</span> The major neurotransmitters &amp; what they do</span><button class="note-btn" data-note="b-neurotrans">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">5.5</span> Excitation, inhibition &amp; how neurons code information</span><button class="note-btn" data-note="b-coding">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">5.6</span> Drugs at the synapse — agonists &amp; antagonists</span><button class="note-btn" data-note="b-drugs">📖 Notes</button></li>
         </ul>
       </div>
 
@@ -8826,6 +8826,860 @@
         </ul>
       </div>
     `
+  },
+
+  /* ---------- 5.3 ---------- */
+  'b-synapse': {
+    eyebrow: 'Part II · Topic 05 · Biological Bases',
+    title: 'The synapse',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/openstax-synapse.jpg" alt="Labelled diagram of a chemical synapse showing the axon terminal, synaptic vesicles, synaptic cleft and receptors on the postsynaptic neuron">
+        <figcaption><b>A chemical synapse.</b> The axon terminal of the sending neuron holds vesicles filled with neurotransmitter. The two neurons do not touch: a gap called the synaptic cleft separates them, and the signal crosses it as a chemical rather than as an electrical current.
+          <span class="cred">OpenStax, <i>Anatomy &amp; Physiology</i> · CC BY 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:1225_Chemical_Synapse.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, "The Electrochemical Actions of Neurons", the section <i>Chemical Signaling: Transmission Between Neurons</i>.
+      </div>
+
+      <p class="lesson-lead">An action potential travels to the end of an axon and stops there, because neurons are not physically joined. A gap separates one neuron from the next. This lesson covers how a signal crosses that gap: the chemical released, how it is recognised by the receiving neuron, and the three processes that clear it away afterwards.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The synapse is a gap, not a join</h4>
+        <span class="role">The parts, and what each one does</span>
+
+        <div class="lesson-def">
+          <span class="term">Synapse</span> — the junction between two neurons, consisting of the sending neuron's terminal, the gap, and the receiving neuron's membrane.<br><br>
+          <span class="term">Synaptic cleft</span> — the gap itself, about 20 nanometres across.<br><br>
+          <span class="term">Presynaptic neuron</span> — the neuron sending the signal.<br><br>
+          <span class="term">Postsynaptic neuron</span> — the neuron receiving it.<br><br>
+          <span class="term">Terminal buttons</span> — knoblike structures branching from the end of an axon, where the neurotransmitter is stored and released.<br><br>
+          <span class="term">Vesicles</span> — small sacs inside the terminal button, each holding thousands of molecules of neurotransmitter.<br><br>
+          <span class="term">Neurotransmitter</span> — a chemical that carries information across the synapse to the receiving neuron.<br><br>
+          <span class="term">Receptor</span> — a structure in the postsynaptic membrane that binds a neurotransmitter and either initiates or prevents a new electrical signal.
+        </div>
+
+        <p>The gap is very small, but it is real. Nothing passes between the two neurons by direct contact.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Scale</span>
+          A single neuron typically forms <b>1,000 to 10,000</b> synapses with other neurons. The human brain contains roughly 86 billion neurons, which places the number of synapses in the region of a hundred trillion.<br><br>
+          Behaviour is not produced by neurons firing on their own. It is produced by this pattern of connections.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The sequence of synaptic transmission</h4>
+        <span class="role">Six steps, in order</span>
+
+        <ul>
+          <li><b>1. The action potential arrives</b> at the terminal button, having travelled the length of the axon (<i>5.2</i>).</li>
+          <li><b>2. Calcium enters.</b> The change in voltage opens calcium channels in the terminal membrane, and calcium ions flow in.</li>
+          <li><b>3. Vesicles fuse and release.</b> Calcium causes vesicles to move to the membrane, fuse with it, and empty their neurotransmitter into the cleft.</li>
+          <li><b>4. The neurotransmitter diffuses</b> across the gap. This is passive movement, not propulsion, and it takes a fraction of a millisecond.</li>
+          <li><b>5. Binding.</b> Molecules that fit the receptors on the postsynaptic membrane attach to them.</li>
+          <li><b>6. A change in the receiving neuron.</b> Binding opens ion channels, making the postsynaptic neuron either more likely or less likely to fire (<i>5.5</i>).</li>
+        </ul>
+
+        <figure class="lesson-fig">
+          <svg viewBox="0 0 640 300" role="img" aria-label="The six steps of synaptic transmission, from action potential arrival to postsynaptic effect">
+            <defs>
+              <marker id="ar-syn" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#b98cff"/></marker>
+            </defs>
+            <g font-family="Inter, sans-serif">
+              <path d="M40 30 L 190 30 L 220 90 L 220 150 L 40 150 Z" fill="rgba(185,140,255,0.10)" stroke="#5a4a78" stroke-width="1.4"/>
+              <text x="70" y="52" font-size="11.5" font-weight="800" fill="#a396bb">PRESYNAPTIC</text>
+              <text x="70" y="68" font-size="11" fill="#8b7fa3">terminal button</text>
+              <circle cx="120" cy="100" r="13" fill="rgba(110,231,168,0.22)" stroke="#6ee7a8"/>
+              <circle cx="165" cy="112" r="13" fill="rgba(110,231,168,0.22)" stroke="#6ee7a8"/>
+              <text x="120" y="104" font-size="9" fill="#a7f3d0" text-anchor="middle">ves</text>
+              <text x="165" y="116" font-size="9" fill="#a7f3d0" text-anchor="middle">ves</text>
+              <path d="M40 200 L 340 200 L 340 270 L 40 270 Z" fill="rgba(255,143,176,0.08)" stroke="#5a4a78" stroke-width="1.4"/>
+              <text x="70" y="222" font-size="11.5" font-weight="800" fill="#a396bb">POSTSYNAPTIC</text>
+              <text x="70" y="238" font-size="11" fill="#8b7fa3">receiving membrane</text>
+              <g fill="#ff8fb0">
+                <rect x="150" y="194" width="9" height="12" rx="2"/><rect x="185" y="194" width="9" height="12" rx="2"/><rect x="220" y="194" width="9" height="12" rx="2"/>
+              </g>
+              <text x="245" y="204" font-size="10.5" fill="#ffd0de">receptors</text>
+              <g fill="#6ee7a8">
+                <circle cx="150" cy="172" r="3.5"/><circle cx="168" cy="180" r="3.5"/><circle cx="190" cy="170" r="3.5"/><circle cx="208" cy="182" r="3.5"/><circle cx="226" cy="174" r="3.5"/>
+              </g>
+              <text x="272" y="176" font-size="10.5" fill="#a7f3d0">the cleft — about 20 nm</text>
+              <path d="M180 128 L 180 160" stroke="#b98cff" stroke-width="2" fill="none" marker-end="url(#ar-syn)"/>
+              <g font-size="11" fill="#d3cbe2">
+                <text x="380" y="46">1 · action potential arrives</text>
+                <text x="380" y="70">2 · calcium channels open</text>
+                <text x="380" y="94">3 · vesicles fuse and release</text>
+                <text x="380" y="118">4 · transmitter diffuses across</text>
+                <text x="380" y="142">5 · binding at receptors</text>
+                <text x="380" y="166">6 · postsynaptic neuron changes</text>
+              </g>
+              <text x="380" y="200" font-size="11" fill="#8b7fa3">whole sequence: under a millisecond</text>
+            </g>
+          </svg>
+          <figcaption>The signal is electrical within a neuron and chemical between neurons.</figcaption>
+        </figure>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the signal changes form</span>
+          Within a neuron, information travels as a wave of voltage change. Between neurons, it travels as a released chemical.<br><br>
+          The chemical step costs time — roughly half a millisecond per synapse — but it is what makes the nervous system flexible. A chemical signal can be excitatory in one place and inhibitory in another, can be strengthened or weakened with experience, and can be altered by drugs. A direct electrical connection could do none of these things.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Lock and key: why the right neuron receives the right message</h4>
+        <span class="role">How specificity is achieved</span>
+
+        <div class="lesson-def">
+          <span class="term">Lock-and-key principle</span> — a neurotransmitter binds only to receptors whose molecular structure fits its own shape, in the way a particular key fits a particular lock.
+        </div>
+
+        <p>Thousands of synapses converge on a single neuron, and many different neurotransmitters are present in the surrounding fluid. Two things prevent confusion.</p>
+
+        <ul>
+          <li><b>Molecular fit.</b> A receptor binds only molecules of a matching shape. A neurotransmitter drifting past a receptor it does not fit has no effect at all.</li>
+          <li><b>Pathways.</b> Neurons using the same neurotransmitter tend to form organised routes through the brain, so one transmitter predominates in one region and a different one elsewhere (<i>5.4</i>).</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">The consequence for drugs</span>
+          Any molecule shaped enough like a neurotransmitter will fit the same receptor, whether the body made it or not.<br><br>
+          <b>LSD</b> is structurally similar to serotonin, so it binds readily to serotonin receptors. This is not an accident of chemistry that the brain can detect; the receptor recognises shape, and nothing else (<i>5.6</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Clearing the synapse: three routes</h4>
+        <span class="role">Why the message has to be stopped</span>
+
+        <p>A neurotransmitter left sitting in the cleft would go on binding to receptors indefinitely, and the signal would never end. Three processes remove it.</p>
+
+        <div class="lesson-def">
+          <span class="term">Reuptake</span> — the neurotransmitter is reabsorbed into the terminal buttons of the presynaptic neuron and reused.<br><br>
+          <span class="term">Enzyme deactivation</span> — an enzyme in the cleft breaks the neurotransmitter down chemically. Specific enzymes act on specific transmitters.<br><br>
+          <span class="term">Autoreceptors</span> — receptors on the presynaptic neuron itself that detect how much transmitter has been released and signal the neuron to stop releasing more.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Route</th><th>What happens to the transmitter</th><th>Example of a drug acting here</th></tr>
+          <tr><td><b>Reuptake</b></td><td>Taken back into the sending neuron and reused</td><td>SSRIs block serotonin reuptake, leaving more in the cleft (<i>5.6</i>)</td></tr>
+          <tr><td><b>Enzyme deactivation</b></td><td>Broken apart in the cleft</td><td>Some Alzheimer's drugs block the enzyme that breaks down acetylcholine</td></tr>
+          <tr><td><b>Autoreceptors</b></td><td>Not removed — release is reduced instead</td><td>Some antidepressants act on autoreceptors to change release rate</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">Where most psychiatric drugs act</span>
+          These clearing processes, rather than the release step, are the commonest target of drugs affecting mood and behaviour. Slowing removal raises the amount of transmitter in the cleft without changing how much the neuron releases.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evidence that transmission is chemical</h4>
+        <span class="role">The experiment that settled a thirty-year argument</span>
+
+        <p>Until the 1920s it was disputed whether neurons communicated electrically or chemically. The question was settled by a simple experiment on two frog hearts.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Loewi (1921) — chemical transmission at the vagus nerve</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether a nerve slows the heart by an electrical action or by releasing a chemical substance.</dd>
+            <dt>Method</dt>
+            <dd>Two frog hearts were kept beating in separate baths of fluid. The vagus nerve attached to the first heart was electrically stimulated, which slowed it. The fluid surrounding that first heart was then transferred to the second heart, which had no nerve stimulation applied to it at all.</dd>
+            <dt>Results</dt>
+            <dd>The second heart slowed as well, despite receiving no electrical stimulation. The effect had been carried by the fluid.</dd>
+            <dt>Conclusion</dt>
+            <dd>Stimulating the nerve had released a chemical substance into the fluid, and that substance produced the slowing. Loewi named it <i>Vagusstoff</i>, meaning vagus substance. It was later identified as <b>acetylcholine</b>. Loewi shared the 1936 Nobel Prize with Henry Dale for this work.</dd>
+          </dl>
+        </div>
+
+        <figure class="lesson-fig">
+          <img class="fig-img" src="img/dale-loewi-1936.jpg" alt="Henry Dale and Otto Loewi shaking hands in overcoats and hats, 1936" style="max-width:300px">
+          <figcaption><b>Henry Dale and Otto Loewi, 1936</b>, the year they shared the Nobel Prize for the discovery of chemical transmission at nerve endings.
+            <span class="cred">Unknown author · CC BY 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:Henry_Hallett_Dale_and_Otto_Loewi_1936.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the design works</span>
+          The second heart was never stimulated. The only thing it received was fluid. If transmission were purely electrical, transferring the fluid could have no effect, because electricity does not remain in a liquid after the current stops.<br><br>
+          The result therefore rules out one of the two competing explanations rather than merely being consistent with the other. This is what makes it a decisive experiment rather than a suggestive one (<i>3.1</i>).
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a drug blocks the enzyme that breaks down acetylcholine in the synaptic cleft. Predict the effect on transmission, and name a condition it might be used to treat.</summary>
+          <div class="ans">Blocking the enzyme removes one of the three clearing routes. Acetylcholine therefore <b>remains in the cleft longer</b> and continues binding to receptors, so its effect on the postsynaptic neuron is prolonged and strengthened. The drug is an <b>agonist</b> in effect, even though it never touches a receptor itself (<i>5.6</i>).<br><br><b>Alzheimer's disease</b> involves deterioration of acetylcholine-producing neurons. If fewer neurons are releasing the transmitter, slowing its removal keeps more of it available, which is the reasoning behind cholinesterase inhibitors. The effect is modest, because the treatment preserves the signal rather than replacing the lost neurons.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>A <b>synapse</b> is a gap, not a join. The <b>synaptic cleft</b> is about 20 nm across, and neurons do not touch.</li>
+          <li>Transmission runs: action potential arrives → <b>calcium</b> enters → <b>vesicles</b> fuse and release → transmitter <b>diffuses</b> → <b>binds</b> to receptors → the postsynaptic neuron changes.</li>
+          <li>Specificity comes from <b>molecular fit</b> — the lock-and-key principle — and from neurons using the same transmitter forming organised pathways.</li>
+          <li>Three routes clear the cleft: <b>reuptake</b>, <b>enzyme deactivation</b> and <b>autoreceptors</b>. These are where most psychiatric drugs act.</li>
+          <li><b>Loewi (1921)</b> showed transmission is chemical by transferring fluid from a stimulated frog heart to an unstimulated one and reproducing the effect.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, concepts, examples and studies from 5.3, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Synapse</td><td>The junction between two neurons: the sending terminal, the gap, and the receiving membrane.</td></tr>
+          <tr><td>Synaptic cleft</td><td>The gap itself, about 20 nanometres across.</td></tr>
+          <tr><td>Presynaptic neuron</td><td>The neuron sending the signal.</td></tr>
+          <tr><td>Postsynaptic neuron</td><td>The neuron receiving the signal.</td></tr>
+          <tr><td>Terminal buttons</td><td>Knoblike structures branching from the end of an axon, where transmitter is stored and released.</td></tr>
+          <tr><td>Vesicles</td><td>Small sacs in the terminal button, each holding thousands of neurotransmitter molecules.</td></tr>
+          <tr><td>Neurotransmitter</td><td>A chemical that carries information across the synapse.</td></tr>
+          <tr><td>Receptor</td><td>A structure in the postsynaptic membrane that binds a neurotransmitter and either initiates or prevents a new signal.</td></tr>
+          <tr><td>Lock-and-key principle</td><td>A neurotransmitter binds only to receptors whose molecular structure fits its own shape.</td></tr>
+          <tr><td>Reuptake</td><td>The transmitter is reabsorbed into the presynaptic terminal and reused.</td></tr>
+          <tr><td>Enzyme deactivation</td><td>An enzyme in the cleft breaks the transmitter down. Specific enzymes act on specific transmitters.</td></tr>
+          <tr><td>Autoreceptors</td><td>Receptors on the presynaptic neuron that detect how much has been released and reduce further release.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The signal changes form at the synapse.</b> Electrical within a neuron, chemical between neurons.</li>
+          <li><b>The six-step sequence.</b> Action potential arrives, calcium enters, vesicles fuse and release, transmitter diffuses, binding occurs, the postsynaptic neuron changes.</li>
+          <li><b>The chemical step costs about half a millisecond per synapse</b>, and buys flexibility: the same signal can excite or inhibit, can change strength with experience, and can be altered by drugs.</li>
+          <li><b>Receptors recognise shape and nothing else.</b> Any molecule of a matching shape will bind, whether or not the body produced it — which is why drugs work at all.</li>
+          <li><b>The message must be stopped as well as sent.</b> Without the three clearing routes, binding would continue indefinitely.</li>
+          <li><b>Scale matters.</b> Each neuron makes 1,000 to 10,000 synapses; behaviour arises from the pattern of connections rather than from individual neurons firing.</li>
+        </ul>
+
+        <h5>Examples used</h5>
+        <ul>
+          <li><b>SSRIs</b> — block serotonin reuptake, leaving more transmitter in the cleft.</li>
+          <li><b>Cholinesterase inhibitors</b> — block the enzyme that breaks down acetylcholine, used in Alzheimer's disease.</li>
+          <li><b>LSD</b> — structurally similar to serotonin, so it binds to serotonin receptors. The receptor recognises shape, not origin.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Loewi (1921)</b> — two frog hearts. Stimulating the vagus nerve of the first slowed it; transferring the surrounding fluid to the second, unstimulated heart slowed that one too. The effect was carried by a chemical, named <i>Vagusstoff</i> and later identified as acetylcholine. Nobel Prize with Henry Dale, 1936. The design is decisive because a purely electrical account predicts no effect from transferring fluid.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 5.4 ---------- */
+  'b-neurotrans': {
+    eyebrow: 'Part II · Topic 05 · Biological Bases',
+    title: 'The major neurotransmitters',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/dopamine-pathways.png" alt="Diagram of a human brain in side view showing the main dopamine pathways from the ventral tegmental area and substantia nigra">
+        <figcaption><b>The main dopamine pathways.</b> Neurons using a given neurotransmitter form organised routes rather than spreading evenly through the brain. Dopamine neurons originate in the substantia nigra and the ventral tegmental area and project to the striatum, the nucleus accumbens and the frontal lobe. Damage to one pathway produces very different effects from damage to another.
+          <span class="cred">Jtneill · CC BY-SA 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:Dopamine_pathways-en.svg" target="_blank" rel="noopener">Wikimedia Commons</a> · the original labels "substantia nigra" with a typographical error</span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, the section <i>Types and Functions of Neurotransmitters</i>.
+      </div>
+
+      <p class="lesson-lead">Around sixty chemicals are known to carry signals between neurons, and a small number of them account for most of what is studied in psychology. This lesson covers seven major neurotransmitters: what each one does, where it acts, and which conditions are associated with too much or too little of it.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Neurotransmitters travel in pathways</h4>
+        <span class="role">Why location matters as much as chemical</span>
+
+        <div class="lesson-def">
+          <span class="term">Neurotransmitter</span> — a chemical released at a synapse that carries a signal to the receiving neuron.<br><br>
+          <span class="term">Pathway</span> — an organised route of neurons that use the same neurotransmitter, running from one brain region to another.
+        </div>
+
+        <p>A neurotransmitter is not distributed evenly through the brain. Neurons using the same chemical are organised into pathways, so one transmitter predominates in one region and a different one elsewhere.</p>
+
+        <p>This is why the same chemical can be involved in unrelated functions. Dopamine loss in the pathway running to the striatum produces the movement problems of Parkinson's disease. Dopamine activity in the pathway running to the nucleus accumbens is involved in reward and motivation. Same molecule, different route, different consequence.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">A caution about single-word summaries</span>
+          Dopamine is often labelled "the pleasure chemical" and serotonin "the happiness chemical". These labels are too compressed to be useful.<br><br>
+          Each transmitter acts in several pathways with different functions, and behaviour depends on the balance between transmitters rather than on the level of any one. The summaries below give the main associations, not a complete account of what any chemical does.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The seven to know</h4>
+        <span class="role">Function, and the conditions associated with each</span>
+
+        <div class="lesson-def">
+          <span class="term">Acetylcholine (ACh)</span> — involved in voluntary motor control. Found in the brain and at every synapse where an axon meets a muscle. Also contributes to attention, learning, sleep, dreaming and memory.<br><br>
+          <span class="term">Dopamine</span> — regulates motor behaviour, motivation, pleasure and emotional arousal.<br><br>
+          <span class="term">Glutamate</span> — the major <b>excitatory</b> neurotransmitter in the brain, increasing the likelihood that the receiving neuron fires.<br><br>
+          <span class="term">GABA (gamma-aminobutyric acid)</span> — the primary <b>inhibitory</b> neurotransmitter, reducing the likelihood that the receiving neuron fires.<br><br>
+          <span class="term">Norepinephrine</span> — involved in vigilance, meaning heightened awareness of dangers in the environment. Also called noradrenaline.<br><br>
+          <span class="term">Serotonin</span> — involved in the regulation of sleep and wakefulness, eating, and aggressive behaviour.<br><br>
+          <span class="term">Endorphins</span> — chemicals acting in the pain pathways and emotion centres of the brain. The name is a contraction of <i>endogenous morphine</i>.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Transmitter</th><th>Main functions</th><th>Associated conditions</th></tr>
+          <tr><td><b>Acetylcholine</b></td><td>Voluntary movement; attention, learning, memory, dreaming</td><td>Alzheimer's disease — deterioration of ACh-producing neurons</td></tr>
+          <tr><td><b>Dopamine</b></td><td>Movement, motivation, reward, emotional arousal</td><td>Low in Parkinson's disease; high activity linked to schizophrenia</td></tr>
+          <tr><td><b>Glutamate</b></td><td>The main excitatory signal throughout the brain</td><td>Too much causes neurons to become overactive, producing seizures</td></tr>
+          <tr><td><b>GABA</b></td><td>The main inhibitory signal; damping activity down</td><td>Too little produces the same overactivity and seizures; targeted by anti-anxiety drugs</td></tr>
+          <tr><td><b>Norepinephrine</b></td><td>Vigilance, alertness, arousal</td><td>Low levels implicated in mood disorders</td></tr>
+          <tr><td><b>Serotonin</b></td><td>Sleep and wakefulness, eating, aggression, mood</td><td>Low levels implicated in mood disorders</td></tr>
+          <tr><td><b>Endorphins</b></td><td>Dulling pain, elevating mood</td><td>The mechanism opioid drugs act on; the basis of "runner's high"</td></tr>
+        </table>
+
+        <div class="worked">
+          <span class="wl">Worked example — glutamate, GABA and seizures</span>
+          Glutamate <b>increases</b> the chance that the receiving neuron fires. GABA <b>decreases</b> it. Normal brain function depends on these two staying in balance.<br><br>
+          A seizure is uncontrolled, excessive firing across a population of neurons. Two entirely different faults produce it:<br><br>
+          <b>Too much glutamate</b> — too much excitation pushing neurons over threshold.<br>
+          <b>Too little GABA</b> — the same result reached by removing the brake rather than by pressing the accelerator.<br><br>
+          This is why anticonvulsant drugs come in two families: some reduce glutamate activity, others enhance GABA activity. Both restore the balance, from opposite directions.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Balance, not quantity</h4>
+        <span class="role">What "chemical imbalance" does and does not mean</span>
+
+        <p>Normal functioning depends on a balance between transmitters. A small imbalance, in either direction, can change behaviour substantially. Imbalances arise in two ways: naturally, as when the brain does not produce enough serotonin; and deliberately, as when a person smokes, drinks alcohol or takes a drug (<i>5.6</i>).</p>
+
+        <div class="lesson-plain">
+          <span class="pl">The phrase "chemical imbalance" is used more loosely than the evidence supports</span>
+          The claim that depression is caused by low serotonin was widely repeated for decades, including in drug advertising. It has not been established. A large 2022 review by Moncrieff and colleagues found no consistent evidence that depression is associated with lowered serotonin levels or activity.<br><br>
+          This does not mean antidepressants do not work — whether a drug helps is a separate question from whether the original account of the cause was right. It means the mechanism is not settled, and a single-chemical explanation of a disorder should be treated as a hypothesis rather than a finding (<i>3.1</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Applications</h4>
+        <span class="role">Where each transmitter appears in practice</span>
+
+        <ul>
+          <li><b>Parkinson's disease</b> — loss of dopamine neurons in the pathway to the striatum produces tremor and difficulty initiating movement. Treated with L-dopa, which the surviving neurons convert into dopamine (<i>5.6</i>).</li>
+          <li><b>Alzheimer's disease</b> — associated with deterioration of acetylcholine-producing neurons, which is why cholinesterase inhibitors are used to preserve what remains (<i>5.3</i>).</li>
+          <li><b>Anxiety</b> — benzodiazepines enhance the action of GABA, increasing inhibition throughout the brain.</li>
+          <li><b>Pain relief</b> — opioid drugs act on the receptors that endorphins normally occupy.</li>
+          <li><b>Myasthenia gravis</b> — an autoimmune condition in which acetylcholine receptors at the muscle are destroyed, producing weakness despite intact nerves and muscles.</li>
+        </ul>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: dopamine is involved in both Parkinson's disease and schizophrenia, and the two conditions have nothing obvious in common. Explain how one chemical can be implicated in both.</summary>
+          <div class="ans"><b>Different pathways, opposite directions.</b> Dopamine neurons run in several distinct routes, and a transmitter's effect depends on where it acts as much as on what it is.<br><br>Parkinson's disease involves the <b>loss</b> of dopamine neurons in the pathway projecting to the <b>striatum</b>, which is involved in movement. Schizophrenia has been linked to <b>excess</b> dopamine activity in other pathways.<br><br>This also predicts a problem in treatment, and the prediction holds. Drugs that raise dopamine to treat Parkinson's can produce psychotic symptoms, and drugs that block dopamine to treat schizophrenia can produce movement problems resembling Parkinson's. Neither drug can confine itself to one pathway.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>Around 60 neurotransmitters are known; <b>seven</b> account for most of what psychology studies.</li>
+          <li>Transmitters run in <b>pathways</b>, so the same chemical has different effects depending on the route it acts in.</li>
+          <li><b>Glutamate</b> is the main excitatory transmitter and <b>GABA</b> the main inhibitory one. Too much glutamate or too little GABA produces seizures.</li>
+          <li><b>Dopamine</b>: movement, motivation, reward. Low in Parkinson's; excess activity linked to schizophrenia.</li>
+          <li><b>Acetylcholine</b>: movement and memory, and lost in Alzheimer's. <b>Norepinephrine</b> and <b>serotonin</b>: arousal and mood. <b>Endorphins</b>: pain and mood.</li>
+          <li>Behaviour depends on the <b>balance</b> between transmitters. Single-chemical explanations of disorders are hypotheses, not established findings.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, functions, examples and applications from 5.4, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Neurotransmitter</td><td>A chemical released at a synapse that carries a signal to the receiving neuron.</td></tr>
+          <tr><td>Pathway</td><td>An organised route of neurons using the same transmitter, running from one brain region to another.</td></tr>
+          <tr><td>Acetylcholine (ACh)</td><td>Voluntary motor control; also attention, learning, sleep, dreaming and memory. Found at every axon–muscle synapse.</td></tr>
+          <tr><td>Dopamine</td><td>Motor behaviour, motivation, pleasure and emotional arousal.</td></tr>
+          <tr><td>Glutamate</td><td>The major excitatory neurotransmitter in the brain.</td></tr>
+          <tr><td>GABA</td><td>The primary inhibitory neurotransmitter in the brain.</td></tr>
+          <tr><td>Norepinephrine</td><td>Vigilance and heightened awareness of danger. Also called noradrenaline.</td></tr>
+          <tr><td>Serotonin</td><td>Regulation of sleep and wakefulness, eating, and aggressive behaviour.</td></tr>
+          <tr><td>Endorphins</td><td>Chemicals acting in pain pathways and emotion centres. The name contracts <i>endogenous morphine</i>.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Location matters as much as chemical.</b> A transmitter acts in several pathways, and the same molecule produces different effects in different routes.</li>
+          <li><b>Excitation and inhibition must balance.</b> Glutamate raises the chance of firing, GABA lowers it, and seizures follow from either too much of the first or too little of the second.</li>
+          <li><b>Two drug families, one target.</b> Anticonvulsants either reduce glutamate or enhance GABA — opposite approaches to restoring the same balance.</li>
+          <li><b>Single-word labels are misleading.</b> "The pleasure chemical" and "the happiness chemical" compress several distinct functions into one phrase.</li>
+          <li><b>"Chemical imbalance" is a hypothesis, not a finding.</b> The serotonin account of depression has not been established, and whether a drug helps is a separate question from whether the proposed cause is correct.</li>
+          <li><b>Treatment side effects follow from pathway overlap.</b> A drug raising or blocking a transmitter cannot confine its action to the pathway of interest.</li>
+        </ul>
+
+        <h5>Conditions and their transmitter associations</h5>
+        <table>
+          <tr><td>Parkinson's disease</td><td>Loss of dopamine neurons projecting to the striatum. Tremor and difficulty initiating movement.</td></tr>
+          <tr><td>Schizophrenia</td><td>Linked to excess dopamine activity in other pathways.</td></tr>
+          <tr><td>Alzheimer's disease</td><td>Deterioration of acetylcholine-producing neurons.</td></tr>
+          <tr><td>Seizures</td><td>Too much glutamate or too little GABA; both produce overactive neurons.</td></tr>
+          <tr><td>Mood disorders</td><td>Low norepinephrine and serotonin have been implicated; the evidence for the serotonin account is weak.</td></tr>
+          <tr><td>Myasthenia gravis</td><td>Acetylcholine receptors at the muscle destroyed by the immune system, producing weakness.</td></tr>
+        </table>
+
+        <h5>Examples used</h5>
+        <ul>
+          <li><b>Glutamate, GABA and seizures</b> — the same outcome reached by pressing the accelerator or removing the brake.</li>
+          <li><b>Benzodiazepines</b> — enhance GABA, increasing inhibition, used for anxiety.</li>
+          <li><b>Opioid drugs</b> — act on the receptors endorphins normally occupy.</li>
+          <li><b>Runner's high</b> — attributed to endorphin release during prolonged exertion.</li>
+          <li><b>Dopamine in two conditions</b> — raising it for Parkinson's can produce psychotic symptoms; blocking it for schizophrenia can produce Parkinsonian movement problems.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 5.5 ---------- */
+  'b-coding': {
+    eyebrow: 'Part II · Topic 05 · Biological Bases',
+    title: 'Excitation, inhibition and neural coding',
+    html: `
+      <figure class="lesson-hero-img frame">
+        <img src="img/adrian-nobel.jpg" alt="Portrait photograph of the physiologist Edgar Douglas Adrian">
+        <figcaption><b>Edgar Douglas Adrian (1889–1977).</b> Adrian recorded from single nerve fibres and established that impulses do not grow larger when a stimulus grows stronger. They arrive more often instead. This is how a signal that cannot vary in size still carries information about intensity.
+          <span class="cred">Public domain · via <a href="https://commons.wikimedia.org/wiki/File:Edgar_Douglas_Adrian_nobel_(cropped).jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, "The Electrochemical Actions of Neurons", covering excitatory and inhibitory signalling and the all-or-none action potential.
+      </div>
+
+      <p class="lesson-lead">A neuron receives thousands of signals at once, some pushing it toward firing and some pushing it away. It produces a single output that is always the same size. This lesson covers how those many inputs are combined into one decision, and how information about the strength of a stimulus survives being converted into a signal that cannot vary in size.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two kinds of message arrive at a neuron</h4>
+        <span class="role">Excitation and inhibition</span>
+
+        <div class="lesson-def">
+          <span class="term">Excitatory postsynaptic potential (EPSP)</span> — a small depolarisation of the receiving neuron, making it <b>more</b> likely to reach threshold and fire.<br><br>
+          <span class="term">Inhibitory postsynaptic potential (IPSP)</span> — a small hyperpolarisation of the receiving neuron, making it <b>less</b> likely to fire.<br><br>
+          <span class="term">Graded potential</span> — a change in membrane voltage whose size varies with the strength of the input, unlike an action potential.
+        </div>
+
+        <p>Whether a synapse is excitatory or inhibitory depends on the neurotransmitter released and the receptor it binds to. Glutamate synapses are typically excitatory and GABA synapses inhibitory (<i>5.4</i>).</p>
+
+        <p>Neither an EPSP nor an IPSP causes an action potential on its own. Each shifts the membrane voltage by roughly one millivolt, and about 15 mV of depolarisation is needed to move a neuron from its resting −70 mV to the threshold of −55 mV (<i>5.2</i>).</p>
+
+        <div class="lesson-plain">
+          <span class="pl">The essential difference from the action potential</span>
+          EPSPs and IPSPs are <b>graded</b>: their size varies with how much transmitter was released, and they fade as they spread.<br><br>
+          The action potential is <b>all-or-none</b>: fixed size, and it does not fade.<br><br>
+          Graded signals are the input. The all-or-none signal is the output. Everything in this lesson happens at the point where one becomes the other.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Adding the inputs up: summation</h4>
+        <span class="role">How thousands of small signals become one decision</span>
+
+        <div class="lesson-def">
+          <span class="term">Summation</span> — the combining of all excitatory and inhibitory inputs arriving at a neuron to determine whether threshold is reached.<br><br>
+          <span class="term">Spatial summation</span> — inputs arriving at <b>different places</b> on the neuron at the same time add together.<br><br>
+          <span class="term">Temporal summation</span> — inputs arriving at the <b>same place</b> in quick succession add together, because each one has not yet faded when the next arrives.<br><br>
+          <span class="term">Integration</span> — the neuron's overall process of weighing excitation against inhibition and producing a single output.
+        </div>
+
+        <figure class="lesson-fig">
+          <svg viewBox="0 0 640 300" role="img" aria-label="Spatial and temporal summation compared, with membrane voltage rising to threshold">
+            <g font-family="Inter, sans-serif">
+              <text x="150" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#a396bb">SPATIAL SUMMATION</text>
+              <text x="150" y="44" text-anchor="middle" font-size="11" fill="#8b7fa3">different places, same moment</text>
+              <circle cx="150" cy="120" r="26" fill="#171122" stroke="#3d2f57"/>
+              <g stroke="#6ee7a8" stroke-width="2" fill="none">
+                <path d="M70 82 L 128 106"/><path d="M70 158 L 128 136"/><path d="M110 60 L 138 96"/>
+              </g>
+              <g fill="#6ee7a8" font-size="10.5" text-anchor="end">
+                <text x="66" y="80">EPSP</text><text x="66" y="162">EPSP</text><text x="106" y="56">EPSP</text>
+              </g>
+              <path d="M176 120 L 226 120" stroke="#b98cff" stroke-width="2.4" fill="none"/>
+              <text x="200" y="110" text-anchor="middle" font-size="10.5" fill="#e6d5ff">fires</text>
+              <text x="150" y="186" text-anchor="middle" font-size="11" fill="#d3cbe2">three weak inputs at once</text>
+              <text x="150" y="204" text-anchor="middle" font-size="11" fill="#d3cbe2">reach threshold together</text>
+
+              <line x1="310" y1="40" x2="310" y2="215" stroke="#3d2f57" stroke-dasharray="4 5"/>
+
+              <text x="480" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#a396bb">TEMPORAL SUMMATION</text>
+              <text x="480" y="44" text-anchor="middle" font-size="11" fill="#8b7fa3">same place, rapid succession</text>
+              <line x1="370" y1="170" x2="600" y2="170" stroke="#5a4a78" stroke-width="1.3"/>
+              <line x1="370" y1="88" x2="600" y2="88" stroke="#ffd479" stroke-width="1" stroke-dasharray="5 4" opacity="0.8"/>
+              <text x="600" y="82" text-anchor="end" font-size="10" fill="#ffd479">threshold</text>
+              <path d="M370 160 L 394 160 L 404 132 L 424 152 L 434 124 L 454 142 L 464 110 L 484 128 L 494 84 L 520 84 L 540 160 L 600 160"
+                    fill="none" stroke="#6ee7a8" stroke-width="2.4"/>
+              <g fill="#6ee7a8">
+                <circle cx="398" cy="146" r="3"/><circle cx="428" cy="138" r="3"/><circle cx="458" cy="126" r="3"/><circle cx="490" cy="96" r="3"/>
+              </g>
+              <text x="480" y="196" text-anchor="middle" font-size="11" fill="#d3cbe2">each input arrives before</text>
+              <text x="480" y="214" text-anchor="middle" font-size="11" fill="#d3cbe2">the last has faded</text>
+
+              <rect x="60" y="240" width="520" height="40" rx="10" fill="rgba(185,140,255,0.08)" stroke="#3d2f57" stroke-dasharray="6 4"/>
+              <text x="320" y="265" text-anchor="middle" font-size="12.5" font-weight="700" fill="#d3cbe2">inhibitory inputs subtract from the same running total</text>
+            </g>
+          </svg>
+          <figcaption>Both routes reach the same threshold. Inhibition works by pulling the total back down.</figcaption>
+        </figure>
+
+        <div class="worked">
+          <span class="wl">Worked example — running the arithmetic</span>
+          A neuron sits at <b>−70 mV</b> and fires at <b>−55 mV</b>, so it needs <b>+15 mV</b> of net depolarisation.<br><br>
+          Suppose 20 excitatory synapses fire at once, each contributing <b>+1 mV</b>: the total is +20 mV, which is enough. The neuron fires.<br><br>
+          Now suppose 8 inhibitory synapses fire at the same moment, each contributing <b>−1 mV</b>: the net total is +20 − 8 = <b>+12 mV</b>. The neuron does not reach −55 mV, and does not fire.<br><br>
+          Nothing changed about the excitatory input. The outcome was determined by what arrived alongside it. This is why inhibition is not merely the absence of a signal — it is an active instruction that changes the result.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">How intensity is coded</h4>
+        <span class="role">Carrying information with a signal that cannot vary in size</span>
+
+        <p>Every action potential is the same size, so amplitude cannot carry information about how strong a stimulus was (<i>5.2</i>). Three alternatives are used.</p>
+
+        <div class="lesson-def">
+          <span class="term">Rate coding</span> — a stronger stimulus produces action potentials <b>more frequently</b>, up to several hundred per second.<br><br>
+          <span class="term">Population coding</span> — a stronger stimulus recruits <b>more neurons</b>, and the pattern across the population carries the information.<br><br>
+          <span class="term">Temporal coding</span> — information is carried by the <b>precise timing</b> of spikes relative to one another, not only by how many there are.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Code</th><th>What varies</th><th>Example</th></tr>
+          <tr><td><b>Rate</b></td><td>Spikes per second</td><td>Pressing harder on the skin makes touch receptors fire faster</td></tr>
+          <tr><td><b>Population</b></td><td>Which neurons, and how many</td><td>Colour is coded by the relative activity of three cone types rather than by any single one</td></tr>
+          <tr><td><b>Temporal</b></td><td>The timing pattern of spikes</td><td>Locating a sound uses differences of microseconds between the two ears</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">The refractory period sets a ceiling</span>
+          Rate coding cannot be extended indefinitely. The refractory period after each action potential means a neuron cannot fire again immediately, which caps the maximum rate at roughly 500 to 1,000 spikes per second (<i>5.2</i>).<br><br>
+          Beyond that ceiling, additional intensity has to be signalled by recruiting more neurons instead.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Adrian (1926) — the frequency code in sensory nerves</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine how a sensory nerve conveys the strength of a stimulus, given that individual nerve impulses appear identical.</dd>
+            <dt>Method</dt>
+            <dd>Edgar Adrian recorded electrical activity from single sensory nerve fibres in the frog, using valve amplification to make individual impulses detectable. Stretch of increasing degrees was applied to a muscle and the resulting impulses were recorded.</dd>
+            <dt>Results</dt>
+            <dd>Individual impulses were the same size regardless of how strong the stimulus was. Increasing the stretch increased the <b>frequency</b> of impulses, not their amplitude. Sustained stimulation produced firing that gradually slowed, corresponding to sensory adaptation.</dd>
+            <dt>Conclusion</dt>
+            <dd>Sensory intensity is encoded by rate of firing rather than by signal size. Adrian shared the 1932 Nobel Prize with Charles Sherrington for work on the function of neurons.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Why inhibition matters</h4>
+        <span class="role">What happens when the balance fails</span>
+
+        <p>Roughly one neuron in five in the cortex is inhibitory. That proportion is not a design inefficiency; without it the brain would not function.</p>
+
+        <ul>
+          <li><b>Preventing runaway activity.</b> Excitatory neurons connect to other excitatory neurons. Without inhibition, activity would spread and amplify without limit. This is what a seizure is (<i>5.4</i>).</li>
+          <li><b>Sharpening signals.</b> An active neuron can inhibit its neighbours, a process called lateral inhibition. This is what makes edges and boundaries stand out in vision.</li>
+          <li><b>Timing.</b> Inhibitory neurons impose rhythm on populations of neurons, which coordinates activity between regions.</li>
+          <li><b>Selection.</b> Choosing one action means suppressing the alternatives. Much of the frontal lobe's role in control is inhibitory.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">A useful correction</span>
+          Inhibition is often described as switching a neuron "off". It does not do that.<br><br>
+          It <b>subtracts from a running total</b>, alongside excitation arriving at the same moment. Whether the neuron fires depends on the balance of the two, which is why the same excitatory input can produce firing on one occasion and nothing on another.
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a neuron receives 30 excitatory inputs at once and does not fire. A moment later it receives 12 excitatory inputs and does fire. Give two explanations.</summary>
+          <div class="ans"><b>1. Inhibition.</b> The first occasion may have included a large number of inhibitory inputs arriving simultaneously, pulling the net total below threshold. Thirty excitatory inputs against twenty-five inhibitory ones nets less than twelve against none. Excitation alone never determines the outcome.<br><br><b>2. Where and when the inputs arrived.</b> Inputs on distant dendrites fade before reaching the cell body, so 30 distant inputs may contribute less than 12 close ones. Inputs spread over a longer interval also fail to summate, because the earlier ones have decayed before the later ones arrive.<br><br>A third possibility is the <b>refractory period</b>: if the neuron had just fired, it could not fire again regardless of the input.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>Inputs arrive as <b>EPSPs</b> (more likely to fire) and <b>IPSPs</b> (less likely). Both are <b>graded</b>; the action potential is all-or-none.</li>
+          <li><b>Summation</b> combines them. <b>Spatial</b> summation adds inputs from different places at the same time; <b>temporal</b> summation adds inputs at the same place in quick succession.</li>
+          <li>The neuron needs about <b>+15 mV</b> of net depolarisation to move from −70 mV to the −55 mV threshold.</li>
+          <li>Intensity is coded by <b>rate</b>, by <b>population</b>, and by <b>timing</b> — never by the size of the action potential.</li>
+          <li><b>Adrian (1926)</b> established rate coding by recording from single sensory fibres: stronger stretch produced more frequent impulses of unchanged size.</li>
+          <li><b>Inhibition subtracts from a total</b> rather than switching neurons off, and is essential for preventing runaway activity, sharpening signals, timing and selection.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, concepts, examples and studies from 5.5, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Excitatory postsynaptic potential (EPSP)</td><td>A small depolarisation making the receiving neuron more likely to reach threshold.</td></tr>
+          <tr><td>Inhibitory postsynaptic potential (IPSP)</td><td>A small hyperpolarisation making the receiving neuron less likely to fire.</td></tr>
+          <tr><td>Graded potential</td><td>A voltage change whose size varies with the strength of the input, and which fades as it spreads.</td></tr>
+          <tr><td>Summation</td><td>The combining of all excitatory and inhibitory inputs to determine whether threshold is reached.</td></tr>
+          <tr><td>Spatial summation</td><td>Inputs arriving at different places on the neuron at the same time adding together.</td></tr>
+          <tr><td>Temporal summation</td><td>Inputs arriving at the same place in quick succession adding together, because each has not faded when the next arrives.</td></tr>
+          <tr><td>Integration</td><td>The neuron's overall weighing of excitation against inhibition to produce one output.</td></tr>
+          <tr><td>Rate coding</td><td>A stronger stimulus produces action potentials more frequently.</td></tr>
+          <tr><td>Population coding</td><td>A stronger stimulus recruits more neurons; the pattern across the population carries the information.</td></tr>
+          <tr><td>Temporal coding</td><td>Information carried by the precise timing of spikes relative to one another.</td></tr>
+          <tr><td>Lateral inhibition</td><td>An active neuron inhibiting its neighbours, which sharpens edges and boundaries.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Graded in, all-or-none out.</b> The inputs vary in size and fade; the output is fixed in size and does not fade. The neuron is the point where one becomes the other.</li>
+          <li><b>No single input causes firing.</b> Each EPSP shifts the voltage by about 1 mV, and about 15 mV is needed to move from −70 mV to −55 mV.</li>
+          <li><b>Inhibition subtracts from a running total</b> rather than switching a neuron off, so the same excitatory input can produce firing on one occasion and not on another.</li>
+          <li><b>Where and when an input arrives changes its weight.</b> Distant inputs fade before reaching the cell body; inputs spread over time fail to summate.</li>
+          <li><b>Intensity cannot be carried by amplitude</b>, because action potentials do not vary in size. Rate, population and timing carry it instead.</li>
+          <li><b>The refractory period caps rate coding</b> at roughly 500 to 1,000 spikes per second, beyond which extra intensity must recruit more neurons.</li>
+          <li><b>Inhibitory neurons are about one in five in the cortex</b>, and are required for preventing runaway activity, sharpening signals, imposing timing, and selecting one action over others.</li>
+        </ul>
+
+        <h5>Examples used</h5>
+        <ul>
+          <li><b>The arithmetic example</b> — 20 excitatory inputs (+20 mV) fires; the same 20 with 8 inhibitory inputs (+12 mV net) does not.</li>
+          <li><b>Pressing harder on the skin</b> — touch receptors fire faster, illustrating rate coding.</li>
+          <li><b>Colour vision</b> — coded by relative activity across three cone types, illustrating population coding.</li>
+          <li><b>Locating a sound</b> — differences of microseconds between the ears, illustrating temporal coding.</li>
+          <li><b>Seizures</b> — what unchecked excitatory spread produces when inhibition fails.</li>
+          <li><b>Purkinje cell</b> — up to 200,000 inputs reduced to a single output down one axon (<i>5.1</i>).</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Adrian (1926)</b> — recorded from single sensory nerve fibres in the frog using valve amplification. Impulses were identical in size regardless of stimulus strength; stronger stretch raised their <b>frequency</b>. Sustained stimulation produced gradually slowing firing, matching sensory adaptation. Nobel Prize with Sherrington, 1932.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 5.6 ---------- */
+  'b-drugs': {
+    eyebrow: 'Part II · Topic 05 · Biological Bases',
+    title: 'Drugs at the synapse',
+    html: `
+      <figure class="lesson-hero-img">
+        <img src="img/pills.png" alt="Assorted tablets and capsules on a plate">
+        <figcaption><b>Every drug that changes thought, mood or behaviour does so by acting at a synapse.</b> None of them introduces a new kind of signal. They interfere with a step in a process the brain already runs, which is why their effects are predictable from the step they act on.
+          <span class="cred">epSos.de · CC BY 2.0 · via <a href="https://commons.wikimedia.org/wiki/File:Medicine_Drug_Pills_on_Plate.png" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, the section <i>How Drugs Mimic Neurotransmitters</i>.
+      </div>
+
+      <p class="lesson-lead">Drugs that affect the nervous system work by increasing, blocking or imitating the action of a neurotransmitter. There are only two directions of effect and a small number of points in the synapse where a drug can act. This lesson covers both, and works through the standard examples.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two directions: agonist and antagonist</h4>
+        <span class="role">The whole classification in two words</span>
+
+        <div class="lesson-def">
+          <span class="term">Agonist</span> — a drug that <b>increases</b> the action of a neurotransmitter.<br><br>
+          <span class="term">Antagonist</span> — a drug that <b>blocks</b> the action of a neurotransmitter.<br><br>
+          <span class="term">Psychoactive drug</span> — any substance that changes conscious experience by acting on the nervous system.
+        </div>
+
+        <p>A drug with a molecular structure similar enough to a neurotransmitter will bind to that transmitter's receptors, because a receptor recognises shape and nothing else (<i>5.3</i>). What happens next divides the two categories.</p>
+
+        <ul>
+          <li>If binding <b>activates</b> the receptor, the drug is an <b>agonist</b>. It does what the transmitter would have done.</li>
+          <li>If binding <b>occupies the receptor without activating it</b>, the drug is an <b>antagonist</b>. It blocks the site, so the real transmitter cannot bind.</li>
+        </ul>
+
+        <figure class="lesson-fig">
+          <svg viewBox="0 0 640 260" role="img" aria-label="Agonist binds and activates a receptor; antagonist binds and blocks it">
+            <g font-family="Inter, sans-serif" text-anchor="middle">
+              <text x="150" y="26" font-size="12" font-weight="800" fill="#6ee7a8">AGONIST</text>
+              <path d="M60 120 L 240 120 L 240 176 L 60 176 Z" fill="rgba(255,143,176,0.08)" stroke="#5a4a78"/>
+              <path d="M132 120 L 132 104 L 168 104 L 168 120" fill="none" stroke="#ff8fb0" stroke-width="2"/>
+              <path d="M138 100 L 138 74 L 162 74 L 162 100 Z" fill="rgba(110,231,168,0.3)" stroke="#6ee7a8" stroke-width="2"/>
+              <text x="150" y="92" font-size="10" fill="#a7f3d0">drug</text>
+              <text x="150" y="150" font-size="11" fill="#ffd0de">receptor activated</text>
+              <path d="M150 186 L 150 210" stroke="#6ee7a8" stroke-width="2.4" fill="none"/>
+              <text x="150" y="228" font-size="11.5" font-weight="700" fill="#6ee7a8">signal passes on</text>
+              <text x="150" y="246" font-size="10.5" fill="#8b7fa3">effect is increased</text>
+
+              <line x1="320" y1="40" x2="320" y2="240" stroke="#3d2f57" stroke-dasharray="4 5"/>
+
+              <text x="480" y="26" font-size="12" font-weight="800" fill="#ff8fb0">ANTAGONIST</text>
+              <path d="M390 120 L 570 120 L 570 176 L 390 176 Z" fill="rgba(255,143,176,0.08)" stroke="#5a4a78"/>
+              <path d="M462 120 L 462 104 L 498 104 L 498 120" fill="none" stroke="#ff8fb0" stroke-width="2"/>
+              <path d="M468 100 L 468 74 L 492 74 L 492 100 Z" fill="rgba(255,143,176,0.35)" stroke="#ff8fb0" stroke-width="2"/>
+              <text x="480" y="92" font-size="10" fill="#ffd0de">drug</text>
+              <text x="480" y="150" font-size="11" fill="#ffd0de">receptor occupied, not activated</text>
+              <g stroke="#5a4a78" stroke-width="2" fill="none">
+                <path d="M540 70 L 556 86"/><path d="M556 70 L 540 86"/>
+              </g>
+              <path d="M534 78 L 512 78" stroke="#5a4a78" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
+              <text x="584" y="62" font-size="10" fill="#8b7fa3">real</text>
+              <text x="584" y="76" font-size="10" fill="#8b7fa3">transmitter</text>
+              <text x="584" y="90" font-size="10" fill="#8b7fa3">shut out</text>
+              <text x="480" y="228" font-size="11.5" font-weight="700" fill="#ff8fb0">no signal passes</text>
+              <text x="480" y="246" font-size="10.5" fill="#8b7fa3">effect is blocked</text>
+            </g>
+          </svg>
+          <figcaption>Both drugs bind to the same site. The difference is whether binding activates the receptor.</figcaption>
+        </figure>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Six points where a drug can act</h4>
+        <span class="role">Every step in transmission is a possible target</span>
+
+        <p>Binding to the postsynaptic receptor is the most obvious route, and it is only one of six. A drug can produce an agonist effect without ever touching a receptor, by acting earlier or later in the sequence (<i>5.3</i>).</p>
+
+        <table class="lesson-table">
+          <tr><th>Point in the synapse</th><th>Agonist effect</th><th>Antagonist effect</th></tr>
+          <tr><td><b>1 · Production</b></td><td>Supply more of the raw material the transmitter is made from</td><td>Block the enzyme that manufactures it</td></tr>
+          <tr><td><b>2 · Release</b></td><td>Cause vesicles to release more than usual</td><td>Prevent vesicles from releasing at all</td></tr>
+          <tr><td><b>3 · Autoreceptors</b></td><td>Block them, so the neuron does not slow its own release</td><td>Stimulate them, so the neuron reduces release</td></tr>
+          <tr><td><b>4 · Reuptake</b></td><td>Block reuptake, so the transmitter stays in the cleft longer</td><td>Speed reuptake up</td></tr>
+          <tr><td><b>5 · Postsynaptic receptors</b></td><td>Bind and activate them</td><td>Bind and occupy them without activating</td></tr>
+          <tr><td><b>6 · Enzymes in the cleft</b></td><td>Block the enzyme that breaks the transmitter down</td><td>Increase its breakdown</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">The exam-useful consequence</span>
+          "Agonist" describes the <b>effect on the transmitter's action</b>, not the mechanism.<br><br>
+          A drug blocking reuptake never binds a receptor, and a drug blocking a breakdown enzyme never binds a receptor either. Both are agonists, because both increase the transmitter's effect.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The standard examples</h4>
+        <span class="role">What acts where, and what it does</span>
+
+        <table class="lesson-table">
+          <tr><th>Drug</th><th>Transmitter</th><th>Mechanism</th><th>Type</th></tr>
+          <tr><td><b>L-dopa</b></td><td>Dopamine</td><td>Supplies the precursor molecule, so surviving neurons make more dopamine</td><td>Agonist</td></tr>
+          <tr><td><b>Amphetamine</b></td><td>Dopamine, norepinephrine</td><td>Increases release and blocks reuptake</td><td>Agonist</td></tr>
+          <tr><td><b>SSRIs</b></td><td>Serotonin</td><td>Block reuptake, leaving more in the cleft</td><td>Agonist</td></tr>
+          <tr><td><b>Nicotine</b></td><td>Acetylcholine</td><td>Binds and activates one class of ACh receptor</td><td>Agonist</td></tr>
+          <tr><td><b>Benzodiazepines</b></td><td>GABA</td><td>Enhance GABA's effect at its receptor, increasing inhibition</td><td>Agonist</td></tr>
+          <tr><td><b>Opioids</b></td><td>Endorphins</td><td>Bind and activate the receptors endorphins normally occupy</td><td>Agonist</td></tr>
+          <tr><td><b>Curare</b></td><td>Acetylcholine</td><td>Occupies ACh receptors at the muscle without activating them; causes paralysis</td><td>Antagonist</td></tr>
+          <tr><td><b>Antipsychotics</b></td><td>Dopamine</td><td>Block dopamine receptors</td><td>Antagonist</td></tr>
+          <tr><td><b>Naloxone</b></td><td>Endorphins</td><td>Displaces opioids from their receptors; reverses overdose within minutes</td><td>Antagonist</td></tr>
+          <tr><td><b>Botulinum toxin</b></td><td>Acetylcholine</td><td>Prevents vesicles from releasing ACh at the muscle</td><td>Antagonist</td></tr>
+          <tr><td><b>Caffeine</b></td><td>Adenosine</td><td>Blocks adenosine receptors, so the sleepiness signal is not received</td><td>Antagonist</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">Caffeine is worth a second look</span>
+          Caffeine is usually described as a stimulant, which suggests it adds energy. It does not.<br><br>
+          Adenosine accumulates through the day and produces sleepiness by binding to its receptors. Caffeine <b>occupies those receptors without activating them</b>, so the sleepiness signal cannot be received. The tiredness is still being generated — it is simply not being registered, which is why it arrives all at once when the caffeine wears off.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>L-dopa and Parkinson's disease</b></div>
+          <dl>
+            <dt>Background</dt>
+            <dd>Parkinson's disease is a movement disorder involving tremor and difficulty initiating movement, caused by the loss of dopamine-producing neurons in the pathway projecting to the striatum (<i>5.4</i>).</dd>
+            <dt>The problem</dt>
+            <dd>Dopamine itself cannot be given as a drug, because it does not cross from the bloodstream into the brain.</dd>
+            <dt>The solution</dt>
+            <dd>Dopamine is manufactured in neurons from a precursor molecule called L-dopa, which does cross into the brain. Administering L-dopa raises its concentration there and prompts the surviving neurons to produce more dopamine. It is therefore an agonist acting at the <b>production</b> step rather than at a receptor.</dd>
+            <dt>Outcome</dt>
+            <dd>Treatment has been reasonably successful in relieving symptoms. Effectiveness typically declines with long-term use, so many long-term users experience some return of symptoms.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Why effects change with repeated use</h4>
+        <span class="role">Tolerance, withdrawal and the reason side effects are unavoidable</span>
+
+        <div class="lesson-def">
+          <span class="term">Tolerance</span> — a larger dose is required to produce the effect an earlier dose produced, because the nervous system adjusts to repeated exposure.<br><br>
+          <span class="term">Withdrawal</span> — the symptoms produced when a drug is stopped, typically opposite in direction to the drug's own effect.
+        </div>
+
+        <p>A synapse repeatedly flooded with a transmitter compensates: it reduces the number of receptors, or makes the remaining ones less responsive. The drug's effect diminishes, and a larger dose is needed. If the drug is then stopped, the compensation remains but the drug that prompted it is gone, so the system is left unbalanced in the opposite direction. That is withdrawal.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why side effects cannot be designed out</span>
+          A drug travels in the bloodstream and reaches every receptor of the matching type in the body. It cannot be confined to the pathway of interest (<i>5.4</i>).<br><br>
+          Raising dopamine to treat Parkinson's also raises it in pathways associated with psychosis. Blocking dopamine to treat schizophrenia also blocks it in the movement pathway. Neither is a flaw in the particular drug; it follows from receptors being distributed across pathways.
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: naloxone reverses a heroin overdose within minutes without removing any heroin from the body. Explain the mechanism, and why the person may need a second dose.</summary>
+          <div class="ans"><b>Mechanism.</b> Heroin acts as an <b>agonist</b> at opioid receptors, and at high doses suppresses breathing. Naloxone is an <b>antagonist</b> with a stronger affinity for those receptors: it displaces the heroin from them and occupies them without activating them. The receptors are no longer being stimulated, so breathing resumes. No heroin has been removed from the body — the drug is simply prevented from acting.<br><br><b>Why a second dose may be needed.</b> Naloxone is cleared from the body faster than heroin is. When it wears off, the heroin still circulating can reoccupy the now-vacant receptors and the overdose can return. This is also why someone who has been given naloxone requires monitoring rather than being left once they have recovered.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Agonists increase</b> a neurotransmitter's action; <b>antagonists block</b> it. Those two words cover the whole classification.</li>
+          <li>Drugs bind because <b>receptors recognise shape</b>, not origin. Activating the receptor makes a drug an agonist; occupying it without activating makes it an antagonist.</li>
+          <li>There are <b>six points</b> of action: production, release, autoreceptors, reuptake, postsynaptic receptors, and enzymes in the cleft.</li>
+          <li>"Agonist" describes the <b>effect</b>, not the mechanism. Blocking reuptake or blocking a breakdown enzyme both produce agonist effects without touching a receptor.</li>
+          <li><b>L-dopa</b> treats Parkinson's by supplying the precursor of dopamine, since dopamine itself cannot cross into the brain.</li>
+          <li><b>Tolerance</b> arises when the synapse compensates for repeated exposure; <b>withdrawal</b> is that compensation left behind once the drug is removed.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, mechanisms, drug examples and studies from 5.6, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Agonist</td><td>A drug that increases the action of a neurotransmitter.</td></tr>
+          <tr><td>Antagonist</td><td>A drug that blocks the action of a neurotransmitter.</td></tr>
+          <tr><td>Psychoactive drug</td><td>Any substance that changes conscious experience by acting on the nervous system.</td></tr>
+          <tr><td>Tolerance</td><td>A larger dose is needed to produce the effect an earlier dose produced, because the nervous system has adjusted to repeated exposure.</td></tr>
+          <tr><td>Withdrawal</td><td>The symptoms produced when a drug is stopped, typically opposite in direction to the drug's own effect.</td></tr>
+          <tr><td>Precursor</td><td>A molecule the body converts into a neurotransmitter. L-dopa is the precursor of dopamine.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Receptors recognise shape, not origin.</b> Any molecule shaped like a transmitter will bind, whether the body made it or not.</li>
+          <li><b>Two directions only.</b> Binding that activates a receptor makes a drug an agonist; binding that occupies without activating makes it an antagonist.</li>
+          <li><b>Six points of action</b>: production, release, autoreceptors, reuptake, postsynaptic receptors, enzymes in the cleft.</li>
+          <li><b>"Agonist" names the effect, not the mechanism.</b> Reuptake blockers and enzyme blockers are agonists without ever binding a receptor.</li>
+          <li><b>Tolerance is compensation.</b> The synapse reduces receptor number or sensitivity in response to repeated flooding; withdrawal is that compensation persisting once the drug is gone.</li>
+          <li><b>Side effects follow from anatomy.</b> A drug in the bloodstream reaches every matching receptor in the body and cannot be confined to one pathway.</li>
+        </ul>
+
+        <h5>Drug examples</h5>
+        <table>
+          <tr><td>L-dopa</td><td>Dopamine agonist, acting at the production step. Treats Parkinson's disease.</td></tr>
+          <tr><td>Amphetamine</td><td>Increases release and blocks reuptake of dopamine and norepinephrine. Agonist.</td></tr>
+          <tr><td>SSRIs</td><td>Block serotonin reuptake. Agonist.</td></tr>
+          <tr><td>Nicotine</td><td>Binds and activates one class of acetylcholine receptor. Agonist.</td></tr>
+          <tr><td>Benzodiazepines</td><td>Enhance GABA at its receptor, increasing inhibition. Agonist.</td></tr>
+          <tr><td>Opioids</td><td>Activate the receptors endorphins normally occupy. Agonist.</td></tr>
+          <tr><td>Curare</td><td>Occupies acetylcholine receptors at the muscle without activating them; causes paralysis. Antagonist.</td></tr>
+          <tr><td>Antipsychotics</td><td>Block dopamine receptors. Antagonist.</td></tr>
+          <tr><td>Naloxone</td><td>Displaces opioids from their receptors and reverses overdose. Antagonist.</td></tr>
+          <tr><td>Botulinum toxin</td><td>Prevents vesicles releasing acetylcholine at the muscle. Antagonist.</td></tr>
+          <tr><td>Caffeine</td><td>Blocks adenosine receptors so the sleepiness signal is not received. Antagonist.</td></tr>
+        </table>
+
+        <h5>Worked cases</h5>
+        <ul>
+          <li><b>Caffeine.</b> Not an energy source. Adenosine builds up through the day and signals sleepiness; caffeine occupies its receptors without activating them, so the signal is not registered. The tiredness is still accumulating, which is why it arrives at once when the caffeine clears.</li>
+          <li><b>L-dopa.</b> Dopamine cannot cross from the bloodstream into the brain, but its precursor can. Surviving neurons convert it. Effectiveness declines with long-term use.</li>
+          <li><b>Naloxone.</b> Displaces opioids from receptors without removing any drug from the body. It clears faster than heroin does, so the overdose can return and a second dose may be required.</li>
+        </ul>
+      </div>
+    `
   }
 
   };
@@ -9020,6 +9874,34 @@
       ['The ion that floods into the neuron during the rising phase is ___.', 'sodium', ['na','na+']],
       ['The brief interval after firing when the neuron cannot fire again is the ___ period.', 'refractory', []],
       ['Action potentials do not vary in size; this is the ___-or-none law.', 'all', []]
+    ],
+    'b-synapse': [
+      ['The gap between two neurons is the synaptic ___.', 'cleft', []],
+      ['Neurotransmitter is stored in small sacs called ___.', 'vesicles', ['vesicle']],
+      ['The ion that enters the terminal and triggers release is ___.', 'calcium', ['ca','ca2+']],
+      ['Reabsorption of the transmitter into the sending neuron is called ___.', 'reuptake', []],
+      ['Receptors on the sending neuron that reduce further release are called ___.', 'autoreceptors', ['autoreceptor']]
+    ],
+    'b-neurotrans': [
+      ['The major excitatory neurotransmitter in the brain is ___.', 'glutamate', []],
+      ['The primary inhibitory neurotransmitter in the brain is ___.', 'gaba', []],
+      ['The transmitter lost in Parkinson\'s disease is ___.', 'dopamine', []],
+      ['The transmitter released at every synapse between an axon and a muscle is ___.', 'acetylcholine', ['ach']],
+      ['Chemicals acting in the pain pathways, whose name contracts endogenous morphine, are ___.', 'endorphins', ['endorphin']]
+    ],
+    'b-coding': [
+      ['A small depolarisation making a neuron more likely to fire is an ___ postsynaptic potential.', 'excitatory', ['epsp']],
+      ['Inputs arriving at different places at the same moment combine by ___ summation.', 'spatial', []],
+      ['Inputs arriving at the same place in quick succession combine by ___ summation.', 'temporal', []],
+      ['Coding stimulus intensity by spikes per second is called ___ coding.', 'rate', ['frequency']],
+      ['An active neuron suppressing its neighbours to sharpen edges is called ___ inhibition.', 'lateral', []]
+    ],
+    'b-drugs': [
+      ['A drug that increases the action of a neurotransmitter is an ___.', 'agonist', []],
+      ['A drug that blocks the action of a neurotransmitter is an ___.', 'antagonist', []],
+      ['The precursor given to treat Parkinson\'s disease is ___.', 'l-dopa', ['ldopa','levodopa','l dopa']],
+      ['Caffeine works by blocking receptors for ___.', 'adenosine', []],
+      ['Needing a larger dose to get the same effect is called ___.', 'tolerance', []]
     ],
     'l-classical': [
       ['A stimulus that produces a response without any learning is the ___ stimulus.', 'unconditioned', ['ucs']],
