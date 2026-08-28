@@ -861,6 +861,26 @@
   }
   .lesson-hero-img figcaption b { color: #fff; }
   .lesson-hero-img figcaption .cred { margin-top: 4px; color: #9d92b4; }
+  /* the hero caption stays hidden until the image is clicked, so the picture is seen first */
+  .lesson-hero-img figcaption {
+    opacity: 0; visibility: hidden; transform: translateY(10px);
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+  }
+  .lesson-hero-img.cap-open figcaption { opacity: 1; visibility: visible; transform: none; }
+  .lesson-hero-img img { cursor: pointer; }
+  .hero-hint, .hero-zoom {
+    position: absolute; z-index: 2; border-radius: 999px; cursor: pointer;
+    font-family: var(--font); font-weight: 700; color: #ddd5ea;
+    border: 1px solid rgba(255,255,255,0.24); background: rgba(10,6,16,0.74);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    transition: background 0.15s, color 0.15s, border-color 0.15s, opacity 0.2s;
+  }
+  .hero-hint { left: 12px; bottom: 12px; padding: 6px 13px; font-size: 0.78rem; letter-spacing: 0.01em; }
+  .hero-zoom { right: 12px; top: 12px; width: 32px; height: 32px; font-size: 0.95rem; line-height: 1; display: flex; align-items: center; justify-content: center; padding: 0; }
+  .hero-hint:hover, .hero-zoom:hover, .hero-hint:focus-visible, .hero-zoom:focus-visible {
+    background: var(--accent); color: #180f26; border-color: var(--accent); outline: none;
+  }
+  .lesson-hero-img.cap-open .hero-hint { opacity: 0; pointer-events: none; }
   @media (max-width: 640px) { .lesson-hero-img img, .lesson-hero-img.contain img { height: 180px; } }
   .fig-img { display: block; width: 100%; height: auto; border-radius: 8px; }
   .fig-img.paper { background: #fff; padding: 14px; }        /* line art needs a white ground */
@@ -5861,54 +5881,29 @@
       </div>
 
       <div class="lesson-card">
-        <h4 class="numbered">Strengths</h4>
-        <span class="role">What the method does well</span>
-        <div class="evalsec plus">
-          <div class="evalpoint">
-            <h5>It can be used where experiments are impossible</h5>
-            <p>Participants cannot be randomly assigned to be neglected in childhood, to be bereaved, or to smoke for thirty years. For questions of this kind, correlation is not a weaker substitute for an experiment. It is the only method available.</p>
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">What the method does well, and what it cannot do</span>
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>It can be used where experiments are impossible.</b> Participants cannot be randomly assigned to be neglected in childhood, bereaved, or to smoke for thirty years. For questions of this kind correlation is not a weaker substitute for an experiment; it is the only method available.</li>
+              <li><b>It is sufficient for prediction.</b> Identifying which pupils are at risk of dropping out does not require knowing why the relationship exists. Prediction and explanation are separate goals (<i>1.4</i>).</li>
+              <li><b>It measures behaviour as it occurs</b>, in its natural setting rather than a laboratory version, which usually gives higher realism than an experiment on the same question.</li>
+              <li><b>It is quick and economical.</b> No condition has to be created or controlled, and existing records can often be used, so it is a practical first step before committing to an experiment.</li>
+              <li><b>A near-zero correlation is real evidence.</b> A well-measured study with enough participants that finds no relationship shows there is none to find. Ruling something out is a genuine result.</li>
+            </ul>
           </div>
-          <div class="evalpoint">
-            <h5>It is sufficient for prediction</h5>
-            <p>Identifying which pupils are at risk of dropping out, or which patients are likely to relapse, does not require knowing why the relationship exists. A correlation identifies who needs attention. Prediction and explanation are separate goals (<i>1.4</i>).</p>
-          </div>
-          <div class="evalpoint">
-            <h5>It measures behaviour as it occurs</h5>
-            <p>Correlational studies record variables in their natural setting rather than a version of them produced in a laboratory. This usually gives higher realism than an experiment on the same question. It is also quick and economical, since no condition has to be created or controlled and existing records can often be used.</p>
-          </div>
-          <div class="evalpoint">
-            <h5>A near-zero correlation is real evidence</h5>
-            <p>A well-measured study with enough participants that finds no relationship provides evidence that no relationship exists. Ruling a relationship out is a genuine result, and correlational designs do it well.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="lesson-card">
-        <h4 class="numbered">Weaknesses</h4>
-        <span class="role">What the method cannot do, and what distorts it</span>
-        <div class="evalsec minus">
-          <div class="evalpoint">
-            <h5>It cannot establish cause</h5>
-            <p>Three explanations always remain available: X causes Y, Y causes X, or a third variable causes both. The numbers are identical in all three cases, so no statistical procedure applied to the data can separate them.</p>
-            <p>The limitation is permanent for a given dataset. It is not resolved by collecting more data or by using a more sophisticated analysis.</p>
-          </div>
-          <div class="evalpoint">
-            <h5>Third variables can never be fully removed</h5>
-            <p>Matching removes only the variables the researcher has identified. Statistical control removes a confound only to the accuracy with which it was measured. Neither method can address a third variable that has not been thought of.</p>
-          </div>
-          <div class="evalpoint">
-            <h5>The direction of the relationship is often unclear</h5>
-            <p>People with depression exercise less than people without it. Exercise may protect against depression, or depression may reduce the capacity to exercise. Both are plausible, and in many cases both operate at once, each strengthening the other.</p>
-          </div>
-          <div class="evalpoint">
-            <h5>The coefficient hides the shape of the data</h5>
-            <p>A single extreme case, called an <b>outlier</b>, can produce a correlation that is absent from the rest of the data, or conceal one that is present. A <b>curvilinear relationship</b>, in which two variables are related but not by a straight line, produces an <i>r</i> close to zero. Performance rises with arousal up to a point and then falls again; reported as a coefficient alone, this appears as no relationship.</p>
-            <p>Anscombe's quartet, shown at the top of this lesson, demonstrates the same point with four datasets that share nearly identical statistics and describe four different relationships.</p>
-          </div>
-          <div class="evalpoint">
-            <h5>Restricted samples shrink correlations</h5>
-            <p><b>Restricted range</b> occurs when the people studied are similar to each other on one of the co-variables, leaving little variation available to correlate. Testing whether an aptitude test predicts performance <i>within</i> a highly selective university underestimates its predictive power, because everyone admitted already scored highly on the test.</p>
-            <p>Sample size affects the coefficient in a separate way. Whether a correlation reaches statistical significance depends heavily on how many people were measured. In a sample of 10,000, an <i>r</i> of .03 is statistically significant and accounts for less than one tenth of one per cent of the variation.</p>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>It cannot establish cause.</b> Three explanations always remain — X causes Y, Y causes X, or a third variable causes both — and the numbers are identical in all three, so no statistical procedure can separate them. The limitation is permanent for a given dataset, not a matter of collecting more data.</li>
+              <li><b>Third variables can never be fully removed.</b> Matching removes only the variables the researcher identified, and statistical control removes a confound only as accurately as it was measured.</li>
+              <li><b>The direction is often unclear.</b> People with depression exercise less. Exercise may protect against depression, or depression may reduce the capacity to exercise, and in many cases both operate at once.</li>
+              <li><b>The coefficient hides the shape of the data.</b> A single <b>outlier</b> can create or conceal a correlation, and a <b>curvilinear relationship</b> such as arousal and performance produces an <i>r</i> near zero. Anscombe's quartet at the top of this lesson is the demonstration.</li>
+              <li><b>Restricted range shrinks correlations.</b> Testing an aptitude test <i>within</i> a highly selective university underestimates its predictive power, because everyone admitted already scored highly.</li>
+              <li><b>Significance is not strength.</b> In a sample of 10,000 an <i>r</i> of .03 is statistically significant and accounts for less than one tenth of one per cent of the variation.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -10386,34 +10381,23 @@
         <h4 class="numbered">Evaluation</h4>
         <span class="role">What the studies do and do not establish</span>
 
-        <div class="evalsec plus">
-          <div class="evalpoint">
-            <h5>The design isolates the variable precisely</h5>
-            <p>Flashing a stimulus to one visual field of a patient whose hemispheres are disconnected delivers information to one hemisphere and no other. Few designs in psychology achieve this degree of control over what a participant's brain receives.</p>
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>The design isolates the variable precisely.</b> Flashing a stimulus to one visual field of a patient whose hemispheres are disconnected delivers information to one hemisphere and no other. Few designs in psychology achieve this much control over what a participant's brain receives.</li>
+              <li><b>The dissociation is unambiguous.</b> The same patient in the same trial cannot name an object yet can select it by touch. Both responses come from one person at one moment, so the difference cannot be put down to differences between people, effort or attention.</li>
+              <li><b>It answered a question observation could not.</b> Everyday behaviour after the operation looked normal, which had been taken to mean the corpus callosum did little. Sperry's judgement that this was premature, and that sensitive tests were needed, is a model of how to treat a null result (<i>3.6</i>).</li>
+            </ul>
           </div>
-          <div class="evalpoint">
-            <h5>The dissociation is unambiguous</h5>
-            <p>The same patient in the same trial can be unable to name an object and able to select it by touch. Since both responses come from one person at one moment, the difference cannot be attributed to differences between people, effort or attention.</p>
-          </div>
-          <div class="evalpoint">
-            <h5>It answered a question observation could not</h5>
-            <p>Everyday behaviour after the operation appeared normal, which had been taken to mean the corpus callosum did little. Sperry's judgement that this conclusion was premature, and that sensitive tests were needed, is a model of how a null result should be treated (<i>3.6</i>).</p>
-          </div>
-        </div>
-
-        <div class="evalsec minus">
-          <div class="evalpoint">
-            <h5>The sample is very small and unrepresentative</h5>
-            <p>Only a few dozen people worldwide have had this operation, all of them with epilepsy severe enough to justify it, often lasting decades and frequently with medication and prior brain damage. Their brains may have reorganised in ways that ordinary brains have not.</p>
-          </div>
-          <div class="evalpoint">
-            <h5>The surgery is not uniform</h5>
-            <p>The corpus callosum was completely severed in some patients and only partially in others, and some subcortical connections always remain. Results differ between patients accordingly, and generalising from one to another is unsafe.</p>
-          </div>
-          <div class="evalpoint">
-            <h5>The findings have been badly overextended</h5>
-            <p>The results describe what happens when the hemispheres are <b>disconnected</b>. They say little about how an intact brain works, where the two sides exchange information constantly.</p>
-            <p>The popular "left-brained and right-brained people" account does not follow from them and is not supported: large imaging studies find no evidence that individuals preferentially use one hemisphere overall.</p>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>The sample is very small and unrepresentative.</b> Only a few dozen people worldwide have had this operation, all with epilepsy severe enough to justify it, often lasting decades and frequently with medication and prior brain damage. Their brains may have reorganised in ways ordinary brains have not.</li>
+              <li><b>The surgery is not uniform.</b> The corpus callosum was completely severed in some patients and only partially in others, and some subcortical connections always remain, so results differ between patients and generalising from one to another is unsafe.</li>
+              <li><b>The findings describe disconnected brains.</b> They say little about an intact brain, where the two sides exchange information constantly.</li>
+              <li><b>They have been badly overextended.</b> The popular "left-brained and right-brained people" account does not follow, and large imaging studies find no evidence that individuals preferentially use one hemisphere overall.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -11584,6 +11568,7 @@
     document.getElementById("noteBody").innerHTML = note.html;
     tagDrawnFigs();
     applyKsState();
+    prepHeroes();
     prepRoundups();
     buildLessonToc(document.getElementById('noteBody'));
     initWidgets(document.getElementById('noteBody'));
@@ -12076,11 +12061,64 @@
     }
     return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(new XMLSerializer().serializeToString(c));
   }
+  /* the hero image at the top of a lesson reveals its caption on click; the ⤢ button zooms it.
+     every other figure still opens the lightbox when clicked. */
+  function toggleHeroCap(fig) {
+    const open = fig.classList.toggle('cap-open');
+    const hint = fig.querySelector('.hero-hint');
+    if (hint) hint.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function prepHeroes() {
+    document.querySelectorAll('#noteBody .lesson-hero-img').forEach(fig => {
+      if (fig.dataset.heroReady) { fig.classList.remove('cap-open'); return; }
+      fig.dataset.heroReady = '1';
+      const img = fig.querySelector('img');
+      if (img) {
+        img.setAttribute('role', 'button');
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('aria-label', 'Show what this image is');
+      }
+      if (fig.querySelector('figcaption') && !fig.querySelector('.hero-hint')) {
+        const hint = document.createElement('button');
+        hint.type = 'button';
+        hint.className = 'hero-hint';
+        hint.textContent = 'ⓘ  What is this?';
+        hint.setAttribute('aria-expanded', 'false');
+        fig.appendChild(hint);
+      }
+      if (img && !fig.querySelector('.hero-zoom')) {
+        const zoom = document.createElement('button');
+        zoom.type = 'button';
+        zoom.className = 'hero-zoom';
+        zoom.title = 'Enlarge this image';
+        zoom.setAttribute('aria-label', 'Enlarge this image');
+        zoom.textContent = '⤢';
+        fig.appendChild(zoom);
+      }
+    });
+  }
   document.getElementById('noteBody').addEventListener('click', e => {
+    if (e.target.closest('a')) return;                 /* links in a caption still work */
+    const zoomBtn = e.target.closest('.hero-zoom');
+    if (zoomBtn) {
+      const hi = zoomBtn.closest('.lesson-hero-img').querySelector('img');
+      if (hi && hi.src) openLightbox(hi.src);
+      return;
+    }
+    const hero = e.target.closest('.lesson-hero-img');
+    if (hero) { toggleHeroCap(hero); return; }
     const img = e.target.closest('img');
     if (img && img.src) { openLightbox(img.src); return; }
     const svg = e.target.closest('.lesson-fig svg');
     if (svg) openLightbox(svgToDataUrl(svg));
+  });
+  document.getElementById('noteBody').addEventListener('keydown', e => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const hero = e.target.closest('.lesson-hero-img');
+    if (!hero) return;
+    if (e.target.closest('.hero-zoom')) return;        /* a button handles its own keys */
+    e.preventDefault();
+    toggleHeroCap(hero);
   });
 
   /* ---------- MY NOTES OVERVIEW ---------- */
