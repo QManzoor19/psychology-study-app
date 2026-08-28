@@ -1262,13 +1262,13 @@
         <h3><span class="tnum">11</span><span class="ttl">The Senses</span></h3>
         <p class="desc">Vision gets the most cortex, but the others are where the surprises are.</p>
         <ul class="subs">
-          <li><span class="txt"><span class="num">11.1</span> The eye, retina, rods &amp; cones</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">11.2</span> Visual pathways, receptive fields &amp; feature detection</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">11.3</span> Colour — trichromatic &amp; opponent-process theory</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">11.4</span> The ear; how pitch and loudness are coded</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">11.5</span> Touch, temperature &amp; the gate-control theory of pain</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">11.6</span> Taste, smell &amp; the chemical senses</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">11.7</span> Balance, proprioception &amp; multisensory integration</span><span class="placeholder">notes soon</span></li>
+          <li><span class="txt"><span class="num">11.1</span> The eye, retina, rods &amp; cones</span><button class="note-btn" data-note="sn-eye">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">11.2</span> Visual pathways, receptive fields &amp; feature detection</span><button class="note-btn" data-note="sn-vispath">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">11.3</span> Colour — trichromatic &amp; opponent-process theory</span><button class="note-btn" data-note="sn-colour">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">11.4</span> The ear; how pitch and loudness are coded</span><button class="note-btn" data-note="sn-hearing">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">11.5</span> Touch, temperature &amp; the gate-control theory of pain</span><button class="note-btn" data-note="sn-touch">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">11.6</span> Taste, smell &amp; the chemical senses</span><button class="note-btn" data-note="sn-chemical">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">11.7</span> Balance, proprioception &amp; multisensory integration</span><button class="note-btn" data-note="sn-balance">📖 Notes</button></li>
         </ul>
       </div>
 
@@ -15162,6 +15162,1256 @@
         </ul>
       </div>
     `
+  },
+
+  /* ---------- 11.1 ---------- */
+  'sn-eye': {
+    eyebrow: 'Part III · Topic 11 · Sensation &amp; Perception',
+    title: 'The eye and the retina',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/eye-anatomy.png" alt="Labelled cross-section of the human eye showing cornea, iris, pupil, lens, retina, fovea and optic disc">
+        <figcaption><b>The human eye in cross-section.</b> Light passes through the <b>cornea</b>, the <b>pupil</b> and the <b>lens</b> before reaching the <b>retina</b> at the back. Note the <b>optic disc</b>, marked here as the blind spot: the point where the optic nerve leaves, and where there are no receptors at all.
+          <span class="cred">OpenStax · CC BY 3.0 · via <a href="https://commons.wikimedia.org/wiki/File:1413_Structure_of_the_Eye.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Lesson 10.1 established that photoreceptors convert light into neural signals. This lesson covers the apparatus that gets light to them, why two receptor types exist rather than one, and two features of the eye's design that look like faults and are not.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The path light takes</h4>
+        <span class="role">Focusing before transducing</span>
+
+        <div class="lesson-def">
+          <span class="term">Cornea</span> — the transparent outer covering at the front of the eye, which does most of the focusing.<br><br>
+          <span class="term">Iris</span> — the coloured muscular ring that controls the size of the pupil.<br><br>
+          <span class="term">Pupil</span> — the opening that admits light. It is a hole, not a structure.<br><br>
+          <span class="term">Lens</span> — a flexible structure behind the pupil that adjusts focus for distance.<br><br>
+          <span class="term">Accommodation</span> — the process by which the eye maintains a clear image on the retina, achieved by the ciliary muscles changing the shape of the lens.<br><br>
+          <span class="term">Retina</span> — the layer of light-sensitive tissue lining the back of the eyeball.
+        </div>
+
+        <p>The cornea provides roughly two-thirds of the focusing power and cannot change. The lens supplies the rest and is adjustable, which is what allows the same eye to focus on a page and then on a distant building.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why short and long sight are shape problems</span>
+          Accommodation fails when the eyeball is the wrong length for the optics.<br><br>
+          <b>Too long</b> and the image comes to focus <b>in front of</b> the retina: distant objects are blurred, which is <b>myopia</b>, or short sight.<br><br>
+          <b>Too short</b> and the focal point falls <b>behind</b> the retina: near objects are blurred, which is <b>hyperopia</b>, or long sight.<br><br>
+          Neither is a failure of the receptors. The transduction machinery is intact and the image arriving at it is blurred, which is why a lens in front of the eye corrects it completely.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two receptor types, two jobs</h4>
+        <span class="role">Why a single kind would not do</span>
+
+        <table class="lesson-table">
+          <tr><th></th><th>Rods</th><th>Cones</th></tr>
+          <tr><td><b>Number</b></td><td>About 120 million</td><td>About 6 million</td></tr>
+          <tr><td><b>Where</b></td><td>Periphery; <b>none in the fovea</b></td><td>Concentrated in the fovea</td></tr>
+          <tr><td><b>Light needed</b></td><td>Very little</td><td>Much more</td></tr>
+          <tr><td><b>Colour</b></td><td>None</td><td>Yes (<i>11.3</i>)</td></tr>
+          <tr><td><b>Acuity</b></td><td>Poor</td><td>High</td></tr>
+        </table>
+
+        <div class="lesson-def">
+          <span class="term">Visual acuity</span> — the ability to see fine detail.<br><br>
+          <span class="term">Convergence</span> — many receptors feeding into a single downstream cell, so their signals are summed.
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Convergence explains the whole trade-off</span>
+          Many rods converge onto one ganglion cell. Their signals add together, so a very weak light that would not trigger any single rod can produce enough combined signal to fire the cell. That buys <b>sensitivity</b>.<br><br>
+          The cost is that the cell can no longer report <b>which</b> rod was stimulated, so fine spatial detail is lost. That is why acuity is poor in the periphery.<br><br>
+          In the fovea, cones connect close to one-to-one. Each cell reports a specific point, giving high acuity — and no summation, so more light is needed.<br><br>
+          Sensitivity and acuity are traded against each other, and the retina solves the problem by doing both in different places rather than compromising everywhere.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">How little light is enough</h4>
+        <span class="role">The physical limit of vision</span>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Hecht, Shlaer &amp; Pirenne (1942) — the absolute threshold for light</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine the smallest amount of light a fully dark-adapted human eye can detect, expressed in physical units rather than as a comparison.</dd>
+            <dt>Method</dt>
+            <dd>Observers dark-adapted for 30 minutes (<i>10.4</i>). Very brief, very dim flashes were then presented to a peripheral region of the retina, rich in rods, and observers reported whether they had seen anything. The number of light quanta reaching the cornea was measured physically, and losses through the eye's optics were calculated to estimate how many were actually absorbed by receptors.</dd>
+            <dt>Results</dt>
+            <dd>Detection required roughly <b>54 to 148 quanta</b> arriving at the cornea, of which only about <b>5 to 14</b> were estimated to be absorbed by rods. Since the flash covered around 500 rods, it was highly unlikely that any rod absorbed more than one.</dd>
+            <dt>Conclusion</dt>
+            <dd>A single rod can be triggered by a <b>single photon</b>, and a handful of such events across the retina is enough for a conscious report. Human vision operates close to the physical limit set by the quantum nature of light — it cannot be much improved, because there is nothing smaller to detect.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the threshold is variable, in physical terms</span>
+          If only a handful of photons are needed, the number arriving in any given flash varies randomly around its average. So the same nominal flash intensity sometimes delivers enough absorbed quanta and sometimes does not.<br><br>
+          This means the gradual detection curve of <i>10.2</i> is not only a fact about the observer. Part of it is genuine randomness in the <b>stimulus</b>, which is a further reason a fixed threshold could not exist (<i>10.3</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two apparent design faults</h4>
+        <span class="role">The blind spot and the inverted retina</span>
+
+        <div class="lesson-def">
+          <span class="term">Optic disc</span> — the point where the optic nerve leaves the eye. It contains no photoreceptors.<br><br>
+          <span class="term">Blind spot</span> — the resulting location in the visual field that produces no sensation.
+        </div>
+
+        <div class="worked">
+          <span class="wl">Worked example — finding your blind spot</span>
+          Close your left eye. With your right eye, stare at the cross below and hold the screen about 15–30 cm away.<br><br>
+          <b>+</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>●</b><br><br>
+          Move slowly toward and away from the screen. At one distance the dot <b>disappears</b>, because its image has fallen on the optic disc.<br><br>
+          <b>The instructive part is what you see instead.</b> Not a hole, and not darkness — the background continues across the gap. The brain fills it in with whatever surrounds it, and it does so without informing you that anything was missing (<i>9.1</i>).
+        </div>
+
+        <p>The second oddity is that the retina is built <b>back to front</b>: light passes through the ganglion and bipolar cell layers before reaching the photoreceptors behind them (<i>10.1</i>). The blind spot is a direct consequence, since the nerve fibres run across the inner surface and must exit somewhere.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why "bad design" is the wrong description</span>
+          Both features follow from the evolutionary history of the vertebrate eye rather than from any advantage, and neither could be redesigned without rebuilding the whole structure. Octopus eyes, which evolved separately, have the receptors at the front and no blind spot.<br><br>
+          But the eye is not thereby a poor instrument. It performs at the physical limit of light detection, and the blind spot has no practical consequence because two eyes cover each other's gaps and the brain fills the remainder.<br><br>
+          The general lesson is about evolution, not optics: selection works on what already exists, so a good solution and a well-designed one are different things (<i>8.4</i>).
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: an astronomer says faint stars are best seen by looking slightly to one side of them, and also that it takes half an hour outside before faint stars appear at all. Explain both, and why the two facts are connected.</summary>
+          <div class="ans"><b>Looking to one side.</b> Direct gaze puts the image on the <b>fovea</b>, which contains no rods. Looking slightly away places it on peripheral retina, which is rod-rich. Rods are the receptors that work in near-darkness (<i>10.1</i>).<br><br><b>The half hour.</b> That is <b>dark adaptation</b>. Cones adapt within about ten minutes; rods continue to gain sensitivity for a further twenty to thirty (<i>10.4</i>).<br><br><b>Why the two connect.</b> Both are facts about <b>rods</b>. The technique only works once rods have reached full sensitivity, and the waiting is only worth doing because the rods are where the faint-light performance lives.<br><br><b>Two consequences that follow.</b> The star will appear colourless, since rods give no colour information. And a single glance at a phone screen bleaches the pigment and restarts the twenty minutes — which is why observers use red light (<i>10.4</i>).<br><br><b>The physical floor.</b> Hecht and colleagues showed detection needs only a handful of absorbed photons, so the limit here is not the eye. It is how many photons the star sends.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>Light passes <b>cornea → pupil → lens → retina</b>. The cornea does most focusing; the lens adjusts it by <b>accommodation</b>.</li>
+          <li><b>Myopia</b> and <b>hyperopia</b> are eyeball-length problems, not receptor problems, which is why external lenses correct them.</li>
+          <li>About <b>120 million rods</b> and <b>6 million cones</b>. Rods are peripheral, sensitive and colourless; cones are foveal, less sensitive, and give colour and acuity.</li>
+          <li><b>Convergence</b> explains the trade-off: many rods to one cell buys sensitivity and loses detail; near one-to-one cones do the reverse.</li>
+          <li><b>Hecht et al. (1942)</b> showed detection needs only about 5–14 absorbed photons, so a single rod responds to a single photon.</li>
+          <li>The <b>blind spot</b> and the back-to-front retina follow from evolutionary history; the brain fills in the gap without reporting it.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, structures, examples and studies from 11.1, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Cornea</td><td>The transparent outer covering at the front of the eye. Provides about two-thirds of the focusing power and cannot change.</td></tr>
+          <tr><td>Iris</td><td>The coloured muscular ring controlling pupil size.</td></tr>
+          <tr><td>Pupil</td><td>The opening admitting light — a hole, not a structure.</td></tr>
+          <tr><td>Lens</td><td>A flexible structure behind the pupil that adjusts focus for distance.</td></tr>
+          <tr><td>Accommodation</td><td>Maintaining a clear image on the retina by changing the shape of the lens.</td></tr>
+          <tr><td>Retina</td><td>The light-sensitive tissue lining the back of the eyeball.</td></tr>
+          <tr><td>Visual acuity</td><td>The ability to see fine detail.</td></tr>
+          <tr><td>Convergence</td><td>Many receptors feeding one downstream cell, so their signals sum.</td></tr>
+          <tr><td>Optic disc</td><td>Where the optic nerve leaves the eye. Contains no photoreceptors.</td></tr>
+          <tr><td>Blind spot</td><td>The resulting location in the visual field that produces no sensation.</td></tr>
+          <tr><td>Myopia</td><td>Short sight: the eyeball is too long, so distant images focus in front of the retina.</td></tr>
+          <tr><td>Hyperopia</td><td>Long sight: the eyeball is too short, so near images focus behind the retina.</td></tr>
+        </table>
+
+        <h5>Rods versus cones</h5>
+        <table>
+          <tr><td>Number</td><td>About 120 million rods; about 6 million cones.</td></tr>
+          <tr><td>Location</td><td>Rods in the periphery, none in the fovea; cones concentrated in the fovea.</td></tr>
+          <tr><td>Light required</td><td>Rods very little; cones much more.</td></tr>
+          <tr><td>Colour</td><td>Rods none; cones yes.</td></tr>
+          <tr><td>Acuity</td><td>Rods poor; cones high.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Focusing and transducing are separate problems.</b> Short and long sight leave the receptors intact.</li>
+          <li><b>Convergence trades acuity for sensitivity</b>, and the retina does both in different places rather than compromising everywhere.</li>
+          <li><b>Vision runs at the physical limit</b> set by the quantum nature of light.</li>
+          <li><b>Photon randomness contributes to the variable threshold</b>, so part of the gradual detection curve is in the stimulus, not the observer.</li>
+          <li><b>The blind spot is filled in, not experienced as a gap</b>, and the brain does not report the filling.</li>
+          <li><b>Evolution optimises what exists.</b> The inverted retina is a good solution without being a well-designed one.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Hecht, Shlaer &amp; Pirenne (1942)</b> — dark-adapted observers detected very brief dim flashes on peripheral retina. Detection required about 54–148 quanta at the cornea, of which roughly <b>5–14</b> were absorbed by rods, spread across around 500 rods. A single rod is therefore triggered by a single photon, and human vision operates near the physical floor.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 11.2 ---------- */
+  'sn-vispath': {
+    eyebrow: 'Part III · Topic 11 · Sensation &amp; Perception',
+    title: 'Visual pathways and the two streams',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/visual-pathway.png" alt="Diagram of the visual pathway showing left and right visual fields crossing at the optic chiasm and projecting via the LGN to the occipital cortex">
+        <figcaption><b>The visual pathway.</b> Each <b>visual field</b> — not each eye — projects to the opposite hemisphere. Fibres carrying the two halves cross at the <b>optic chiasm</b>, relay in the <b>LGN</b> of the thalamus, and arrive at the occipital cortex.
+          <span class="cred">Firoz et al. · CC BY 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:Diagram_of_the_visual_pathway.png" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Between the retina and the experience of seeing an object lies a series of stages, each extracting more than the last. This lesson covers that route, what a cell at each stage responds to, and the discovery that recognising an object and acting on it are handled by different pathways.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The route to the cortex</h4>
+        <span class="role">And the crossing that matters</span>
+
+        <div class="lesson-def">
+          <span class="term">Optic chiasm</span> — the point beneath the brain where fibres from the inner half of each retina cross to the opposite hemisphere.<br><br>
+          <span class="term">Lateral geniculate nucleus (LGN)</span> — the thalamic relay through which nearly all visual information passes on its way to the cortex (<i>6.2</i>).<br><br>
+          <span class="term">Primary visual cortex (V1)</span> — the first cortical destination for visual input, in the occipital lobe (<i>6.4</i>).
+        </div>
+
+        <p>The crossing is organised by <b>visual field</b>, not by eye. Everything in the left half of what you see — from <b>both</b> eyes — goes to the right hemisphere, and the reverse. This is the anatomy the split-brain experiments exploit (<i>6.5</i>).</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why this arrangement is diagnostically useful</span>
+          Because the crossing happens at one identifiable point, the pattern of blindness tells a clinician <b>where</b> the damage is.<br><br>
+          <b>Before the chiasm</b> — one eye is affected, since the fibres from that eye have not yet split.<br><br>
+          <b>At the chiasm</b> — the outer half of each field is lost, because the crossing fibres are the ones damaged. A pituitary tumour pressing upward produces exactly this.<br><br>
+          <b>After the chiasm</b> — the same half of the field is lost in <b>both</b> eyes, because the fibres are now sorted by field rather than by eye.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Receptive fields</h4>
+        <span class="role">What makes a cell fire</span>
+
+        <div class="lesson-def">
+          <span class="term">Receptive field</span> — the region of the visual field in which a stimulus will change the firing of a particular cell.<br><br>
+          <span class="term">Centre–surround organisation</span> — a receptive field in which light at the centre and light in the surrounding ring have <b>opposite</b> effects on the cell.
+        </div>
+
+        <p>Retinal ganglion cells and LGN cells have centre–surround fields. A cell might be excited by light in a small central spot and inhibited by light in the ring around it.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">What centre–surround is for</span>
+          Such a cell responds weakly to <b>uniform</b> illumination, because centre and surround cancel. It responds strongly when light falls on the centre and not the surround — that is, at an <b>edge</b>.<br><br>
+          The visual system is therefore discarding the most redundant information at the earliest opportunity. Large areas of unchanging brightness carry little information; boundaries carry most of it (<i>10.4</i>).<br><br>
+          This is also why simultaneous contrast illusions occur: a grey patch looks lighter on a dark background than on a light one, because the surround is doing exactly what the cell is built to make it do.
+        </div>
+
+        <p>In V1 the fields change character. Cells there respond to <b>oriented edges and bars</b> rather than spots, as Hubel and Wiesel found (<i>10.1</i>). Further along, cells respond to increasingly complex properties, and receptive fields grow larger.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two streams</h4>
+        <span class="role">What it is, and what to do about it</span>
+
+        <div class="lesson-def">
+          <span class="term">Ventral stream</span> — the pathway running from the occipital lobe into the temporal lobe, identifying <b>what</b> an object is.<br><br>
+          <span class="term">Dorsal stream</span> — the pathway running from the occipital lobe into the parietal lobe, concerned with <b>where</b> objects are and with guiding action toward them. Also called the "how" pathway.<br><br>
+          <span class="term">Visual form agnosia</span> — the inability to recognise objects by sight, with vision otherwise intact.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Goodale et al. (1991) — patient D.F.</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To establish what visual abilities survive damage to the ventral stream, in a patient who could not recognise objects by sight.</dd>
+            <dt>Method</dt>
+            <dd>D.F. had suffered damage to the lateral occipital cortex, part of the ventral stream, after carbon monoxide poisoning. She was shown a slot that could be set to any orientation, and given two tasks. In one she had to <b>report</b> the slot's orientation by turning a handheld card to match it. In the other she had to <b>post</b> the card through the slot.</dd>
+            <dt>Results</dt>
+            <dd>She could not match the orientation — her settings were near random. Yet when asked to post the card, she rotated her hand accurately as she reached, and inserted it successfully. She could also recognise objects normally <b>by touch</b>.</dd>
+            <dt>Conclusion</dt>
+            <dd>The visual information needed to <b>guide the action</b> was available even though the information needed to <b>report</b> the same property was not. Perception for identification and vision for action depend on separate pathways. Later fMRI confirmed normal dorsal stream activation in D.F. during guided movement.</dd>
+          </dl>
+        </div>
+
+        <p>The opposite pattern also exists. Patients with parietal damage, in the dorsal stream, recognise objects perfectly well and cannot use vision to guide reaching and grasping toward them.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the pair matters more than either case alone</span>
+          One patient losing recognition while keeping action could be explained by action being an <b>easier</b> use of vision.<br><br>
+          The reverse case removes that explanation, because no single difficulty scale can put each task above the other. Together they form a <b>double dissociation</b>, which is the strongest evidence lesion work produces (<i>7.1</i>, <i>6.6</i>).<br><br>
+          It also demonstrates something about consciousness: D.F. acted accurately on information she could not report. Visual processing sufficient to control a movement is not sufficient to reach awareness (<i>9.1</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">How good is the hierarchical account</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>The anatomy is established.</b> The route from retina to chiasm to LGN to V1 is traced and predicts clinical field losses precisely.</li>
+              <li><b>Receptive fields are directly measurable</b>, so claims about what a cell responds to are tested rather than inferred (<i>7.4</i>).</li>
+              <li><b>The centre–surround design has a clear rationale</b>: discard redundancy early, keep edges.</li>
+              <li><b>The two-stream account rests on a double dissociation</b> rather than on imaging correlations alone.</li>
+              <li><b>It explains behaviour imaging cannot</b>, including why D.F. can act on what she cannot describe.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>The hierarchy is not one-way.</b> Feedback connections running back down the pathway outnumber the forward ones, so treating it as a production line is a simplification (<i>6.6</i>).</li>
+              <li><b>Feature detectors do not scale.</b> Building recognition from ever more specific cells leads to needing a cell for every object — the "grandmother cell" problem — and the evidence favours patterns of activity across populations (<i>5.5</i>).</li>
+              <li><b>The streams interact.</b> They are not independent channels, and regions in each are sensitive to properties associated with the other.</li>
+              <li><b>"What" versus "where" versus "how" is disputed</b>, and the dorsal stream's function has been relabelled once already.</li>
+              <li><b>Single cases carry the argument.</b> D.F. is one patient, and her damage was diffuse rather than confined to one region (<i>7.1</i>).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a patient reports that the outer half of the visual field is missing in both eyes — they can see straight ahead but nothing to either side. Where is the damage, and why does it produce that pattern?</summary>
+          <div class="ans"><b>At the optic chiasm</b>, and the pattern identifies it precisely.<br><br><b>Why.</b> The fibres that <b>cross</b> at the chiasm are those from the <b>inner (nasal)</b> half of each retina. Because the eye's optics invert the image, the nasal retina receives the <b>outer</b> part of the visual field. Damage at the crossing point therefore knocks out the outer field on both sides while leaving the uncrossed fibres — carrying the central field — intact.<br><br><b>The name.</b> Bitemporal hemianopia. The classic cause is a <b>pituitary tumour</b>, because the pituitary sits directly beneath the chiasm and grows upward into it (<i>6.7</i>).<br><br><b>How it differs from other levels.</b> Damage <b>before</b> the chiasm affects one eye only. Damage <b>after</b> it removes the same half of the field in both eyes — the left half or the right half, not the outer halves — because the fibres are by then sorted by field rather than by eye.<br><br><b>Why this is worth knowing.</b> The visual pathway is one of the few places in the brain where the pattern of loss maps onto a specific location well enough to localise damage without a scan.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>The route runs retina → <b>optic chiasm</b> → <b>LGN</b> → <b>V1</b>. Crossing is organised by <b>visual field</b>, not by eye.</li>
+          <li>The pattern of field loss localises damage: one eye before the chiasm, outer halves at it, matching halves after it.</li>
+          <li>A <b>receptive field</b> is the region where a stimulus changes a cell's firing. Retinal and LGN cells are <b>centre–surround</b>, so they signal edges and ignore uniform light.</li>
+          <li>V1 cells respond to <b>oriented edges</b>; later cells respond to more complex properties over larger fields.</li>
+          <li>The <b>ventral</b> stream identifies what; the <b>dorsal</b> stream locates and guides action.</li>
+          <li><b>Goodale et al. (1991)</b>: D.F. could not report a slot's orientation but could post a card through it. With the reverse pattern in parietal patients, this is a <b>double dissociation</b>.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, anatomy, evaluation and studies from 11.2, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Optic chiasm</td><td>Where fibres from the inner half of each retina cross to the opposite hemisphere.</td></tr>
+          <tr><td>Lateral geniculate nucleus (LGN)</td><td>The thalamic relay through which nearly all visual information passes to the cortex.</td></tr>
+          <tr><td>Primary visual cortex (V1)</td><td>The first cortical destination for visual input, in the occipital lobe.</td></tr>
+          <tr><td>Receptive field</td><td>The region of the visual field in which a stimulus changes a cell's firing.</td></tr>
+          <tr><td>Centre–surround organisation</td><td>A field where light at the centre and in the surrounding ring have opposite effects, so the cell signals edges.</td></tr>
+          <tr><td>Ventral stream</td><td>Occipital into temporal lobe; identifies <b>what</b> an object is.</td></tr>
+          <tr><td>Dorsal stream</td><td>Occipital into parietal lobe; <b>where</b> objects are and <b>how</b> to act on them.</td></tr>
+          <tr><td>Visual form agnosia</td><td>Inability to recognise objects by sight, with vision otherwise intact.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Crossing is by visual field, not by eye</b>, which is what makes split-brain experiments possible.</li>
+          <li><b>Field-loss patterns localise damage</b> — before, at, or after the chiasm.</li>
+          <li><b>Centre–surround discards redundancy early.</b> Uniform light cancels; edges do not.</li>
+          <li><b>Simultaneous contrast follows from the design</b>, so the illusion is the mechanism working as built.</li>
+          <li><b>Acting on visual information does not require being able to report it</b>, which bears directly on consciousness.</li>
+          <li><b>The hierarchy runs both ways.</b> Feedback connections outnumber forward ones.</li>
+          <li><b>Feature detectors do not scale to recognition</b>, which is the grandmother-cell problem.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Goodale et al. (1991)</b> — patient D.F., with lateral occipital damage from carbon monoxide poisoning, could not turn a card to match the orientation of a slot, yet posted the card through it accurately. She recognised objects normally by touch, and later fMRI showed normal dorsal stream activity during guided movement. Parietal patients show the reverse, completing a double dissociation.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 11.3 ---------- */
+  'sn-colour': {
+    eyebrow: 'Part III · Topic 11 · Sensation &amp; Perception',
+    title: 'Colour vision',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/ishihara.png" alt="An Ishihara test plate: a circle of coloured dots in which the number 74 appears in orange against green">
+        <figcaption><b>An Ishihara plate.</b> The number is defined by <b>colour alone</b>, not by brightness or shape, so it can only be read by someone whose cone types differ in the usual way. Around 8% of men cannot read this plate as printed.
+          <span class="cred">Shinobu Ishihara · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Ishihara_1.svg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Colour is not a property of light. Light has wavelength; colour is what the nervous system makes of it. This lesson covers the two theories that were treated as rivals for a century, the discovery that both are correct at different stages, and what colour blindness reveals about the code.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What colour is</h4>
+        <span class="role">Three dimensions from one physical quantity</span>
+
+        <div class="lesson-def">
+          <span class="term">Wavelength</span> — the physical property of light that colour perception is based on, measured in nanometres. Visible light runs roughly 400 nm (violet) to 700 nm (red).<br><br>
+          <span class="term">Hue</span> — what is normally meant by "colour": red, green, blue. Corresponds mainly to wavelength.<br><br>
+          <span class="term">Saturation</span> — how pure the colour is, as opposed to how much white is mixed in.<br><br>
+          <span class="term">Brightness</span> — the perceived intensity.
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">The point that has to come first</span>
+          There is no red in a wavelength of 700 nm. There is a wave of a certain length.<br><br>
+          <b>Red</b> is what a visual system produces in response to it. A different visual system responds differently: many birds have four cone types and see distinctions that are invisible to us, and to them two objects we call identical are not.<br><br>
+          Colour is therefore a construction, and the question is not what colour light <b>is</b> but what code the system uses.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Trichromatic theory</h4>
+        <span class="role">Three receptors, at the retina</span>
+
+        <div class="lesson-def">
+          <span class="term">Trichromatic theory</span> — proposed by Young and developed by Helmholtz: colour vision depends on three receptor types, each most sensitive to a different range of wavelengths.<br><br>
+          <span class="term">S, M and L cones</span> — the three cone types, most sensitive to <b>short</b> (blue), <b>medium</b> (green) and <b>long</b> (red-ish) wavelengths.
+        </div>
+
+        <p>No cone reports a colour. Each reports only <b>how strongly it was stimulated</b>. Colour is computed from the <b>ratio</b> of activity across the three types.</p>
+
+        <div class="worked">
+          <span class="wl">Worked example — why a screen can show you yellow</span>
+          Pure yellow light has a wavelength around 580 nm, which stimulates M and L cones roughly equally.<br><br>
+          A screen contains no yellow. It shows red and green pixels together — which also stimulate M and L cones roughly equally.<br><br>
+          The two are physically completely different and produce the <b>same ratio</b> across the three cone types, so they are indistinguishable. Pairs like this are called <b>metamers</b>.<br><br>
+          <b>Why this proves the theory.</b> If colour were read off wavelength directly, mixed red and green light could not look identical to pure yellow. That it does is only explicable if the system has access to three numbers and nothing more.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Opponent-process theory</h4>
+        <span class="role">Pairs in opposition, after the retina</span>
+
+        <div class="lesson-def">
+          <span class="term">Colour-opponent system</span> — the theory that pairs of visual neurons work in <b>opposition</b>: red against green, blue against yellow, and black against white.<br><br>
+          <span class="term">Negative afterimage</span> — after prolonged viewing of one colour, a neutral surface appears tinted in the opposing colour.
+        </div>
+
+        <p>Hering proposed this because trichromatic theory left facts unexplained. There is no such thing as a reddish green or a bluish yellow, though bluish green and reddish yellow are ordinary. And staring at red produces a green afterimage, not a red one.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">How an afterimage follows from opposition</span>
+          A red–green opponent cell is excited by red and inhibited by green, so its output signals the <b>balance</b> between them.<br><br>
+          Prolonged red input <b>adapts</b> the red side (<i>10.4</i>). When the red is removed and a neutral white surface is viewed, both inputs are equal in the world — but the red contribution is temporarily weakened, so the balance tips toward green and green is what is experienced.<br><br>
+          The afterimage is not an error. It is the opponent code behaving exactly as its design requires.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>De Valois (1966) — opponent cells in the monkey visual system</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether cells beyond the receptors respond in the opponent manner Hering's theory required, which had been proposed on purely perceptual grounds a century earlier.</dd>
+            <dt>Method</dt>
+            <dd>Single-cell recordings were made from the lateral geniculate nucleus of macaque monkeys, whose colour vision closely resembles the human case. Lights of different wavelengths were presented and each cell's firing rate was recorded.</dd>
+            <dt>Results</dt>
+            <dd>Many cells <b>increased</b> their firing to one range of wavelengths and <b>decreased</b> it below baseline to another. Some were excited by red and inhibited by green; others by blue and inhibited by yellow. Both directions of each pair were found.</dd>
+            <dt>Conclusion</dt>
+            <dd>Opponent processing exists physically, at the stage <b>after</b> the receptors. Hering's theory, derived from perceptual observations alone, described a real mechanism.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Both theories are right</h4>
+        <span class="role">At different stages of the same system</span>
+
+        <table class="lesson-table">
+          <tr><th>Stage</th><th>Code</th><th>Evidence</th></tr>
+          <tr><td><b>Receptors (cones)</b></td><td><b>Trichromatic</b> — three types, each reporting how much it absorbed</td><td>Metamers; three types of pigment identified directly</td></tr>
+          <tr><td><b>Ganglion cells, LGN and beyond</b></td><td><b>Opponent</b> — signals recombined into red–green, blue–yellow and black–white channels</td><td>Afterimages; the absence of reddish green; De Valois's recordings</td></tr>
+        </table>
+
+        <p>The century-long dispute was a false choice. Trichromatic theory describes the input stage; opponent theory describes what the next stage does with it.</p>
+
+        <div class="lesson-def">
+          <span class="term">Colour blindness</span> — reduced ability to distinguish colours, usually because one cone type is absent or its pigment is shifted.
+        </div>
+
+        <p>The commonest forms affect the M or L cones, producing red–green confusion. The genes for those pigments sit on the <b>X chromosome</b>, so the condition is far more common in men — around 8% — than in women, who have a second X to compensate (<i>8.1</i>).</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why an Ishihara plate works</span>
+          The number is drawn in dots that differ from the background in <b>hue only</b>, with brightness and dot size deliberately varied so that no shape can be found any other way.<br><br>
+          Someone lacking the relevant cone type receives the same ratio from figure and background, so there is nothing to distinguish. The test isolates the one channel that is missing, which is why it works where naming everyday colours does not.
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: someone says colour blindness means "seeing in black and white". Correct them, and explain what most colour-blind people actually experience.</summary>
+          <div class="ans"><b>Almost never black and white.</b> Complete absence of colour vision — monochromacy — is very rare, affecting a tiny fraction of people, usually through a cone disorder that also impairs acuity.<br><br><b>What is common</b> is a <b>reduced number of distinctions</b>. In the usual red–green forms, one of the M or L cone types is missing or shifted, so those two channels carry nearly the same information. Colour vision remains: blues and yellows are seen normally, because that opponent channel is intact.<br><br><b>What it is like.</b> Reds, greens, browns and oranges become confusable, because they differ mainly along the channel that is missing. A ripe and unripe tomato may look the same; traffic lights are distinguished by <b>position</b> rather than by colour.<br><br><b>Why the sex difference.</b> The M and L pigment genes are on the <b>X chromosome</b>. Men have one X, so a single affected copy produces the condition; women need both copies affected, which is far less likely — hence roughly 8% versus under 1% (<i>8.1</i>).<br><br><b>The design consequence.</b> Never encode essential information by red-versus-green alone. Add shape, position or a label.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>Light has <b>wavelength</b>; colour is what a visual system constructs from it. Perceived colour has three dimensions: <b>hue</b>, <b>saturation</b>, <b>brightness</b>.</li>
+          <li><b>Trichromatic theory</b>: three cone types — <b>S, M, L</b> — each reporting only how strongly it was stimulated. Colour comes from the ratio.</li>
+          <li><b>Metamers</b> prove it: red and green light together look identical to pure yellow, because they produce the same three numbers.</li>
+          <li><b>Opponent-process theory</b>: later cells code <b>red–green</b>, <b>blue–yellow</b> and <b>black–white</b> in opposition. This explains afterimages and the absence of reddish green.</li>
+          <li><b>De Valois (1966)</b> recorded opponent cells in the monkey LGN, confirming a theory proposed from perception alone a century earlier.</li>
+          <li>Both theories are correct at <b>different stages</b>. Colour blindness is usually a missing or shifted cone type, X-linked, affecting about 8% of men.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, the two theories, examples and studies from 11.3, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Wavelength</td><td>The physical property colour perception is based on. Visible light runs about 400–700 nm.</td></tr>
+          <tr><td>Hue</td><td>What is normally meant by colour. Corresponds mainly to wavelength.</td></tr>
+          <tr><td>Saturation</td><td>How pure a colour is, as opposed to how much white is mixed in.</td></tr>
+          <tr><td>Brightness</td><td>Perceived intensity.</td></tr>
+          <tr><td>Trichromatic theory</td><td>Colour vision depends on three receptor types with different wavelength sensitivities. Young and Helmholtz.</td></tr>
+          <tr><td>S, M, L cones</td><td>Cones most sensitive to short, medium and long wavelengths.</td></tr>
+          <tr><td>Metamers</td><td>Physically different lights that produce the same cone ratios and so look identical.</td></tr>
+          <tr><td>Colour-opponent system</td><td>Pairs of neurons working in opposition: red–green, blue–yellow, black–white. Hering.</td></tr>
+          <tr><td>Negative afterimage</td><td>A neutral surface appearing tinted in the opposing colour after prolonged viewing.</td></tr>
+          <tr><td>Colour blindness</td><td>Reduced colour discrimination, usually from a missing or shifted cone pigment.</td></tr>
+        </table>
+
+        <h5>The two theories compared</h5>
+        <table>
+          <tr><td>Receptors</td><td><b>Trichromatic.</b> Three cone types, each reporting only absorption. Evidence: metamers, and the pigments identified directly.</td></tr>
+          <tr><td>Ganglion cells and beyond</td><td><b>Opponent.</b> Recombined into red–green, blue–yellow, black–white. Evidence: afterimages, no reddish green, De Valois's recordings.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Colour is constructed, not detected.</b> A system with four cone types sees distinctions invisible to us.</li>
+          <li><b>No cone reports a colour</b>; each reports a quantity, and colour comes from the ratio across three.</li>
+          <li><b>Metamers are the decisive evidence</b> for a three-number code, since physically different lights look identical.</li>
+          <li><b>Afterimages follow from opponency</b>, and are the code working as designed rather than failing.</li>
+          <li><b>The century-old dispute was a false choice</b>; the theories describe consecutive stages.</li>
+          <li><b>Colour blindness is X-linked</b>, which is why it affects about 8% of men and under 1% of women.</li>
+          <li><b>Do not encode information by red versus green alone.</b></li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>De Valois (1966)</b> — single-cell recordings from macaque LGN while lights of different wavelengths were presented. Many cells increased firing to one wavelength range and decreased it below baseline to another, in red–green and blue–yellow pairings. Opponent processing exists physically, after the receptors, confirming a theory derived a century earlier from perception alone.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 11.4 ---------- */
+  'sn-hearing': {
+    eyebrow: 'Part III · Topic 11 · Sensation &amp; Perception',
+    title: 'The ear, pitch and loudness',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/ear-anatomy.png" alt="Labelled cross-section of the human ear showing the auditory canal, eardrum, ossicles, cochlea and semicircular canals">
+        <figcaption><b>The ear in cross-section.</b> Sound arrives as pressure waves in air, is turned into vibration of the <b>tympanic membrane</b>, amplified by three tiny bones, and delivered to the fluid-filled <b>cochlea</b> where transduction finally happens.
+          <span class="cred">Lars Chittka &amp; Axel Brockmann · CC BY 2.5 · via <a href="https://commons.wikimedia.org/wiki/File:Anatomy_of_the_Human_Ear.svg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Hearing has a problem vision does not: the signal arrives in air and must be transduced in fluid, and pressure waves lose almost all their energy crossing that boundary. This lesson covers how the ear solves that, and how a single vibrating membrane produces both pitch and loudness.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Sound, and what it becomes</h4>
+        <span class="role">Three physical properties, three perceived ones</span>
+
+        <div class="lesson-def">
+          <span class="term">Frequency</span> — how many pressure cycles pass per second, measured in hertz. Perceived as <b>pitch</b>.<br><br>
+          <span class="term">Amplitude</span> — the size of the pressure change. Perceived as <b>loudness</b>.<br><br>
+          <span class="term">Complexity</span> — the mixture of frequencies present. Perceived as <b>timbre</b>, which is what makes a violin and a piano playing the same note sound different.
+        </div>
+
+        <p>Human hearing runs roughly 20 Hz to 20,000 Hz, and the upper limit falls steadily with age.</p>
+
+        <table class="lesson-table">
+          <tr><th>Part</th><th>Structures</th><th>What it does</th></tr>
+          <tr><td><b>Outer ear</b></td><td>Auricle, auditory canal, tympanic membrane</td><td>Collects sound and converts it into vibration of the eardrum</td></tr>
+          <tr><td><b>Middle ear</b></td><td>Malleus, incus, stapes — the <b>ossicles</b></td><td>Amplifies the vibration and delivers it to the oval window</td></tr>
+          <tr><td><b>Inner ear</b></td><td>Cochlea, basilar membrane, hair cells</td><td>Transduction: vibration becomes neural signal</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the middle ear exists at all</span>
+          Airborne pressure waves striking fluid reflect off it, losing about 99.9% of their energy. Without a solution, hearing would be almost impossible.<br><br>
+          The ossicles solve it in two ways. They act as a <b>lever</b>, and more importantly they concentrate the force from the large eardrum onto the much smaller <b>oval window</b> — an area ratio of roughly 17 to 1.<br><br>
+          Pressure is force divided by area, so the same force on a smaller area produces far greater pressure. The middle ear is an impedance-matching device, and it recovers almost all the energy that would otherwise be lost.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Transduction in the cochlea</h4>
+        <span class="role">Where vibration becomes signal</span>
+
+        <div class="lesson-def">
+          <span class="term">Cochlea</span> — a coiled, fluid-filled tube that is the organ of auditory transduction.<br><br>
+          <span class="term">Basilar membrane</span> — a structure running the length of the cochlea that undulates when vibrations reach the cochlear fluid.<br><br>
+          <span class="term">Hair cells</span> — specialised auditory receptor neurons embedded in the basilar membrane, whose bending opens ion channels and generates the neural signal.
+        </div>
+
+        <p>The basilar membrane is not uniform. It is narrow and stiff at the base, near the oval window, and wide and floppy at the far end. That gradient is what makes pitch coding possible.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>von Békésy (1928 onwards) — the travelling wave</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine how the cochlea responds mechanically to sounds of different frequencies, a question that could not be settled by anatomy alone.</dd>
+            <dt>Method</dt>
+            <dd>Georg von Békésy dissected cochleas from human cadavers and other species, opened them, and observed the basilar membrane directly under a microscope while pure tones were applied. He used silver particles scattered on the membrane and stroboscopic illumination to make the motion visible.</dd>
+            <dt>Results</dt>
+            <dd>Sound produced a <b>travelling wave</b> moving along the membrane from base to apex. The point of maximum displacement depended on frequency: <b>high</b> frequencies peaked near the stiff base, <b>low</b> frequencies near the floppy apex.</dd>
+            <dt>Conclusion</dt>
+            <dd>Frequency is converted into a <b>position</b> along the membrane, so which hair cells are most stimulated tells the brain the pitch. Von Békésy received the Nobel Prize in 1961. Later work showed the living cochlea sharpens this considerably, since dead tissue tunes more broadly than a living ear does.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two codes for pitch</h4>
+        <span class="role">Because one cannot cover the range</span>
+
+        <div class="lesson-def">
+          <span class="term">Place code</span> — different frequencies stimulate hair cells at specific <b>places</b> along the basilar membrane, and the brain reads pitch from which place responded.<br><br>
+          <span class="term">Temporal code</span> — low frequencies are registered by the <b>rate</b> of action potentials entering the auditory nerve, which follows the sound wave itself.<br><br>
+          <span class="term">Volley principle</span> — groups of neurons take turns firing, so a population can collectively follow a frequency faster than any single neuron could.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Frequency range</th><th>Code used</th><th>Why</th></tr>
+          <tr><td><b>Below about 500 Hz</b></td><td>Temporal</td><td>Neurons can fire in step with the wave; the membrane does not separate low frequencies well by place</td></tr>
+          <tr><td><b>Roughly 500–4,000 Hz</b></td><td>Both, with the volley principle</td><td>Too fast for one neuron to follow, but a group taking turns can</td></tr>
+          <tr><td><b>Above about 4,000 Hz</b></td><td>Place</td><td>Far beyond any firing rate; only position remains</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">The constraint that forces two codes</span>
+          A neuron cannot fire faster than the <b>refractory period</b> allows — a ceiling of roughly 1,000 spikes per second (<i>5.2</i>).<br><br>
+          So a temporal code cannot represent a 10,000 Hz tone: there is no way to fire ten thousand times a second.<br><br>
+          Place coding has the opposite problem. At low frequencies the travelling wave peaks broadly and the position is imprecise.<br><br>
+          Neither code covers the range, so the ear uses both — the same solution as coding intensity by rate and by number of neurons in <i>5.5</i>.
+        </div>
+
+        <p><b>Loudness</b> is coded separately and more simply: by the <b>firing rate</b> of the responding neurons and by <b>how many</b> hair cells are activated. A louder sound moves the membrane further, which bends more hair cells more strongly.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">When hearing fails</h4>
+        <span class="role">Two kinds of deafness, two different remedies</span>
+
+        <div class="lesson-def">
+          <span class="term">Conductive hearing loss</span> — sound fails to reach the cochlea, because of damage to the eardrum or ossicles.<br><br>
+          <span class="term">Sensorineural hearing loss</span> — the cochlea or auditory nerve is damaged, most often through loss of hair cells.
+        </div>
+
+        <p>The distinction determines what helps. Conductive loss can be treated by making the sound louder, since the transduction machinery is intact. Sensorineural loss cannot: amplifying a signal does not help if the receptors that would transduce it are gone.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why cochlear implants work</span>
+          A cochlear implant does not amplify anything. It bypasses the hair cells entirely, inserting an electrode array into the cochlea and stimulating the auditory nerve directly.<br><br>
+          It works because of the <b>place code</b>. The device separates incoming sound into frequency bands and stimulates the electrode sitting at the position that frequency would normally excite — high frequencies near the base, low near the apex.<br><br>
+          The implant is therefore an application of von Békésy's finding. Without the map from frequency to place, there would be nowhere to send each band.<br><br>
+          Its limits follow from the same fact. An implant has around 20 electrodes where the cochlea has some 3,500 inner hair cells, so the resolution is coarse. Speech is usually well restored; music, which needs fine pitch discrimination, usually is not.
+        </div>
+
+        <p>Hair cells do not regenerate in mammals. This is why noise-induced hearing loss is permanent, and why it accumulates: each exposure destroys cells that are never replaced.</p>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: after years of loud concerts, someone finds they can hear people talking but cannot follow conversation in a noisy pub. Their hearing test shows loss only at high frequencies. Explain why the specific complaint follows.</summary>
+          <div class="ans"><b>Why high frequencies go first.</b> High frequencies are coded near the <b>base</b> of the cochlea, closest to the oval window. All sound energy passes that point on its way in, so those hair cells take the most cumulative damage. Loud noise destroys them, and mammalian hair cells do not regenerate.<br><br><b>Why speech volume seems fine.</b> Most of the <b>energy</b> in speech is in lower frequencies — vowels — and those are coded further along an undamaged part of the membrane. So speech sounds present.<br><br><b>Why comprehension fails anyway.</b> Most of the <b>information</b> distinguishing one word from another is in high-frequency consonants: s, f, th, t, k. Losing those turns speech into an audible but ambiguous signal. The person is right that they can hear and are not being understood when they say so.<br><br><b>Why noise makes it much worse.</b> With fewer working hair cells, the remaining signal is degraded, so there is less to separate the voice from the background. This is a <b>sensitivity</b> loss in the sense of <i>10.3</i> — the distributions have moved closer together, and no amount of leaning in changes that.<br><br><b>Why a hearing aid helps only partly.</b> The loss is <b>sensorineural</b>. Amplification delivers more signal to receptors that are gone. Modern aids amplify selectively by frequency band, which helps, and cannot restore what is not there.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Frequency → pitch</b>, <b>amplitude → loudness</b>, <b>complexity → timbre</b>. Human range is about 20–20,000 Hz.</li>
+          <li>The <b>middle ear</b> exists to solve an impedance problem: the ossicles concentrate force from the large eardrum onto the small oval window, recovering energy that would be reflected.</li>
+          <li>Transduction happens in the <b>cochlea</b>, where the <b>basilar membrane</b> bends <b>hair cells</b>.</li>
+          <li><b>von Békésy</b> showed sound produces a <b>travelling wave</b> peaking at a position determined by frequency — high at the base, low at the apex.</li>
+          <li>Pitch uses a <b>temporal code</b> below about 500 Hz, both codes with the <b>volley principle</b> in the middle, and a <b>place code</b> above about 4,000 Hz.</li>
+          <li><b>Conductive</b> loss responds to amplification; <b>sensorineural</b> loss does not. <b>Cochlear implants</b> work by exploiting the place code directly.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, coding, applications and studies from 11.4, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Frequency</td><td>Pressure cycles per second, in hertz. Perceived as pitch.</td></tr>
+          <tr><td>Amplitude</td><td>The size of the pressure change. Perceived as loudness.</td></tr>
+          <tr><td>Complexity</td><td>The mixture of frequencies present. Perceived as timbre.</td></tr>
+          <tr><td>Ossicles</td><td>Malleus, incus and stapes — the three middle-ear bones that amplify vibration.</td></tr>
+          <tr><td>Cochlea</td><td>A coiled fluid-filled tube; the organ of auditory transduction.</td></tr>
+          <tr><td>Basilar membrane</td><td>A structure running the cochlea's length that undulates when vibration reaches the fluid. Stiff at the base, floppy at the apex.</td></tr>
+          <tr><td>Hair cells</td><td>Auditory receptor neurons in the basilar membrane; bending them generates the signal.</td></tr>
+          <tr><td>Place code</td><td>Pitch read from which position along the membrane responded most.</td></tr>
+          <tr><td>Temporal code</td><td>Low frequencies registered by the firing rate of the auditory nerve.</td></tr>
+          <tr><td>Volley principle</td><td>Groups of neurons taking turns so a population follows a frequency no single neuron could.</td></tr>
+          <tr><td>Conductive hearing loss</td><td>Sound fails to reach the cochlea. Amplification helps.</td></tr>
+          <tr><td>Sensorineural hearing loss</td><td>Cochlea or auditory nerve damaged, usually hair cell loss. Amplification does not restore it.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Air to fluid loses about 99.9% of the energy</b>, which is the problem the middle ear exists to solve.</li>
+          <li><b>Pressure is force over area</b>, so concentrating the eardrum's force onto the smaller oval window recovers the loss.</li>
+          <li><b>The membrane's stiffness gradient converts frequency into position.</b></li>
+          <li><b>The refractory period caps temporal coding</b> at roughly 1,000 Hz, so high frequencies must be coded by place.</li>
+          <li><b>Place coding is imprecise at low frequencies</b>, so neither code covers the range alone.</li>
+          <li><b>Loudness is coded by firing rate and number of hair cells</b>, separately from pitch.</li>
+          <li><b>Hair cells do not regenerate in mammals</b>, so noise damage accumulates permanently.</li>
+        </ul>
+
+        <h5>The three pitch ranges</h5>
+        <table>
+          <tr><td>Below about 500 Hz</td><td>Temporal code — neurons fire in step with the wave.</td></tr>
+          <tr><td>About 500–4,000 Hz</td><td>Both, using the volley principle.</td></tr>
+          <tr><td>Above about 4,000 Hz</td><td>Place code only — far beyond any firing rate.</td></tr>
+        </table>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>von Békésy (1928 onwards)</b> — cochleas were opened and the basilar membrane observed directly under stroboscopic light with silver particles marking its motion. Sound produced a <b>travelling wave</b> whose peak position depended on frequency: high near the stiff base, low near the floppy apex. Nobel Prize 1961. Later work showed the living cochlea tunes far more sharply than the dead tissue he studied.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 11.5 ---------- */
+  'sn-touch': {
+    eyebrow: 'Part III · Topic 11 · Sensation &amp; Perception',
+    title: 'Touch, temperature and pain',
+    html: `
+      <figure class="lesson-hero-img">
+        <img src="img/tens.jpg" alt="A small handheld TENS unit with electrode leads">
+        <figcaption><b>A TENS unit.</b> It relieves pain by stimulating <b>large touch fibres</b> — not by numbing anything. The device is a direct application of the theory in this lesson: pain signals can be blocked at the spinal cord by activity in a different channel.
+          <span class="cred">Guilty · CC BY-SA 3.0 · via <a href="https://commons.wikimedia.org/wiki/File:Tens_unit.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Touch is not one sense but several sharing a surface, and pain is the one that behaves least like a simple readout of tissue damage. This lesson covers the receptors in the skin, the two pain systems, and the theory that explains why rubbing an injury helps.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The body senses</h4>
+        <span class="role">Several channels, one organ</span>
+
+        <div class="lesson-def">
+          <span class="term">Haptic perception</span> — the active exploration of the environment by touching and grasping objects with the hands.<br><br>
+          <span class="term">Tactile receptors</span> — receptors in the skin responding to pressure, vibration, stretch and texture, each type suited to a different property.<br><br>
+          <span class="term">Thermoreceptors</span> — receptors signalling warmth or cold. There is no single "temperature" receptor; warm and cold are separate channels.<br><br>
+          <span class="term">Nociceptors</span> — receptors responding to stimuli intense enough to threaten tissue damage. The pain channel.
+        </div>
+
+        <p>Touch is <b>active</b>. Identifying an object in a pocket involves moving the fingers over it, and the movement is part of the sensing rather than an accompaniment to it. A hand held still against an object gathers remarkably little information.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Acuity across the body follows cortex, not skin</span>
+          The <b>two-point threshold</b> — the smallest separation at which two touches feel like two — is about 2–4 mm on the fingertip and over 40 mm on the back.<br><br>
+          That ratio matches the <b>homunculus</b> almost exactly: the fingertip commands a large area of somatosensory cortex and the back a small one (<i>6.4</i>).<br><br>
+          The measurement is therefore a behavioural test of a cortical fact, and it is one of the few places in psychology where an anatomical map makes a numerical prediction that a ruler can check.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two pain systems</h4>
+        <span class="role">Why an injury hurts twice</span>
+
+        <table class="lesson-table">
+          <tr><th></th><th>A-delta fibres</th><th>C fibres</th></tr>
+          <tr><td><b>Myelinated?</b></td><td>Thinly myelinated</td><td>Unmyelinated</td></tr>
+          <tr><td><b>Speed</b></td><td>Fast</td><td>Slow (<i>5.1</i>)</td></tr>
+          <tr><td><b>Sensation</b></td><td>Sharp, immediate, well localised</td><td>Dull, aching, burning, poorly localised</td></tr>
+          <tr><td><b>Timing</b></td><td>Arrives first</td><td>Arrives a second or so later and persists</td></tr>
+        </table>
+
+        <div class="worked">
+          <span class="wl">Worked example — stubbing a toe</span>
+          There is a <b>sharp</b> pain almost immediately, precisely located at the toe. Then, after a noticeable gap, a <b>dull throbbing</b> that spreads and lasts.<br><br>
+          These are not one sensation changing. They are <b>two signals</b> from the same event, arriving at different times because they travel in fibres of different conduction speed.<br><br>
+          The gap is the difference between a myelinated and an unmyelinated axon carrying the same news (<i>5.1</i>).
+        </div>
+
+        <div class="lesson-def">
+          <span class="term">Referred pain</span> — pain from an internal organ experienced as coming from a location on the body surface.
+        </div>
+
+        <p>Heart attacks are commonly felt in the left arm and jaw. The visceral and skin fibres converge on the same spinal neurons, and the brain — which receives far more input from skin than from organs throughout life — attributes the signal to the more familiar source.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Gate-control theory</h4>
+        <span class="role">Pain as a signal that can be blocked</span>
+
+        <div class="lesson-def">
+          <span class="term">Gate-control theory</span> — Melzack and Wall's proposal that a neural "gate" in the spinal cord regulates whether pain signals reach the brain. Activity in <b>large</b> touch fibres closes the gate; activity in <b>small</b> pain fibres opens it; and signals descending from the brain can do either.
+        </div>
+
+        <figure class="lesson-fig">
+          <img class="fig-img" src="img/gate-control.png" alt="Two-panel circuit diagram of gate control: large fibre activity closing the gate, and small fibre activity opening it" style="max-width:210px">
+          <figcaption><b>Top:</b> large touch fibres excite an inhibitory interneuron, which blocks the transmission cells — the gate is closed. <b>Bottom:</b> small pain fibres inhibit that interneuron, releasing the transmission cells — the gate opens.
+            <span class="cred">John Tuthill · CC BY-SA 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:Gate_Theory_Circuit_Mechanism.svg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Melzack &amp; Wall (1965) — gate-control theory</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To account for pain phenomena that the prevailing account — pain as a direct readout of tissue damage transmitted to a pain centre — could not explain.</dd>
+            <dt>Method</dt>
+            <dd>This was a theoretical paper drawing together existing physiological and clinical evidence: recordings from spinal neurons showing that large-fibre stimulation reduced their response to noxious input, and clinical observations of pain occurring without injury and injury occurring without pain.</dd>
+            <dt>Results</dt>
+            <dd>The facts requiring explanation included: soldiers with severe wounds reporting little pain; phantom limb pain in the absence of any limb; the effectiveness of rubbing an injury; and the influence of attention, expectation and mood on reported pain. A simple transmission account predicts none of these.</dd>
+            <dt>Conclusion</dt>
+            <dd>Pain is <b>modulated</b> at the spinal cord before it reaches the brain, by input from other sensory fibres and by descending signals from the brain itself. Pain is an output the nervous system produces, not a message it merely relays.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">What the theory explains that its predecessor could not</span>
+          <b>Rubbing an injury.</b> Rubbing activates large touch fibres, which close the gate. This is what a TENS unit does deliberately.<br><br>
+          <b>Injury without pain.</b> A soldier or athlete may not feel a serious wound until later. Descending signals close the gate when attention and arousal are directed elsewhere.<br><br>
+          <b>Pain without injury.</b> Phantom limb pain has no tissue to originate in, and is inexplicable if pain is a readout of damage (<i>8.5</i>).<br><br>
+          <b>Psychological influence.</b> Attention, expectation, mood and placebo all change reported pain — and gate control supplies a physical route by which they could, rather than treating them as reporting bias (<i>3.7</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">Fifty years on</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>It explained a set of facts nothing else did</b>, and it did so with a specific physical mechanism rather than a description.</li>
+              <li><b>It made testable predictions</b> — that large-fibre stimulation should reduce pain — which were confirmed.</li>
+              <li><b>It produced a working treatment.</b> TENS follows directly from the theory and is in routine clinical use.</li>
+              <li><b>It legitimised psychological factors in pain</b> by giving them a route, changing how chronic pain is treated.</li>
+              <li><b>The core claim has survived.</b> Pain is modulated rather than transmitted, and descending control from the brain is now well established.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>The specific circuit has been revised.</b> The 1965 diagram's details do not match what was later found in the dorsal horn, which is more complex.</li>
+              <li><b>It does not fully explain chronic pain</b>, where the nervous system becomes sensitised and pain persists after healing.</li>
+              <li><b>"Gate" is a metaphor</b>, and a single gate is a simplification of modulation happening at many levels.</li>
+              <li><b>TENS has modest and variable clinical evidence</b>, despite following from the theory — mechanism plausibility does not guarantee treatment effect (<i>3.4</i>).</li>
+              <li><b>Pain is subjective and self-reported</b>, so every measure in this area is vulnerable to expectation and demand (<i>3.7</i>).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a nurse tells a child to squeeze a stress ball while receiving an injection, and it appears to help. Give two mechanisms by which it could work, and say how you would tell them apart.</summary>
+          <div class="ans"><b>Mechanism 1 — the gate.</b> Squeezing activates <b>large touch and pressure fibres</b>, which excite the inhibitory interneuron and close the gate on incoming pain signals. This is the same principle as rubbing an injury or using a TENS unit, and it is a <b>spinal</b> effect.<br><br><b>Mechanism 2 — descending control.</b> Squeezing occupies <b>attention</b>, and attention directed away from a stimulus closes the gate through signals descending from the brain. This is a <b>central</b> effect and does not require the hand to be involved at all.<br><br><b>How to separate them.</b> Compare squeezing the ball with an equally engaging task that produces <b>no</b> touch input — counting backwards, or watching a video. If the distraction works equally well, the effect is attentional. If squeezing works better, large-fibre input is contributing something on top.<br><br><b>A third possibility to control for.</b> <b>Expectation.</b> The child was told it would help. A comparison condition would give an equally plausible-sounding instruction with no mechanism behind it (<i>3.7</i>).<br><br><b>Why it matters clinically.</b> If the effect is attentional, anything engaging works and the ball is incidental. If it is the gate, the touch itself matters and the intervention needs a physical component.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>The skin carries several channels: <b>tactile receptors</b>, separate <b>warm and cold</b> thermoreceptors, and <b>nociceptors</b>.</li>
+          <li>Touch is <b>active</b>; a still hand gathers little. The <b>two-point threshold</b> tracks the cortical homunculus.</li>
+          <li>Two pain systems: fast <b>A-delta</b> fibres give sharp localised pain, slow <b>C</b> fibres give dull persistent pain — which is why an injury hurts twice.</li>
+          <li><b>Referred pain</b> occurs because visceral and skin fibres converge on the same spinal neurons.</li>
+          <li><b>Melzack &amp; Wall (1965)</b>: a spinal <b>gate</b> is closed by large-fibre activity and by descending signals, and opened by small-fibre activity.</li>
+          <li>The theory explains rubbing an injury, injury without pain, pain without injury, and psychological influence. Its circuit details have been revised; its core claim has not.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, systems, evaluation and studies from 11.5, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Haptic perception</td><td>Active exploration by touching and grasping with the hands.</td></tr>
+          <tr><td>Tactile receptors</td><td>Skin receptors for pressure, vibration, stretch and texture.</td></tr>
+          <tr><td>Thermoreceptors</td><td>Separate warm and cold channels; there is no single temperature receptor.</td></tr>
+          <tr><td>Nociceptors</td><td>Receptors responding to stimuli intense enough to threaten tissue damage.</td></tr>
+          <tr><td>Two-point threshold</td><td>The smallest separation at which two touches feel like two. 2–4 mm on the fingertip, over 40 mm on the back.</td></tr>
+          <tr><td>A-delta fibres</td><td>Thinly myelinated, fast; sharp, immediate, well-localised pain.</td></tr>
+          <tr><td>C fibres</td><td>Unmyelinated, slow; dull, aching, poorly localised pain arriving later.</td></tr>
+          <tr><td>Referred pain</td><td>Pain from an internal organ experienced as coming from the body surface.</td></tr>
+          <tr><td>Gate-control theory</td><td>A spinal gate regulates whether pain reaches the brain: closed by large-fibre and descending input, opened by small-fibre input.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Touch is active.</b> Movement is part of the sensing, not an accompaniment.</li>
+          <li><b>Acuity follows cortex, not skin.</b> Two-point thresholds match the homunculus, so an anatomical map makes a checkable numerical prediction.</li>
+          <li><b>An injury hurts twice</b> because two fibre types carry the same event at different speeds.</li>
+          <li><b>Referred pain follows from convergence</b> and from the brain's lifetime of far more skin input than visceral input.</li>
+          <li><b>Pain is an output, not a readout.</b> It is modulated before reaching the brain.</li>
+          <li><b>Psychological factors have a physical route</b>, so attention and expectation changing pain is not merely reporting bias.</li>
+          <li><b>A plausible mechanism does not guarantee a treatment effect</b> — TENS follows from the theory and has modest trial evidence.</li>
+        </ul>
+
+        <h5>What gate control explains</h5>
+        <table>
+          <tr><td>Rubbing an injury helps</td><td>Large touch fibres close the gate. TENS does this deliberately.</td></tr>
+          <tr><td>Injury without pain</td><td>Descending signals close the gate when attention and arousal are elsewhere.</td></tr>
+          <tr><td>Pain without injury</td><td>Phantom limb pain has no tissue of origin, and is inexplicable on a transmission account.</td></tr>
+          <tr><td>Attention, mood and placebo</td><td>Descending control supplies the physical route by which they act.</td></tr>
+        </table>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Melzack &amp; Wall (1965)</b> — a theoretical paper assembling physiological recordings and clinical observations that a simple transmission account could not accommodate: wounded soldiers reporting little pain, phantom limb pain, the benefit of rubbing, and the influence of attention and mood. They proposed a spinal gate modulated by large fibres and by descending signals. Pain is produced by the nervous system rather than relayed by it.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 11.6 ---------- */
+  'sn-chemical': {
+    eyebrow: 'Part III · Topic 11 · Sensation &amp; Perception',
+    title: 'Taste and smell',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/tongue.jpg" alt="Diagram of the tongue showing four types of papillae, with taste buds and a magnified taste bud containing gustatory cells">
+        <figcaption><b>The tongue, papillae and taste buds.</b> Taste buds sit in the walls of the visible bumps — the <b>papillae</b> — not on the smooth surface. Each bud contains 50 to 100 receptor cells, and each bud can respond to <b>all five</b> basic tastes.
+          <span class="cred">OpenStax · CC BY 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:1402_The_Tongue.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Taste and smell are the chemical senses: they respond to molecules rather than to energy. This lesson covers how each works, why most of what is called taste is actually smell, and why the tongue map in older textbooks is wrong.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Taste</h4>
+        <span class="role">Five channels, and only five</span>
+
+        <div class="lesson-def">
+          <span class="term">Gustation</span> — the sense of taste.<br><br>
+          <span class="term">Papillae</span> — the visible bumps on the tongue. Taste buds sit in their walls.<br><br>
+          <span class="term">Taste bud</span> — a cluster of 50 to 100 taste receptor cells. An adult has several thousand.<br><br>
+          <span class="term">Umami</span> — the savoury taste produced by glutamate, identified by Ikeda in 1908 and accepted as a basic taste in the 1980s.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Taste</th><th>Typical source</th><th>Likely function</th></tr>
+          <tr><td><b>Sweet</b></td><td>Sugars</td><td>Detecting calories</td></tr>
+          <tr><td><b>Salty</b></td><td>Sodium</td><td>Regulating electrolytes</td></tr>
+          <tr><td><b>Sour</b></td><td>Acids</td><td>Detecting spoilage and unripeness</td></tr>
+          <tr><td><b>Bitter</b></td><td>Many plant alkaloids</td><td>Detecting toxins — which is why the response is rejection</td></tr>
+          <tr><td><b>Umami</b></td><td>Glutamate, in meat, cheese, tomatoes</td><td>Detecting protein</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">The tongue map is wrong</span>
+          Diagrams showing sweet at the tip, bitter at the back and sour along the sides appear in a great many textbooks. They are a mistake, and a traceable one.<br><br>
+          A 1901 German paper reported small regional <b>differences in sensitivity</b>. A 1942 translation and re-drawing turned modest differences into exclusive zones, and the picture was copied for eighty years.<br><br>
+          <b>What is actually true.</b> All five tastes are detected across the whole tongue. Sensitivity varies slightly by region, and the variation is far too small to matter. You can test it directly: put salt on the tip of your tongue.<br><br>
+          This is a useful case of how an error survives — not through fraud, but because a clear diagram is easier to reproduce than a nuanced finding (<i>4.3</i>).
+        </div>
+
+        <p>The number of taste buds varies considerably between people. Those with many are sometimes called <b>supertasters</b>, and they find bitter compounds — in coffee, grapefruit, brassicas — markedly more intense.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Smell</h4>
+        <span class="role">A combinatorial code</span>
+
+        <div class="lesson-def">
+          <span class="term">Olfaction</span> — the sense of smell.<br><br>
+          <span class="term">Olfactory receptor neurons</span> — neurons in the roof of the nasal cavity whose receptors bind airborne molecules. Unusually, they are replaced throughout life.<br><br>
+          <span class="term">Olfactory bulb</span> — the first processing structure, sitting directly beneath the frontal lobe and projecting to cortex <b>without a thalamic relay</b> (<i>10.1</i>).
+        </div>
+
+        <p>Taste has five channels. Smell has around <b>400</b> functional receptor types in humans, and can discriminate an enormous number of odours — far more than the number of receptors, because a single molecule activates a <b>pattern</b> across many receptor types.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Buck &amp; Axel (1991) — the olfactory receptor gene family</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To identify the receptors responsible for detecting odours, which had resisted discovery because no one knew how many kinds to look for.</dd>
+            <dt>Method</dt>
+            <dd>Linda Buck and Richard Axel reasoned that olfactory receptors should be a family of related proteins expressed <b>only</b> in olfactory tissue. Using molecular techniques on rat olfactory epithelium, they searched for genes fitting that profile.</dd>
+            <dt>Results</dt>
+            <dd>They found a very large family of genes — around a thousand in the rat — expressed almost exclusively in olfactory receptor neurons. Each neuron expresses just <b>one</b> receptor type, and neurons carrying the same receptor send their axons to the same location in the olfactory bulb.</dd>
+            <dt>Conclusion</dt>
+            <dd>Odours are coded <b>combinatorially</b>: each receptor responds to features shared by several molecules, and each molecule activates several receptors, so identity is carried by the pattern rather than by any one receptor. Buck and Axel received the Nobel Prize in 2004.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why a combinatorial code is the only workable design</span>
+          A dedicated receptor per odour would need as many receptor types as there are detectable smells, and no genome could carry that.<br><br>
+          With a pattern code, <b>n</b> receptor types can distinguish vastly more than <b>n</b> odours, because what matters is which combination responds and how strongly.<br><br>
+          This is the same principle as colour: three cone types distinguish millions of colours by ratio rather than by having a receptor per colour (<i>11.3</i>). Population coding recurs throughout the nervous system because it is the only way finite hardware covers a large space (<i>5.5</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Flavour is not taste</h4>
+        <span class="role">The most common everyday confusion in this module</span>
+
+        <div class="lesson-def">
+          <span class="term">Flavour</span> — the combined experience produced by taste, smell, texture and temperature together. Most of it is smell.<br><br>
+          <span class="term">Retronasal olfaction</span> — smelling molecules released by food in the mouth, which travel up the back of the throat to the nasal cavity.
+        </div>
+
+        <div class="worked">
+          <span class="wl">Worked example — the nose-clip test</span>
+          Hold your nose firmly closed and eat a jelly baby, or a slice of apple and a slice of onion.<br><br>
+          <b>What survives.</b> Sweetness, sourness and texture — the five taste channels and the mouthfeel.<br><br>
+          <b>What disappears.</b> Which flavour it is. An apple and an onion become difficult to tell apart; a jelly baby is sweet and otherwise anonymous.<br><br>
+          <b>Release the nose and the flavour arrives instantly</b>, because retronasal airflow resumes and the molecules reach the olfactory receptors.<br><br>
+          <b>The conclusion.</b> Almost everything called taste is smell. This is why food is bland during a heavy cold: the taste receptors are unaffected and the nasal route is blocked.
+        </div>
+
+        <p>Loss of smell — <b>anosmia</b> — is therefore experienced as loss of taste, and it is more consequential than it sounds. It removes much of the pleasure of eating, and it removes a warning system for smoke, gas and spoiled food.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">The least understood senses</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths of the evidence</h5>
+            <ul>
+              <li><b>The receptor mechanism is known.</b> Buck and Axel identified the gene family and the one-receptor-per-neuron rule directly.</li>
+              <li><b>The combinatorial account explains the discrimination range</b>, which no dedicated-receptor account could.</li>
+              <li><b>Taste has a clear functional logic.</b> Each of the five channels maps onto a nutritional or toxic category.</li>
+              <li><b>The taste–smell distinction is demonstrable in seconds</b> by anyone, with no equipment.</li>
+              <li><b>Olfactory neurons regenerate</b>, which makes them a valuable model for studying neural replacement (<i>8.5</i>).</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>Odour cannot be described in stimulus terms.</b> Light has wavelength and sound has frequency; there is no equivalent physical dimension along which smells are ordered, which makes systematic experiment hard.</li>
+              <li><b>Vocabulary is impoverished.</b> Smells are usually named by their source — "like lemon" — rather than by properties, which limits what can be reported (<i>3.2</i>).</li>
+              <li><b>Human olfactory ability has been persistently underestimated</b>, partly on the basis of receptor-gene counts, and revised upward.</li>
+              <li><b>Claims about human pheromones are not established</b>, despite widespread commercial use of the term.</li>
+              <li><b>The tongue map persisted for eighty years</b>, which indicates how little the field was checked.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a patient says they lost their sense of taste after a virus. Testing shows they can identify sweet, salty, sour, bitter and umami solutions correctly. What has happened, and how would you confirm it?</summary>
+          <div class="ans"><b>They have lost smell, not taste.</b> The complaint is accurate as they experience it and inaccurate as stated, because most of what people call taste is <b>retronasal olfaction</b>.<br><br><b>Why the test came out normal.</b> The five basic tastes are the only thing the tongue contributes, and those receptors are intact. Testing taste directly was always going to pass.<br><br><b>How to confirm.</b> Test <b>smell</b> separately with standardised odour identification. And demonstrate it to the patient: have them eat something flavoured with the nose held closed and then released. If flavour appears on release, the route rather than the receptors is the problem.<br><br><b>Why a virus.</b> Olfactory receptor neurons are exposed to the outside and are damaged by infection; they normally regenerate, so recovery is common but can take months and is sometimes incomplete.<br><br><b>Why it matters clinically.</b> Anosmia removes a <b>warning system</b> for gas, smoke and spoiled food, and it is associated with reduced appetite and low mood. It should be treated as a real loss and not as a minor complaint about food being dull.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>Taste has exactly <b>five</b> channels: sweet, salty, sour, bitter and <b>umami</b>. Taste buds sit in the walls of the <b>papillae</b>.</li>
+          <li><b>The tongue map is wrong.</b> All five tastes are detected across the whole tongue; the diagram came from a mistranslated 1901 paper.</li>
+          <li>Smell uses about <b>400</b> receptor types and a <b>combinatorial</b> code — each molecule activates a pattern.</li>
+          <li><b>Buck &amp; Axel (1991)</b> identified the receptor gene family and found each neuron expresses one receptor type. Nobel Prize 2004.</li>
+          <li>A pattern code is the only workable design, for the same reason three cones cover millions of colours.</li>
+          <li><b>Flavour is mostly smell</b>, via the <b>retronasal</b> route — which the nose-clip test demonstrates in seconds.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, the five tastes, evaluation and studies from 11.6, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Gustation</td><td>The sense of taste.</td></tr>
+          <tr><td>Papillae</td><td>The visible bumps on the tongue; taste buds sit in their walls.</td></tr>
+          <tr><td>Taste bud</td><td>A cluster of 50–100 receptor cells. An adult has several thousand.</td></tr>
+          <tr><td>Umami</td><td>The savoury taste produced by glutamate. Identified 1908, accepted as basic in the 1980s.</td></tr>
+          <tr><td>Olfaction</td><td>The sense of smell.</td></tr>
+          <tr><td>Olfactory receptor neurons</td><td>Neurons in the roof of the nasal cavity binding airborne molecules. Replaced throughout life.</td></tr>
+          <tr><td>Olfactory bulb</td><td>The first processing structure, projecting to cortex without a thalamic relay.</td></tr>
+          <tr><td>Flavour</td><td>Taste, smell, texture and temperature combined. Mostly smell.</td></tr>
+          <tr><td>Retronasal olfaction</td><td>Smelling molecules released by food in the mouth, reaching the nose from behind.</td></tr>
+          <tr><td>Anosmia</td><td>Loss of the sense of smell, usually experienced as loss of taste.</td></tr>
+        </table>
+
+        <h5>The five basic tastes</h5>
+        <table>
+          <tr><td>Sweet</td><td>Sugars — detecting calories.</td></tr>
+          <tr><td>Salty</td><td>Sodium — regulating electrolytes.</td></tr>
+          <tr><td>Sour</td><td>Acids — detecting spoilage and unripeness.</td></tr>
+          <tr><td>Bitter</td><td>Plant alkaloids — detecting toxins, which is why the response is rejection.</td></tr>
+          <tr><td>Umami</td><td>Glutamate — detecting protein.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Every taste bud responds to all five tastes.</b> The tongue map is a translation error copied for eighty years.</li>
+          <li><b>A dedicated receptor per odour is impossible</b>, so smell must use a pattern code.</li>
+          <li><b>Pattern coding recurs across the senses</b> — three cones for millions of colours, 400 receptors for vastly more odours.</li>
+          <li><b>Most of flavour is smell</b>, demonstrable by holding the nose.</li>
+          <li><b>Odour has no stimulus dimension</b> equivalent to wavelength or frequency, which is the field's central methodological difficulty.</li>
+          <li><b>Anosmia removes a warning system</b>, not only a pleasure.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Buck &amp; Axel (1991)</b> — searching for a family of related proteins expressed only in olfactory tissue, they found around a thousand such genes in the rat. Each olfactory neuron expresses just <b>one</b> receptor type, and neurons with the same receptor converge on the same spot in the olfactory bulb. Odour identity is carried by the combination of receptors activated. Nobel Prize 2004.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 11.7 ---------- */
+  'sn-balance': {
+    eyebrow: 'Part III · Topic 11 · Sensation &amp; Perception',
+    title: 'Balance, proprioception and multisensory integration',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/semicircular.jpg" alt="Diagram of three semicircular canals oriented in the pitch, roll and yaw planes">
+        <figcaption><b>The three semicircular canals.</b> They sit at right angles to each other, one in each plane of rotation — <b>pitch</b>, <b>roll</b> and <b>yaw</b> — so any head movement is decomposed into three components. The system is a biological gyroscope.
+          <span class="cred">NASA · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Roll,_pitch,_and_yaw-_the_plane_of_motion_of_each_semicircular_canal.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Two senses operate almost entirely outside awareness and are noticed only when they fail. This lesson covers those, and then the question that runs through the whole module: how signals from separate senses become one experience of a single world.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The vestibular system</h4>
+        <span class="role">Detecting where the head is and what it is doing</span>
+
+        <div class="lesson-def">
+          <span class="term">Vestibular system</span> — the inner-ear structures that detect head position and movement.<br><br>
+          <span class="term">Semicircular canals</span> — three fluid-filled loops, one in each plane of rotation, detecting <b>angular acceleration</b>. Fluid lags behind when the head turns, bending hair cells.<br><br>
+          <span class="term">Otolith organs</span> — two chambers containing crystals resting on hair cells, detecting <b>linear acceleration</b> and the direction of gravity.
+        </div>
+
+        <p>The receptors are hair cells, the same type used in hearing (<i>11.4</i>), which is why both systems share the inner ear and the vestibulocochlear nerve.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why you can read a sign while walking</span>
+          Every step moves your head, so the image on the retina should jump with each footfall. It does not.<br><br>
+          The <b>vestibulo-ocular reflex</b> takes the signal from the semicircular canals and drives the eyes in the opposite direction, at matched speed, holding the image still. It operates in about 10 milliseconds — faster than any visually guided correction could.<br><br>
+          The demonstration: hold this text still and shake your head gently, and it stays readable. Now hold your head still and shake the screen at the same rate. It blurs. Same relative motion, and only one is corrected — because only one is signalled by the vestibular system.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Proprioception</h4>
+        <span class="role">The sense that is only noticed when absent</span>
+
+        <div class="lesson-def">
+          <span class="term">Proprioception</span> — the sense of where the parts of the body are in space, from receptors in muscles, tendons and joints.<br><br>
+          <span class="term">Kinaesthesis</span> — the sense of body <b>movement</b>, closely related and often grouped with proprioception.
+        </div>
+
+        <p>Close your eyes and touch your nose. Nothing looked, and the hand arrives. That is proprioception, and it is running continuously without ever reaching attention.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">What its loss reveals</span>
+          Rare cases exist of adults losing proprioception from the neck down through nerve damage, with touch and motor control intact.<br><br>
+          The consequence is not weakness. It is an inability to <b>control</b> movement without watching: a limb whose position is unknown cannot be aimed. Such patients can relearn to move by <b>substituting vision</b>, watching their limbs continuously and consciously calculating what they had previously done automatically. In darkness they collapse.<br><br>
+          This makes the point that a sense nobody notices can be doing more work than the ones everybody does.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Multisensory integration</h4>
+        <span class="role">Combining channels into one world</span>
+
+        <div class="lesson-def">
+          <span class="term">Multisensory integration</span> — combining information from different senses into a single unified percept.<br><br>
+          <span class="term">Ventriloquist effect</span> — a sound is heard as coming from where a matching visual event occurs, which is why a cinema's dialogue seems to come from the actors' mouths rather than the speakers.<br><br>
+          <span class="term">Sensory conflict</span> — different senses reporting incompatible information, which the system cannot reconcile.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>McGurk &amp; MacDonald (1976) — hearing lips and seeing voices</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine what happens when the visual and auditory information about a spoken syllable disagree.</dd>
+            <dt>Method</dt>
+            <dd>A video was made of a person repeatedly mouthing <b>"ga"</b>, dubbed with an audio recording of the same person saying <b>"ba"</b>. Participants watched and reported what they heard. They were also tested listening with their eyes closed.</dd>
+            <dt>Results</dt>
+            <dd>With eyes open, most adults reported hearing <b>"da"</b> — a syllable present in neither channel, but intermediate between the two. With eyes closed, they correctly heard "ba". Children were somewhat less affected than adults.</dd>
+            <dt>Conclusion</dt>
+            <dd>Vision alters what is <b>heard</b>, not merely what is believed. The effect persists when participants know exactly how it works, which shows the integration happens before conscious access and cannot be overridden by knowing about it.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why integration usually helps and occasionally misleads</span>
+          Each sense is noisy, and combining independent estimates of the same event produces a better estimate than either alone — which is why speech is easier to follow in a noisy room when you can see the speaker's face.<br><br>
+          The system weights each sense by how <b>reliable</b> it is for that property. Vision is precise about location, so it dominates for <i>where</i>; hearing is precise about timing, so it dominates for <i>when</i>.<br><br>
+          The ventriloquist effect and the McGurk effect are what this weighting produces when the inputs are made to disagree artificially. They are not failures. They are the combination rule working on inputs it was never built to receive.
+        </div>
+
+        <p><b>Motion sickness</b> is the same principle producing something worse. Below deck on a ship, the vestibular system reports motion while vision reports a stationary cabin. Reading in a moving car does the same. One leading account is that the brain treats this specific conflict as a symptom of a neurotoxin, and responds with nausea.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">What this area establishes</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>The integration effects are robust and immediate.</b> McGurk works on almost everyone, on first exposure, and survives being explained.</li>
+              <li><b>Reliability weighting makes quantitative predictions</b> that have been tested: degrade the visual signal and hearing takes over, in the amount predicted.</li>
+              <li><b>The vestibulo-ocular reflex is measurable and fast</b>, and its timing rules out a visually driven explanation.</li>
+              <li><b>Loss cases are informative.</b> Proprioceptive loss shows what an unnoticed sense contributes.</li>
+              <li><b>It has practical applications</b> in cockpit and display design, and in explaining simulator and virtual-reality sickness.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>The McGurk effect varies more than usually reported</b>, across languages, individuals and stimulus quality, and some people barely show it.</li>
+              <li><b>Sensory conflict does not fully explain motion sickness.</b> The toxin account is plausible and not established, and it does not explain why susceptibility differs so much.</li>
+              <li><b>Proprioceptive loss cases are extremely rare</b>, so the evidence rests on a handful of individuals (<i>7.1</i>).</li>
+              <li><b>"Integration" covers several different processes</b> that may not share a mechanism.</li>
+              <li><b>Illusions are artificial by construction</b>, so what they reveal about ordinary functioning has to be argued rather than assumed.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: someone feels fine driving a car but is sick as a passenger reading a book. Explain, and predict two things that would help.</summary>
+          <div class="ans"><b>The difference is sensory conflict.</b><br><br><b>As a passenger reading.</b> The <b>vestibular system</b> reports acceleration, cornering and vibration. <b>Vision</b> is fixed on a page that is stationary relative to the head, so it reports no motion. The two disagree, and that conflict produces nausea.<br><br><b>As a driver.</b> Two things change. Vision is on the <b>road</b>, so it reports the same motion the vestibular system does and the conflict disappears. And the driver <b>initiates</b> the movements, so each turn is predicted before it happens — the brain can anticipate the vestibular consequences of its own actions in a way it cannot for someone else's driving.<br><br><b>Prediction 1 — look at the horizon.</b> Restores agreement between vision and the vestibular signal. This should work, and does.<br><br><b>Prediction 2 — sit in the front and watch the road ahead.</b> Recovers part of the predictability the driver has, since upcoming bends are visible before they are felt.<br><br><b>A third that follows.</b> Audiobooks instead of reading, because the conflict is specifically between <b>vision</b> and the vestibular signal — removing the fixed visual target removes the disagreement.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>The <b>vestibular system</b> uses <b>semicircular canals</b> for rotation and <b>otolith organs</b> for linear acceleration and gravity. Its receptors are hair cells, as in hearing.</li>
+          <li>The <b>vestibulo-ocular reflex</b> stabilises vision during head movement in about 10 ms — too fast to be visually driven.</li>
+          <li><b>Proprioception</b> reports body position continuously and unnoticed; losing it makes movement impossible without watching.</li>
+          <li><b>Multisensory integration</b> weights each sense by its reliability for the property in question — vision for <i>where</i>, hearing for <i>when</i>.</li>
+          <li><b>McGurk &amp; MacDonald (1976)</b>: seeing "ga" while hearing "ba" produces "da". Vision changes what is heard, and knowing about it does not stop it.</li>
+          <li><b>Motion sickness</b> is sensory conflict; the toxin explanation for the nausea is plausible rather than established.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, systems, evaluation and studies from 11.7, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Vestibular system</td><td>Inner-ear structures detecting head position and movement.</td></tr>
+          <tr><td>Semicircular canals</td><td>Three fluid-filled loops, one per plane of rotation, detecting angular acceleration.</td></tr>
+          <tr><td>Otolith organs</td><td>Chambers with crystals on hair cells, detecting linear acceleration and gravity.</td></tr>
+          <tr><td>Vestibulo-ocular reflex</td><td>Eye movement driven by vestibular signals to hold the image still during head motion. About 10 ms.</td></tr>
+          <tr><td>Proprioception</td><td>The sense of where body parts are, from receptors in muscles, tendons and joints.</td></tr>
+          <tr><td>Kinaesthesis</td><td>The sense of body movement.</td></tr>
+          <tr><td>Multisensory integration</td><td>Combining information across senses into one unified percept.</td></tr>
+          <tr><td>Ventriloquist effect</td><td>A sound heard as coming from where a matching visual event occurs.</td></tr>
+          <tr><td>Sensory conflict</td><td>Senses reporting incompatible information, as in motion sickness.</td></tr>
+          <tr><td>McGurk effect</td><td>Seeing one syllable while hearing another produces a third — vision altering what is heard.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Three canals at right angles decompose any rotation</b> into pitch, roll and yaw components.</li>
+          <li><b>Hair cells serve both hearing and balance</b>, which is why the two share the inner ear and one nerve.</li>
+          <li><b>The VOR is too fast to be visually driven</b>, which is how its source is established.</li>
+          <li><b>A sense nobody notices can carry more load than the ones everybody does</b> — proprioceptive loss makes movement impossible without vision.</li>
+          <li><b>Integration weights senses by reliability</b>, which is why vision wins for location and hearing for timing.</li>
+          <li><b>Illusions are the combination rule working on impossible inputs</b>, not failures of it.</li>
+          <li><b>Prediction reduces conflict.</b> A driver anticipates the vestibular consequences of their own actions; a passenger cannot.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>McGurk &amp; MacDonald (1976)</b> — video of a person mouthing <b>"ga"</b> dubbed with audio of <b>"ba"</b>. Most adults reported hearing <b>"da"</b>, a syllable in neither channel; with eyes closed they heard "ba" correctly. The effect persists when the mechanism is fully explained, showing integration occurs before conscious access. Effect size varies more across languages and individuals than early reports suggested.</li>
+        </ul>
+      </div>
+    `
   }
 
   };
@@ -15581,6 +16831,55 @@
       ['Vicary\'s 1957 cinema claim was later admitted to be a ___.', 'fabrication', ['hoax','fake','lie']],
       ['Karremans found subliminal priming worked only in participants who were ___.', 'thirsty', []],
       ['Greenwald found reported improvement followed the tape\'s ___ rather than its content.', 'label', []]
+    ],
+    'sn-eye': [
+      ['Adjusting the lens to keep a clear image on the retina is ___.', 'accommodation', []],
+      ['The point where the optic nerve leaves the eye, with no receptors, is the optic ___.', 'disc', []],
+      ['Many receptors feeding one cell so their signals sum is called ___.', 'convergence', []],
+      ['Short sight, where the eyeball is too long, is called ___.', 'myopia', []],
+      ['Hecht and colleagues showed a single rod can be triggered by a single ___.', 'photon', ['quantum']]
+    ],
+    'sn-vispath': [
+      ['Fibres from the inner half of each retina cross at the optic ___.', 'chiasm', []],
+      ['The thalamic relay for vision is the lateral ___ nucleus.', 'geniculate', ['lgn']],
+      ['The region where a stimulus changes a cell&rsquo;s firing is its ___ field.', 'receptive', []],
+      ['The pathway identifying what an object is, running into the temporal lobe, is the ___ stream.', 'ventral', []],
+      ['Patient D.F. could not report the slot&rsquo;s orientation but could ___ a card through it.', 'post', []]
+    ],
+    'sn-colour': [
+      ['The theory that three cone types underlie colour vision is ___ theory.', 'trichromatic', []],
+      ['Physically different lights that look identical are called ___.', 'metamers', ['metamer']],
+      ['The theory that neurons work in red-green and blue-yellow pairs is ___ process theory.', 'opponent', []],
+      ['Staring at red then looking at white produces a green negative ___.', 'afterimage', []],
+      ['Colour blindness genes sit on the ___ chromosome, so it mostly affects men.', 'x', []]
+    ],
+    'sn-hearing': [
+      ['The three middle-ear bones that amplify vibration are the ___.', 'ossicles', ['ossicle']],
+      ['The fluid-filled organ of auditory transduction is the ___.', 'cochlea', []],
+      ['Reading pitch from which position responded most is the ___ code.', 'place', []],
+      ['Groups of neurons taking turns to follow a frequency is the ___ principle.', 'volley', []],
+      ['Hearing loss from damaged hair cells, which amplification cannot fix, is ___.', 'sensorineural', []]
+    ],
+    'sn-touch': [
+      ['Fast, sharp, well-localised pain travels in ___ fibres.', 'a-delta', ['adelta','a delta']],
+      ['Slow, dull, persistent pain travels in ___ fibres.', 'c', []],
+      ['Pain from an organ felt on the body surface is called ___ pain.', 'referred', []],
+      ['Melzack and Wall proposed that a spinal ___ regulates whether pain reaches the brain.', 'gate', []],
+      ['Rubbing an injury helps because it activates ___ touch fibres.', 'large', []]
+    ],
+    'sn-chemical': [
+      ['The savoury basic taste produced by glutamate is ___.', 'umami', []],
+      ['Taste buds sit in the walls of the visible bumps called ___.', 'papillae', ['papilla']],
+      ['Each olfactory neuron expresses ___ receptor type.', 'one', ['1']],
+      ['Smelling food molecules from inside the mouth is ___ olfaction.', 'retronasal', []],
+      ['Loss of the sense of smell is called ___.', 'anosmia', []]
+    ],
+    'sn-balance': [
+      ['The three fluid-filled loops detecting rotation are the ___ canals.', 'semicircular', []],
+      ['The organs detecting linear acceleration and gravity are the ___ organs.', 'otolith', []],
+      ['The sense of where body parts are in space is ___.', 'proprioception', []],
+      ['The reflex holding the image still during head movement is the ___-ocular reflex.', 'vestibulo', ['vestibular']],
+      ['Seeing ga while hearing ba produces da: the ___ effect.', 'mcgurk', []]
     ],
     'l-classical': [
       ['A stimulus that produces a response without any learning is the ___ stimulus.', 'unconditioned', ['ucs']],
