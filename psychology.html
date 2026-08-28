@@ -1172,13 +1172,13 @@
         <h3><span class="tnum">06</span><span class="ttl">The Nervous System &amp; the Brain</span></h3>
         <p class="desc">The anatomy you genuinely need — organised by what each region does.</p>
         <ul class="subs">
-          <li><span class="txt"><span class="num">6.1</span> CNS &amp; PNS; somatic vs autonomic; sympathetic vs parasympathetic</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">6.2</span> Brainstem, cerebellum &amp; the subcortical structures</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">6.3</span> The limbic system — amygdala, hippocampus, hypothalamus</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">6.4</span> The cerebral cortex &amp; the four lobes</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">6.5</span> Lateralisation &amp; the split-brain studies</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">6.6</span> Localisation vs distributed networks — the modern picture</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">6.7</span> The endocrine system &amp; hormones</span><span class="placeholder">notes soon</span></li>
+          <li><span class="txt"><span class="num">6.1</span> CNS &amp; PNS; somatic vs autonomic; sympathetic vs parasympathetic</span><button class="note-btn" data-note="b-nervous">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">6.2</span> Brainstem, cerebellum &amp; the subcortical structures</span><button class="note-btn" data-note="b-brainstem">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">6.3</span> The limbic system — amygdala, hippocampus, hypothalamus</span><button class="note-btn" data-note="b-limbic">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">6.4</span> The cerebral cortex &amp; the four lobes</span><button class="note-btn" data-note="b-cortex">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">6.5</span> Lateralisation &amp; the split-brain studies</span><button class="note-btn" data-note="b-lateral">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">6.6</span> Localisation vs distributed networks — the modern picture</span><button class="note-btn" data-note="b-networks">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">6.7</span> The endocrine system &amp; hormones</span><button class="note-btn" data-note="b-endocrine">📖 Notes</button></li>
         </ul>
       </div>
 
@@ -9680,6 +9680,1455 @@
         </ul>
       </div>
     `
+  },
+
+  /* ---------- 6.1 ---------- */
+  'b-nervous': {
+    eyebrow: 'Part II · Topic 06 · Biological Bases',
+    title: 'The organisation of the nervous system',
+    html: `
+      <figure class="lesson-hero-img frame">
+        <img src="img/cannon.jpg" alt="Portrait photograph of the physiologist Walter Bradford Cannon">
+        <figcaption><b>Walter Bradford Cannon (1871–1945).</b> Cannon named the <i>fight-or-flight</i> response and showed that it is produced by one branch of the nervous system acting on the organs without conscious control. He also introduced the term <i>homeostasis</i> for the body's maintenance of a steady internal state.
+          <span class="cred">Bachrach · CC BY 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:Walter_Bradford_Cannon_1934.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, "The Organization of the Nervous System", covering <i>Divisions of the Nervous System</i> and <i>Components of the Central Nervous System</i>.
+      </div>
+
+      <p class="lesson-lead">Individual neurons are the building blocks; on their own they explain nothing. They are organised into divisions, each responsible for a different class of task. This lesson covers that organisation: the two main divisions, what each contains, and how the branch that operates without conscious control produces the physical changes of fear.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two main divisions</h4>
+        <span class="role">Central and peripheral</span>
+
+        <div class="lesson-def">
+          <span class="term">Nerve</span> — a bundle of axons together with the glial cells supporting them.<br><br>
+          <span class="term">Nervous system</span> — an interacting network of neurons that conveys electrochemical information throughout the body.<br><br>
+          <span class="term">Central nervous system (CNS)</span> — the brain and the spinal cord.<br><br>
+          <span class="term">Peripheral nervous system (PNS)</span> — everything else: the nerves connecting the CNS to the body's organs and muscles.
+        </div>
+
+        <p>The CNS receives sensory information, processes and coordinates it, and issues commands. The PNS carries information in both directions between the CNS and the rest of the body.</p>
+
+        <figure class="lesson-fig">
+          <svg viewBox="0 0 640 300" role="img" aria-label="Hierarchy of the nervous system from the two main divisions down to sympathetic and parasympathetic">
+            <g font-family="Inter, sans-serif" text-anchor="middle">
+              <rect x="240" y="14" width="160" height="40" rx="9" fill="rgba(185,140,255,0.18)" stroke="#b98cff"/>
+              <text x="320" y="39" font-size="13" font-weight="800" fill="#e6d5ff">NERVOUS SYSTEM</text>
+              <line x1="320" y1="54" x2="320" y2="70" stroke="#5a4a78" stroke-width="1.6"/>
+              <line x1="150" y1="70" x2="490" y2="70" stroke="#5a4a78" stroke-width="1.6"/>
+              <line x1="150" y1="70" x2="150" y2="86" stroke="#5a4a78" stroke-width="1.6"/>
+              <line x1="490" y1="70" x2="490" y2="86" stroke="#5a4a78" stroke-width="1.6"/>
+
+              <rect x="70" y="86" width="160" height="46" rx="9" fill="rgba(110,231,168,0.14)" stroke="#6ee7a8"/>
+              <text x="150" y="106" font-size="12" font-weight="800" fill="#a7f3d0">CENTRAL (CNS)</text>
+              <text x="150" y="123" font-size="10.5" fill="#8b7fa3">brain · spinal cord</text>
+
+              <rect x="410" y="86" width="160" height="46" rx="9" fill="rgba(255,143,176,0.12)" stroke="#ff8fb0"/>
+              <text x="490" y="106" font-size="12" font-weight="800" fill="#ffd0de">PERIPHERAL (PNS)</text>
+              <text x="490" y="123" font-size="10.5" fill="#8b7fa3">organs · muscles</text>
+
+              <line x1="490" y1="132" x2="490" y2="148" stroke="#5a4a78" stroke-width="1.6"/>
+              <line x1="380" y1="148" x2="580" y2="148" stroke="#5a4a78" stroke-width="1.6"/>
+              <line x1="380" y1="148" x2="380" y2="164" stroke="#5a4a78" stroke-width="1.6"/>
+              <line x1="580" y1="148" x2="580" y2="164" stroke="#5a4a78" stroke-width="1.6"/>
+
+              <rect x="312" y="164" width="136" height="44" rx="8" fill="#171122" stroke="#3d2f57"/>
+              <text x="380" y="183" font-size="11.5" font-weight="700" fill="#d3cbe2">SOMATIC</text>
+              <text x="380" y="199" font-size="10" fill="#8b7fa3">voluntary muscles</text>
+
+              <rect x="512" y="164" width="120" height="44" rx="8" fill="#171122" stroke="#3d2f57"/>
+              <text x="572" y="183" font-size="11.5" font-weight="700" fill="#d3cbe2">AUTONOMIC</text>
+              <text x="572" y="199" font-size="10" fill="#8b7fa3">organs, glands</text>
+
+              <line x1="572" y1="208" x2="572" y2="222" stroke="#5a4a78" stroke-width="1.6"/>
+              <line x1="474" y1="222" x2="600" y2="222" stroke="#5a4a78" stroke-width="1.6"/>
+              <line x1="474" y1="222" x2="474" y2="236" stroke="#5a4a78" stroke-width="1.6"/>
+              <line x1="600" y1="222" x2="600" y2="236" stroke="#5a4a78" stroke-width="1.6"/>
+
+              <rect x="410" y="236" width="128" height="42" rx="8" fill="rgba(251,146,60,0.12)" stroke="#fb923c"/>
+              <text x="474" y="254" font-size="11" font-weight="700" fill="#fdba74">SYMPATHETIC</text>
+              <text x="474" y="269" font-size="10" fill="#8b7fa3">prepares for action</text>
+
+              <rect x="546" y="236" width="86" height="42" rx="8" fill="rgba(110,231,168,0.12)" stroke="#6ee7a8"/>
+              <text x="589" y="254" font-size="11" font-weight="700" fill="#a7f3d0">PARA-</text>
+              <text x="589" y="269" font-size="10" fill="#8b7fa3">returns to rest</text>
+            </g>
+          </svg>
+          <figcaption>Each division below the first splits the one above it. Only the somatic branch is under conscious control.</figcaption>
+        </figure>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Inside the CNS: the spinal cord does more than relay</h4>
+        <span class="role">Reflexes that never reach the brain</span>
+
+        <div class="lesson-def">
+          <span class="term">Spinal reflex</span> — a simple pathway in the nervous system that rapidly generates a muscle contraction without involving the brain.<br><br>
+          <span class="term">Reflex arc</span> — the neural pathway that controls a reflex action. It may include sensory neurons, interneurons and motor neurons; the simplest arcs contain only sensory and motor neurons.<br><br>
+          <span class="term">Interneuron</span> — a neuron connecting other neurons, here relaying the sensory input directly to the motor output within the cord.
+        </div>
+
+        <div class="worked">
+          <span class="wl">Worked example — touching a hot stove</span>
+          The hand withdraws before the pain is consciously felt. The sequence explains why.<br><br>
+          <b>1</b> Sensory neurons in the skin register the heat and send input <b>into the spinal cord</b>.<br>
+          <b>2</b> Within the cord, interneurons relay that input across just a few synapses to motor neurons.<br>
+          <b>3</b> Those motor neurons contract the arm muscles and the hand retracts.<br><br>
+          The brain is informed <b>afterwards</b>, by a separate signal travelling up the cord. The withdrawal is already complete by then. Removing the brain from the loop is what makes the response fast enough to matter.
+        </div>
+
+        <p>Beyond reflexes, the spinal cord is the route by which everything else travels. Sensory messages pass up it to the brain, and commands for voluntary movement pass down it to motor neurons whose axons project out to the skeletal muscles.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the level of a spinal injury matters</span>
+          Damage to the cord severs the connection between the brain and everything <b>below</b> the injury. Sensation and motor control are lost in the body parts supplied from that level downward.<br><br>
+          An injury higher up therefore carries a worse prognosis: damage high in the neck can produce loss of sensation and movement in all four limbs, together with dependence on assisted breathing.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Inside the PNS: somatic and autonomic</h4>
+        <span class="role">Voluntary and involuntary</span>
+
+        <div class="lesson-def">
+          <span class="term">Somatic nervous system</span> — the nerves conveying information between the voluntary muscles and the CNS. Under conscious control.<br><br>
+          <span class="term">Autonomic nervous system (ANS)</span> — the nerves carrying involuntary and automatic commands that control blood vessels, body organs and glands. Largely outside conscious control.
+        </div>
+
+        <p>Reaching for a cup of coffee is somatic. Information from receptors in the eyes travels to the brain, registering that the cup is on the table; signals travel from the brain to the muscles of the arm and hand; feedback from those muscles reports that the cup has been grasped.</p>
+
+        <p>Meanwhile the autonomic system is regulating heart rate, digestion, pupil size and sweating, none of which is being decided on.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The autonomic system has two opposed branches</h4>
+        <span class="role">Sympathetic and parasympathetic</span>
+
+        <div class="lesson-def">
+          <span class="term">Sympathetic nervous system</span> — the nerves that prepare the body for action in challenging or threatening situations.<br><br>
+          <span class="term">Parasympathetic nervous system</span> — the nerves that return the body to its normal resting state.
+        </div>
+
+        <p>The two branches mirror each other. Most organs receive input from both, and the balance between them determines what the organ does.</p>
+
+        <table class="lesson-table">
+          <tr><th>Organ or process</th><th>Sympathetic — prepares for action</th><th>Parasympathetic — returns to rest</th></tr>
+          <tr><td><b>Pupils</b></td><td>Dilate, letting in more light</td><td>Constrict</td></tr>
+          <tr><td><b>Heart rate</b></td><td>Increases</td><td>Slows</td></tr>
+          <tr><td><b>Breathing</b></td><td>Increases, delivering more oxygen</td><td>Slows</td></tr>
+          <tr><td><b>Blood flow</b></td><td>Diverted to the brain and muscles</td><td>Diverted to the digestive system</td></tr>
+          <tr><td><b>Sweat glands</b></td><td>Activated, cooling the body</td><td>Activity decreases</td></tr>
+          <tr><td><b>Digestion</b></td><td>Salivation and bowel movements inhibited</td><td>Resumes</td></tr>
+          <tr><td><b>Pain and injury</b></td><td>Responses suppressed</td><td>Return to normal</td></tr>
+          <tr><td><b>Immune response</b></td><td>Suppressed</td><td>Returns to normal</td></tr>
+        </table>
+
+        <figure class="lesson-fig">
+          <img class="fig-img" src="img/autonomic-innervation.jpg" alt="Diagram showing the vagus nerve and sympathetic cardiac nerves running from the brainstem and spinal cord to the heart" style="max-width:270px">
+          <figcaption>Both branches reach the same organ. The <b>vagus nerve</b> (parasympathetic) decreases heart rate; the <b>sympathetic cardiac nerves</b> increase rate and force of contraction. Heart rate at any moment is the balance of the two.
+            <span class="cred">OpenStax College · CC BY 3.0 · via <a href="https://commons.wikimedia.org/wiki/File:2032_Automatic_Innervation.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+
+        <div class="lesson-plain">
+          <span class="pl">The two branches also cooperate</span>
+          They are not simply opposites operating in turn. Sexual response requires both, in sequence: the parasympathetic branch produces genital engorgement and lubrication, while the sympathetic branch underlies orgasm and ejaculation.<br><br>
+          This is why anxiety disrupts it. Anxiety is sympathetic activation, and it arrives at the point in the sequence where parasympathetic activity is required.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evidence that the response is chemical and automatic</h4>
+        <span class="role">Where "fight or flight" comes from</span>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Cannon &amp; de la Paz (1911) — adrenal secretion during fear</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether the bodily changes accompanying fear are produced by a substance released into the bloodstream, rather than by nerve signals to each organ separately.</dd>
+            <dt>Method</dt>
+            <dd>Cats were exposed to a barking dog. Blood taken from the frightened animals was tested on an isolated strip of intestinal muscle kept alive outside the body, and compared with blood taken from calm animals.</dd>
+            <dt>Results</dt>
+            <dd>Blood from the frightened cats inhibited the isolated muscle in the way adrenaline does. Blood from calm cats did not. The effect disappeared when the nerves supplying the adrenal glands were cut.</dd>
+            <dt>Conclusion</dt>
+            <dd>Emotional excitement causes the sympathetic nervous system to trigger the adrenal glands to release adrenaline into the bloodstream, which then acts on organs throughout the body at once. Cannon later named the pattern the <b>fight-or-flight response</b>.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the design is convincing</span>
+          The muscle strip was <b>outside the body</b> and had no nerve supply. Anything that changed its behaviour must have been carried in the blood.<br><br>
+          Cutting the nerves to the adrenal glands then removed the effect, which identifies where the substance came from. Together these rule out the alternative explanation that fear acts on each organ through separate nerve signals (<i>3.1</i>).
+        </div>
+
+        <p>This is also the point where the nervous and endocrine systems meet. The sympathetic branch acts within about a second; the hormones it releases sustain the state for minutes afterwards (<i>6.7</i>).</p>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a person is startled, and their heart is still racing two minutes later even though they now know they are safe. Explain the delay.</summary>
+          <div class="ans"><b>Two systems with different speeds are involved.</b><br><br>The <b>sympathetic nervous system</b> acts through nerve signals and is fast, taking effect within about a second. It can also be switched off quickly.<br><br>But it simultaneously triggers the <b>adrenal glands</b> to release adrenaline into the <b>bloodstream</b>. Hormones circulate and are cleared slowly, over minutes, so their effects persist after the threat has been recognised as harmless (<i>6.7</i>).<br><br>Recognising safety is a decision taken in the cortex. It does not remove adrenaline already in circulation, and the <b>parasympathetic</b> branch has to bring the body back down rather than simply switching the response off.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>The nervous system divides into the <b>CNS</b> (brain and spinal cord) and the <b>PNS</b> (everything connecting it to organs and muscles).</li>
+          <li>The <b>spinal cord</b> is not only a relay: <b>spinal reflexes</b> generate muscle contractions through a <b>reflex arc</b> without the brain, which is why the hand withdraws before pain is felt.</li>
+          <li>The PNS divides into the <b>somatic</b> system (voluntary muscles, conscious control) and the <b>autonomic</b> system (organs and glands, automatic).</li>
+          <li>The ANS divides into the <b>sympathetic</b> branch, preparing for action, and the <b>parasympathetic</b> branch, returning the body to rest. Most organs receive both.</li>
+          <li><b>Cannon &amp; de la Paz (1911)</b> showed the fear response is carried chemically: blood from frightened cats affected an isolated muscle strip, and the effect vanished when the nerves to the adrenal glands were cut.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, concepts, examples and studies from 6.1, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Nerve</td><td>A bundle of axons together with the glial cells supporting them.</td></tr>
+          <tr><td>Nervous system</td><td>An interacting network of neurons conveying electrochemical information through the body.</td></tr>
+          <tr><td>Central nervous system (CNS)</td><td>The brain and the spinal cord.</td></tr>
+          <tr><td>Peripheral nervous system (PNS)</td><td>The nerves connecting the CNS to the body's organs and muscles.</td></tr>
+          <tr><td>Spinal reflex</td><td>A simple pathway that rapidly generates a muscle contraction without involving the brain.</td></tr>
+          <tr><td>Reflex arc</td><td>The neural pathway controlling a reflex action; sensory neuron, often an interneuron, and motor neuron.</td></tr>
+          <tr><td>Somatic nervous system</td><td>Nerves conveying information between voluntary muscles and the CNS. Under conscious control.</td></tr>
+          <tr><td>Autonomic nervous system (ANS)</td><td>Nerves carrying involuntary commands to blood vessels, organs and glands.</td></tr>
+          <tr><td>Sympathetic nervous system</td><td>The branch preparing the body for action in challenging or threatening situations.</td></tr>
+          <tr><td>Parasympathetic nervous system</td><td>The branch returning the body to its normal resting state.</td></tr>
+          <tr><td>Fight-or-flight response</td><td>Cannon's name for the coordinated set of sympathetic changes that prepare the body to escape or confront a threat.</td></tr>
+          <tr><td>Homeostasis</td><td>Cannon's term for the body's maintenance of a steady internal state.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Organisation is the point.</b> Neurons in isolation explain nothing; the divisions exist because different classes of task need different arrangements.</li>
+          <li><b>The spinal cord decides some things itself.</b> Reflexes complete before the brain is informed, which is what makes them fast enough to be protective.</li>
+          <li><b>Injury level predicts loss.</b> Function is lost below the damage, so higher injuries carry worse prognoses.</li>
+          <li><b>Only the somatic branch is voluntary.</b> Everything the autonomic branch does proceeds without decision.</li>
+          <li><b>Most organs receive both autonomic branches</b>, and their state is the balance between the two rather than the action of one.</li>
+          <li><b>The two branches cooperate as well as oppose</b>, which is why anxiety — sympathetic activation — disrupts a sexual response that requires parasympathetic activity first.</li>
+          <li><b>Nerve signals are fast, hormones are slow.</b> The sympathetic branch acts in about a second; the adrenaline it releases keeps the state going for minutes.</li>
+        </ul>
+
+        <h5>Examples used</h5>
+        <ul>
+          <li><b>Touching a hot stove</b> — sensory neuron to interneuron to motor neuron within the cord; the brain learns about it afterwards.</li>
+          <li><b>Reaching for a cup of coffee</b> — the somatic system: eyes to brain, brain to arm muscles, muscle feedback back to the brain.</li>
+          <li><b>The heart</b> — the vagus nerve slows it, the sympathetic cardiac nerves speed it up; rate is the balance of the two.</li>
+          <li><b>Sexual response</b> — parasympathetic for engorgement and lubrication, sympathetic for orgasm and ejaculation; anxiety disrupts the balance.</li>
+          <li><b>Still racing two minutes later</b> — circulating adrenaline outlasts the recognition of safety.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Cannon &amp; de la Paz (1911)</b> — blood from cats frightened by a barking dog inhibited an isolated strip of intestinal muscle as adrenaline does; blood from calm cats did not, and the effect disappeared when the nerves to the adrenal glands were cut. Fear acts through a substance released into the bloodstream, not through separate nerve signals to each organ.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 6.2 ---------- */
+  'b-brainstem': {
+    eyebrow: 'Part II · Topic 06 · Biological Bases',
+    title: 'The brainstem, cerebellum and subcortical structures',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/brainstem.jpg" alt="Midsagittal section of the human brain with the midbrain, pons and medulla labelled">
+        <figcaption><b>The brainstem.</b> A midsagittal section, cut down the midline. The <b>medulla</b>, <b>pons</b> and <b>midbrain</b> form the stalk on which the rest of the brain sits, and they run the functions that cannot be allowed to stop: breathing, heart rate, arousal.
+          <span class="cred">OpenStax · CC BY 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:1311_Brain_Stem.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, "Structure of the Brain", covering <i>The Hindbrain</i>, <i>The Midbrain</i> and the subcortical structures of <i>The Forebrain</i>.
+      </div>
+
+      <p class="lesson-lead">The brain is organised in layers that correspond roughly to how old each part is. The structures nearest the spinal cord handle the functions that keep an animal alive; those furthest from it handle thought. This lesson covers everything below the cortex: the brainstem, the cerebellum, and the structures buried in the middle of the brain.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Three regions, from the cord upward</h4>
+        <span class="role">Hindbrain, midbrain, forebrain</span>
+
+        <div class="lesson-def">
+          <span class="term">Hindbrain</span> — the area of the brain that coordinates information coming into and out of the spinal cord. It controls the most basic functions of life.<br><br>
+          <span class="term">Midbrain</span> — a small region above the hindbrain, concerned with orienting toward stimuli, movement and arousal.<br><br>
+          <span class="term">Forebrain</span> — the largest region, containing the cerebral cortex and the subcortical structures beneath it.
+        </div>
+
+        <p>Following the spinal cord upward from the tailbone, the first brain structure reached is the hindbrain. The organisation is not arbitrary: functions essential to survival sit closest to the cord, and the more recently evolved structures sit above them.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The hindbrain</h4>
+        <span class="role">Medulla, reticular formation, cerebellum, pons</span>
+
+        <div class="lesson-def">
+          <span class="term">Medulla</span> — an extension of the spinal cord into the skull that coordinates heart rate, circulation and respiration.<br><br>
+          <span class="term">Reticular formation</span> — a cluster of neurons extending upward from the medulla that regulates sleep, wakefulness and level of arousal.<br><br>
+          <span class="term">Cerebellum</span> — a large structure of the hindbrain that controls fine motor skills. The name means "little brain".<br><br>
+          <span class="term">Pons</span> — a structure that relays information from the cerebellum to the rest of the brain. The name means "bridge".
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Structure</th><th>Function</th><th>What damage produces</th></tr>
+          <tr><td><b>Medulla</b></td><td>Heart rate, circulation, respiration</td><td>Fatal without mechanical support; these functions cannot be taken over by other structures</td></tr>
+          <tr><td><b>Reticular formation</b></td><td>Sleep, wakefulness, arousal</td><td>Coma, or persistent inability to maintain wakefulness</td></tr>
+          <tr><td><b>Cerebellum</b></td><td>Fine motor skill, coordination, balance, timing</td><td>Movement becomes jerky and poorly aimed; balance is impaired, though strength is normal</td></tr>
+          <tr><td><b>Pons</b></td><td>Relays cerebellar information to the rest of the brain</td><td>Disrupts coordination and, with extensive damage, consciousness</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">The cerebellum is not a minor structure</span>
+          It holds more neurons than the rest of the brain combined, despite occupying about a tenth of its volume.<br><br>
+          Its role is best seen in what alcohol does. Alcohol acts strongly on the cerebellum, which is why intoxication produces unsteady walking, poor balance and clumsy hands while leaving strength unaffected. A roadside coordination test is, in effect, a cerebellar examination.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Moruzzi &amp; Magoun (1949) — the reticular formation and arousal</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine what maintains wakefulness, given that sensory input alone did not appear to account for it.</dd>
+            <dt>Method</dt>
+            <dd>Electrodes were used to stimulate the reticular formation in sleeping cats, and EEG recordings were taken from the cortex. Separately, the effect of severing the structure was observed.</dd>
+            <dt>Results</dt>
+            <dd>Stimulating the reticular formation woke the animals immediately, and the cortical EEG shifted from the slow waves of sleep to the fast pattern of alertness. Severing the structure produced a permanent sleep-like state from which the animal could not be roused.</dd>
+            <dt>Conclusion</dt>
+            <dd>Wakefulness is actively generated by the reticular formation driving the cortex, rather than being the default state that sensory input maintains. The structure is now often called the <b>reticular activating system</b>.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The midbrain</h4>
+        <span class="role">Orienting and movement</span>
+
+        <div class="lesson-def">
+          <span class="term">Tectum</span> — the part of the midbrain that orients an organism in the environment.<br><br>
+          <span class="term">Tegmentum</span> — the part of the midbrain involved in movement and arousal.
+        </div>
+
+        <p>The midbrain is small and easily overlooked. Its function is best described as automatic orienting: a sudden noise to one side turns the head and eyes toward it before any decision is made about what the noise was.</p>
+
+        <p>The tegmentum also contains the dopamine-producing neurons of the substantia nigra and ventral tegmental area, which is where the pathways of <i>5.4</i> begin.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Subcortical structures</h4>
+        <span class="role">Buried in the middle of the forebrain</span>
+
+        <div class="lesson-def">
+          <span class="term">Subcortical structures</span> — areas of the forebrain lying beneath the cerebral cortex, near the centre of the brain.<br><br>
+          <span class="term">Thalamus</span> — a subcortical structure that relays and filters information from the senses and transmits it to the cerebral cortex.<br><br>
+          <span class="term">Basal ganglia</span> — a set of subcortical structures that directs intentional movement.
+        </div>
+
+        <p>The thalamus sits at the centre and is the gateway to the cortex. Almost every sensory signal passes through it on the way up: seeing an apple, feeling its skin, hearing the crunch and tasting it all involve thalamic relay. Smell is the exception, reaching the cortex without passing through it.</p>
+
+        <p>The word <b>filters</b> matters as much as <b>relays</b>. The thalamus does not pass everything on. It suppresses some incoming signals and amplifies others depending on the state of the organism, which is part of why sensory input largely stops reaching awareness during sleep.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">The basal ganglia and Parkinson's disease</span>
+          The basal ganglia receive input from the cortex and direct intentional movement. The <b>striatum</b>, one of their components, depends on dopamine arriving from the substantia nigra.<br><br>
+          When those dopamine neurons die, the striatum can no longer direct movement effectively, which produces the tremor and difficulty initiating movement seen in Parkinson's disease. The problem is not weakness of the muscles, and not loss of the intention to move (<i>5.4</i>, <i>5.6</i>).
+        </div>
+
+        <p>The remaining subcortical structures — the hypothalamus, hippocampus and amygdala — form the limbic system, and are covered in the next lesson (<i>6.3</i>). The pituitary gland, also subcortical, belongs to the endocrine system (<i>6.7</i>).</p>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a patient can lift and grip objects with normal strength, but their hand overshoots when reaching for a cup and their walking is unsteady. Which structure is most likely damaged, and why not the motor cortex?</summary>
+          <div class="ans"><b>The cerebellum.</b> The pattern is a coordination failure, not a strength failure.<br><br><b>Why not the motor cortex.</b> Damage there produces <b>weakness or paralysis</b> — the movement cannot be made at all, or is made feebly. Here the movement is made with normal force but is badly aimed and poorly timed, which is the cerebellar signature.<br><br>The cerebellum's job is fine motor control, coordination, balance and timing, so damage leaves the intention and the power intact while spoiling the execution. The same combination appears temporarily with alcohol intoxication, which acts strongly on this structure.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>The brain is layered from the cord upward: <b>hindbrain</b>, <b>midbrain</b>, <b>forebrain</b>. Survival functions sit closest to the cord.</li>
+          <li><b>Medulla</b>: heart rate, circulation, respiration. <b>Reticular formation</b>: sleep, wakefulness, arousal. <b>Cerebellum</b>: fine motor skill and balance. <b>Pons</b>: relays cerebellar information.</li>
+          <li><b>Moruzzi &amp; Magoun (1949)</b> showed wakefulness is actively generated by the reticular formation driving the cortex, not merely maintained by sensory input.</li>
+          <li>The <b>midbrain</b> orients the organism automatically — <b>tectum</b> for orienting, <b>tegmentum</b> for movement and arousal.</li>
+          <li>The <b>thalamus</b> relays and <b>filters</b> sensory information on its way to the cortex; smell is the exception that bypasses it.</li>
+          <li>The <b>basal ganglia</b> direct intentional movement, and their dopamine supply failing is what produces Parkinson's disease.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, structures, examples and studies from 6.2, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Hindbrain</td><td>The area coordinating information into and out of the spinal cord; controls the most basic functions of life.</td></tr>
+          <tr><td>Midbrain</td><td>A small region above the hindbrain concerned with orienting, movement and arousal.</td></tr>
+          <tr><td>Forebrain</td><td>The largest region: the cerebral cortex plus the subcortical structures beneath it.</td></tr>
+          <tr><td>Medulla</td><td>An extension of the spinal cord into the skull, coordinating heart rate, circulation and respiration.</td></tr>
+          <tr><td>Reticular formation</td><td>A cluster of neurons extending up from the medulla regulating sleep, wakefulness and arousal.</td></tr>
+          <tr><td>Cerebellum</td><td>A large hindbrain structure controlling fine motor skills. Holds more neurons than the rest of the brain combined.</td></tr>
+          <tr><td>Pons</td><td>A structure relaying information from the cerebellum to the rest of the brain.</td></tr>
+          <tr><td>Tectum</td><td>The part of the midbrain that orients an organism in the environment.</td></tr>
+          <tr><td>Tegmentum</td><td>The part of the midbrain involved in movement and arousal.</td></tr>
+          <tr><td>Subcortical structures</td><td>Forebrain areas lying beneath the cortex, near the centre of the brain.</td></tr>
+          <tr><td>Thalamus</td><td>A subcortical structure that relays and filters sensory information and transmits it to the cortex.</td></tr>
+          <tr><td>Basal ganglia</td><td>A set of subcortical structures directing intentional movement; includes the striatum.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Layering reflects function.</b> Structures nearest the spinal cord run what cannot be allowed to stop; those furthest from it support thought.</li>
+          <li><b>Medullary functions have no backup.</b> Other structures cannot take over breathing and heart rate, which is why damage there is fatal without mechanical support.</li>
+          <li><b>Wakefulness is generated, not merely permitted.</b> The reticular formation actively drives the cortex into the alert state.</li>
+          <li><b>Cerebellar damage spoils execution, not power.</b> Strength and intention are intact; aim, timing and balance are not.</li>
+          <li><b>The thalamus filters as well as relays</b>, suppressing and amplifying signals according to the state of the organism.</li>
+          <li><b>Parkinson's is a basal ganglia problem caused elsewhere</b> — the striatum fails because the dopamine reaching it from the substantia nigra has gone.</li>
+        </ul>
+
+        <h5>Examples used</h5>
+        <ul>
+          <li><b>Alcohol intoxication</b> — unsteady walking, poor balance, clumsy hands with normal strength. A roadside coordination test is effectively a cerebellar examination.</li>
+          <li><b>A sudden noise to one side</b> — the midbrain turns head and eyes toward it before any decision about what it was.</li>
+          <li><b>Seeing, feeling, hearing and tasting an apple</b> — all relayed through the thalamus. Smell is the exception.</li>
+          <li><b>Sleep</b> — sensory input largely stops reaching awareness because the thalamus stops passing it on.</li>
+          <li><b>Overshooting when reaching for a cup</b> — the cerebellar signature, distinguished from motor cortex damage by preserved strength.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Moruzzi &amp; Magoun (1949)</b> — stimulating the reticular formation in sleeping cats woke them immediately and shifted the cortical EEG from slow sleep waves to the fast pattern of alertness; severing it produced an unrousable sleep-like state. Wakefulness is actively generated. The structure is now often called the reticular activating system.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 6.3 ---------- */
+  'b-limbic': {
+    eyebrow: 'Part II · Topic 06 · Biological Bases',
+    title: 'The limbic system',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/limbic-lobe.jpg" alt="Midsagittal diagram of the brain with the amygdala, hippocampus, hypothalamic nuclei, thalamus, cingulate gyrus and corpus callosum labelled">
+        <figcaption><b>The limbic system.</b> A group of structures curving around the centre of the brain, where the subcortical structures meet the cerebral cortex. The <b>amygdala</b>, <b>hippocampus</b> and <b>hypothalamus</b> are the three that matter most for psychology.
+          <span class="cred">OpenStax College · CC BY 3.0 · via <a href="https://commons.wikimedia.org/wiki/File:1511_The_Limbic_Lobe.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, "Structure of the Brain", the subsections on the <i>Thalamus and Hypothalamus</i> and <i>The Limbic System</i>.
+      </div>
+
+      <p class="lesson-lead">Motivation, emotion, learning and memory are handled by a group of structures sitting between the subcortical regions and the cortex. This lesson covers the three that appear most often in psychology — the hypothalamus, the hippocampus and the amygdala — and what damage to each of them produces.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What the limbic system is</h4>
+        <span class="role">A group, not a single organ</span>
+
+        <div class="lesson-def">
+          <span class="term">Limbic system</span> — a group of forebrain structures including the hypothalamus, the hippocampus and the amygdala, involved in motivation, emotion, learning and memory.
+        </div>
+
+        <p>The limbic system is where the subcortical structures meet the cerebral cortex. It is a grouping of convenience rather than a single working organ, and the boundaries are drawn slightly differently by different authors.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">A caution about "the emotional brain"</span>
+          The limbic system is frequently described as the emotional part of the brain, in contrast to a rational cortex. That contrast does not survive contact with the evidence.<br><br>
+          The hippocampus is central to <b>memory</b> rather than emotion. The cortex is heavily involved in emotion. And the structures listed as limbic do not form a single circuit doing one job. Treat the term as a useful label for a region, not as an explanation (<i>6.6</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The hypothalamus</h4>
+        <span class="role">Regulating the body's internal state</span>
+
+        <div class="lesson-def">
+          <span class="term">Hypothalamus</span> — a subcortical structure that regulates body temperature, hunger, thirst and sexual behaviour.
+        </div>
+
+        <p>The hypothalamus is roughly the size of an almond and sits below the thalamus, which is what its name records. Its job is to keep the internal state of the body within workable limits, and to generate the motivational states that make an animal act when it drifts outside them.</p>
+
+        <p>It does this in two ways: through the autonomic nervous system, and by controlling the pituitary gland, which releases hormones directing other glands throughout the body (<i>6.7</i>). It is therefore the point where the nervous system and the endocrine system connect.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Olds &amp; Milner (1954) — reward and self-stimulation</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To investigate the effect of electrical stimulation of specific brain regions on the behaviour of rats.</dd>
+            <dt>Method</dt>
+            <dd>Electrodes were implanted in the region of the hypothalamus and adjacent structures. Rats were placed in a box containing a lever; pressing the lever delivered a brief electrical stimulation to the implanted site.</dd>
+            <dt>Results</dt>
+            <dd>Rats pressed the lever repeatedly, in some cases at very high rates and for extended periods. They continued to press in preference to eating and drinking, and would cross an electrified grid to reach the lever.</dd>
+            <dt>Conclusion</dt>
+            <dd>Stimulation of these regions functions as a reward in itself. The finding identified reward as something the brain implements in specific circuitry, rather than as a purely behavioural notion. Later work located the pathway in the dopamine projection from the ventral tegmental area to the nucleus accumbens (<i>5.4</i>).</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The hippocampus</h4>
+        <span class="role">Making new memories, not storing them</span>
+
+        <div class="lesson-def">
+          <span class="term">Hippocampus</span> — a structure critical for creating new memories and integrating them into a network of knowledge, so that they can be stored indefinitely in other parts of the cerebral cortex.
+        </div>
+
+        <p>The definition contains the distinction that matters. The hippocampus <b>creates</b> memories; it does not hold them permanently. Long-term storage is distributed across the cortex.</p>
+
+        <p>This is why damage produces a very specific pattern. A person with hippocampal damage can take in new information and hold it in awareness for a few seconds, but as soon as they are distracted, the information and the experience of receiving it are gone. Memories formed before the damage are typically intact, because they are already stored elsewhere (<i>7.1</i>, <i>16.5</i>).</p>
+
+        <div class="lesson-plain">
+          <span class="pl">What this rules out</span>
+          If the hippocampus were the store, damage would erase old memories as well as preventing new ones. It does not.<br><br>
+          A single dissociation of this kind — one ability lost, a closely related one preserved — is strong evidence that two processes are separate rather than one process of varying difficulty (<i>7.1</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The amygdala</h4>
+        <span class="role">Emotional significance, especially threat</span>
+
+        <div class="lesson-def">
+          <span class="term">Amygdala</span> — a part of the limbic system playing a central role in many emotional processes, particularly the formation of emotional memories.
+        </div>
+
+        <p>The name is Latin for almond, after its shape. It sits at the tip of the hippocampus on each side, and its role is to evaluate incoming information for emotional significance, then to influence what the rest of the brain does about it.</p>
+
+        <p>Its involvement in memory is a consequence of this. Events that carry emotional weight are remembered better than neutral ones, and the amygdala acting on the hippocampus during the event is part of why.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Adolphs et al. (1994) — patient S.M. and the recognition of fear</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To establish what function is lost when the amygdala is destroyed on both sides.</dd>
+            <dt>Method</dt>
+            <dd>Patient S.M. has Urbach–Wiethe disease, which had destroyed her amygdala bilaterally while leaving surrounding structures largely intact. She was shown photographs of faces and asked to identify the emotion expressed and to rate its intensity.</dd>
+            <dt>Results</dt>
+            <dd>She identified happiness, sadness, disgust and surprise normally. She was specifically impaired at recognising <b>fear</b>, and rated fearful faces as far less intense than control participants did. Her ability to recognise <i>who</i> the faces belonged to was unaffected.</dd>
+            <dt>Conclusion</dt>
+            <dd>The amygdala is necessary for recognising fear in others, and this function is separable both from recognising other emotions and from recognising identity. Later work with the same patient found she also reported little fear when exposed to snakes, spiders and a haunted house.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why this case is worth more than its sample size</span>
+          A single case cannot establish how common something is, and it is not being used for that here. It is being used to show that two abilities can <b>come apart</b> — that recognising fear can be lost while recognising disgust, surprise and identity remain.<br><br>
+          One clear case is enough to establish that a separation is possible, which is a different kind of claim from a claim about a population (<i>3.5</i>, <i>3.2</i>).
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a patient can hold a conversation, recall their childhood in detail, and learn to trace a shape in a mirror more skilfully each day — yet denies ever having done the mirror task before. Which structure is damaged, and what does the pattern show?</summary>
+          <div class="ans"><b>The hippocampus.</b><br><br><b>What is preserved.</b> Conversation requires holding information for seconds, which does not depend on the hippocampus. Childhood memories were stored in the cortex long before the damage. And the mirror-tracing skill is improving, so some learning is clearly occurring.<br><br><b>What is lost.</b> The ability to form a new conscious memory of an event — including the event of having practised.<br><br><b>What the pattern shows.</b> Memory is not one system. The skill improves while the memory of acquiring it does not form, which means the two are handled separately. This is the pattern found in patient H.M. (<i>3.2</i>, <i>7.1</i>).</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>The <b>limbic system</b> is a group of forebrain structures — hypothalamus, hippocampus, amygdala — involved in motivation, emotion, learning and memory.</li>
+          <li>Calling it "the emotional brain" is misleading: the hippocampus is a memory structure, and the cortex is heavily involved in emotion.</li>
+          <li>The <b>hypothalamus</b> regulates temperature, hunger, thirst and sexual behaviour, and links the nervous system to the endocrine system through the pituitary.</li>
+          <li><b>Olds &amp; Milner (1954)</b> found rats would press a lever repeatedly for electrical stimulation of this region, in preference to food and water.</li>
+          <li>The <b>hippocampus</b> creates new memories and integrates them for storage <b>elsewhere</b> in the cortex, which is why damage prevents new memories while leaving old ones intact.</li>
+          <li>The <b>amygdala</b> evaluates emotional significance, particularly threat. <b>Adolphs et al. (1994)</b> found patient S.M. specifically impaired at recognising fear while other emotions and identity were unaffected.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, concepts, examples and studies from 6.3, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Limbic system</td><td>A group of forebrain structures including the hypothalamus, hippocampus and amygdala, involved in motivation, emotion, learning and memory.</td></tr>
+          <tr><td>Hypothalamus</td><td>A subcortical structure regulating body temperature, hunger, thirst and sexual behaviour.</td></tr>
+          <tr><td>Hippocampus</td><td>A structure critical for creating new memories and integrating them so they can be stored indefinitely elsewhere in the cortex.</td></tr>
+          <tr><td>Amygdala</td><td>A limbic structure central to emotional processes, particularly the formation of emotional memories and the evaluation of threat.</td></tr>
+          <tr><td>Single dissociation</td><td>One ability lost while a closely related one is preserved — evidence that two processes are separate rather than one of varying difficulty.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>"The emotional brain" is a label, not an explanation.</b> The hippocampus is a memory structure, the cortex is heavily involved in emotion, and the limbic structures do not form one circuit doing one job.</li>
+          <li><b>The hypothalamus is the junction of two systems.</b> It acts through the autonomic nervous system and through the pituitary gland's hormones.</li>
+          <li><b>The hippocampus creates rather than stores.</b> Long-term storage is distributed across the cortex, which is why old memories survive damage that prevents new ones.</li>
+          <li><b>Reward is implemented in circuitry.</b> Olds and Milner's rats show it is a brain state that can be triggered directly, not only a description of behaviour.</li>
+          <li><b>The amygdala's memory role follows from its emotional one.</b> Emotionally significant events are better remembered partly because the amygdala acts on the hippocampus as they occur.</li>
+          <li><b>A single case can establish possibility.</b> S.M. shows that recognising fear can be lost while other emotion recognition survives — a claim about what can come apart, not about how common it is.</li>
+        </ul>
+
+        <h5>Examples used</h5>
+        <ul>
+          <li><b>Holding information for a few seconds then losing it on distraction</b> — the hippocampal damage pattern.</li>
+          <li><b>Emotional events remembered better than neutral ones</b> — the amygdala acting on the hippocampus during encoding.</li>
+          <li><b>Mirror-tracing improving while the memory of practising does not form</b> — evidence that skill learning and conscious memory are separate systems.</li>
+        </ul>
+
+        <h5>Key studies</h5>
+        <ul>
+          <li><b>Olds &amp; Milner (1954)</b> — rats with electrodes near the hypothalamus pressed a lever repeatedly for stimulation, in preference to eating and drinking, and crossed an electrified grid to reach it. Stimulation of these regions is rewarding in itself.</li>
+          <li><b>Adolphs et al. (1994)</b> — patient S.M., whose amygdala had been destroyed bilaterally by Urbach–Wiethe disease, recognised happiness, sadness, disgust and surprise normally but was specifically impaired at recognising <b>fear</b> and rated fearful faces as much less intense. Recognition of identity was unaffected.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 6.4 ---------- */
+  'b-cortex': {
+    eyebrow: 'Part II · Topic 06 · Biological Bases',
+    title: 'The cerebral cortex and the four lobes',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/cortex-lobes.jpg" alt="Side view of the human brain with the frontal, parietal, temporal and occipital lobes shaded in different colours and labelled">
+        <figcaption><b>The four lobes of the cerebral cortex.</b> The <b>frontal</b>, <b>parietal</b>, <b>temporal</b> and <b>occipital</b> lobes, divided by the deep grooves visible on the surface. The raised folds are <b>gyri</b>; the grooves between them are <b>sulci</b>.
+          <span class="cred">OpenStax · CC BY 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:1306_Lobes_of_Cerebral_CortexN.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, "Structure of the Brain", the subsection on the <i>Cerebral Cortex</i> and its lobes.
+      </div>
+
+      <p class="lesson-lead">The cerebral cortex is the outermost layer of the brain and the part responsible for perception, language, planning and voluntary movement. It is conventionally divided into four lobes on each side. This lesson covers what each lobe does, how the map of the body is laid out across it, and why that map is distorted.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The cortex and its folding</h4>
+        <span class="role">Why the surface is wrinkled</span>
+
+        <div class="lesson-def">
+          <span class="term">Cerebral cortex</span> — the outermost layer of the brain, visible to the naked eye and divided into two hemispheres.<br><br>
+          <span class="term">Gyri</span> — the raised, smooth folds on the cortical surface. Singular: gyrus.<br><br>
+          <span class="term">Sulci</span> — the indentations between the folds. Singular: sulcus.
+        </div>
+
+        <p>The cortex is a sheet only a few millimetres thick. Folding it allows a large sheet to fit inside a skull that has to pass through a birth canal: roughly two-thirds of the cortical surface is hidden inside the sulci rather than exposed on the outside.</p>
+
+        <p>The deeper sulci serve as landmarks, and are what the four lobes are divided along. The <b>central sulcus</b> separates the frontal lobe from the parietal lobe; the <b>lateral sulcus</b> marks off the temporal lobe below.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The four lobes</h4>
+        <span class="role">From the back of the head forward</span>
+
+        <div class="lesson-def">
+          <span class="term">Occipital lobe</span> — a region of the cortex that processes visual information.<br><br>
+          <span class="term">Parietal lobe</span> — a region whose functions include processing information about touch.<br><br>
+          <span class="term">Temporal lobe</span> — a region responsible for hearing and language.<br><br>
+          <span class="term">Frontal lobe</span> — a region responsible for movement, planning, judgement and the control of behaviour.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Lobe</th><th>Location</th><th>Main functions</th><th>What damage can produce</th></tr>
+          <tr><td><b>Occipital</b></td><td>Back of the head</td><td>Vision — edges, orientation, motion, colour, and building these into objects</td><td>Blindness despite intact eyes; inability to recognise objects by sight</td></tr>
+          <tr><td><b>Parietal</b></td><td>Top and behind the central sulcus</td><td>Touch, temperature, pain; where objects are in space; attention</td><td>Loss of sensation; neglect of one side of space</td></tr>
+          <tr><td><b>Temporal</b></td><td>Side, below the lateral sulcus</td><td>Hearing, language comprehension, recognising objects and faces</td><td>Deafness despite intact ears; impaired comprehension of speech</td></tr>
+          <tr><td><b>Frontal</b></td><td>Front</td><td>Voluntary movement, planning, judgement, speech production, inhibiting behaviour</td><td>Weakness or paralysis; impaired planning and social judgement</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">"Processes visual information" understates the occipital lobe</span>
+          Visual information arriving from the eye reaches the thalamus, which sends it to the occipital lobe. There, simple features are extracted first — the location and orientation of an object's edges — and are then combined into more complex representations further along.<br><br>
+          The consequence is that the eye is not what does the seeing. When the occipital lobe is damaged, a person with perfectly functioning eyes can be blind. The information arrives and is not turned into anything.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two strips facing each other across the central sulcus</h4>
+        <span class="role">The motor and somatosensory cortices</span>
+
+        <div class="lesson-def">
+          <span class="term">Motor cortex</span> — a strip at the rear of the frontal lobe, on the precentral gyrus, that initiates voluntary movement.<br><br>
+          <span class="term">Somatosensory cortex</span> — a strip at the front of the parietal lobe, on the postcentral gyrus, that receives touch information from the body.<br><br>
+          <span class="term">Topographic map</span> — an arrangement in which neighbouring parts of the body are represented by neighbouring parts of the cortex.
+        </div>
+
+        <p>These two strips sit directly opposite each other, separated by the central sulcus. Both are organised as maps of the body, running from the toes at the top to the face at the bottom.</p>
+
+        <p>Both are also <b>contralateral</b>: the left strip controls and receives from the right side of the body, and the right strip from the left side (<i>6.5</i>).</p>
+
+        <figure class="lesson-fig">
+          <img class="fig-img paper" src="img/homunculus.png" alt="Diagram of the sensory homunculus, a cross-section of cortex with body parts drawn in proportion to the cortical area devoted to them">
+          <figcaption>The <b>sensory homunculus</b>. Each body part is drawn in proportion to the amount of cortex devoted to it, not to its physical size. The hands, lips and tongue are enormous; the trunk and legs are small.
+            <span class="cred">OpenStax, vectorised by Ralf Roletschek · CC BY 3.0 · via <a href="https://commons.wikimedia.org/wiki/File:Sensory_Homunculus-en.svg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+
+        <div class="lesson-plain">
+          <span class="pl">What the distortion means</span>
+          Cortical space is allocated according to <b>how finely a region must be sensed or controlled</b>, not by how large it is.<br><br>
+          The fingertips and lips need very fine spatial discrimination, so they receive a large area. The back needs little, so it receives a small one.<br><br>
+          This makes a testable prediction: two points touched close together should be distinguishable as two on the fingertip but felt as one on the back. They are. Rough thresholds are about 2–4 mm on the fingertip and over 40 mm on the back.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Penfield &amp; Rasmussen (1950) — mapping the cortex during surgery</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To map the functions of the cortical surface, in order to avoid removing essential tissue during surgery for severe epilepsy.</dd>
+            <dt>Method</dt>
+            <dd>Patients undergoing surgery were kept conscious under local anaesthetic, since the brain itself contains no pain receptors. Wilder Penfield applied a weak electrical current to points on the exposed cortex and recorded what the patient reported or did. Findings were accumulated across many patients over years.</dd>
+            <dt>Results</dt>
+            <dd>Stimulating points along the postcentral gyrus produced sensations felt in specific body parts; stimulating the precentral gyrus produced movements. Neighbouring points corresponded to neighbouring body parts, and the amount of cortex given to each part varied enormously and consistently.</dd>
+            <dt>Conclusion</dt>
+            <dd>The body is represented topographically across both strips, in proportion to required precision rather than physical size. Penfield drew the result as the distorted figure now called the <b>homunculus</b>, meaning "little man".</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Association areas</h4>
+        <span class="role">The majority of the cortex</span>
+
+        <div class="lesson-def">
+          <span class="term">Association areas</span> — regions of cortex that are not primarily sensory or motor, and that combine and interpret information from other areas.
+        </div>
+
+        <p>The primary sensory and motor strips occupy a minority of the cortical surface. Most of it is association cortex, and the proportion is larger in humans than in other species.</p>
+
+        <p>This is where the difference between sensing and understanding sits. The primary visual area registers edges and orientations; recognising that the pattern is a face, belonging to someone known, arriving at a surprising moment, involves association areas in the temporal and frontal lobes.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">The frontal lobe and behavioural control</span>
+          The frontal lobes are the last part of the brain to mature, continuing to develop into the mid-twenties. Their role is largely inhibitory: selecting an action means suppressing the alternatives (<i>5.5</i>).<br><br>
+          Damage to the frontal lobes characteristically leaves intelligence, language and memory intact while impairing planning, judgement and the regulation of behaviour. The case of Phineas Gage is the standard example (<i>3.2</i>, <i>7.1</i>).
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a surgeon stimulates a point on a conscious patient's postcentral gyrus and the patient reports a tingling in the left thumb. Predict what stimulating a point one centimetre away, further down the strip, would produce — and what stimulating the matching point across the central sulcus would produce.</summary>
+          <div class="ans"><b>The point one centimetre down.</b> A sensation in a <b>neighbouring body part</b>, most likely the index finger or the palm, since the map is topographic and adjacent points represent adjacent parts. Given how much cortex the hand receives, one centimetre may not even leave the hand.<br><br><b>Across the central sulcus.</b> That is the <b>precentral gyrus</b> — motor cortex. Stimulation would produce a <b>movement</b> rather than a sensation, in roughly the same body part: a twitch of the left thumb.<br><br><b>Why the left thumb in both cases.</b> The strips are contralateral, so this must be the <b>right</b> hemisphere (<i>6.5</i>).</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>The <b>cerebral cortex</b> is a folded sheet a few millimetres thick; <b>gyri</b> are the folds and <b>sulci</b> the grooves, about two-thirds of the surface being hidden inside them.</li>
+          <li>Four lobes: <b>occipital</b> (vision), <b>parietal</b> (touch and space), <b>temporal</b> (hearing and language), <b>frontal</b> (movement, planning, judgement).</li>
+          <li>The <b>motor cortex</b> and <b>somatosensory cortex</b> face each other across the central sulcus, both organised as <b>topographic maps</b> of the body and both <b>contralateral</b>.</li>
+          <li>The maps are distorted: cortical space follows <b>required precision</b>, not body size, which is why the fingertips and lips dominate the <b>homunculus</b>.</li>
+          <li><b>Penfield &amp; Rasmussen (1950)</b> established the maps by stimulating the cortex of conscious surgical patients.</li>
+          <li>Most of the cortex is <b>association cortex</b>, which combines and interprets rather than registering or commanding directly.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, lobes, examples and studies from 6.4, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Cerebral cortex</td><td>The outermost layer of the brain, visible to the naked eye and divided into two hemispheres.</td></tr>
+          <tr><td>Gyri / sulci</td><td>The raised folds on the cortical surface, and the grooves between them.</td></tr>
+          <tr><td>Occipital lobe</td><td>The region processing visual information.</td></tr>
+          <tr><td>Parietal lobe</td><td>The region whose functions include processing touch, and locating objects in space.</td></tr>
+          <tr><td>Temporal lobe</td><td>The region responsible for hearing and language.</td></tr>
+          <tr><td>Frontal lobe</td><td>The region responsible for movement, planning, judgement and the control of behaviour.</td></tr>
+          <tr><td>Motor cortex</td><td>A strip on the precentral gyrus, at the rear of the frontal lobe, initiating voluntary movement.</td></tr>
+          <tr><td>Somatosensory cortex</td><td>A strip on the postcentral gyrus, at the front of the parietal lobe, receiving touch information.</td></tr>
+          <tr><td>Topographic map</td><td>An arrangement in which neighbouring body parts are represented by neighbouring cortex.</td></tr>
+          <tr><td>Contralateral</td><td>Each hemisphere controls and receives from the opposite side of the body.</td></tr>
+          <tr><td>Homunculus</td><td>The distorted figure representing the body as mapped onto the cortex, drawn in proportion to cortical area.</td></tr>
+          <tr><td>Association areas</td><td>Cortex that is not primarily sensory or motor, combining and interpreting information from other areas.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Folding solves a packing problem.</b> A large sheet fits a small skull, at the cost of two-thirds of it being buried in sulci.</li>
+          <li><b>Sulci are the landmarks.</b> The central sulcus divides frontal from parietal; the lateral sulcus marks off the temporal lobe.</li>
+          <li><b>The eye does not do the seeing.</b> Occipital damage produces blindness with intact eyes, because the arriving information is never turned into anything.</li>
+          <li><b>Cortical space follows precision, not size.</b> Fingertips and lips get large areas; the trunk and back get small ones.</li>
+          <li><b>The distortion is testable.</b> Two-point discrimination is roughly 2–4 mm on the fingertip and over 40 mm on the back, as the map predicts.</li>
+          <li><b>Most of the cortex is association cortex</b>, which is where sensing becomes understanding.</li>
+          <li><b>The frontal lobes mature last</b>, into the mid-twenties, and their role is largely inhibitory — selecting an action means suppressing the alternatives.</li>
+        </ul>
+
+        <h5>Examples used</h5>
+        <ul>
+          <li><b>Blindness with intact eyes</b> — occipital damage.</li>
+          <li><b>Two-point discrimination</b> — two touches felt as two on the fingertip and as one on the back.</li>
+          <li><b>Recognising a face</b> — primary visual cortex registers edges; association areas identify whose face it is and that its appearance is surprising.</li>
+          <li><b>Phineas Gage</b> — frontal damage leaving intelligence, language and memory intact while impairing planning and judgement.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Penfield &amp; Rasmussen (1950)</b> — conscious patients under local anaesthetic during epilepsy surgery had points on the exposed cortex stimulated electrically. Postcentral stimulation produced sensations in specific body parts, precentral stimulation produced movements, neighbouring points mapped to neighbouring parts, and the cortical area given to each part varied enormously and consistently. The result was drawn as the homunculus.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 6.5 ---------- */
+  'b-lateral': {
+    eyebrow: 'Part II · Topic 06 · Biological Bases',
+    title: 'Lateralisation and the split-brain studies',
+    html: `
+      <figure class="lesson-hero-img frame">
+        <img src="img/sperry.jpg" alt="Portrait photograph of the neuroscientist Roger Sperry">
+        <figcaption><b>Roger Wolcott Sperry (1913–1994).</b> Everyday observation suggested that cutting the connection between the hemispheres changed nothing. Sperry judged that conclusion premature, and designed tests sensitive enough to detect what casual observation had missed. He received the Nobel Prize in 1981.
+          <span class="cred">Public domain · via <a href="https://commons.wikimedia.org/wiki/File:Roger_Wolcott_Sperry.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, "Investigating the Brain", the section <i>Studying the Damaged Brain</i>, covering the split-brain procedure and Sperry's experiments.
+      </div>
+
+      <p class="lesson-lead">The two hemispheres of the brain are not identical in what they do. This lesson covers what each specialises in, how that specialisation was established by testing patients whose hemispheres had been surgically disconnected, and why the popular version of the finding is wrong.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two hemispheres, one bridge</h4>
+        <span class="role">Lateralisation and the corpus callosum</span>
+
+        <div class="lesson-def">
+          <span class="term">Lateralisation</span> — the tendency for a function to be handled more by one hemisphere than the other.<br><br>
+          <span class="term">Corpus callosum</span> — a thick band of nerve fibres connecting large areas of cortex on each side of the brain, supporting communication of information across the hemispheres.<br><br>
+          <span class="term">Split-brain procedure</span> — an operation severing the corpus callosum, performed to stop seizures spreading from one hemisphere to the other.
+        </div>
+
+        <p>In an intact brain, information entering one hemisphere crosses the corpus callosum and is registered in the other almost immediately. Both hemispheres therefore know what is going on, whichever side received the information.</p>
+
+        <p>The split-brain operation was developed for people with epilepsy so severe that seizures crossing to the opposite hemisphere produced uncontrollable activity throughout the brain. Cutting the connection confines a seizure to the side where it starts. It helps, and it also produces the situation Sperry exploited: information entering one hemisphere <b>stays there</b>.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What each hemisphere specialises in</h4>
+        <span class="role">Language on the left, for most people</span>
+
+        <p>Two nineteenth-century cases established that language is lateralised.</p>
+
+        <ul>
+          <li><b>Broca (1861)</b> described a patient who had lost the capacity to <b>produce</b> spoken language while still understanding it, following damage to a small area in the <b>left frontal lobe</b>.</li>
+          <li><b>Wernicke (1874)</b> described a patient with impaired <b>comprehension</b> of language while still able to produce speech, following damage to an area in the <b>upper left temporal lobe</b>.</li>
+        </ul>
+
+        <p>These are now called Broca's area and Wernicke's area. Together they showed that speech production and speech comprehension are separate, and that for most people the left hemisphere is critical to both.</p>
+
+        <div class="lesson-def">
+          <span class="term">Broca's area</span> — a region of the left frontal lobe necessary for <b>producing</b> speech. Damage leaves comprehension intact.<br><br>
+          <span class="term">Wernicke's area</span> — a region of the upper left temporal lobe necessary for <b>comprehending</b> language. Damage leaves the ability to produce speech intact.<br><br>
+          <span class="term">Aphasia</span> — a loss of language ability caused by brain damage rather than by damage to the mouth, ears or vocal apparatus.<br><br>
+          <span class="term">Visual field</span> — the left or right half of what is seen. Each half projects to the opposite hemisphere, regardless of which eye received it.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Left hemisphere</th><th>Right hemisphere</th></tr>
+          <tr><td>Speech production and comprehension</td><td>Spatial relationships and navigation</td></tr>
+          <tr><td>Reading and writing</td><td>Recognising faces</td></tr>
+          <tr><td>Detailed sequential analysis</td><td>Perceiving the overall arrangement of a scene</td></tr>
+          <tr><td>Controls the <b>right</b> side of the body</td><td>Controls the <b>left</b> side of the body</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">"For most people" is doing real work in that sentence</span>
+          Language is left-lateralised in roughly 95% of right-handed people, and in a smaller majority of left-handed people — around 70%, with the rest either right-lateralised or using both sides.<br><br>
+          Lateralisation is also a matter of <b>degree</b>. Both hemispheres contribute to almost everything; the difference is in how much.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">How the split-brain experiments worked</h4>
+        <span class="role">Getting information to one hemisphere only</span>
+
+        <p>The method depends on a fact about the visual system. Each eye sends information from the <b>right</b> half of what it sees to the <b>left</b> hemisphere, and from the left half to the right hemisphere. The split is by visual field, not by eye.</p>
+
+        <p>So a participant fixates a spot in the centre of a screen, and a word or picture is flashed briefly to one side. In a split-brain patient, that information reaches one hemisphere and cannot cross to the other.</p>
+
+        <figure class="lesson-fig">
+          <svg viewBox="0 0 640 300" role="img" aria-label="Split-brain experimental setup showing left and right visual fields projecting to opposite hemispheres">
+            <g font-family="Inter, sans-serif" text-anchor="middle">
+              <rect x="150" y="20" width="340" height="86" rx="8" fill="#171122" stroke="#5a4a78"/>
+              <line x1="320" y1="20" x2="320" y2="106" stroke="#5a4a78" stroke-dasharray="4 4"/>
+              <circle cx="320" cy="63" r="4" fill="#ffd479"/>
+              <text x="235" y="58" font-size="13" font-weight="700" fill="#ff8fb0">KEY</text>
+              <text x="235" y="88" font-size="10" fill="#8b7fa3">left visual field</text>
+              <text x="405" y="58" font-size="13" font-weight="700" fill="#6ee7a8">RING</text>
+              <text x="405" y="88" font-size="10" fill="#8b7fa3">right visual field</text>
+              <text x="320" y="122" font-size="10.5" fill="#ffd479">fixation point</text>
+
+              <path d="M235 106 C 235 150, 420 150, 420 176" stroke="#ff8fb0" stroke-width="2" fill="none"/>
+              <path d="M405 106 C 405 150, 220 150, 220 176" stroke="#6ee7a8" stroke-width="2" fill="none"/>
+
+              <rect x="140" y="176" width="160" height="74" rx="10" fill="rgba(110,231,168,0.10)" stroke="#6ee7a8"/>
+              <text x="220" y="198" font-size="12" font-weight="800" fill="#a7f3d0">LEFT HEMISPHERE</text>
+              <text x="220" y="216" font-size="10.5" fill="#8b7fa3">receives RING</text>
+              <text x="220" y="234" font-size="10.5" fill="#d3cbe2">can say "ring"</text>
+
+              <rect x="340" y="176" width="160" height="74" rx="10" fill="rgba(255,143,176,0.10)" stroke="#ff8fb0"/>
+              <text x="420" y="198" font-size="12" font-weight="800" fill="#ffd0de">RIGHT HEMISPHERE</text>
+              <text x="420" y="216" font-size="10.5" fill="#8b7fa3">receives KEY</text>
+              <text x="420" y="234" font-size="10.5" fill="#d3cbe2">cannot say it</text>
+
+              <line x1="300" y1="213" x2="340" y2="213" stroke="#5a4a78" stroke-width="2.4" stroke-dasharray="3 4"/>
+              <g stroke="#ff8fb0" stroke-width="2.2">
+                <path d="M312 205 L 328 221"/><path d="M328 205 L 312 221"/>
+              </g>
+              <text x="320" y="274" font-size="11.5" font-weight="700" fill="#d3cbe2">corpus callosum cut — nothing crosses</text>
+              <text x="320" y="292" font-size="10.5" fill="#8b7fa3">the left hand, controlled by the right hemisphere, can still pick out the key</text>
+            </g>
+          </svg>
+          <figcaption>Each visual field projects to the opposite hemisphere. With the bridge cut, each side knows only what it was shown.</figcaption>
+        </figure>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Sperry and Gazzaniga — the split-brain experiments (1960s)</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether severing the corpus callosum has effects that casual observation of everyday behaviour fails to detect, and to establish what each hemisphere can do alone.</dd>
+            <dt>Method</dt>
+            <dd>Preliminary work showed that when the corpus callosum was cut in cats, learning did not transfer from one hemisphere to the other. In humans, patients who had undergone the split-brain procedure fixated a central point while a word or image was flashed briefly to the left or right visual field, isolating it to one hemisphere. Patients were asked to name what they saw, or to select the object by touch with one hand out of sight.</dd>
+            <dt>Results</dt>
+            <dd>An image presented to the <b>right</b> visual field, reaching the left hemisphere, could be named without difficulty. An image presented to the <b>left</b> visual field, reaching the right hemisphere, could <b>not</b> be named — patients often reported seeing nothing. But the <b>left hand</b>, controlled by the right hemisphere, could reliably select that object from a set by touch.</dd>
+            <dt>Conclusion</dt>
+            <dd>The right hemisphere had perceived and recognised the object; it simply could not speak. Language and consciousness of the stimulus were dissociated, establishing that the hemispheres are specialised and can operate independently when disconnected. Sperry received the Nobel Prize in 1981.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why patients said "nothing" rather than staying silent</span>
+          The hemisphere that speaks is the one that did not see the object. Asked what was shown, it answers honestly from what it knows, which is nothing.<br><br>
+          Gazzaniga's later work extended this. When the right hemisphere was instructed to perform an action, the left hemisphere — which had not seen the instruction — produced a confident explanation for why the action had been taken. It was not lying; it was constructing a plausible account from the information available to it. This became the basis for his idea of an <b>interpreter</b> in the left hemisphere (<i>1.1</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">What the studies do and do not establish</span>
+
+        <div class="evalsec plus">
+          <div class="evalpoint">
+            <h5>The design isolates the variable precisely</h5>
+            <p>Flashing a stimulus to one visual field of a patient whose hemispheres are disconnected delivers information to one hemisphere and no other. Few designs in psychology achieve this degree of control over what a participant's brain receives.</p>
+          </div>
+          <div class="evalpoint">
+            <h5>The dissociation is unambiguous</h5>
+            <p>The same patient in the same trial can be unable to name an object and able to select it by touch. Since both responses come from one person at one moment, the difference cannot be attributed to differences between people, effort or attention.</p>
+          </div>
+          <div class="evalpoint">
+            <h5>It answered a question observation could not</h5>
+            <p>Everyday behaviour after the operation appeared normal, which had been taken to mean the corpus callosum did little. Sperry's judgement that this conclusion was premature, and that sensitive tests were needed, is a model of how a null result should be treated (<i>3.6</i>).</p>
+          </div>
+        </div>
+
+        <div class="evalsec minus">
+          <div class="evalpoint">
+            <h5>The sample is very small and unrepresentative</h5>
+            <p>Only a few dozen people worldwide have had this operation, all of them with epilepsy severe enough to justify it, often lasting decades and frequently with medication and prior brain damage. Their brains may have reorganised in ways that ordinary brains have not.</p>
+          </div>
+          <div class="evalpoint">
+            <h5>The surgery is not uniform</h5>
+            <p>The corpus callosum was completely severed in some patients and only partially in others, and some subcortical connections always remain. Results differ between patients accordingly, and generalising from one to another is unsafe.</p>
+          </div>
+          <div class="evalpoint">
+            <h5>The findings have been badly overextended</h5>
+            <p>The results describe what happens when the hemispheres are <b>disconnected</b>. They say little about how an intact brain works, where the two sides exchange information constantly.</p>
+            <p>The popular "left-brained and right-brained people" account does not follow from them and is not supported: large imaging studies find no evidence that individuals preferentially use one hemisphere overall.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a split-brain patient is shown the word HEART, with HE in the left visual field and ART in the right. Asked what they saw, they say "art". Asked to point with the left hand to a card, they point to HE. Explain both responses.</summary>
+          <div class="ans"><b>Saying "art".</b> ART fell in the <b>right</b> visual field, so it reached the <b>left</b> hemisphere. That is the speaking hemisphere, so it reports what it received. It has no access to HE, and does not experience anything as missing.<br><br><b>Pointing to HE.</b> HE fell in the <b>left</b> visual field and reached the <b>right</b> hemisphere. That hemisphere cannot speak, but it controls the <b>left hand</b>, so it can respond by pointing.<br><br><b>What this shows.</b> Both halves of the word were perceived. The two hemispheres are holding different information at the same moment, and the response depends entirely on which one is asked and how. It also shows the limitation of asking people to report their own mental contents — the answer comes from whichever system can talk (<i>1.1</i>).</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Lateralisation</b> is the tendency for a function to be handled more by one hemisphere. The <b>corpus callosum</b> normally keeps both sides informed.</li>
+          <li>The <b>split-brain procedure</b> severs it to stop seizures spreading, and leaves information entering one hemisphere unable to reach the other.</li>
+          <li><b>Broca (1861)</b> and <b>Wernicke (1874)</b> established that speech production and comprehension are separate and both left-lateralised in most people.</li>
+          <li><b>Sperry and Gazzaniga</b> flashed stimuli to one visual field. Objects reaching the left hemisphere could be named; objects reaching the right could not be named but could be selected by the left hand.</li>
+          <li>The <b>left-hemisphere interpreter</b> constructs confident explanations for actions it did not initiate.</li>
+          <li>The sample is tiny and unrepresentative, the surgery varies, and the results describe <b>disconnected</b> brains. "Left-brained" and "right-brained" personalities do not follow and are not supported.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, concepts, evaluation and studies from 6.5, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Lateralisation</td><td>The tendency for a function to be handled more by one hemisphere than the other. A matter of degree, not of all or nothing.</td></tr>
+          <tr><td>Corpus callosum</td><td>A thick band of nerve fibres connecting large areas of cortex on each side, carrying information between the hemispheres.</td></tr>
+          <tr><td>Split-brain procedure</td><td>An operation severing the corpus callosum to confine epileptic seizures to one hemisphere.</td></tr>
+          <tr><td>Visual field</td><td>The left or right half of what is seen. Each field projects to the opposite hemisphere, regardless of which eye receives it.</td></tr>
+          <tr><td>Broca's area</td><td>A region of the left frontal lobe necessary for producing speech.</td></tr>
+          <tr><td>Wernicke's area</td><td>A region of the upper left temporal lobe necessary for comprehending language.</td></tr>
+          <tr><td>The interpreter</td><td>Gazzaniga's term for the left hemisphere's tendency to construct plausible explanations for behaviour it did not initiate.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The split is by visual field, not by eye.</b> Each eye sends the right half of its view to the left hemisphere and the left half to the right.</li>
+          <li><b>Disconnection isolates information.</b> With the callosum cut, whatever enters one hemisphere stays there, which is what makes the design work.</li>
+          <li><b>Naming and knowing are separable.</b> The right hemisphere recognised objects it could not name, and demonstrated this through the left hand.</li>
+          <li><b>The speaking hemisphere answers for the whole person</b>, which is why patients reported seeing nothing rather than reporting uncertainty.</li>
+          <li><b>Explanation is constructed, not read off.</b> The interpreter produces confident accounts of actions whose real cause it has no access to.</li>
+          <li><b>Language is left-lateralised in about 95% of right-handers</b> and around 70% of left-handers, so "for most people" is a real qualification.</li>
+          <li><b>Results from disconnected brains do not describe intact ones.</b> The "left-brained / right-brained" personality claim does not follow and is unsupported by imaging studies.</li>
+        </ul>
+
+        <h5>Evaluation</h5>
+        <table>
+          <tr><td>Strengths</td><td>Precise control over what each hemisphere receives; an unambiguous dissociation within a single patient in a single trial; a demonstration that a null result from casual observation should not be trusted.</td></tr>
+          <tr><td>Limitations</td><td>Only a few dozen patients worldwide, all with severe long-standing epilepsy; surgery complete in some and partial in others, with subcortical connections always remaining; findings routinely overextended to intact brains and to personality.</td></tr>
+        </table>
+
+        <h5>Key studies</h5>
+        <ul>
+          <li><b>Broca (1861)</b> — a patient who could understand language but not produce speech, following damage to a small area of the left frontal lobe.</li>
+          <li><b>Wernicke (1874)</b> — a patient who could produce speech but not comprehend language, following damage to the upper left temporal lobe.</li>
+          <li><b>Sperry and Gazzaniga (1960s)</b> — split-brain patients fixated a central point while stimuli were flashed to one visual field. Right-field stimuli reaching the left hemisphere could be named; left-field stimuli reaching the right hemisphere could not be named, yet the left hand could select the object by touch. Sperry received the Nobel Prize in 1981.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 6.6 ---------- */
+  'b-networks': {
+    eyebrow: 'Part II · Topic 06 · Biological Bases',
+    title: 'Localisation versus distributed networks',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/broca-wernicke.jpg" alt="Side view of the brain showing Broca's area in the frontal lobe and Wernicke's area in the temporal lobe, joined by a bundle of fibres">
+        <figcaption><b>Broca's and Wernicke's areas, and the bundle joining them.</b> The two regions founded the localisation approach. The fibres drawn between them are the point the modern account emphasises: neither region works alone, and damage to the connection produces its own deficit.
+          <span class="cred">OpenStax College · CC BY 3.0 · via <a href="https://commons.wikimedia.org/wiki/File:1605_Brocas_and_Wernickes_Areas-02.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, "Investigating the Brain" and "Brain Plasticity"; and <b>Chapter 1</b> on Broca and the origins of localisation.
+      </div>
+
+      <p class="lesson-lead">Two accounts of how the brain implements psychological functions have competed since the nineteenth century. One holds that specific functions sit in specific places; the other that they emerge from networks of regions working together. This lesson covers the evidence for each, and why the disagreement is narrower than it appears.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The two positions</h4>
+        <span class="role">Localisation and distributed processing</span>
+
+        <div class="lesson-def">
+          <span class="term">Localisation of function</span> — the view that specific psychological functions are carried out by specific, identifiable regions of the brain.<br><br>
+          <span class="term">Distributed processing</span> — the view that psychological functions arise from the coordinated activity of networks of regions, no one of which performs the function alone.<br><br>
+          <span class="term">Network</span> — a set of brain regions whose activity is correlated over time and which act together during a class of task.
+        </div>
+
+        <p>The disagreement is not about whether regions differ from one another. Everyone accepts that the occipital lobe is doing something visual and that damage to Broca's area impairs speech production. The disagreement is about what the correct <b>unit of explanation</b> is: the region, or the network the region belongs to.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The case for localisation</h4>
+        <span class="role">Damage in one place removes one ability</span>
+
+        <p>The localisation view was established by cases where a small area of damage produced a specific and predictable loss.</p>
+
+        <ul>
+          <li><b>Broca (1861).</b> Damage to a small region of the left frontal lobe removed the ability to produce speech while comprehension survived (<i>6.5</i>).</li>
+          <li><b>Wernicke (1874).</b> Damage to the upper left temporal lobe removed comprehension while production survived.</li>
+          <li><b>Penfield (1950).</b> Stimulating one point of the cortex reliably produced a sensation in one body part, and the map was consistent across patients (<i>6.4</i>).</li>
+          <li><b>The fusiform face area.</b> A region of the temporal lobe responds far more strongly to faces than to other objects, and damage to it can impair face recognition while leaving object recognition intact.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the Broca and Wernicke pair is such strong evidence</span>
+          Each case on its own could be explained by the damaged area being generally important, so that losing it makes any language task harder.<br><br>
+          Taken together they rule that out. One patient loses production and keeps comprehension; the other loses comprehension and keeps production. This is a <b>double dissociation</b>, and it shows the two abilities depend on different machinery rather than on differing amounts of one resource.
+        </div>
+
+        <div class="lesson-def">
+          <span class="term">Double dissociation</span> — a pattern in which damage in one location impairs ability A but not B, while damage in another impairs B but not A. It establishes that the two abilities are independent.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The case for distributed networks</h4>
+        <span class="role">Four findings the strict view cannot accommodate</span>
+
+        <ul>
+          <li><b>One region participates in many functions.</b> Broca's area is active during tasks involving music, action observation and working memory, not only speech production. A region is not dedicated to a single psychological category.</li>
+          <li><b>One function recruits many regions.</b> Imaging a language task activates a network spanning frontal, temporal and parietal areas, not two spots.</li>
+          <li><b>Damage to connections produces deficits of its own.</b> Cutting the fibre bundle joining Broca's and Wernicke's areas, while leaving both intact, impairs the ability to repeat what has just been heard. The deficit is caused by the connection, so the connection is part of the machinery.</li>
+          <li><b>The brain reorganises.</b> Function can shift to other tissue after damage, particularly in childhood — which cannot happen if a function is fixed to one location.</li>
+        </ul>
+
+        <div class="lesson-def">
+          <span class="term">Plasticity</span> — the capacity of the brain to change its organisation in response to experience or injury.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Maguire et al. (2000) — hippocampal volume in London taxi drivers</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To test whether extensive use of spatial navigation is associated with structural differences in the hippocampus.</dd>
+            <dt>Method</dt>
+            <dd>Structural MRI scans of licensed London taxi drivers, who must memorise the city's street layout to pass a qualification known as the Knowledge, were compared with scans of matched control participants who did not drive taxis.</dd>
+            <dt>Results</dt>
+            <dd>Taxi drivers had significantly greater grey matter volume in the <b>posterior</b> hippocampus and less in the anterior hippocampus. Posterior volume correlated positively with the number of years spent driving a taxi.</dd>
+            <dt>Conclusion</dt>
+            <dd>The structure of the hippocampus differs with navigational experience, and the correlation with years of experience suggests the difference develops with use rather than selecting who becomes a driver. Later work following trainees over time supported that interpretation.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Note what this study is and is not</span>
+          The main comparison is <b>correlational</b>, so the three explanations of <i>3.3</i> all apply: driving changed the hippocampus, hippocampal structure influenced who became a driver, or something else produced both.<br><br>
+          The dose–response relationship with years of experience strengthens the causal reading without establishing it, and the later longitudinal study of trainees — comparing the same people before and after qualifying — is what makes the case convincing. One study rarely settles a causal question (<i>3.3</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The modern position</h4>
+        <span class="role">Both, at different levels of description</span>
+
+        <p>The two views are not straightforwardly opposed. The current account is that regions are specialised, and that psychological functions are implemented by networks of specialised regions rather than by any region alone.</p>
+
+        <table class="lesson-table">
+          <tr><th>Question</th><th>The answer the evidence supports</th></tr>
+          <tr><td>Do regions differ in what they do?</td><td><b>Yes.</b> Consistently, across people, and predictably enough to guide surgery</td></tr>
+          <tr><td>Does one region perform one psychological function?</td><td><b>No.</b> Regions participate in several networks and several functions</td></tr>
+          <tr><td>Can a function be located at a point?</td><td><b>No.</b> It is implemented across a network, connections included</td></tr>
+          <tr><td>Does damage to a region produce predictable loss?</td><td><b>Yes</b> — which is why localisation was believed, and why it remains clinically useful</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">Why damage evidence favours localisation more than it should</span>
+          A lesion study asks what is lost when a region is removed. A region that is <b>necessary</b> for a function will show up clearly. A region that <b>participates</b> in the function alongside others may show nothing, because the rest of the network compensates.<br><br>
+          The method is therefore biased toward finding localisation, and toward missing distribution. This is a limitation of the evidence, not a fact about the brain (<i>7.1</i>).
+        </div>
+
+        <p>The practical consequence is a rule for reading claims. "Region X is the seat of Y" is almost always too strong. "Region X is reliably involved when people do Y, alongside other regions" is usually what the data support (<i>7.5</i>).</p>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a headline reads "Scientists find the brain's generosity centre". The study scanned people while they donated money and found one region more active than during a control task. Give three reasons the headline overstates the finding.</summary>
+          <div class="ans"><b>1. Activity is not location of a function.</b> The region was more active during donating than during the control task. That makes it <b>involved</b>, not the seat of generosity. Other regions were almost certainly active too, and the network is the unit that implements the behaviour.<br><br><b>2. The region does other things.</b> Almost every region participates in many functions. Finding it active during donation does not make it a generosity region — it may be responding to reward, to social evaluation, or to the decision itself.<br><br><b>3. The inference runs backwards.</b> Concluding "this region does generosity" from "this region was active" is <b>reverse inference</b>, and it is only valid if the region is active for little else. Almost none are (<i>7.5</i>).<br><br>A fourth point: this is correlational. It shows association between a task and activity, not that the activity causes the behaviour (<i>3.3</i>).</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Localisation</b> holds that functions sit in specific regions; <b>distributed processing</b> holds that they arise from networks. The dispute concerns the unit of explanation, not whether regions differ.</li>
+          <li>The <b>double dissociation</b> between Broca's and Wernicke's patients is the strongest kind of localisation evidence: each ability is lost while the other survives.</li>
+          <li>Against strict localisation: one region serves many functions, one function recruits many regions, damage to <b>connections</b> produces deficits, and the brain <b>reorganises</b>.</li>
+          <li><b>Maguire et al. (2000)</b> found greater posterior hippocampal volume in London taxi drivers, correlating with years of experience — evidence of structural plasticity, though correlational.</li>
+          <li>The modern position is that regions are <b>specialised</b> and functions are implemented by <b>networks of specialised regions</b>.</li>
+          <li>Lesion evidence is <b>biased toward localisation</b>, because regions that merely participate may show no deficit when the rest of the network compensates.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, arguments, examples and studies from 6.6, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Localisation of function</td><td>The view that specific psychological functions are carried out by specific identifiable regions.</td></tr>
+          <tr><td>Distributed processing</td><td>The view that functions arise from coordinated networks of regions, none performing the function alone.</td></tr>
+          <tr><td>Network</td><td>A set of regions whose activity is correlated over time and which act together during a class of task.</td></tr>
+          <tr><td>Double dissociation</td><td>Damage at one site impairs A but not B, while damage at another impairs B but not A — establishing the two abilities are independent.</td></tr>
+          <tr><td>Plasticity</td><td>The brain's capacity to change its organisation in response to experience or injury.</td></tr>
+          <tr><td>Reverse inference</td><td>Concluding that a psychological process occurred because a region associated with it was active. Valid only if the region is active for little else.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The dispute is about the unit of explanation</b>, not about whether regions differ. Both sides accept that they do.</li>
+          <li><b>A double dissociation beats two single ones.</b> Either case alone is compatible with one region being generally important; the pair is not.</li>
+          <li><b>Regions are many-to-many with functions.</b> One region serves several functions and one function recruits several regions.</li>
+          <li><b>Connections are part of the machinery.</b> Cutting the bundle between Broca's and Wernicke's areas impairs repetition while both regions remain intact.</li>
+          <li><b>Plasticity is incompatible with fixed localisation.</b> Function shifting to other tissue after damage cannot happen if a function is tied to one place.</li>
+          <li><b>Lesion methods are biased toward localisation.</b> Necessary regions show up; merely participating regions may not, because the network compensates.</li>
+          <li><b>The reading rule.</b> "Region X is the seat of Y" is almost always too strong; "region X is reliably involved in Y, alongside others" is usually what the data support.</li>
+        </ul>
+
+        <h5>Evidence for each position</h5>
+        <table>
+          <tr><td>For localisation</td><td>Broca (1861) and Wernicke (1874) forming a double dissociation; Penfield's consistent cortical maps; the fusiform face area responding selectively to faces.</td></tr>
+          <tr><td>For distribution</td><td>One region active across many tasks; imaging showing whole networks for single functions; disconnection deficits; plasticity and post-injury reorganisation.</td></tr>
+        </table>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Maguire et al. (2000)</b> — structural MRI of licensed London taxi drivers, who must memorise the street layout for the Knowledge, compared with matched controls. Drivers had greater grey matter volume in the <b>posterior</b> hippocampus and less in the anterior, with posterior volume correlating with years of driving. The comparison is correlational; a later longitudinal study of trainees strengthened the causal interpretation.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 6.7 ---------- */
+  'b-endocrine': {
+    eyebrow: 'Part II · Topic 06 · Biological Bases',
+    title: 'The endocrine system and hormones',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/endocrine-system.png" alt="Diagram of a human head and neck showing the hypothalamus, pineal gland, pituitary gland and thyroid, with the hormones each releases listed">
+        <figcaption><b>The endocrine glands of the head and neck, with the hormones each releases.</b> The <b>hypothalamus</b> controls the <b>pituitary</b>, and the pituitary directs glands throughout the rest of the body. This is the junction at which the nervous system issues chemical instructions.
+          <span class="cred">LadyofHats · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Endocrine_central_nervous_en.svg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <div class="lesson-source">
+        <span class="src">In the textbook</span>
+        Schacter, Gilbert, Nock &amp; Wegner, <b>Psychology</b> (4th ed., 2017) — <b>Chapter 3</b>, "Structure of the Brain", the subsection on the <i>pituitary gland</i> and its role in the response to stress.
+      </div>
+
+      <p class="lesson-lead">The nervous system is not the body's only signalling system. A second one sends chemical messages through the bloodstream, reaching every cell rather than a specific target, and acting over minutes to years rather than milliseconds. This lesson covers how that system works, the main glands and hormones, and how the two systems combine in the response to stress.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">A second signalling system</h4>
+        <span class="role">How hormones differ from neurotransmitters</span>
+
+        <div class="lesson-def">
+          <span class="term">Endocrine system</span> — the network of glands that release hormones directly into the bloodstream.<br><br>
+          <span class="term">Gland</span> — an organ that manufactures and releases a chemical substance.<br><br>
+          <span class="term">Hormone</span> — a chemical messenger released into the bloodstream that acts on cells elsewhere in the body carrying the matching receptor.<br><br>
+          <span class="term">Target cell</span> — a cell bearing a receptor for a particular hormone. Cells without that receptor are unaffected by it.
+        </div>
+
+        <p>The two systems use similar chemistry and differ in delivery. A neurotransmitter is released into a gap 20 nanometres wide and acts on one specific neuron (<i>5.3</i>). A hormone is released into the blood and travels everywhere, acting only where a matching receptor exists.</p>
+
+        <table class="lesson-table">
+          <tr><th></th><th>Nervous system</th><th>Endocrine system</th></tr>
+          <tr><td><b>Message travels by</b></td><td>Electrical signal along an axon, then a chemical across a synapse</td><td>Hormone carried in the bloodstream</td></tr>
+          <tr><td><b>Speed</b></td><td>Milliseconds</td><td>Seconds to minutes</td></tr>
+          <tr><td><b>Duration</b></td><td>Milliseconds</td><td>Minutes, days, or years</td></tr>
+          <tr><td><b>Addressing</b></td><td>Precise — one neuron to a specific target</td><td>Broadcast — everywhere, acting only on cells with the receptor</td></tr>
+          <tr><td><b>Best suited to</b></td><td>Rapid, precise action such as movement</td><td>Sustained, body-wide states such as growth, metabolism and stress</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">Same molecule, two roles</span>
+          Some chemicals do both jobs. <b>Norepinephrine</b> is a neurotransmitter at synapses in the brain and a hormone when the adrenal glands release it into the blood (<i>5.4</i>).<br><br>
+          What makes something a hormone is not its chemistry but its <b>route of delivery</b>.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The hypothalamus and the pituitary</h4>
+        <span class="role">Where the brain gives chemical orders</span>
+
+        <div class="lesson-def">
+          <span class="term">Pituitary gland</span> — the "master gland" of the body's hormone-producing system, which releases hormones that direct the functions of many other glands.
+        </div>
+
+        <p>The pituitary hangs just beneath the hypothalamus, which controls it. This arrangement is what allows the nervous system to issue instructions to the whole body: the hypothalamus detects an internal state or receives information about a situation, and the pituitary converts that into hormonal commands (<i>6.3</i>).</p>
+
+        <p>The chain typically runs in three steps. The <b>hypothalamus</b> releases a signal to the <b>pituitary</b>; the pituitary releases a hormone into the blood; that hormone acts on a <b>target gland</b>, which releases the hormone that produces the effect.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Two examples of the pituitary's reach</span>
+          <b>Oxytocin</b>, released by the pituitary, causes the release of milk from reservoirs in the breast during nursing.<br><br>
+          <b>Growth hormone</b> directs physical growth, and the pituitary also governs sexual development. A gland the size of a pea determines adult height.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The main glands and what they do</h4>
+        <span class="role">The ones that appear in psychology</span>
+
+        <table class="lesson-table">
+          <tr><th>Gland</th><th>Key hormone</th><th>Main effect</th></tr>
+          <tr><td><b>Hypothalamus</b></td><td>Releasing hormones</td><td>Controls the pituitary; links nervous and endocrine systems</td></tr>
+          <tr><td><b>Pituitary</b></td><td>ACTH, growth hormone, oxytocin</td><td>Directs the other glands; growth; childbirth and nursing</td></tr>
+          <tr><td><b>Pineal</b></td><td>Melatonin</td><td>Signals darkness; regulates the sleep–wake cycle</td></tr>
+          <tr><td><b>Thyroid</b></td><td>Thyroxine</td><td>Sets metabolic rate. Too little produces fatigue and low mood; too much, agitation and weight loss</td></tr>
+          <tr><td><b>Adrenal glands</b></td><td>Adrenaline, cortisol</td><td>The stress response — immediate arousal, then sustained mobilisation</td></tr>
+          <tr><td><b>Pancreas</b></td><td>Insulin</td><td>Regulates blood glucose</td></tr>
+          <tr><td><b>Gonads</b></td><td>Testosterone, oestrogen</td><td>Sexual development and reproductive function</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the thyroid is worth knowing about</span>
+          An underactive thyroid produces fatigue, weight gain, slowed thinking and low mood — a presentation almost indistinguishable from depression.<br><br>
+          This is why thyroid function is checked before a diagnosis of depression is made. A psychological presentation does not establish a psychological cause.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The stress response: two systems in sequence</h4>
+        <span class="role">Fast nerves, then slow hormones</span>
+
+        <div class="lesson-def">
+          <span class="term">HPA axis</span> — the hypothalamic–pituitary–adrenal pathway: the hypothalamus signals the pituitary, which releases ACTH, which causes the adrenal glands to release cortisol.<br><br>
+          <span class="term">Cortisol</span> — the main stress hormone, which mobilises energy and suppresses functions that can wait, including immune activity and digestion.
+        </div>
+
+        <figure class="lesson-fig">
+          <svg viewBox="0 0 640 260" role="img" aria-label="The two stress pathways: the fast sympathetic route and the slower HPA axis">
+            <defs>
+              <marker id="ar-hpa" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#b98cff"/></marker>
+            </defs>
+            <g font-family="Inter, sans-serif" text-anchor="middle">
+              <rect x="242" y="12" width="156" height="38" rx="9" fill="rgba(185,140,255,0.18)" stroke="#b98cff"/>
+              <text x="320" y="30" font-size="12" font-weight="800" fill="#e6d5ff">THREAT DETECTED</text>
+              <text x="320" y="44" font-size="10" fill="#a396bb">hypothalamus</text>
+
+              <path d="M270 50 L 170 76" stroke="#fb923c" stroke-width="2" fill="none" marker-end="url(#ar-hpa)"/>
+              <path d="M370 50 L 470 76" stroke="#6ee7a8" stroke-width="2" fill="none" marker-end="url(#ar-hpa)"/>
+
+              <rect x="60" y="82" width="220" height="40" rx="8" fill="rgba(251,146,60,0.12)" stroke="#fb923c"/>
+              <text x="170" y="99" font-size="11.5" font-weight="700" fill="#fdba74">FAST — sympathetic nerves</text>
+              <text x="170" y="114" font-size="10" fill="#8b7fa3">about one second</text>
+
+              <rect x="360" y="82" width="220" height="40" rx="8" fill="rgba(110,231,168,0.10)" stroke="#6ee7a8"/>
+              <text x="470" y="99" font-size="11.5" font-weight="700" fill="#a7f3d0">SLOW — HPA axis</text>
+              <text x="470" y="114" font-size="10" fill="#8b7fa3">minutes</text>
+
+              <path d="M170 122 L 170 146" stroke="#5a4a78" stroke-width="1.8" fill="none" marker-end="url(#ar-hpa)"/>
+              <path d="M470 122 L 470 146" stroke="#5a4a78" stroke-width="1.8" fill="none" marker-end="url(#ar-hpa)"/>
+
+              <rect x="60" y="146" width="220" height="38" rx="8" fill="#171122" stroke="#3d2f57"/>
+              <text x="170" y="163" font-size="11" fill="#d3cbe2">adrenal glands release</text>
+              <text x="170" y="178" font-size="11" font-weight="700" fill="#fdba74">ADRENALINE</text>
+
+              <rect x="360" y="146" width="220" height="38" rx="8" fill="#171122" stroke="#3d2f57"/>
+              <text x="470" y="163" font-size="11" fill="#d3cbe2">pituitary releases ACTH, adrenals release</text>
+              <text x="470" y="178" font-size="11" font-weight="700" fill="#a7f3d0">CORTISOL</text>
+
+              <path d="M170 184 L 170 206" stroke="#5a4a78" stroke-width="1.8" fill="none" marker-end="url(#ar-hpa)"/>
+              <path d="M470 184 L 470 206" stroke="#5a4a78" stroke-width="1.8" fill="none" marker-end="url(#ar-hpa)"/>
+
+              <rect x="60" y="206" width="220" height="40" rx="8" fill="rgba(251,146,60,0.06)" stroke="#3d2f57"/>
+              <text x="170" y="223" font-size="10.5" fill="#8b7fa3">heart rate, breathing, pupils,</text>
+              <text x="170" y="238" font-size="10.5" fill="#8b7fa3">blood to muscles</text>
+
+              <rect x="360" y="206" width="220" height="40" rx="8" fill="rgba(110,231,168,0.06)" stroke="#3d2f57"/>
+              <text x="470" y="223" font-size="10.5" fill="#8b7fa3">glucose released, immune and</text>
+              <text x="470" y="238" font-size="10.5" fill="#8b7fa3">digestive activity suppressed</text>
+            </g>
+          </svg>
+          <figcaption>One threat, two pathways. The nervous route acts immediately; the hormonal route sustains the state.</figcaption>
+        </figure>
+
+        <p>The two pathways explain the timing of a fright. The sympathetic route produces the racing heart within a second. The HPA axis takes minutes to reach full effect and keeps the body mobilised long after the threat has gone, which is why arousal outlasts the recognition of safety (<i>6.1</i>).</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why chronic stress causes physical harm</span>
+          The stress response is well designed for a threat lasting minutes. Cortisol suppresses immune activity, digestion and tissue repair because those can safely wait.<br><br>
+          A threat that lasts months — debt, caring for an ill relative, an unsafe workplace — keeps the same system switched on. The suppression that was adaptive becomes damaging, which is the route by which prolonged stress produces physical illness rather than only distress.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evidence that glands signal through the blood</h4>
+        <span class="role">The first endocrine experiment</span>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Berthold (1849) — testis transplantation in roosters</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether the effects of the testes on a rooster's appearance and behaviour are carried by nerves or by something released into the blood.</dd>
+            <dt>Method</dt>
+            <dd>Six young roosters were used in three conditions. Two were castrated and left so. Two were castrated and had one testis transplanted back into the abdominal cavity, in a different location and with no nerve connection restored. Two were left intact as controls.</dd>
+            <dt>Results</dt>
+            <dd>The castrated birds lost their comb and wattles, stopped crowing, and lost interest in mating and fighting. The birds with transplanted testes kept all of these, and on later dissection the transplanted tissue had grown a new blood supply but had no nerve supply.</dd>
+            <dt>Conclusion</dt>
+            <dd>The testes act by releasing a substance into the bloodstream, not through nerve connections. This is the first demonstration of hormonal action, and the logic is the same as Loewi's later work on the synapse: remove the nerve route and the effect survives, so the message must travel in the blood (<i>5.3</i>).</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the transplant is the crucial condition</span>
+          Castration alone shows only that the organ matters. It does not say <b>how</b>.<br><br>
+          Replacing the organ <b>in the wrong place, with no nerves attached</b>, is what separates the two explanations. A nerve-based account predicts no recovery; a blood-based account predicts full recovery. The result matched the second, which is what makes the experiment decisive rather than merely suggestive (<i>3.1</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">A caution about hormone claims</h4>
+        <span class="role">Why single-hormone explanations of behaviour fail</span>
+
+        <p>Hormones are frequently offered as explanations of complex behaviour: testosterone for aggression, oxytocin for trust, cortisol for stress. These claims are weaker than they sound, for three reasons.</p>
+
+        <ul>
+          <li><b>The relationships are correlational and bidirectional.</b> Testosterone is associated with dominance behaviour, and it also <b>rises</b> after winning a competition. Which direction the arrow runs is rarely established (<i>3.3</i>).</li>
+          <li><b>Effects depend on context.</b> Oxytocin was widely reported as a trust hormone. Later work found it increases favouritism toward one's own group and can increase hostility toward outsiders. The effect depends on who is involved, so "trust hormone" is not a description of what it does.</li>
+          <li><b>Levels in blood or saliva are not levels in the brain.</b> Much research measures what is easy to measure, and the relationship between peripheral and central concentrations is not straightforward.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">The general form of the error</span>
+          It is the same error as "the pleasure chemical" in <i>5.4</i>: taking a molecule involved in a process and treating it as the <b>cause</b> of a psychological category.<br><br>
+          Hormones set the conditions under which behaviour becomes more or less likely. They do not select the behaviour.
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a person nearly steps into traffic, jumps back, and is shaking for several minutes afterwards. Name the two pathways involved and explain which produces which part of the response.</summary>
+          <div class="ans"><b>The jump back.</b> A spinal and brainstem reflex, faster than any conscious decision (<i>6.1</i>).<br><br><b>The immediate racing heart, wide pupils and rapid breathing.</b> The <b>sympathetic nervous system</b>, acting through nerves within about a second, plus adrenaline released from the adrenal glands into the bloodstream.<br><br><b>The shaking that lasts several minutes.</b> The <b>HPA axis</b>. The hypothalamus signalled the pituitary, which released ACTH, which caused the adrenal glands to release <b>cortisol</b>. This route takes minutes to build and clears slowly.<br><br><b>Why knowing you are safe does not stop it.</b> The hormones are already circulating. Recognising safety is a cortical judgement, and it cannot remove chemicals from the blood — the parasympathetic branch has to bring the body back down while the hormones are cleared.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>The <b>endocrine system</b> signals with <b>hormones</b> carried in the bloodstream, acting only on cells with a matching receptor.</li>
+          <li>Compared with the nervous system it is <b>slower, longer-lasting and broadcast</b> rather than precisely addressed. Some molecules, such as norepinephrine, serve as both.</li>
+          <li>The <b>hypothalamus</b> controls the <b>pituitary</b>, the master gland, which directs the others. This is where the nervous system issues chemical commands.</li>
+          <li>Main glands: <b>pineal</b> (melatonin), <b>thyroid</b> (thyroxine), <b>adrenals</b> (adrenaline, cortisol), <b>pancreas</b> (insulin), <b>gonads</b> (testosterone, oestrogen).</li>
+          <li>Stress runs down two routes: the fast <b>sympathetic</b> one and the slower <b>HPA axis</b> ending in cortisol. Chronic activation causes physical harm because cortisol suppresses immunity, digestion and repair.</li>
+          <li>Single-hormone explanations of behaviour fail: the relationships are correlational and often bidirectional, the effects are context-dependent, and peripheral levels are not brain levels.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, glands, mechanisms and cautions from 6.7, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Endocrine system</td><td>The network of glands releasing hormones directly into the bloodstream.</td></tr>
+          <tr><td>Gland</td><td>An organ that manufactures and releases a chemical substance.</td></tr>
+          <tr><td>Hormone</td><td>A chemical messenger released into the bloodstream, acting on cells elsewhere that carry the matching receptor.</td></tr>
+          <tr><td>Target cell</td><td>A cell bearing a receptor for a particular hormone. Cells without it are unaffected.</td></tr>
+          <tr><td>Pituitary gland</td><td>The master gland, which releases hormones directing the functions of many other glands.</td></tr>
+          <tr><td>HPA axis</td><td>Hypothalamus signals pituitary, which releases ACTH, which causes the adrenals to release cortisol.</td></tr>
+          <tr><td>Cortisol</td><td>The main stress hormone; mobilises energy and suppresses immunity, digestion and repair.</td></tr>
+          <tr><td>Melatonin</td><td>Released by the pineal gland; signals darkness and regulates the sleep–wake cycle.</td></tr>
+          <tr><td>Thyroxine</td><td>Released by the thyroid; sets metabolic rate.</td></tr>
+        </table>
+
+        <h5>Key study</h5>
+        <table>
+          <tr><td>Berthold (1849)</td><td>Six roosters: two castrated, two castrated with a testis transplanted into the abdomen with no nerve connection, two intact. The castrated birds lost comb, wattles, crowing and mating behaviour; the transplanted birds kept them, and the tissue had grown a blood supply but no nerves. The first demonstration of hormonal action.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Delivery, not chemistry, defines a hormone.</b> Norepinephrine is a neurotransmitter at a synapse and a hormone in the blood.</li>
+          <li><b>Broadcast with selective reception.</b> A hormone reaches every cell and acts only where a matching receptor exists.</li>
+          <li><b>The hypothalamus–pituitary link is the junction of the two systems</b>, letting the brain issue chemical instructions to the whole body.</li>
+          <li><b>The three-step chain.</b> Hypothalamus signals pituitary; pituitary releases a hormone; a target gland releases the hormone that produces the effect.</li>
+          <li><b>Two stress routes with different timings</b> explain why arousal outlasts the recognition of safety.</li>
+          <li><b>Chronic stress harms because the response is designed for minutes.</b> Suppressing immunity and repair is adaptive briefly and damaging over months.</li>
+          <li><b>A psychological presentation does not establish a psychological cause</b> — an underactive thyroid closely resembles depression.</li>
+          <li><b>Hormones set conditions, they do not select behaviour.</b> Single-hormone labels repeat the error of "the pleasure chemical".</li>
+        </ul>
+
+        <h5>Nervous versus endocrine</h5>
+        <table>
+          <tr><td>Speed</td><td>Milliseconds versus seconds to minutes.</td></tr>
+          <tr><td>Duration</td><td>Milliseconds versus minutes, days or years.</td></tr>
+          <tr><td>Addressing</td><td>Precise, one neuron to a target, versus broadcast to the whole body.</td></tr>
+          <tr><td>Suited to</td><td>Rapid precise action versus sustained body-wide states.</td></tr>
+        </table>
+
+        <h5>Examples and cautions</h5>
+        <ul>
+          <li><b>Oxytocin and milk release</b> during nursing; <b>growth hormone</b> determining adult height — a pea-sized gland with body-wide reach.</li>
+          <li><b>Underactive thyroid</b> — fatigue, weight gain, slowed thinking and low mood, checked before diagnosing depression.</li>
+          <li><b>Testosterone and dominance</b> — the relationship is bidirectional, since testosterone also rises after winning.</li>
+          <li><b>Oxytocin as a "trust hormone"</b> — later work found it increases favouritism toward one's own group and can increase hostility toward outsiders.</li>
+          <li><b>Peripheral versus central levels</b> — blood and saliva measures are convenient, and their relationship to brain concentrations is not straightforward.</li>
+        </ul>
+      </div>
+    `
   }
 
   };
@@ -9902,6 +11351,55 @@
       ['The precursor given to treat Parkinson\'s disease is ___.', 'l-dopa', ['ldopa','levodopa','l dopa']],
       ['Caffeine works by blocking receptors for ___.', 'adenosine', []],
       ['Needing a larger dose to get the same effect is called ___.', 'tolerance', []]
+    ],
+    'b-nervous': [
+      ['The brain and spinal cord together form the ___ nervous system.', 'central', ['cns']],
+      ['The branch of the PNS controlling voluntary muscles is the ___ nervous system.', 'somatic', []],
+      ['The branch that prepares the body for action in a threat is the ___ nervous system.', 'sympathetic', []],
+      ['The branch that returns the body to a resting state is the ___ nervous system.', 'parasympathetic', []],
+      ['A rapid muscle contraction produced without involving the brain is a spinal ___.', 'reflex', []]
+    ],
+    'b-brainstem': [
+      ['The structure coordinating heart rate, circulation and respiration is the ___.', 'medulla', []],
+      ['Sleep, wakefulness and arousal are regulated by the ___ formation.', 'reticular', []],
+      ['Fine motor skill, coordination and balance depend on the ___.', 'cerebellum', []],
+      ['Sensory information is relayed and filtered to the cortex by the ___.', 'thalamus', []],
+      ['Intentional movement is directed by the basal ___.', 'ganglia', []]
+    ],
+    'b-limbic': [
+      ['Body temperature, hunger and thirst are regulated by the ___.', 'hypothalamus', []],
+      ['New memories are created by the ___.', 'hippocampus', []],
+      ['The structure central to emotional processing, especially fear, is the ___.', 'amygdala', []],
+      ['Olds and Milner found rats would press a lever repeatedly for electrical ___.', 'stimulation', []],
+      ['Patient S.M. was specifically impaired at recognising ___ in faces.', 'fear', []]
+    ],
+    'b-cortex': [
+      ['Visual information is processed by the ___ lobe.', 'occipital', []],
+      ['Touch information arrives at the ___ lobe.', 'parietal', []],
+      ['Hearing and language are handled by the ___ lobe.', 'temporal', []],
+      ['The distorted body map drawn across the cortex is called the ___.', 'homunculus', []],
+      ['Cortex that is neither primarily sensory nor motor is called ___ cortex.', 'association', []]
+    ],
+    'b-lateral': [
+      ['The band of fibres connecting the hemispheres is the corpus ___.', 'callosum', []],
+      ['Damage to Broca\'s area impairs the ___ of speech.', 'production', []],
+      ['Damage to Wernicke\'s area impairs the ___ of language.', 'comprehension', []],
+      ['A stimulus in the left visual field reaches the ___ hemisphere.', 'right', []],
+      ['Gazzaniga called the left hemisphere\'s explanation-making the ___.', 'interpreter', []]
+    ],
+    'b-networks': [
+      ['The view that functions sit in specific regions is called ___ of function.', 'localisation', ['localization']],
+      ['Damage at one site impairing A but not B, and at another impairing B but not A, is a double ___.', 'dissociation', []],
+      ['The brain\'s capacity to reorganise after experience or injury is called ___.', 'plasticity', []],
+      ['Maguire found greater posterior hippocampal volume in London ___ drivers.', 'taxi', []],
+      ['Concluding a process occurred because a region was active is called ___ inference.', 'reverse', []]
+    ],
+    'b-endocrine': [
+      ['A chemical messenger carried in the bloodstream is a ___.', 'hormone', []],
+      ['The master gland directing the others is the ___ gland.', 'pituitary', []],
+      ['The main stress hormone released by the adrenal glands is ___.', 'cortisol', []],
+      ['The pathway from hypothalamus to pituitary to adrenals is the ___ axis.', 'hpa', []],
+      ['Metabolic rate is set by the hormone ___, released by the thyroid.', 'thyroxine', []]
     ],
     'l-classical': [
       ['A stimulus that produces a response without any learning is the ___ stimulus.', 'unconditioned', ['ucs']],
