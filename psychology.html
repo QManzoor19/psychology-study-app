@@ -1216,11 +1216,11 @@
         <h3><span class="tnum">08</span><span class="ttl">Genes, Evolution &amp; Plasticity</span></h3>
         <p class="desc">Nature and nurture aren't rivals — they're two names for one interacting process.</p>
         <ul class="subs">
-          <li><span class="txt"><span class="num">8.1</span> Behavioural genetics — twin, family &amp; adoption designs</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">8.2</span> Heritability — what the number does and doesn't mean</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">8.3</span> Gene–environment interaction &amp; correlation; epigenetics</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">8.4</span> Evolutionary psychology — adaptations, and its critics</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">8.5</span> Neuroplasticity, critical periods &amp; recovery from injury</span><span class="placeholder">notes soon</span></li>
+          <li><span class="txt"><span class="num">8.1</span> Behavioural genetics — twin, family &amp; adoption designs</span><button class="note-btn" data-note="b-behgen">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">8.2</span> Heritability — what the number does and doesn't mean</span><button class="note-btn" data-note="b-herit">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">8.3</span> Gene–environment interaction &amp; correlation; epigenetics</span><button class="note-btn" data-note="b-geneenv">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">8.4</span> Evolutionary psychology — adaptations, and its critics</span><button class="note-btn" data-note="b-evopsych">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">8.5</span> Neuroplasticity, critical periods &amp; recovery from injury</span><button class="note-btn" data-note="b-plasticity">📖 Notes</button></li>
         </ul>
       </div>
 
@@ -11840,6 +11840,1066 @@
         </ul>
       </div>
     `
+  },
+
+  /* ---------- 8.1 ---------- */
+  'b-behgen': {
+    eyebrow: 'Part II · Topic 08 · Biological Bases',
+    title: 'Behavioural genetics: twin, family and adoption designs',
+    html: `
+      <figure class="lesson-hero-img">
+        <img src="img/twins.jpg" alt="Two young twin sisters standing side by side in school uniform">
+        <figcaption><b>Twin sisters.</b> Behavioural genetics works by comparing people whose <b>degree of relatedness</b> is known. Twins are useful because two kinds exist — one sharing all their genes, the other half — while both kinds share a home.
+          <span class="cred">Basile Morin · CC BY-SA 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:Twin_sisters_wearing_school_uniform_in_Si_Phan_Don.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Nobody can assign a person their genes or their upbringing, so the influence of each cannot be studied experimentally. Behavioural genetics works around this by finding people whose relatedness and rearing are already known, and comparing them. This lesson covers the three designs used, what each one holds constant, and the assumption each depends on.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The vocabulary</h4>
+        <span class="role">What is inherited, and what is measured</span>
+
+        <div class="lesson-def">
+          <span class="term">Gene</span> — the major unit of hereditary transmission; a section of DNA coding for protein molecules that affect traits.<br><br>
+          <span class="term">Chromosome</span> — a long thread of DNA wound in a double helix. Human cells carry 23 pairs.<br><br>
+          <span class="term">Genotype</span> — the set of genes a person carries.<br><br>
+          <span class="term">Phenotype</span> — the observable characteristic that results, produced by genes and environment together.<br><br>
+          <span class="term">Behavioural genetics</span> — the study of how far differences between people in a behavioural trait are associated with differences in their genes.
+        </div>
+
+        <div class="lesson-def">
+          <span class="term">Degree of relatedness</span> — the probability that two people share any given gene.<br><br>
+          <span class="term">Monozygotic (MZ) twins</span> — identical twins, developed from one fertilised egg that split. They share <b>100%</b> of their genes.<br><br>
+          <span class="term">Dizygotic (DZ) twins</span> — fraternal twins, developed from two separately fertilised eggs. They share <b>50%</b>, the same as any two siblings.<br><br>
+          <span class="term">Concordance rate</span> — the probability that if one member of a pair has a trait, the other has it too.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Relationship</th><th>Genes shared</th></tr>
+          <tr><td><b>Monozygotic twins</b></td><td>100%</td></tr>
+          <tr><td><b>Dizygotic twins, and ordinary siblings</b></td><td>50%</td></tr>
+          <tr><td><b>Parent and child</b></td><td>50%</td></tr>
+          <tr><td><b>Half-siblings, grandparent and grandchild</b></td><td>25%</td></tr>
+          <tr><td><b>First cousins</b></td><td>12.5%</td></tr>
+        </table>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The three designs</h4>
+        <span class="role">Each one holds something different constant</span>
+
+        <p>The problem is that in ordinary families, relatives share genes <b>and</b> a home. Any resemblance could come from either. Each design attacks this differently.</p>
+
+        <table class="lesson-table">
+          <tr><th>Design</th><th>What it compares</th><th>The reasoning</th><th>Its weakness</th></tr>
+          <tr><td><b>Family study</b></td><td>Relatives of differing closeness</td><td>If a trait runs in families, something is being transmitted</td><td>Closer relatives also share more environment, so it cannot separate the two at all</td></tr>
+          <tr><td><b>Twin study</b></td><td>MZ pairs with DZ pairs, both raised together</td><td>Both kinds share a home, and only the genetic similarity differs. Greater MZ similarity suggests genetic influence</td><td>Assumes MZ and DZ pairs experience equally similar environments</td></tr>
+          <tr><td><b>Adoption study</b></td><td>Adopted children with their biological and their adoptive parents</td><td>Genes come from one set of parents and environment from the other, so the two are separated</td><td>Adoptive homes are screened and unusually uniform, and placement is not random</td></tr>
+        </table>
+
+        <figure class="lesson-fig">
+          <svg viewBox="0 0 640 260" role="img" aria-label="The twin design: MZ pairs share all genes and DZ pairs share half, while both share a home">
+            <g font-family="Inter, sans-serif" text-anchor="middle">
+              <text x="160" y="24" font-size="12" font-weight="800" fill="#6ee7a8">MONOZYGOTIC PAIR</text>
+              <circle cx="112" cy="72" r="24" fill="rgba(110,231,168,0.20)" stroke="#6ee7a8"/>
+              <circle cx="208" cy="72" r="24" fill="rgba(110,231,168,0.20)" stroke="#6ee7a8"/>
+              <line x1="136" y1="72" x2="184" y2="72" stroke="#6ee7a8" stroke-width="2.4"/>
+              <text x="160" y="60" font-size="11" font-weight="800" fill="#a7f3d0">100%</text>
+              <text x="160" y="112" font-size="10.5" fill="#8b7fa3">of genes shared</text>
+
+              <text x="480" y="24" font-size="12" font-weight="800" fill="#ff8fb0">DIZYGOTIC PAIR</text>
+              <circle cx="432" cy="72" r="24" fill="rgba(255,143,176,0.18)" stroke="#ff8fb0"/>
+              <circle cx="528" cy="72" r="24" fill="rgba(255,143,176,0.18)" stroke="#ff8fb0"/>
+              <line x1="456" y1="72" x2="504" y2="72" stroke="#ff8fb0" stroke-width="2.4" stroke-dasharray="6 5"/>
+              <text x="480" y="60" font-size="11" font-weight="800" fill="#ffd0de">50%</text>
+              <text x="480" y="112" font-size="10.5" fill="#8b7fa3">of genes shared</text>
+
+              <rect x="60" y="140" width="520" height="40" rx="9" fill="rgba(185,140,255,0.10)" stroke="#b98cff"/>
+              <text x="320" y="165" font-size="12.5" font-weight="700" fill="#e6d5ff">both kinds of pair share a home, a school and a neighbourhood</text>
+
+              <rect x="60" y="196" width="520" height="48" rx="10" fill="#171122" stroke="#3d2f57" stroke-dasharray="6 4"/>
+              <text x="320" y="216" font-size="12" font-weight="700" fill="#d3cbe2">so if MZ pairs are more alike than DZ pairs,</text>
+              <text x="320" y="234" font-size="12" fill="#8b7fa3">the extra similarity is attributed to the extra genetic similarity</text>
+            </g>
+          </svg>
+          <figcaption>The design works only if the environments of MZ and DZ pairs are equally similar. That assumption has a name, and it is the method's main vulnerability.</figcaption>
+        </figure>
+
+        <div class="worked">
+          <span class="wl">Worked example — schizophrenia</span>
+          If one <b>dizygotic</b> twin has schizophrenia, the chance the other develops it is about <b>27%</b>.<br><br>
+          If one <b>monozygotic</b> twin has it, the chance rises to about <b>50%</b>.<br><br>
+          <b>What the rise indicates.</b> Doubling the shared genes roughly doubles the concordance, which points to a substantial genetic contribution.<br><br>
+          <b>What the ceiling indicates.</b> The figure is 50%, not 100%. In half of MZ pairs where one twin has schizophrenia, the other — with an identical genome and the same home — does not. That remaining half must be attributed to environment, to chance events in development, or to both.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Twins reared apart</h4>
+        <span class="role">The design that separates genes from home directly</span>
+
+        <p>The rarest and most informative case is a pair of MZ twins separated in infancy and raised in different families. Their genes are identical and their homes are unrelated, so resemblance cannot be attributed to shared upbringing.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Bouchard et al. (1990) — the Minnesota Study of Twins Reared Apart</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To estimate how far similarity between monozygotic twins depends on shared genes rather than shared rearing, by studying pairs separated early in life.</dd>
+            <dt>Method</dt>
+            <dd>Over one hundred pairs of twins and triplets separated in infancy and reared apart were traced and brought to Minnesota. Each individual completed around 50 hours of assessment covering ability, personality, interests, attitudes and physiological measures. Their scores were compared with those of MZ pairs reared together.</dd>
+            <dt>Results</dt>
+            <dd>MZ twins reared apart were substantially similar across most measured traits, and on many of them about as similar as MZ twins reared together. Estimates of the genetic contribution to variation in general cognitive ability were around 70% in this sample.</dd>
+            <dt>Conclusion</dt>
+            <dd>Genetic similarity accounts for a large share of the variation in psychological traits within the populations studied, and being raised in the same household contributes less to adult similarity than had been assumed.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Three cautions about this study</span>
+          <b>Separation was rarely complete.</b> Many pairs were placed with relatives, in similar neighbourhoods, and some had met before the study.<br><br>
+          <b>The sample was self-selected.</b> Twins were recruited partly through publicity, and pairs who discover they are strikingly alike are more likely to come forward than pairs who are not.<br><br>
+          <b>Shared prenatal environment remains.</b> Twins reared apart still shared a womb, which is nine months of identical environment that no design here removes.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">What these designs can and cannot deliver</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>They address a question no experiment can.</b> Genes and upbringing cannot be assigned, so naturally occurring variation is the only available route (<i>3.4</i>).</li>
+              <li><b>The comparisons are internally coherent.</b> MZ and DZ pairs are the same age, in the same family, at the same time — controls a between-family comparison cannot achieve.</li>
+              <li><b>Adoption and twin designs converge.</b> When two methods with different weaknesses give similar answers, the answer is more credible than either alone.</li>
+              <li><b>They overturned a strong prior.</b> Mid-century psychology assumed family environment explained most adult personality; these designs showed that shared environment contributes far less than expected.</li>
+              <li><b>They can also detect environment.</b> A concordance well below 100% in MZ pairs is direct evidence of non-genetic influence.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>The equal environments assumption may fail.</b> Identical twins are dressed alike, mistaken for each other, given the same friends and treated as a unit far more than fraternal twins. If their environments are more similar, some of the extra resemblance is environmental and is being credited to genes.</li>
+              <li><b>Twins are not typical.</b> They are lower in birth weight, more often premature, and always share a womb, so results may not generalise to non-twins (<i>3.5</i>).</li>
+              <li><b>Adoptive placement is not random.</b> Agencies screen homes and often match children to families, which correlates the genetic and environmental influences the design is meant to separate.</li>
+              <li><b>Adoptive homes have restricted range.</b> Very poor and abusive homes are largely excluded, which shrinks environmental variation and therefore inflates the apparent role of genes (<i>3.3</i>).</li>
+              <li><b>Genes and environments are correlated in reality.</b> Parents supply both, and children select environments that suit their dispositions, so the two cannot be cleanly separated even in principle (<i>8.3</i>).</li>
+              <li><b>The output is about variation in a population</b>, not about any individual, and this is the point most often lost when the numbers are reported (<i>8.2</i>).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a study finds MZ twins are much more similar in political attitudes than DZ twins, and concludes that political attitudes are substantially genetic. Give the strongest objection, and say what evidence would answer it.</summary>
+          <div class="ans"><b>The strongest objection is the equal environments assumption.</b> The design credits the extra MZ similarity to extra shared genes, which is only sound if MZ and DZ pairs have equally similar environments.<br><br>For political attitudes this is doubtful. Identical twins look the same, are treated as a pair, are more often in the same friendship groups, and are more likely to be talked to as a unit by adults. All of that could produce more similar attitudes without any genetic route.<br><br><b>Evidence that would answer it.</b> Compare DZ pairs mistakenly believed by their parents to be identical with DZ pairs correctly identified. Genes are the same in both groups, so if the mistakenly-identical pairs are no more similar, the assumption holds for this trait. Studies of this kind have been done and broadly support the assumption, though the answer differs by trait.<br><br><b>A second answer</b> is an <b>adoption</b> design, which does not rest on the assumption at all — but it brings its own problem of restricted range in adoptive homes.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>MZ</b> twins share 100% of their genes; <b>DZ</b> twins and ordinary siblings share 50%.</li>
+          <li><b>Family</b> studies cannot separate genes from environment. <b>Twin</b> studies hold the home constant and vary relatedness. <b>Adoption</b> studies separate the two directly.</li>
+          <li>Schizophrenia concordance is about <b>27%</b> for DZ pairs and <b>50%</b> for MZ pairs — evidence of substantial genetic influence, and of substantial non-genetic influence too.</li>
+          <li><b>Bouchard et al. (1990)</b> found MZ twins reared apart were about as similar as those reared together on many traits.</li>
+          <li>The twin design rests on the <b>equal environments assumption</b>, which is its main vulnerability.</li>
+          <li>Adoption designs are limited by <b>non-random placement</b> and by the <b>restricted range</b> of adoptive homes.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, designs, evaluation and studies from 8.1, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Gene</td><td>The major unit of hereditary transmission; a section of DNA coding for proteins that affect traits.</td></tr>
+          <tr><td>Chromosome</td><td>A long thread of DNA in a double helix. Human cells carry 23 pairs.</td></tr>
+          <tr><td>Genotype</td><td>The set of genes a person carries.</td></tr>
+          <tr><td>Phenotype</td><td>The observable characteristic, produced by genes and environment together.</td></tr>
+          <tr><td>Behavioural genetics</td><td>The study of how far differences between people in a trait are associated with differences in their genes.</td></tr>
+          <tr><td>Degree of relatedness</td><td>The probability that two people share any given gene.</td></tr>
+          <tr><td>Monozygotic (MZ) twins</td><td>Identical twins from one split egg, sharing 100% of their genes.</td></tr>
+          <tr><td>Dizygotic (DZ) twins</td><td>Fraternal twins from two eggs, sharing 50% — the same as ordinary siblings.</td></tr>
+          <tr><td>Concordance rate</td><td>The probability that if one member of a pair has a trait, the other does too.</td></tr>
+          <tr><td>Equal environments assumption</td><td>The assumption that MZ and DZ pairs experience equally similar environments. The twin design depends on it.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The core problem is that relatives share genes and a home.</b> Every design is an attempt to separate the two.</li>
+          <li><b>The twin design varies relatedness while holding the home constant</b>, which is why it is the workhorse of the field.</li>
+          <li><b>A concordance below 100% in MZ pairs is evidence of environment</b>, so these designs measure both influences, not only genes.</li>
+          <li><b>Restricted range inflates the apparent role of genes.</b> If environments barely vary, variation that remains must come from somewhere else.</li>
+          <li><b>Twins reared apart still shared a womb</b>, so no design removes prenatal environment.</li>
+          <li><b>The output describes variation in a population</b>, never an individual (<i>8.2</i>).</li>
+        </ul>
+
+        <h5>Degrees of relatedness</h5>
+        <table>
+          <tr><td>Monozygotic twins</td><td>100%</td></tr>
+          <tr><td>Dizygotic twins, ordinary siblings, parent and child</td><td>50%</td></tr>
+          <tr><td>Half-siblings, grandparent and grandchild</td><td>25%</td></tr>
+          <tr><td>First cousins</td><td>12.5%</td></tr>
+        </table>
+
+        <h5>Examples used</h5>
+        <ul>
+          <li><b>Schizophrenia concordance</b> — 27% in DZ pairs, 50% in MZ pairs. The rise indicates genetic influence; the ceiling indicates that half the variation is not genetic.</li>
+          <li><b>Political attitudes</b> — the trait where the equal environments assumption is most obviously worth questioning.</li>
+          <li><b>DZ pairs mistakenly believed to be identical</b> — the test that checks the equal environments assumption directly.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Bouchard et al. (1990)</b> — over a hundred pairs of twins separated in infancy were traced and each given about 50 hours of assessment. MZ pairs reared apart were substantially similar and often about as similar as MZ pairs reared together, with the genetic contribution to variation in general cognitive ability estimated near 70% in that sample. Cautions: separation was rarely complete, the sample was partly self-selected through publicity, and all pairs shared a prenatal environment.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 8.2 ---------- */
+  'b-herit': {
+    eyebrow: 'Part II · Topic 08 · Biological Bases',
+    title: 'Heritability: what the number means',
+    html: `
+      <figure class="lesson-hero-img frame">
+        <img src="img/galton.jpg" alt="Seated portrait photograph of Francis Galton">
+        <figcaption><b>Francis Galton (1822–1911).</b> Galton coined the phrase "nature versus nurture", invented the twin method, and built the statistics heritability rests on. He also founded eugenics and argued for selective breeding of humans. The techniques outlived the programme, and the number they produce is routinely read as though it supported it.
+          <span class="cred">Public domain · via <a href="https://commons.wikimedia.org/wiki/File:Francis_Galton_1850s.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Heritability is a number between 0 and 1 that is misread more often than almost any other statistic in psychology. This lesson takes its definition apart clause by clause, and then works through what the number cannot tell you — which is most of what people use it for.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The definition, one clause at a time</h4>
+        <span class="role">Every clause is doing work</span>
+
+        <div class="lesson-def">
+          <span class="term">Heritability</span> — the proportion of the <b>variation</b> in a trait, <b>within a particular population</b> and <b>range of environments</b>, that is associated with <b>genetic variation</b>.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Clause</th><th>What it rules out</th></tr>
+          <tr><td><b>the proportion of the variation</b></td><td>It is about <b>differences between people</b>, not about any one person. It never describes how much of your height came from your genes</td></tr>
+          <tr><td><b>in a trait</b></td><td>It is a property of a measured trait in a dataset, not a property of a gene or of a person</td></tr>
+          <tr><td><b>within a particular population</b></td><td>The same trait can have a different heritability in a different group. The number travels with its sample</td></tr>
+          <tr><td><b>and range of environments</b></td><td>Change the spread of environments and the number changes, without any gene changing</td></tr>
+          <tr><td><b>associated with genetic variation</b></td><td>Association, not mechanism. It does not name a gene or say how the influence works</td></tr>
+        </table>
+
+        <div class="worked">
+          <span class="wl">Worked example — why it cannot describe an individual</span>
+          Heritability of height in a well-fed population is roughly <b>0.8</b>.<br><br>
+          The tempting reading: "80% of my height came from my genes, 20% from my diet."<br><br>
+          That statement is not merely inaccurate, it is not the kind of claim the number makes. Your height was produced by genes and environment acting together, inseparably, throughout development. Neither contributed a percentage.<br><br>
+          The correct reading: <b>in this population, about 80% of the variation in height between people is associated with genetic variation between them.</b> It is a statement about a group's spread, not about anybody's body.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Why the number moves</h4>
+        <span class="role">Equalise environments and heritability rises</span>
+
+        <p>This is the most counter-intuitive property of the statistic, and the one that most often reverses a conclusion.</p>
+
+        <p>Heritability is a ratio: genetic variation divided by total variation. Anything that shrinks environmental variation increases the ratio, even though nothing genetic has changed.</p>
+
+        <figure class="lesson-fig">
+          <svg viewBox="0 0 640 250" role="img" aria-label="The same genetic variation gives a higher heritability when environmental variation is reduced">
+            <g font-family="Inter, sans-serif" text-anchor="middle">
+              <text x="160" y="24" font-size="12" font-weight="800" fill="#a396bb">UNEQUAL ENVIRONMENTS</text>
+              <rect x="52" y="42" width="216" height="34" rx="6" fill="rgba(110,231,168,0.22)" stroke="#6ee7a8"/>
+              <text x="160" y="64" font-size="11.5" font-weight="700" fill="#a7f3d0">genetic variation</text>
+              <rect x="52" y="82" width="216" height="62" rx="6" fill="rgba(255,143,176,0.16)" stroke="#ff8fb0"/>
+              <text x="160" y="108" font-size="11.5" font-weight="700" fill="#ffd0de">environmental variation</text>
+              <text x="160" y="126" font-size="10.5" fill="#8b7fa3">some children well fed, some not</text>
+              <text x="160" y="176" font-size="13" font-weight="800" fill="#d3cbe2">heritability is LOW</text>
+              <text x="160" y="196" font-size="10.5" fill="#8b7fa3">genes are a small share of the total</text>
+
+              <text x="480" y="24" font-size="12" font-weight="800" fill="#a396bb">EQUAL ENVIRONMENTS</text>
+              <rect x="372" y="42" width="216" height="34" rx="6" fill="rgba(110,231,168,0.22)" stroke="#6ee7a8"/>
+              <text x="480" y="64" font-size="11.5" font-weight="700" fill="#a7f3d0">genetic variation</text>
+              <rect x="372" y="82" width="216" height="18" rx="6" fill="rgba(255,143,176,0.16)" stroke="#ff8fb0"/>
+              <text x="480" y="95" font-size="10" font-weight="700" fill="#ffd0de">environmental variation</text>
+              <text x="480" y="120" font-size="10.5" fill="#8b7fa3">everyone equally well fed</text>
+              <text x="480" y="176" font-size="13" font-weight="800" fill="#d3cbe2">heritability is HIGH</text>
+              <text x="480" y="196" font-size="10.5" fill="#8b7fa3">genes are a large share of the total</text>
+
+              <rect x="52" y="212" width="536" height="30" rx="8" fill="rgba(185,140,255,0.10)" stroke="#3d2f57" stroke-dasharray="6 4"/>
+              <text x="320" y="232" font-size="12" font-weight="700" fill="#e6d5ff">the genes are identical in both cases — only the denominator changed</text>
+            </g>
+          </svg>
+          <figcaption>A high heritability can mean the environment matters enormously and has simply been made uniform.</figcaption>
+        </figure>
+
+        <div class="lesson-plain">
+          <span class="pl">The uncomfortable consequence</span>
+          If a society succeeded completely in giving every child identical nutrition, schooling and care, environmental variation would fall toward zero and the heritability of almost every trait would approach <b>1</b>.<br><br>
+          A rising heritability would then be a measure of how <b>fair</b> the society had become, not of how genetically determined people are. The number cannot distinguish these readings on its own.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Turkheimer et al. (2003) — heritability differs by socioeconomic status</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To test whether the heritability of cognitive ability is the same across families of different socioeconomic status, given that most twin samples had been drawn from relatively affluent groups.</dd>
+            <dt>Method</dt>
+            <dd>Data came from a large sample of twin pairs, deliberately including many families living in poverty — a group under-represented in earlier twin research. Ability scores at age seven were analysed, and heritability was estimated separately across the range of socioeconomic status rather than for the sample as a whole.</dd>
+            <dt>Results</dt>
+            <dd>In the most affluent families, roughly <b>60%</b> of the variation in ability was attributable to genes and almost none to shared environment. In the poorest families the pattern reversed: the genetic share was close to <b>zero</b> and shared environment accounted for almost all the variation.</dd>
+            <dt>Conclusion</dt>
+            <dd>Heritability is not a fixed property of a trait. Where environments vary widely and some are severely deprived, environmental differences dominate and genetic potential is not expressed. A single heritability figure for a whole population can conceal opposite patterns within it.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">High heritability does not mean unchangeable</h4>
+        <span class="role">The inference people most want to make, and cannot</span>
+
+        <p>Heritability says nothing about how responsive a trait is to intervention. The two are independent, and three examples make this concrete.</p>
+
+        <ul>
+          <li><b>Phenylketonuria (PKU).</b> A condition caused by a single gene, with heritability close to 1. Untreated it produces severe intellectual disability. Removing one amino acid from the diet from birth prevents that outcome almost entirely. Maximum heritability, and a complete environmental remedy.</li>
+          <li><b>Height.</b> Heritability around 0.8, and average height in many countries rose by several centimetres in a century. Genes did not change in four generations; nutrition did.</li>
+          <li><b>Eyesight.</b> Myopia is substantially heritable and is corrected completely by a pair of glasses.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the inference fails</span>
+          Heritability describes the causes of the <b>variation that currently exists</b>, under the environments that currently exist.<br><br>
+          An intervention introduces an environment that <b>did not exist in the sample</b>. The statistic has nothing to say about it, because it was never measured. This is why a high heritability is not an argument against a treatment, a policy or a programme.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Heritability says nothing about differences between groups</h4>
+        <span class="role">The most consequential misuse</span>
+
+        <p>Heritability is calculated <b>within</b> a population. It carries no information about why the averages of two different populations differ. This is not a matter of caution about a difficult topic; it is a mathematical point.</p>
+
+        <div class="worked">
+          <span class="wl">Worked example — the two seed trays</span>
+          Take a bag of genetically varied seeds and split it randomly into two trays.<br><br>
+          <b>Tray A</b> gets good soil. <b>Tray B</b> gets poor soil.<br><br>
+          <b>Within</b> each tray, every plant had the same soil, so all the variation in height is genetic. Heritability within each tray is close to <b>1</b>.<br><br>
+          <b>Between</b> the trays, tray A's plants are taller on average. That difference is entirely environmental, because the seeds were split at random.<br><br>
+          So heritability within groups is at its maximum, and the difference between groups is entirely due to environment. A high within-group heritability tells you nothing whatever about the between-group difference.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">A useful statistic, for a narrow purpose</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>What it is good for</h5>
+            <ul>
+              <li><b>Establishing that genetic variation matters at all</b> for a trait, which was genuinely disputed for much of the twentieth century.</li>
+              <li><b>Showing where to look for environmental effects.</b> A heritability of 0.5 means half the variation is not genetic, which is a finding about environment.</li>
+              <li><b>Comparing populations or periods.</b> A heritability that differs between groups, as in Turkheimer's data, is informative precisely because the number moves.</li>
+              <li><b>Guiding gene-finding research</b> by indicating which traits are worth searching for specific genetic variants.</li>
+              <li><b>Correcting a false prior.</b> These methods showed that shared family environment contributes less to adult personality than mid-century psychology assumed.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>What it cannot support</h5>
+            <ul>
+              <li><b>Any claim about an individual.</b> It is a property of variation in a group.</li>
+              <li><b>Any claim that a trait is fixed.</b> PKU has near-maximal heritability and a complete dietary remedy.</li>
+              <li><b>Any claim about differences between groups.</b> It is calculated within a population and carries no between-population information.</li>
+              <li><b>Any claim about mechanism.</b> It names no gene and describes no pathway.</li>
+              <li><b>Any claim that generalises beyond the sampled environments.</b> Change the range of environments and the number changes.</li>
+              <li><b>Any separation of genes from environment in principle</b>, since the two are correlated in real families and interact throughout development (<i>8.3</i>).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: "Educational achievement is 60% heritable, so spending more on schools is a waste of money." Identify every error.</summary>
+          <div class="ans"><b>1. It treats heritability as a claim about individuals.</b> The figure describes variation across a population, not the composition of any pupil's achievement.<br><br><b>2. It treats high heritability as unchangeability.</b> These are independent. PKU is almost entirely heritable and almost entirely preventable by diet.<br><br><b>3. It ignores what the other 40% means.</b> Even taken at face value, 40% of the variation is non-genetic — a large target for intervention.<br><br><b>4. It reasons about an environment that was never sampled.</b> The estimate comes from schools as they currently are. A better-funded school is a new environment, about which the statistic says nothing.<br><br><b>5. It gets the direction backwards.</b> Equalising school quality would <b>raise</b> heritability by shrinking environmental variation. On this logic, a successful policy would look like proof the policy was pointless (<i>8.1</i>).<br><br><b>6. A "waste of money" claim is about mean levels, not variation.</b> Spending could raise everyone's achievement while leaving heritability untouched, because the spread between people need not change at all.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Heritability</b> is the proportion of the <b>variation</b> in a trait, <b>within a particular population and range of environments</b>, associated with <b>genetic variation</b>. Every clause matters.</li>
+          <li>It is never a statement about an individual.</li>
+          <li><b>Equalising environments raises heritability</b>, because the number is a ratio and the denominator shrinks.</li>
+          <li><b>Turkheimer et al. (2003)</b> found heritability of ability near 60% in affluent families and near zero in the poorest.</li>
+          <li><b>High heritability does not mean unchangeable</b> — PKU, height and myopia are the standard counterexamples.</li>
+          <li>Heritability is calculated <b>within</b> groups and carries <b>no</b> information about differences between them. The two seed trays make this exact.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">The definition, the misreadings, examples and studies from 8.2, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Heritability</td><td>The proportion of the variation in a trait, within a particular population and range of environments, that is associated with genetic variation.</td></tr>
+          <tr><td>Variation</td><td>The spread of differences between people. Heritability is about this, never about a single person.</td></tr>
+          <tr><td>Shared environment</td><td>Influences that make members of the same family alike.</td></tr>
+          <tr><td>Non-shared environment</td><td>Influences that make members of the same family different, including chance events in development.</td></tr>
+          <tr><td>Phenylketonuria (PKU)</td><td>A single-gene condition with near-maximal heritability whose effects are almost entirely prevented by dietary change.</td></tr>
+        </table>
+
+        <h5>The definition, clause by clause</h5>
+        <table>
+          <tr><td>the proportion of the variation</td><td>About differences between people, not about one person.</td></tr>
+          <tr><td>in a trait</td><td>A property of a measured trait in a dataset, not of a gene or a person.</td></tr>
+          <tr><td>within a particular population</td><td>The number travels with its sample and can differ elsewhere.</td></tr>
+          <tr><td>and range of environments</td><td>Change the spread of environments and the number changes with no gene changing.</td></tr>
+          <tr><td>associated with genetic variation</td><td>Association, not mechanism. It names no gene and describes no pathway.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>It is a ratio.</b> Shrinking environmental variation raises it without any genetic change.</li>
+          <li><b>A rising heritability can measure fairness.</b> If a society equalised every child's conditions, heritability would approach 1.</li>
+          <li><b>High heritability does not mean fixed</b>, because an intervention creates an environment the sample never contained.</li>
+          <li><b>Within-group heritability says nothing about between-group differences</b> — the seed-tray case has maximal heritability within each tray and a purely environmental difference between them.</li>
+          <li><b>A heritability below 1 is itself a finding about environment</b>, which is often the more useful half of the number.</li>
+        </ul>
+
+        <h5>Examples used</h5>
+        <ul>
+          <li><b>Height at 0.8</b> — and average height rising several centimetres in a century, on unchanged genes.</li>
+          <li><b>PKU</b> — heritability near 1, prevented almost entirely by removing one amino acid from the diet.</li>
+          <li><b>Myopia</b> — substantially heritable, corrected completely by glasses.</li>
+          <li><b>The two seed trays</b> — identical genetic variation, one good soil and one poor; heritability near 1 within each tray, and a wholly environmental difference between them.</li>
+          <li><b>"Schools are a waste of money"</b> — six separate errors in one sentence.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Turkheimer et al. (2003)</b> — a large twin sample deliberately including many families in poverty. Among the most affluent families about 60% of the variation in ability at age seven was genetic and almost none was shared environment; among the poorest the genetic share was near zero and shared environment accounted for almost all of it. Heritability is not a fixed property of a trait, and one figure for a whole population can hide opposite patterns within it.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 8.3 ---------- */
+  'b-geneenv': {
+    eyebrow: 'Part II · Topic 08 · Biological Bases',
+    title: 'Gene–environment interplay and epigenetics',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/epigenetics.png" alt="Diagram of epigenetic mechanisms showing a chromosome, DNA, methyl groups tagging DNA, and histones with modified tails">
+        <figcaption><b>Epigenetic mechanisms.</b> The DNA sequence stays the same. What changes is whether a stretch of it can be <b>read</b> — either because a methyl group has tagged it, or because the histone spools it wraps around have been loosened or tightened.
+          <span class="cred">National Institutes of Health · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Epigenetic_mechanisms.png" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">The question "how much is genes and how much is environment" assumes the two act separately and can be added up. They do not. This lesson covers the three ways they are entangled — interaction, correlation, and chemical marks that switch genes on and off — and what each does to the arithmetic of the previous lesson.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Interaction: the effect of a gene depends on the environment</h4>
+        <span class="role">And the effect of an environment depends on the genes</span>
+
+        <div class="lesson-def">
+          <span class="term">Gene–environment interaction (G×E)</span> — the effect of a genetic variant differs depending on the environment, and the effect of an environment differs depending on the genotype.
+        </div>
+
+        <p>An interaction means the two influences cannot be added. Their combination produces something neither predicts alone.</p>
+
+        <p><b>Phenylketonuria</b> is the cleanest case. The genotype produces severe intellectual disability in a normal diet and almost no impairment in a diet low in phenylalanine. The gene has no fixed effect. It has an effect <b>in an environment</b>, and asking what it does in general has no answer (<i>8.2</i>).</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why this breaks the percentages</span>
+          Heritability treats genetic and environmental contributions as shares of a total that sum to 1.<br><br>
+          An interaction is a contribution belonging to <b>neither alone</b>. The variance can still be partitioned arithmetically, but the resulting shares stop corresponding to anything you can act on, because the size of the genetic effect depends on which environments happen to be present in the sample.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Correlation: genes and environments are not assigned independently</h4>
+        <span class="role">Three ways they come bundled</span>
+
+        <div class="lesson-def">
+          <span class="term">Gene–environment correlation (rGE)</span> — a person's genotype is systematically associated with the environments they experience.<br><br>
+          <span class="term">Passive rGE</span> — parents supply both the genes and the home, so the two arrive together.<br><br>
+          <span class="term">Evocative rGE</span> — a child's disposition draws different treatment from other people.<br><br>
+          <span class="term">Active rGE</span> — people seek out environments that suit their dispositions. Also called <b>niche-picking</b>.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Type</th><th>Mechanism</th><th>Example</th></tr>
+          <tr><td><b>Passive</b></td><td>The child receives genes and environment from the same source</td><td>Musical parents pass on both any relevant genetic variants and a house full of instruments</td></tr>
+          <tr><td><b>Evocative</b></td><td>The child's behaviour changes how others behave toward them</td><td>An easy-tempered baby is smiled at and talked to more, receiving a richer environment as a consequence</td></tr>
+          <tr><td><b>Active</b></td><td>The person chooses their surroundings</td><td>A child who reads easily seeks out books, joins the library, and accumulates practice others do not</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">Why correlation matters more than it first appears</span>
+          Active and evocative correlation make the effect of a small initial genetic difference grow over time. A slight early advantage attracts practice, encouragement and opportunity, which produce a larger advantage, which attracts more.<br><br>
+          The final gap can be mostly environmental in its immediate cause, and still show up as heritable, because the environments were selected by the genotype. A twin study cannot tell these apart (<i>8.1</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Epigenetics: switching genes on and off</h4>
+        <span class="role">The sequence stays the same; what is read changes</span>
+
+        <div class="lesson-def">
+          <span class="term">Epigenetics</span> — the study of environmental influences that determine whether genes are expressed, and to what degree, <b>without altering the DNA sequence itself</b>.<br><br>
+          <span class="term">Epigenetic marks</span> — chemical modifications to DNA that can turn genes on or off.<br><br>
+          <span class="term">DNA methylation</span> — attaching a methyl group to a stretch of DNA, which switches the tagged gene off without changing the sequence.<br><br>
+          <span class="term">Histone modification</span> — altering the proteins DNA is wound around, changing how tightly it is packed and therefore how accessible the genes are.<br><br>
+          <span class="term">Gene expression</span> — whether and how much a gene is actually being used to make protein, as opposed to merely being present.
+        </div>
+
+        <p>Every cell in the body carries the same genome. A liver cell and a neuron differ because different parts of it are switched on. Epigenetic marks are how that switching is done, and some of them respond to experience.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Weaver et al. (2004) — maternal care and the stress response in rats</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether early maternal care alters an offspring's later stress response through a change in gene expression rather than through inherited genes.</dd>
+            <dt>Method</dt>
+            <dd>Rat mothers differ naturally in how much they lick and groom their pups. Pups of high-licking and low-licking mothers were compared in adulthood on their hormonal response to stress and on methylation of the gene for the glucocorticoid receptor in the hippocampus. Crucially, pups were also <b>cross-fostered</b>: pups born to low-licking mothers were reared by high-licking mothers and the reverse.</dd>
+            <dt>Results</dt>
+            <dd>Adults reared by high-licking mothers showed a calmer, better-regulated stress response and <b>less methylation</b> of the receptor gene, so more of it was expressed. Cross-fostered pups matched the mother who <b>reared</b> them, not the one who bore them. Administering a drug that removes methyl marks reversed the pattern in adulthood.</dd>
+            <dt>Conclusion</dt>
+            <dd>Early experience produced a lasting chemical modification of a specific gene, altering its expression and the animal's physiology for life. Cross-fostering rules out inheritance as the explanation, and the drug reversal shows the mark is doing the causal work.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why cross-fostering is the crucial condition</span>
+          Without it, high-licking mothers and their calm offspring share genes as well as an upbringing, so the calm could be inherited.<br><br>
+          Swapping the pups separates the two. Matching the <b>rearing</b> mother rather than the <b>birth</b> mother identifies care rather than inheritance as the cause. It is the same logic as an adoption study (<i>8.1</i>), applied where random assignment is possible.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">A caution about how this field is reported</h4>
+        <span class="role">One famous finding that did not survive</span>
+
+        <p>Gene–environment interaction had a period in which single-gene findings were published rapidly and reported enthusiastically. Most have not held up.</p>
+
+        <p>The best-known example proposed that a variant of a serotonin transporter gene made people more likely to become depressed <b>after</b> stressful life events, while having no effect in the absence of stress — a textbook interaction, published in 2003 and cited thousands of times.</p>
+
+        <p>Later work did not support it. Meta-analyses failed to find the interaction consistently, and a large 2019 study examining the main candidate genes for depression across very large samples found essentially no evidence for any of them. The findings appear to have been produced by small samples, many analytic choices and selective reporting (<i>4.6</i>, <i>4.7</i>).</p>
+
+        <div class="lesson-plain">
+          <span class="pl">What replaced the candidate-gene approach</span>
+          Traits like depression and intelligence are influenced by <b>very many</b> genetic variants, each with a tiny effect, rather than by a few identifiable genes.<br><br>
+          Studies now scan the whole genome across hundreds of thousands of people and combine thousands of variants into a single score. These scores predict better than any single gene, and they still explain only a modest share of the variation — which is itself a finding worth knowing.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">A better framework, with real limits</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>It replaces an unanswerable question with an answerable one.</b> "How much is genes" has no good answer; "under what conditions does this variant matter" does.</li>
+              <li><b>It supplies a mechanism.</b> Epigenetic marks describe how an experience becomes a lasting biological change, which heritability estimates never do (<i>8.2</i>).</li>
+              <li><b>Animal work permits real experiments.</b> Cross-fostering assigns rearing at random, which no human design can (<i>3.4</i>).</li>
+              <li><b>It explains why identical genomes diverge.</b> MZ twins differ increasingly with age, and differing epigenetic marks are part of the reason.</li>
+              <li><b>It reframes early adversity as biological</b>, not merely psychological, which changes how seriously it is taken in policy.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>Interactions are hard to detect.</b> Finding them reliably needs very large samples, and the small studies that reported them have mostly failed to replicate.</li>
+              <li><b>Most human epigenetic work is correlational.</b> Methylation differing between groups does not show which came first (<i>3.3</i>).</li>
+              <li><b>Tissue is a problem.</b> Human studies measure marks in blood or saliva, and the relationship to marks in the brain is not straightforward (<i>6.7</i>).</li>
+              <li><b>Transgenerational claims are contested.</b> Evidence that epigenetic marks caused by experience are passed to grandchildren is much weaker in humans than popular accounts suggest.</li>
+              <li><b>The field is prone to overstatement.</b> "Epigenetics" is used loosely to mean any environmental effect on biology, which drains the term of its specific meaning.</li>
+              <li><b>Gene–environment correlation is very hard to remove.</b> Because people select and evoke their environments, no observational design cleanly separates the two.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a study finds adults who were maltreated as children have higher methylation of a stress-related gene than adults who were not, and concludes that maltreatment causes lasting epigenetic damage. Assess it.</summary>
+          <div class="ans"><b>The design is correlational.</b> Nobody assigned maltreatment, so the three explanations apply: maltreatment altered methylation, methylation differences preceded and somehow contributed to the circumstances, or a third factor produced both (<i>3.3</i>).<br><br><b>A specific third variable is available.</b> Maltreatment is strongly associated with poverty, poor nutrition, smoking during pregnancy and chronic stress in adulthood, all of which affect methylation. Matching on some of them does not remove the ones nobody measured.<br><br><b>The tissue may be wrong.</b> The marks were almost certainly measured in blood or saliva. Their relationship to methylation in the hippocampus is uncertain.<br><br><b>Direction of time is not established</b> unless methylation was measured before and after, which observational studies of childhood maltreatment rarely manage.<br><br><b>What would strengthen it.</b> A longitudinal design measuring methylation at several points; a dose–response relationship with severity; and convergence with animal work where rearing can be assigned, as in Weaver et al. (<i>3.3</i>).</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>G×E interaction</b>: a variant's effect depends on the environment, so the two influences cannot be added. PKU is the clearest case.</li>
+          <li><b>rGE correlation</b>: genotype and environment arrive together — <b>passive</b> from parents, <b>evocative</b> from how others respond, <b>active</b> through niche-picking.</li>
+          <li>Active and evocative correlation make small initial differences grow, and twin designs count the result as genetic.</li>
+          <li><b>Epigenetics</b> studies changes in gene <b>expression</b> without changes to the sequence, through <b>methylation</b> and <b>histone modification</b>.</li>
+          <li><b>Weaver et al. (2004)</b> found maternal licking altered methylation of a stress-receptor gene in rats; cross-fostered pups matched their rearing mother, and a drug reversed the effect.</li>
+          <li>Single-gene interaction findings in humans have largely failed to replicate; the field now uses whole-genome scores built from thousands of tiny effects.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, mechanisms, evaluation and studies from 8.3, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Gene–environment interaction (G×E)</td><td>A variant's effect differs by environment, and an environment's effect differs by genotype. The two cannot be added.</td></tr>
+          <tr><td>Gene–environment correlation (rGE)</td><td>Genotype is systematically associated with the environments a person experiences.</td></tr>
+          <tr><td>Passive rGE</td><td>Parents supply both genes and home, so the two arrive together.</td></tr>
+          <tr><td>Evocative rGE</td><td>A person's disposition draws different treatment from others.</td></tr>
+          <tr><td>Active rGE</td><td>People seek environments that suit them. Also called niche-picking.</td></tr>
+          <tr><td>Epigenetics</td><td>Environmental influences on whether and how far genes are expressed, without altering the DNA sequence.</td></tr>
+          <tr><td>Epigenetic marks</td><td>Chemical modifications to DNA that switch genes on or off.</td></tr>
+          <tr><td>DNA methylation</td><td>Attaching a methyl group to DNA, switching the tagged gene off.</td></tr>
+          <tr><td>Histone modification</td><td>Altering the proteins DNA winds around, changing how accessible the genes are.</td></tr>
+          <tr><td>Gene expression</td><td>Whether and how much a gene is actually being used, as opposed to merely being present.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>A gene has no fixed effect.</b> It has an effect in an environment, which is why asking what PKU "does" in general has no answer.</li>
+          <li><b>Interaction breaks the percentages.</b> The shares can still be computed, and they stop corresponding to anything actionable.</li>
+          <li><b>Correlation means the two were never assigned independently</b>, in real families or anywhere else.</li>
+          <li><b>Selected environments amplify small differences</b>, and twin designs credit the result to genes.</li>
+          <li><b>Every cell has the same genome</b>; cells differ because different parts are switched on.</li>
+          <li><b>Cross-fostering is the decisive condition</b>, separating what was inherited from what was received.</li>
+          <li><b>Candidate-gene findings largely failed to replicate</b>, and whole-genome scores built from thousands of tiny effects replaced them.</li>
+        </ul>
+
+        <h5>The three kinds of correlation</h5>
+        <table>
+          <tr><td>Passive</td><td>Musical parents pass on relevant variants and a house full of instruments.</td></tr>
+          <tr><td>Evocative</td><td>An easy-tempered baby is smiled at and talked to more, and so receives a richer environment.</td></tr>
+          <tr><td>Active</td><td>A child who reads easily seeks out books and accumulates practice others do not.</td></tr>
+        </table>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Weaver et al. (2004)</b> — pups of high-licking and low-licking rat mothers were compared as adults, with cross-fostering. Those reared by high-licking mothers had a better-regulated stress response and <b>less methylation</b> of the glucocorticoid receptor gene. Cross-fostered pups matched their rearing mother rather than their birth mother, and a drug removing methyl marks reversed the pattern in adulthood. Early experience produces a lasting, specific and reversible change in gene expression.</li>
+        </ul>
+
+        <h5>The cautionary case</h5>
+        <ul>
+          <li><b>The serotonin transporter interaction (2003)</b> — proposed that a gene variant raised depression risk only after stressful life events. Cited thousands of times, then unsupported by meta-analysis, and a large 2019 study found essentially no evidence for the main candidate genes for depression. Small samples, many analytic choices and selective reporting are the likely explanation (<i>4.6</i>, <i>4.7</i>).</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 8.4 ---------- */
+  'b-evopsych': {
+    eyebrow: 'Part II · Topic 08 · Biological Bases',
+    title: 'Evolutionary psychology and its critics',
+    html: `
+      <figure class="lesson-hero-img frame">
+        <img src="img/darwin.jpg" alt="Photographic portrait of Charles Darwin in later life">
+        <figcaption><b>Charles Darwin (1809–1882).</b> Darwin proposed that the mind, like the body, has a history, and that psychological traits could be shaped by selection. Evolutionary psychology takes that proposal and asks what problems a given mental mechanism was built to solve.
+          <span class="cred">Herbert Rose Barraud · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Charles_Darwin_photograph_by_Herbert_Rose_Barraud,_1881_2.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Evolutionary psychology explains psychological traits by the reproductive problems they would have solved for our ancestors. It has produced testable predictions and a substantial body of evidence, and it attracts the most sustained methodological criticism of any approach in the field. This lesson covers the argument, the evidence, and the objections.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The argument</h4>
+        <span class="role">From natural selection to mental mechanisms</span>
+
+        <div class="lesson-def">
+          <span class="term">Natural selection</span> — the process by which heritable characteristics that improve survival and reproduction become more common in a population over generations.<br><br>
+          <span class="term">Adaptation</span> — a characteristic that exists because it solved a survival or reproductive problem for ancestors.<br><br>
+          <span class="term">Evolutionary psychology</span> — the approach that explains psychological traits as adaptations shaped by natural selection.<br><br>
+          <span class="term">Environment of evolutionary adaptedness (EEA)</span> — the set of conditions under which a trait evolved. For humans, mainly small-group foraging life over hundreds of thousands of years.
+        </div>
+
+        <p>The reasoning has three steps. The brain is a product of evolution, like any other organ. Organs are shaped by selection to perform functions. Therefore the mind should contain mechanisms shaped to solve the recurring problems ancestors faced — finding food, avoiding predators, choosing mates, cooperating, detecting cheats.</p>
+
+        <div class="lesson-def">
+          <span class="term">Mismatch</span> — a trait that was adaptive in the environment where it evolved and is harmful in the current one.
+        </div>
+
+        <p>Mismatch produces the approach's most secure predictions, because the ancestral conditions and the modern ones can both be described.</p>
+
+        <ul>
+          <li><b>Sugar and fat.</b> A strong preference for calorie-dense food was useful when such food was scarce and unreliable. In an environment of constant abundance the same preference contributes to obesity.</li>
+          <li><b>Fear.</b> Snakes and spiders are learned as fear signals far more readily than cars or electrical sockets, though the latter are vastly more dangerous now. The threats that shaped the mechanism are the ones it is prepared for (<i>13.4</i>).</li>
+          <li><b>Stress.</b> The fight-or-flight response suits a threat lasting minutes. Applied to a threat lasting months it damages health (<i>6.7</i>).</li>
+        </ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The evidence base</h4>
+        <span class="role">What a prediction looks like</span>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Buss (1989) — mate preferences across 37 cultures</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To test predictions derived from parental investment theory: that because the minimum reproductive investment differs between the sexes, men and women should differ in what they prioritise in a long-term partner.</dd>
+            <dt>Method</dt>
+            <dd>Over 10,000 participants across <b>37 cultures</b> on six continents rated and ranked the importance of 18 characteristics in a potential mate, and stated their preferred age difference.</dd>
+            <dt>Results</dt>
+            <dd>Women rated good financial prospects and ambition higher than men did in 36 of 37 cultures, and preferred partners a few years older. Men rated physical attractiveness higher in all 37 and preferred partners a few years younger. Both sexes ranked <b>kindness and intelligence</b> above all of these, in nearly every sample.</dd>
+            <dt>Conclusion</dt>
+            <dd>Buss argued the sex differences were consistent across cultures in the direction predicted, supporting an evolved basis. Critics note that the cultures sampled were not independent, that all had unequal access to resources by sex, and that the differences were small compared with the shared priorities.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Reading this study carefully</span>
+          Two facts sit in the same result and are usually reported separately.<br><br>
+          <b>The sex differences were consistent</b> in direction across almost every sample, which is what the theory predicted.<br><br>
+          <b>The similarities were larger than the differences.</b> Kindness and intelligence outranked the traits the debate is about, for both sexes, nearly everywhere. A summary that mentions only the differences misdescribes the data.<br><br>
+          There is also a live alternative explanation: in 1989 no sampled culture had economic equality between the sexes, so a preference for resources in a partner could reflect restricted access to resources rather than evolved preference. Later work found the sex difference is smaller in more economically equal countries, which fits that reading.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The criticisms</h4>
+        <span class="role">Where the approach is most vulnerable</span>
+
+        <div class="lesson-def">
+          <span class="term">Just-so story</span> — an explanation constructed after the fact to account for an observed trait, which sounds plausible but makes no independent prediction and could have been constructed for the opposite result.<br><br>
+          <span class="term">By-product</span> — a trait that exists not because it was selected for, but as a side effect of something else that was.<br><br>
+          <span class="term">Spandrel</span> — Gould and Lewontin's term for a by-product mistaken for an adaptation, from the architectural spaces created by placing a dome on arches.
+        </div>
+
+        <p>The central objection is about <b>falsifiability</b> (<i>3.1</i>). If a trait is found, an adaptive story can be constructed for it. If the opposite trait had been found, a story could have been constructed for that too. An explanation compatible with any outcome rules nothing out.</p>
+
+        <div class="worked">
+          <span class="wl">Worked example — the shape of the objection</span>
+          Suppose research finds that people are more helpful to strangers than expected.<br><br>
+          <b>Adaptive story:</b> reputation mattered in small groups, so generosity toward strangers was rewarded.<br><br>
+          Now suppose the research had found the opposite — that people are notably unhelpful to strangers.<br><br>
+          <b>Adaptive story:</b> strangers were rare and dangerous in ancestral groups, so caution was rewarded.<br><br>
+          Both stories are plausible and neither was stated in advance. The test of a good evolutionary hypothesis is whether it predicts something specific <b>before</b> the data are collected, and whether some finding would have counted against it.
+        </div>
+
+        <p>Not every evolutionary hypothesis is like this. Mismatch predictions and predictions about which cues trigger a mechanism can be stated in advance and can fail. The criticism identifies a failure mode, not a property of the whole field.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">The naturalistic fallacy</span>
+          Showing that a behaviour was adaptive says <b>nothing</b> about whether it is acceptable. Infanticide, aggression and deception all have plausible adaptive accounts.<br><br>
+          Moving from "this is natural" to "this is justified" is an error of reasoning, not a finding. The approach does not entail it, and it is frequently attributed to the approach because some popular accounts commit it.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">The case for and against</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>It supplies the missing why.</b> Other approaches describe how a mechanism works; this one asks what it is for, which is a question the others do not address.</li>
+              <li><b>It generates testable predictions</b> where the ancestral problem can be specified — which cues trigger disgust, which threats are learned as fears most readily.</li>
+              <li><b>It unifies psychology with biology</b>, treating the brain as an organ with a history rather than a general-purpose machine.</li>
+              <li><b>Mismatch has practical value</b>, explaining why environments of abundance produce obesity and why chronic stress harms health.</li>
+              <li><b>Cross-cultural consistency is real evidence.</b> A pattern appearing in dozens of unrelated societies needs some explanation, whether or not the evolutionary one is right.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>Post-hoc explanations are unfalsifiable.</b> A story can be built for any result, and one built after the data has not been tested.</li>
+              <li><b>The EEA is largely unknown.</b> Claims about ancestral conditions rest on limited archaeological evidence and on inference from present-day foraging societies, which are not ancestral populations.</li>
+              <li><b>Not everything is an adaptation.</b> Traits can be by-products or the result of drift, and assuming a function for every feature is the error Gould and Lewontin named.</li>
+              <li><b>Cultural explanations are often at least as good</b>, and evolutionary accounts frequently do not test against them.</li>
+              <li><b>Cross-cultural does not mean innate.</b> Widely shared conditions — unequal resource access, division of labour — can produce widely shared patterns.</li>
+              <li><b>Findings are readily misused</b> through the naturalistic fallacy, particularly on sex differences.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a researcher claims that a fear of public speaking is an adaptation, because in ancestral groups being negatively judged risked exclusion, and exclusion was fatal. Is this a good evolutionary hypothesis?</summary>
+          <div class="ans"><b>As stated, no — it is a just-so story.</b> It was constructed after the trait was observed, and it makes no prediction that could fail. Had people turned out to be indifferent to public judgement, an equally plausible story would have been available.<br><br><b>What would make it a good hypothesis.</b> Derive something specific and testable in advance. For example: fear should be greater when the audience is a group one belongs to than a group of strangers, since exclusion by one's own group carried the cost. Or: the response should be triggered by cues of being evaluated rather than by being observed as such, so an audience facing away should produce less fear.<br><br><b>The key property</b> is that some result would count against it. "Exclusion was costly, therefore we fear judgement" cannot fail; "fear should track cues of evaluation specifically, not observation" can (<i>3.1</i>).<br><br><b>An alternative to test against.</b> Social anxiety may be a by-product of general threat-detection machinery rather than a dedicated adaptation, and the two make different predictions about how specific the triggers are.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Evolutionary psychology</b> explains psychological traits as <b>adaptations</b> shaped by natural selection to solve ancestral problems.</li>
+          <li>Its most secure predictions concern <b>mismatch</b>: sugar preference, prepared fears, and the stress response in a modern environment.</li>
+          <li><b>Buss (1989)</b> found consistent sex differences in mate preference across 37 cultures — and larger similarities, with kindness and intelligence ranked highest by both sexes.</li>
+          <li>The central criticism is the <b>just-so story</b>: post-hoc explanations that could have accommodated the opposite result and so rule nothing out.</li>
+          <li>Traits may be <b>by-products</b> or <b>spandrels</b> rather than adaptations, and the <b>EEA</b> is largely unknown.</li>
+          <li>Adaptive does not mean acceptable. Moving from natural to justified is the <b>naturalistic fallacy</b>.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, arguments, criticisms and studies from 8.4, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Natural selection</td><td>Heritable characteristics that improve survival and reproduction become more common over generations.</td></tr>
+          <tr><td>Adaptation</td><td>A characteristic that exists because it solved a survival or reproductive problem for ancestors.</td></tr>
+          <tr><td>Evolutionary psychology</td><td>The approach explaining psychological traits as adaptations shaped by selection.</td></tr>
+          <tr><td>Environment of evolutionary adaptedness (EEA)</td><td>The conditions under which a trait evolved — for humans, mainly small-group foraging life.</td></tr>
+          <tr><td>Mismatch</td><td>A trait adaptive in the environment where it evolved and harmful in the current one.</td></tr>
+          <tr><td>By-product</td><td>A trait existing as a side effect of something else that was selected for.</td></tr>
+          <tr><td>Spandrel</td><td>Gould and Lewontin's term for a by-product mistaken for an adaptation.</td></tr>
+          <tr><td>Just-so story</td><td>An explanation built after the fact that makes no independent prediction and could have accommodated the opposite result.</td></tr>
+          <tr><td>Naturalistic fallacy</td><td>Inferring that because something is natural it is therefore acceptable or justified.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The argument in three steps.</b> The brain is a product of evolution; organs are shaped by selection to perform functions; so the mind should contain mechanisms for recurring ancestral problems.</li>
+          <li><b>Mismatch gives the securest predictions</b>, because both the ancestral and the current environment can be described.</li>
+          <li><b>The falsifiability test.</b> A good evolutionary hypothesis predicts something specific in advance, and some result would count against it.</li>
+          <li><b>Post-hoc stories fail that test</b>, because a plausible account is available for any outcome.</li>
+          <li><b>Cross-cultural consistency is evidence but not proof of innateness</b>, since shared conditions can produce shared patterns.</li>
+          <li><b>Adaptive is not acceptable.</b> The move from natural to justified is a fallacy, not a finding.</li>
+        </ul>
+
+        <h5>Examples of mismatch</h5>
+        <table>
+          <tr><td>Sugar and fat</td><td>A preference useful under scarcity contributes to obesity under abundance.</td></tr>
+          <tr><td>Prepared fears</td><td>Snakes and spiders are learned as fear signals more readily than cars or sockets, which are far more dangerous now.</td></tr>
+          <tr><td>Chronic stress</td><td>A response suited to minutes damages health when sustained for months.</td></tr>
+        </table>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Buss (1989)</b> — over 10,000 participants in <b>37 cultures</b> rated 18 characteristics in a potential mate. Women rated financial prospects and ambition higher in 36 of 37 cultures and preferred older partners; men rated physical attractiveness higher in all 37 and preferred younger partners. <b>Both sexes ranked kindness and intelligence above all of these.</b> Critics note the cultures were not independent, none had economic equality between the sexes, and the differences were small beside the similarities. Later work found the sex difference is smaller in more equal countries.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 8.5 ---------- */
+  'b-plasticity': {
+    eyebrow: 'Part II · Topic 08 · Biological Bases',
+    title: 'Plasticity, critical periods and recovery',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/mirror-box.png" alt="Schematic of a mirror box: an open box divided down the middle by a vertical mirror, with a hole in the front of each half">
+        <figcaption><b>Ramachandran's mirror box.</b> The intact hand goes in one side and the stump in the other. The mirror reflects the intact hand where the missing one would be, so the brain receives visual evidence of a limb that moves when instructed — a treatment for phantom limb pain built directly out of the fact that cortical maps can be rewritten.
+          <span class="cred">User:Phidauex · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Ramachandran-mirrorbox.svg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">The cortical maps of <i>6.4</i> look like fixed wiring. They are not. This lesson covers how far the brain reorganises with experience and after injury, why some changes are only possible during particular windows of development, and how far the popular idea of plasticity outruns the evidence.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What plasticity means</h4>
+        <span class="role">Reorganisation at several scales</span>
+
+        <div class="lesson-def">
+          <span class="term">Plasticity</span> — the capacity of the brain to change its structure and organisation in response to experience or injury.<br><br>
+          <span class="term">Cortical remapping</span> — a region of cortex coming to represent a different part of the body or a different function from the one it previously served.<br><br>
+          <span class="term">Synaptic pruning</span> — the elimination of unused synapses during development, which sharpens the connections that remain.
+        </div>
+
+        <p>Change happens at more than one level, and the term covers all of them: individual synapses strengthening with use, dendrites growing new branches, and whole cortical territories shifting their allegiance.</p>
+
+        <p>Development is not simply a matter of adding connections. Synapse numbers peak in early childhood and then <b>fall</b> substantially, as connections that are not used are removed. Experience shapes the brain partly by determining what survives.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Maps change with use</h4>
+        <span class="role">Four demonstrations</span>
+
+        <ul>
+          <li><b>Trained fingers take territory.</b> Heavy stimulation of one finger expands its cortical representation into the area that previously represented adjacent fingers. Concert pianists have unusually large cortical areas for finger control.</li>
+          <li><b>Practised navigation changes structure.</b> London taxi drivers, who memorise the street layout, have greater posterior hippocampal volume, and the difference grows with years of experience (<i>6.6</i>).</li>
+          <li><b>Skilled performance uses less.</b> An expert musician's finger-control regions are <b>less</b> active while playing than a novice's — efficiency rather than effort.</li>
+          <li><b>Exercise changes the tissue.</b> A large body of animal work indicates physical exercise increases the number of synapses and supports the growth of new neurons in the hippocampus.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">Phantom limbs are remapping made visible</span>
+          After an amputation, the cortical territory that represented the missing hand receives no input. Neighbouring territory — which happens to include the face — expands into it.<br><br>
+          The consequence is that touching the person's cheek can produce a sensation felt <b>in the missing hand</b>, because the face is now stimulating tissue the brain still interprets as hand.<br><br>
+          This explains how something absent can be felt, and it is what the mirror box exploits: giving the brain visual evidence of a moving limb helps establish a new mapping and can reduce phantom pain.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Critical and sensitive periods</h4>
+        <span class="role">Windows when experience must arrive</span>
+
+        <div class="lesson-def">
+          <span class="term">Critical period</span> — a window during development in which a particular experience is required for normal development, and outside which the outcome cannot be achieved.<br><br>
+          <span class="term">Sensitive period</span> — a window in which the system is unusually responsive to a particular experience, but during which learning remains possible afterwards, though harder.
+        </div>
+
+        <p>The distinction matters. Most human examples are sensitive periods rather than strictly critical ones, and the stronger term is used loosely in popular accounts.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Hubel &amp; Wiesel (1963 onwards) — monocular deprivation in kittens</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether the organisation of the visual cortex depends on visual experience during development, and whether the timing of that experience matters.</dd>
+            <dt>Method</dt>
+            <dd>One eye of a kitten was sutured closed for a period during early life, then reopened. Recordings were made from individual cells in the visual cortex to establish which eye each cell responded to. The procedure was repeated in adult cats for comparison, and at different ages in kittens.</dd>
+            <dt>Results</dt>
+            <dd>Kittens deprived early lost cortical responsiveness to the deprived eye almost entirely, and the eye remained functionally blind after reopening even though it was physically normal. The territory it would have occupied was taken over by the open eye. Adult cats deprived for the same period showed <b>no</b> such loss.</dd>
+            <dt>Conclusion</dt>
+            <dd>The visual cortex requires input during a specific early window to organise normally, and beyond that window the same deprivation has little effect. Hubel and Wiesel shared the 1981 Nobel Prize with Sperry (<i>6.5</i>).</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">The clinical consequence</span>
+          A child with a cataract, a squint or a very unequal prescription receives degraded input from one eye. If this is not corrected early, the visual cortex commits its territory to the better eye and vision in the weaker one does not develop — a condition called <b>amblyopia</b>.<br><br>
+          This is why children's eyes are screened early. The same correction made at twenty does not restore the vision, because the window has closed.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Ability</th><th>Window</th><th>Evidence</th></tr>
+          <tr><td><b>Binocular vision</b></td><td>Early childhood; largely closed by about age eight</td><td>Amblyopia after uncorrected early visual deprivation</td></tr>
+          <tr><td><b>First-language acquisition</b></td><td>Sensitive period through childhood; sharply reduced after puberty</td><td>Deaf children exposed to sign language later reach lower final proficiency than early learners</td></tr>
+          <tr><td><b>Second-language accent</b></td><td>Sensitive period; declines gradually through adolescence</td><td>Age of arrival predicts final accent better than years of exposure</td></tr>
+          <tr><td><b>Attachment</b></td><td>Sensitive rather than critical</td><td>Children adopted from severe deprivation after infancy show recovery, though incomplete (<i>24.4</i>)</td></tr>
+        </table>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Recovery from injury</h4>
+        <span class="role">What reorganisation can and cannot repair</span>
+
+        <p>Plasticity is the reason recovery from brain injury is possible at all, and its limits are the reason recovery is usually partial.</p>
+
+        <ul>
+          <li><b>Age matters.</b> Children recover language after left-hemisphere damage far better than adults, sometimes transferring it to the right hemisphere. The same injury in adulthood usually produces lasting aphasia.</li>
+          <li><b>Nearby tissue takes over more readily than distant tissue.</b> Reorganisation works with the connections that already exist.</li>
+          <li><b>Use drives recovery.</b> Constraint-induced therapy restrains the unaffected limb so the impaired one must be used, and produces better outcomes than allowing compensation with the good side.</li>
+          <li><b>Neurons are mostly not replaced.</b> Recovery comes largely from surviving tissue reorganising, not from regrowth. New neuron formation in adults is limited to a few regions and is itself contested.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">Reorganisation is not always beneficial</span>
+          The same process that supports recovery also produces phantom limb pain, and it contributes to <b>focal dystonia</b> in musicians — where the cortical representations of adjacent fingers merge after intensive practice, so the fingers can no longer be controlled independently.<br><br>
+          Plasticity is a mechanism, not a benefit. Whether a given reorganisation helps depends on what it produces.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">A caution about how plasticity is sold</h4>
+        <span class="role">Where the evidence stops</span>
+
+        <p>"Neuroplasticity" has become a marketing term, used to support claims the research does not carry.</p>
+
+        <p>The strongest example is commercial brain training. Practising a task reliably improves performance on that task, and the improvement is often accompanied by measurable changes in the brain. The disputed step is <b>transfer</b>: whether practising a computerised task improves anything else — memory in daily life, reasoning, academic performance.</p>
+
+        <p>Large trials and reviews have generally found improvement on the trained task, weak transfer to closely similar tasks, and little or no transfer to different abilities or to everyday functioning. A group of scientists issued a public consensus statement to this effect in 2014.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why "the brain changed" is not the finding people take it for</span>
+          Any learning changes the brain. Reading this sentence changed your brain.<br><br>
+          So a demonstration that training produced a brain change establishes that <b>something was learned</b>. It does not establish that what was learned is useful, general, or lasting. Those are behavioural questions, answered by measuring behaviour (<i>7.5</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">The evidence and its limits</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths of the evidence</h5>
+            <ul>
+              <li><b>Converging methods.</b> Single-cell recording, imaging, lesion studies and behavioural work all point the same way (<i>7.1</i>–<i>7.3</i>).</li>
+              <li><b>Animal work permits experiments.</b> Hubel and Wiesel could assign deprivation and its timing, which no human study can (<i>3.4</i>).</li>
+              <li><b>It has produced treatments.</b> Constraint-induced therapy, mirror-box therapy and early screening for amblyopia all follow directly from the findings.</li>
+              <li><b>It settled an old question.</b> The adult brain was long assumed to be fixed; that assumption is now clearly wrong.</li>
+              <li><b>Sensitive periods explain timing effects</b> that a purely cumulative account of learning cannot.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>Much human evidence is correlational.</b> Taxi drivers and musicians chose their occupations, so structure may have preceded the experience (<i>6.6</i>, <i>3.3</i>).</li>
+              <li><b>Animal windows may not map onto human ones.</b> Kitten visual development has a well-defined window; human sensitive periods are broader and less sharply bounded.</li>
+              <li><b>Plasticity is limited and slow in adults</b>, and reorganisation works largely within existing connections rather than creating new pathways at will.</li>
+              <li><b>The term is used far too loosely.</b> "The brain changes" is true of all learning and supports almost no specific claim.</li>
+              <li><b>Transfer is the weak point of training claims</b>, and it is the step commercial programmes assert most confidently.</li>
+              <li><b>Reorganisation can be harmful</b> — phantom limb pain and focal dystonia are produced by the same mechanism as recovery.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: an app claims it "rewires your brain for focus", citing a study where six weeks of training improved scores on its own attention game and produced changes on fMRI. What has been shown, and what has not?</summary>
+          <div class="ans"><b>What has been shown.</b> That practising the game improves performance <b>on the game</b>, and that learning it changed the brain. Both are real and neither is surprising: practice improves the practised task, and all learning changes the brain.<br><br><b>What has not been shown.</b> <b>Transfer.</b> Nothing here indicates that attention improved anywhere outside the game — at work, while reading, or while driving. That is the claim being made and the one not tested.<br><br><b>The fMRI adds nothing to the claim.</b> A brain change establishes that something was learned, which the behavioural improvement already showed. Whether the learning is useful is a behavioural question (<i>7.5</i>).<br><br><b>What would test the claim properly.</b> An <b>active control group</b> doing an equally engaging but different activity, to rule out expectancy and general engagement; outcome measures that are <b>not</b> the trained task and not similar to it; and a follow-up months later. Trials of this design have generally found little or no transfer (<i>3.7</i>).</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Plasticity</b> is the brain's capacity to change with experience or injury, from single synapses up to whole cortical territories.</li>
+          <li>Cortical maps <b>remap with use</b> — trained fingers, taxi drivers, musicians — and remapping after amputation explains <b>phantom limbs</b>.</li>
+          <li>A <b>critical period</b> is a window outside which an outcome cannot be achieved; a <b>sensitive period</b> is one where learning is easier but remains possible. Most human cases are sensitive periods.</li>
+          <li><b>Hubel &amp; Wiesel</b> found early monocular deprivation in kittens left the eye functionally blind, while the same deprivation in adults had little effect.</li>
+          <li>Recovery depends on <b>surviving tissue reorganising</b>, is better in children, and is driven by <b>use</b>.</li>
+          <li>Plasticity is a mechanism, not a benefit: it also produces phantom pain and focal dystonia. Brain-training claims fail at <b>transfer</b>.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, findings, evaluation and studies from 8.5, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Plasticity</td><td>The brain's capacity to change structure and organisation in response to experience or injury.</td></tr>
+          <tr><td>Cortical remapping</td><td>A region coming to represent a different body part or function from the one it previously served.</td></tr>
+          <tr><td>Synaptic pruning</td><td>Elimination of unused synapses during development, sharpening the connections that remain.</td></tr>
+          <tr><td>Critical period</td><td>A window in which an experience is required for normal development, and outside which the outcome cannot be achieved.</td></tr>
+          <tr><td>Sensitive period</td><td>A window of unusual responsiveness, after which learning is harder but still possible.</td></tr>
+          <tr><td>Amblyopia</td><td>Failure of vision to develop in an eye that received degraded input during the early window, despite the eye being physically normal.</td></tr>
+          <tr><td>Phantom limb</td><td>Sensation felt in a limb that is no longer present, explained by neighbouring cortex expanding into its territory.</td></tr>
+          <tr><td>Constraint-induced therapy</td><td>Restraining the unaffected limb so the impaired one must be used, which improves recovery.</td></tr>
+          <tr><td>Focal dystonia</td><td>Loss of independent finger control after intensive practice, when adjacent cortical representations merge.</td></tr>
+          <tr><td>Transfer</td><td>Whether improvement on a trained task carries over to untrained abilities. The disputed step in brain-training claims.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Development removes as well as adds.</b> Synapse numbers peak in early childhood and then fall, so experience shapes the brain partly by determining what survives.</li>
+          <li><b>Territory follows use.</b> Heavily used representations expand into neighbouring cortex; unused territory is taken over.</li>
+          <li><b>Phantom limbs make remapping visible</b>, since touching the face can produce sensation in a missing hand.</li>
+          <li><b>Critical and sensitive periods are different claims</b>, and most human examples are the weaker one.</li>
+          <li><b>Recovery comes from surviving tissue reorganising</b>, not from regrowth, and it is driven by use.</li>
+          <li><b>Plasticity is a mechanism, not a benefit.</b> The same process produces recovery, phantom pain and focal dystonia.</li>
+          <li><b>"The brain changed" is not a finding</b>, because all learning changes the brain. Usefulness is a behavioural question.</li>
+        </ul>
+
+        <h5>Sensitive periods in humans</h5>
+        <table>
+          <tr><td>Binocular vision</td><td>Early childhood, largely closed by about eight. Evidence: amblyopia after uncorrected deprivation.</td></tr>
+          <tr><td>First-language acquisition</td><td>Through childhood, sharply reduced after puberty. Evidence: later-exposed deaf children reach lower final proficiency.</td></tr>
+          <tr><td>Second-language accent</td><td>Declines gradually through adolescence. Age of arrival predicts accent better than years of exposure.</td></tr>
+          <tr><td>Attachment</td><td>Sensitive rather than critical. Children adopted after severe early deprivation recover, though incompletely.</td></tr>
+        </table>
+
+        <h5>Examples used</h5>
+        <ul>
+          <li><b>Concert pianists</b> — enlarged cortical areas for finger control, and less activity than novices while playing.</li>
+          <li><b>London taxi drivers</b> — greater posterior hippocampal volume, increasing with years of experience.</li>
+          <li><b>Exercise</b> — increases synapse numbers and supports new neuron growth in the hippocampus in animal studies.</li>
+          <li><b>The mirror box</b> — visual evidence of a moving limb helps establish a new mapping and can reduce phantom pain.</li>
+          <li><b>Brain-training apps</b> — improvement on the trained task, weak transfer to similar tasks, little or none to everyday functioning.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Hubel &amp; Wiesel (1963 onwards)</b> — one eye of a kitten was closed for a period in early life and then reopened, with recordings taken from individual visual cortex cells. Early deprivation left the eye functionally blind despite being physically normal, its cortical territory taken over by the open eye. The same deprivation in adult cats produced no such loss. The visual cortex requires input during a specific early window. Nobel Prize 1981, shared with Sperry.</li>
+        </ul>
+      </div>
+    `
   }
 
   };
@@ -12140,6 +13200,41 @@
       ['Bennett and colleagues demonstrated the problem by scanning a dead ___.', 'salmon', []],
       ['Selecting voxels for a large effect then reporting that effect is called ___ analysis.', 'circular', ['double dipping']],
       ['An unsupported but widely believed claim about the brain is a ___.', 'neuromyth', []]
+    ],
+    'b-behgen': [
+      ['Twins who develop from one split egg and share all their genes are ___.', 'monozygotic', ['mz','identical']],
+      ['The probability that two people share any given gene is their degree of ___.', 'relatedness', []],
+      ['The probability that if one twin has a trait the other does too is the ___ rate.', 'concordance', []],
+      ['The twin design depends on the equal ___ assumption.', 'environments', ['environment']],
+      ['Separating genes from rearing by studying children raised by non-relatives is an ___ study.', 'adoption', []]
+    ],
+    'b-herit': [
+      ['Heritability is the proportion of the ___ in a trait associated with genetic variation.', 'variation', []],
+      ['Because heritability is a ratio, reducing environmental variation makes it ___.', 'rise', ['higher','increase']],
+      ['A single-gene condition with near-maximal heritability that diet prevents is ___.', 'pku', ['phenylketonuria']],
+      ['Turkheimer found heritability of ability near zero in the ___ families.', 'poorest', ['poor']],
+      ['Heritability is calculated within a population and says nothing about differences between ___.', 'groups', ['group']]
+    ],
+    'b-geneenv': [
+      ['When a variant has different effects in different environments this is gene-environment ___.', 'interaction', []],
+      ['Parents supplying both the genes and the home is ___ gene-environment correlation.', 'passive', []],
+      ['Seeking out environments that suit your dispositions is ___ gene-environment correlation.', 'active', ['niche-picking']],
+      ['Adding a methyl group to DNA to switch a gene off is DNA ___.', 'methylation', []],
+      ['Weaver and colleagues separated inheritance from care by ___ the rat pups.', 'cross-fostering', ['crossfostering','cross fostering']]
+    ],
+    'b-evopsych': [
+      ['A characteristic that exists because it solved an ancestral problem is an ___.', 'adaptation', []],
+      ['A trait that was useful ancestrally and is harmful now shows ___.', 'mismatch', []],
+      ['An explanation built after the fact that could fit any result is a ___ story.', 'just-so', ['just so','justso']],
+      ['Gould and Lewontin called a by-product mistaken for an adaptation a ___.', 'spandrel', []],
+      ['Buss surveyed mate preferences across ___ cultures.', '37', ['thirty-seven']]
+    ],
+    'b-plasticity': [
+      ['The brain changing its organisation with experience or injury is called ___.', 'plasticity', []],
+      ['Removal of unused synapses during development is synaptic ___.', 'pruning', []],
+      ['A window after which an outcome can no longer be achieved is a ___ period.', 'critical', []],
+      ['Failure of vision to develop in a structurally normal deprived eye is called ___.', 'amblyopia', []],
+      ['Whether training gains carry over to untrained abilities is the question of ___.', 'transfer', []]
     ],
     'l-classical': [
       ['A stimulus that produces a response without any learning is the ___ stimulus.', 'unconditioned', ['ucs']],
