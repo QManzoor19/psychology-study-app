@@ -1204,11 +1204,11 @@
         <h3><span class="tnum">07</span><span class="ttl">Studying the Brain</span></h3>
         <p class="desc">Every method trades resolution for something else. Know the trade and you can read the literature.</p>
         <ul class="subs">
-          <li><span class="txt"><span class="num">7.1</span> Lesion studies &amp; classic neuropsychology (Phineas Gage, H.M.)</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">7.2</span> EEG &amp; event-related potentials — timing over location</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">7.3</span> fMRI, PET &amp; what "lights up" actually means</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">7.4</span> Causal tools — TMS, tDCS, optogenetics</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">7.5</span> Reverse inference &amp; reading a brain-scan headline critically</span><span class="placeholder">notes soon</span></li>
+          <li><span class="txt"><span class="num">7.1</span> Lesion studies &amp; classic neuropsychology (Phineas Gage, H.M.)</span><button class="note-btn" data-note="b-lesion">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">7.2</span> EEG &amp; event-related potentials — timing over location</span><button class="note-btn" data-note="b-eeg">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">7.3</span> fMRI, PET &amp; what "lights up" actually means</span><button class="note-btn" data-note="b-imaging">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">7.4</span> Causal tools — TMS, tDCS, optogenetics</span><button class="note-btn" data-note="b-causal">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">7.5</span> Reverse inference &amp; reading a brain-scan headline critically</span><button class="note-btn" data-note="b-reading">📖 Notes</button></li>
         </ul>
       </div>
 
@@ -10891,6 +10891,955 @@
         </ul>
       </div>
     `
+  },
+
+  /* ---------- 7.1 ---------- */
+  'b-lesion': {
+    eyebrow: 'Part II · Topic 07 · Biological Bases',
+    title: 'Lesion studies and classic neuropsychology',
+    html: `
+      <figure class="lesson-hero-img frame">
+        <img src="img/gage-skull.jpg" alt="Harlow's 1868 diagram of Phineas Gage's skull showing the path taken by the iron bar">
+        <figcaption><b>John Harlow's 1868 diagram of Phineas Gage's skull</b>, showing the path the tamping iron took through the frontal lobe. Damage arrived by accident, and what was lost afterwards became evidence about what the damaged tissue had been doing.
+          <span class="cred">John M. Harlow · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Phineas_gage_-_1868_skull_diagram.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">The oldest method in brain science is to find someone whose brain has been damaged, work out precisely what they can no longer do, and infer what the damaged tissue was contributing. This lesson covers how that inference works, the cases that established it, and why the method is weaker than it looks.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The logic of a lesion study</h4>
+        <span class="role">Reasoning from what is lost</span>
+
+        <div class="lesson-def">
+          <span class="term">Lesion</span> — an area of damaged tissue. In this context, damaged brain tissue, whether from injury, stroke, tumour or surgery.<br><br>
+          <span class="term">Lesion study</span> — an investigation that compares what a person could do before and after damage, or compares them with undamaged people, in order to infer the function of the damaged region.<br><br>
+          <span class="term">Neuropsychology</span> — the study of the relationship between brain damage and changes in behaviour and mental function.
+        </div>
+
+        <p>The reasoning is subtraction. If a region is removed and an ability disappears, that region was doing something the ability required.</p>
+
+        <p>The claim this supports is narrower than it first appears. It shows the region was <b>necessary</b> for the ability. It does not show the region was <b>sufficient</b>, and it does not show the region was doing the ability by itself. Removing the power supply stops a computer working, without the power supply being where the computing happened.</p>
+
+        <div class="lesson-def">
+          <span class="term">Single dissociation</span> — one ability is lost while a closely related one is preserved. Evidence that the two are separable, though the preserved one might simply be easier.<br><br>
+          <span class="term">Double dissociation</span> — damage at site A impairs ability 1 but not 2, and damage at site B impairs ability 2 but not 1. This rules out the difficulty explanation, and is the strongest evidence the method can produce (<i>6.6</i>).
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why a single dissociation is not enough on its own</span>
+          Suppose damage impairs recall of word lists but not recognition of the same words. One reading is that recall and recognition use different machinery.<br><br>
+          But recall is simply <b>harder</b> than recognition. Any general reduction in memory would damage the harder task first, and would produce exactly the same pattern.<br><br>
+          Finding a second patient with the opposite pattern — recognition impaired, recall intact — removes that explanation, because no single difficulty scale can put each task above the other at the same time.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The founding cases</h4>
+        <span class="role">Four patients who shaped the field</span>
+
+        <table class="lesson-table">
+          <tr><th>Patient</th><th>Damage</th><th>What was lost</th><th>What it established</th></tr>
+          <tr><td><b>Phineas Gage</b> (1848)</td><td>Left frontal lobe, from a tamping iron</td><td>Judgement, planning and social conduct, by contemporary accounts</td><td>That personality and social behaviour depend on specific tissue, not on a unitary soul</td></tr>
+          <tr><td><b>Broca's patient</b> (1861)</td><td>Small area of the left frontal lobe</td><td>Speech production, with comprehension intact</td><td>The first localisation of a psychological function (<i>6.5</i>)</td></tr>
+          <tr><td><b>Wernicke's patient</b> (1874)</td><td>Upper left temporal lobe</td><td>Comprehension, with speech production intact</td><td>Completed the double dissociation for language</td></tr>
+          <tr><td><b>Patient H.M.</b> (1953)</td><td>Both medial temporal lobes, removed surgically for epilepsy</td><td>The ability to form new conscious memories</td><td>That memory is several systems, separable by damage (<i>6.3</i>)</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">The Gage story is less secure than its fame suggests</span>
+          The account of total personality ruin — profane, unreliable, "no longer Gage" — comes largely from later retellings, and grew more dramatic with each one.<br><br>
+          Contemporary records indicate he worked as a stagecoach driver in Chile for years, which requires planning, punctuality and dealing with people. The case shows frontal damage changes behaviour. It does not support the caricature (<i>3.2</i>).
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Milner (1962) — mirror drawing in patient H.M.</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether H.M., who could form no new conscious memories after surgery, was capable of any learning at all.</dd>
+            <dt>Method</dt>
+            <dd>H.M. was asked to trace the outline of a star while viewing his hand only in a mirror, which reverses the visual feedback and makes the task difficult. Performance was measured as the number of errors per attempt, over repeated sessions on successive days.</dd>
+            <dt>Results</dt>
+            <dd>His error rate <b>fell steadily across days</b>, following the normal learning curve. On each occasion he stated that he had never performed the task before and had no memory of the previous sessions.</dd>
+            <dt>Conclusion</dt>
+            <dd>Skill learning had occurred without any conscious memory of acquiring it. Memory is therefore not a single system: the medial temporal lobes are necessary for forming conscious memories of events and not for acquiring motor skills.</dd>
+          </dl>
+        </div>
+
+        <p>The pattern was completed by patients with the opposite profile. Individuals with damage to the left parietal region have been described whose immediate memory span was reduced to one or two items while their ability to form new long-term memories remained intact — the mirror image of H.M.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">What the method can and cannot establish</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>It comes closer to causal evidence than imaging does.</b> Something was removed and an ability changed, which is more than a correlation between activity and task (<i>7.3</i>).</li>
+              <li><b>It is the only route to some questions.</b> Nobody can be assigned to have their hippocampus removed, so naturally occurring damage is the only available evidence about what it does.</li>
+              <li><b>Detail is extraordinary.</b> H.M. was studied for over fifty years by many researchers, producing a depth of description no group study achieves.</li>
+              <li><b>A double dissociation settles a separability question</b> in a way no amount of correlational data can.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>The researcher did not choose the lesion.</b> Damage falls where illness or accident puts it, never neatly within one region, and usually destroys fibres passing through as well as the region itself.</li>
+              <li><b>There is no random assignment and no control group.</b> What the person was like beforehand is usually known only from report, so this is a natural experiment rather than an experiment (<i>3.4</i>).</li>
+              <li><b>Samples are tiny and unrepresentative.</b> Findings establish that something is possible; they cannot establish how common it is (<i>3.5</i>).</li>
+              <li><b>The brain reorganises.</b> Function can shift to other tissue, particularly after early damage, so what is lost may understate what the region normally did (<i>6.6</i>).</li>
+              <li><b>The method is biased toward localisation.</b> A region that is necessary shows up clearly; a region that merely participates may show nothing, because the rest of the network compensates.</li>
+              <li><b>Necessary is not the same as responsible.</b> Losing a region that supplies input to a system disrupts the system without that region performing its function.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: after damage to one region, a patient can no longer recognise familiar faces but can still recognise the same people by their voices and can describe objects normally. What does this support, and what would you need to make the case stronger?</summary>
+          <div class="ans"><b>What it supports.</b> A <b>single dissociation</b>: face recognition is impaired while voice recognition and object recognition are preserved. This suggests face recognition depends on machinery that the other two do not need, and that the damaged region is <b>necessary</b> for it.<br><br><b>Why it is not yet conclusive.</b> Face recognition may simply be the <b>hardest</b> of the three. A general weakening of visual recognition would impair the most demanding task first and produce this exact pattern.<br><br><b>What would strengthen it.</b> A patient with the <b>opposite</b> profile — object recognition impaired while face recognition is preserved. That <b>double dissociation</b> cannot be explained by difficulty, because no single scale can make each task harder than the other. Such patients have been described.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>A <b>lesion study</b> infers function from what is lost after damage. It establishes that a region was <b>necessary</b>, not that it was sufficient or that it performed the function alone.</li>
+          <li>A <b>single dissociation</b> can always be explained by one task being harder. A <b>double dissociation</b> cannot, and is the strongest result the method produces.</li>
+          <li><b>Gage</b>, <b>Broca's</b> and <b>Wernicke's</b> patients and <b>H.M.</b> are the founding cases; the Gage story has been embellished well beyond the records.</li>
+          <li><b>Milner (1962)</b> found H.M.'s mirror-drawing errors fell across days while he denied ever attempting the task — skill learning without conscious memory.</li>
+          <li>The method's weaknesses are structural: no chosen lesion, no random assignment, tiny samples, reorganisation, and a bias toward finding localisation.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, cases, evaluation and studies from 7.1, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Lesion</td><td>An area of damaged tissue — here, damaged brain tissue from injury, stroke, tumour or surgery.</td></tr>
+          <tr><td>Lesion study</td><td>Inferring a region's function by establishing what a person can no longer do after it is damaged.</td></tr>
+          <tr><td>Neuropsychology</td><td>The study of the relationship between brain damage and changes in behaviour and mental function.</td></tr>
+          <tr><td>Necessary</td><td>The ability cannot occur without the region. What a lesion study can show.</td></tr>
+          <tr><td>Sufficient</td><td>The region alone can produce the ability. What a lesion study cannot show.</td></tr>
+          <tr><td>Single dissociation</td><td>One ability lost while a related one is preserved. Compatible with the preserved task simply being easier.</td></tr>
+          <tr><td>Double dissociation</td><td>Damage at A impairs ability 1 not 2, damage at B impairs 2 not 1. Rules out the difficulty explanation.</td></tr>
+          <tr><td>Natural experiment</td><td>A comparison where the "manipulation" occurred without the researcher arranging or randomising it.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The inference is subtraction.</b> Remove a region, see what disappears, conclude the region was involved in it.</li>
+          <li><b>Necessary is not responsible.</b> Removing a computer's power supply stops it computing without the power supply being where computing happened.</li>
+          <li><b>Difficulty is the standing alternative explanation</b> for a single dissociation, and only a double dissociation removes it.</li>
+          <li><b>Damage is not chosen and is never tidy</b>, and it destroys passing fibres as well as the target region.</li>
+          <li><b>Small samples establish possibility, not prevalence</b>, which is the right use for them (<i>3.5</i>).</li>
+          <li><b>Reorganisation can mask function</b>, so what remains impaired may understate what the region normally contributed.</li>
+        </ul>
+
+        <h5>The founding cases</h5>
+        <table>
+          <tr><td>Phineas Gage (1848)</td><td>Left frontal damage from a tamping iron; changed judgement and social conduct. The dramatic version of the story was largely added by later writers.</td></tr>
+          <tr><td>Broca's patient (1861)</td><td>Left frontal damage; lost speech production, kept comprehension.</td></tr>
+          <tr><td>Wernicke's patient (1874)</td><td>Upper left temporal damage; lost comprehension, kept speech production. Completes the double dissociation with Broca.</td></tr>
+          <tr><td>Patient H.M. (1953)</td><td>Both medial temporal lobes removed for epilepsy; could form no new conscious memories, while old memories and skill learning survived.</td></tr>
+        </table>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Milner (1962)</b> — H.M. traced a star while seeing his hand only in a mirror. Errors fell steadily across days in a normal learning curve, while he reported on each occasion that he had never done the task before. Skill learning occurs without conscious memory of acquiring it, so memory is more than one system.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 7.2 ---------- */
+  'b-eeg': {
+    eyebrow: 'Part II · Topic 07 · Biological Bases',
+    title: 'EEG and event-related potentials',
+    html: `
+      <figure class="lesson-hero-img">
+        <img src="img/eeg-cap.jpg" alt="Close-up of a person wearing an EEG cap with many electrodes and grey cables attached">
+        <figcaption><b>An EEG cap.</b> Each electrode records the summed electrical activity of millions of neurons beneath it, through the skull and scalp. What is gained is timing measured in milliseconds; what is lost is knowing where the signal came from.
+          <span class="cred">Chris Hope · CC BY 2.0 · via <a href="https://commons.wikimedia.org/wiki/File:EEG_Recording_Cap.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Neurons signal electrically, and enough of them firing together produce a current detectable at the scalp. This lesson covers what that recording can and cannot tell you: excellent information about <i>when</i> something happened in the brain, and very poor information about <i>where</i>.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What an EEG records</h4>
+        <span class="role">Millions of neurons at once, through the skull</span>
+
+        <div class="lesson-def">
+          <span class="term">Electroencephalograph (EEG)</span> — a device used to record electrical activity in the brain, usually through electrodes placed on the scalp.<br><br>
+          <span class="term">Electrode</span> — a small sensor that detects voltage change at one point on the scalp.<br><br>
+          <span class="term">Temporal resolution</span> — how precisely a method can locate an event in <b>time</b>.<br><br>
+          <span class="term">Spatial resolution</span> — how precisely a method can locate an event in <b>space</b>.
+        </div>
+
+        <p>The source of the signal — synapses and action potentials — is a long way from the wires, separated by brain tissue, skull and scalp. The EEG amplifies what reaches the surface.</p>
+
+        <p>Two consequences follow, and they are the whole character of the method.</p>
+
+        <ul>
+          <li><b>Timing is excellent.</b> Electrical change travels to the scalp almost instantly, so the EEG resolves events to within a millisecond or so.</li>
+          <li><b>Location is poor.</b> Each electrode picks up activity summed from a large volume of tissue, and current spreads and bends as it passes through the skull. Working backwards from scalp voltages to their source has no unique solution.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the location problem has no clean fix</span>
+          Many different arrangements of activity inside the head produce exactly the same pattern of voltages at the surface. Mathematically the problem is <b>underdetermined</b>: the data do not pick out one answer.<br><br>
+          This is not a limitation of current equipment that better electrodes would solve. It follows from measuring a three-dimensional source from a two-dimensional surface.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">From raw EEG to an event-related potential</h4>
+        <span class="role">Averaging away the noise</span>
+
+        <figure class="lesson-fig">
+          <img class="fig-img paper" src="img/eeg-trace.png" alt="Raw EEG recording showing 62 channels of continuous wavy traces">
+          <figcaption>Raw EEG from 62 electrodes. The response to any single event is buried in activity from everything else the brain is doing.
+            <span class="cred">Laurens R. Krol · CC0 · via <a href="https://commons.wikimedia.org/wiki/File:EEG_time_series_62_channels.svg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+
+        <div class="lesson-def">
+          <span class="term">Event-related potential (ERP)</span> — the average electrical response to a repeated event, obtained by aligning many trials to the moment the event occurred and averaging them together.<br><br>
+          <span class="term">Epoch</span> — the short slice of EEG taken around one occurrence of the event, typically a fraction of a second.<br><br>
+          <span class="term">Component</span> — a reliable peak or trough in the averaged waveform, named by its direction and timing.
+        </div>
+
+        <p>The response to a single stimulus is far smaller than the ongoing background activity. Averaging solves this. Activity unrelated to the event varies randomly from trial to trial and averages toward zero; the response that is time-locked to the event occurs at the same moment every time and survives.</p>
+
+        <figure class="lesson-fig">
+          <svg viewBox="0 0 640 280" role="img" aria-label="Averaging many noisy EEG trials produces a clean event-related potential">
+            <g font-family="Inter, sans-serif">
+              <text x="24" y="22" font-size="11.5" font-weight="800" fill="#a396bb">SINGLE TRIALS — the response is buried</text>
+              <g stroke="#5a4a78" stroke-width="1.3" fill="none" opacity="0.85">
+                <path d="M24 52 L 60 44 L 84 60 L 110 40 L 132 66 L 158 46 L 186 58 L 214 42 L 244 62 L 276 48 L 306 56"/>
+                <path d="M24 84 L 58 92 L 86 72 L 108 90 L 136 70 L 160 88 L 188 74 L 216 92 L 246 72 L 274 88 L 306 78"/>
+                <path d="M24 116 L 62 108 L 88 124 L 112 104 L 138 122 L 162 106 L 190 120 L 218 104 L 248 122 L 278 108 L 306 118"/>
+              </g>
+              <text x="24" y="150" font-size="11" fill="#8b7fa3">…repeated 100 times…</text>
+              <line x1="110" y1="34" x2="110" y2="132" stroke="#ffd479" stroke-width="1.2" stroke-dasharray="4 4"/>
+              <text x="110" y="170" text-anchor="middle" font-size="10.5" fill="#ffd479">stimulus</text>
+
+              <text x="360" y="22" font-size="11.5" font-weight="800" fill="#6ee7a8">AVERAGE OF ALL TRIALS — the ERP</text>
+              <line x1="360" y1="110" x2="612" y2="110" stroke="#5a4a78" stroke-width="1.2"/>
+              <line x1="392" y1="40" x2="392" y2="150" stroke="#ffd479" stroke-width="1.2" stroke-dasharray="4 4"/>
+              <text x="392" y="170" text-anchor="middle" font-size="10.5" fill="#ffd479">stimulus</text>
+              <path d="M360 110 L 392 110 L 412 96 L 430 118 L 452 60 L 476 124 L 506 104 L 540 112 L 612 110"
+                    fill="none" stroke="#6ee7a8" stroke-width="2.6"/>
+              <circle cx="452" cy="60" r="4.5" fill="#6ee7a8"/>
+              <text x="452" y="48" text-anchor="middle" font-size="10.5" fill="#a7f3d0">a component</text>
+              <text x="486" y="140" font-size="10.5" fill="#8b7fa3">time after the stimulus, in milliseconds</text>
+
+              <rect x="24" y="196" width="588" height="62" rx="10" fill="rgba(185,140,255,0.08)" stroke="#3d2f57" stroke-dasharray="6 4"/>
+              <text x="318" y="220" text-anchor="middle" font-size="12.5" font-weight="700" fill="#d3cbe2">activity unrelated to the event varies randomly and cancels out</text>
+              <text x="318" y="242" text-anchor="middle" font-size="12" fill="#8b7fa3">the response locked to the event happens at the same moment each time, so it survives</text>
+            </g>
+          </svg>
+          <figcaption>Averaging does not remove noise from a trial. It removes what is not consistent across trials.</figcaption>
+        </figure>
+
+        <p>Components are named by polarity and latency. <b>N400</b> is a negative deflection about 400 milliseconds after the stimulus; <b>P300</b> is a positive one about 300 milliseconds after.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Kutas &amp; Hillyard (1980) — the N400 and meaning</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether the brain's electrical response distinguishes a sentence ending that makes sense from one that does not.</dd>
+            <dt>Method</dt>
+            <dd>Participants read sentences presented one word at a time while EEG was recorded. Some sentences ended sensibly — "he shaved off his moustache and beard" — and some ended with a semantically anomalous word — "he spread the warm bread with socks". A third set ended with a sensible word printed in a larger typeface, as a control for mere unexpectedness.</dd>
+            <dt>Results</dt>
+            <dd>Anomalous endings produced a large negative deflection peaking around <b>400 milliseconds</b> after the word appeared. The physically unexpected but meaningful endings did not produce it; they produced a different, positive response.</dd>
+            <dt>Conclusion</dt>
+            <dd>The N400 reflects processing of <b>meaning</b> specifically, rather than surprise in general. It also showed that semantic integration is measurable within half a second of a word being seen, before any behavioural response could be made.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the large-typeface condition matters</span>
+          Without it, the anomalous endings differ from the sensible ones in two ways at once: they are <b>meaningless in context</b> and they are <b>unexpected</b>. Either could produce the response.<br><br>
+          The third condition holds unexpectedness constant while restoring meaning. Its failure to produce an N400 is what isolates meaning as the cause. This is the same reasoning as a control condition in any experiment (<i>3.7</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">The trade-off in one place</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>Millisecond timing.</b> No other non-invasive method resolves the order of mental events this precisely, which matters whenever the question is about sequence rather than place.</li>
+              <li><b>It requires no response from the participant.</b> Signals can be recorded from infants, from people who cannot speak, and from unconscious patients.</li>
+              <li><b>Direct measure of neural activity.</b> The signal is the electrical activity itself, not a proxy such as blood flow (<i>7.3</i>).</li>
+              <li><b>Cheap, portable and safe</b>, so it can be used repeatedly and in settings a scanner cannot reach.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>Very poor spatial resolution.</b> Many internal arrangements produce identical scalp readings, so the source cannot be recovered uniquely.</li>
+              <li><b>It mostly misses deep structures.</b> The signal comes largely from cortex near the surface; the hippocampus and amygdala contribute little that reaches the scalp.</li>
+              <li><b>ERPs need many repetitions.</b> Averaging requires dozens or hundreds of trials, so brief or one-off events cannot be studied this way.</li>
+              <li><b>Averaging assumes the response is the same every time.</b> If timing varies from trial to trial, the average flattens a real response into a smaller one.</li>
+              <li><b>Artefacts are large.</b> Blinks, eye movements and muscle tension produce voltages far bigger than the brain signal and must be removed before analysis.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">The complementary pair</span>
+          EEG has excellent timing and poor location. fMRI has good location and poor timing (<i>7.3</i>).<br><br>
+          Neither is better. They answer different questions, and studies increasingly use both, so that the <i>when</i> from one can be combined with the <i>where</i> from the other.
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a researcher wants to know whether people register the meaning of a word they were told to ignore. Would you recommend EEG or fMRI, and why?</summary>
+          <div class="ans"><b>EEG</b>, because the question is about <b>timing</b> and about a response that need not be reported.<br><br><b>What EEG offers here.</b> The N400 indicates that meaning has been processed, and it appears within about 400 milliseconds. If ignored words still produce an N400, meaning was registered even though attention was directed elsewhere. No behavioural response is required, which matters because asking the participant about the word would draw attention to it and destroy the manipulation.<br><br><b>Why not fMRI.</b> Its temporal resolution is several seconds, far too coarse to distinguish early automatic processing from later deliberate processing — which is exactly the distinction the question turns on.<br><br><b>What EEG will not tell you</b> is where in the brain the meaning was processed. If that mattered, both methods would be needed.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>The <b>EEG</b> records electrical activity at the scalp, summed across millions of neurons.</li>
+          <li><b>Temporal resolution is excellent</b> — about a millisecond. <b>Spatial resolution is poor</b>, and the source problem is underdetermined rather than merely technically hard.</li>
+          <li>An <b>ERP</b> is produced by averaging many trials aligned to the event: unrelated activity cancels, and the time-locked response survives.</li>
+          <li><b>Components</b> are named by polarity and latency — N400, P300.</li>
+          <li><b>Kutas &amp; Hillyard (1980)</b> found anomalous sentence endings produced an N400 while merely unexpected ones did not, isolating meaning rather than surprise.</li>
+          <li>EEG and fMRI are <b>complementary</b>: when versus where.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, concepts, evaluation and studies from 7.2, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Electroencephalograph (EEG)</td><td>A device recording electrical activity in the brain, usually from electrodes on the scalp.</td></tr>
+          <tr><td>Electrode</td><td>A sensor detecting voltage change at one point on the scalp.</td></tr>
+          <tr><td>Temporal resolution</td><td>How precisely a method locates an event in time.</td></tr>
+          <tr><td>Spatial resolution</td><td>How precisely a method locates an event in space.</td></tr>
+          <tr><td>Event-related potential (ERP)</td><td>The average electrical response to a repeated event, obtained by aligning trials to the event and averaging.</td></tr>
+          <tr><td>Epoch</td><td>The short slice of EEG taken around one occurrence of the event.</td></tr>
+          <tr><td>Component</td><td>A reliable peak or trough in the averaged waveform, named by polarity and latency.</td></tr>
+          <tr><td>N400</td><td>A negative deflection about 400 ms after a word, larger when the word does not fit the meaning of its context.</td></tr>
+          <tr><td>P300</td><td>A positive deflection about 300 ms after a stimulus, associated with attention and stimulus evaluation.</td></tr>
+          <tr><td>Artefact</td><td>A recorded voltage that did not come from the brain — blinks, eye movements, muscle tension.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The method's character is a trade.</b> Excellent timing bought at the cost of location.</li>
+          <li><b>The source problem is underdetermined.</b> Many internal arrangements produce the same surface voltages, so better equipment cannot solve it.</li>
+          <li><b>Averaging removes what is inconsistent</b>, not what is noisy in a single trial. Unrelated activity cancels; time-locked activity survives.</li>
+          <li><b>Averaging assumes constant timing.</b> Trial-to-trial variation in latency flattens a real response.</li>
+          <li><b>A control condition isolates the cause.</b> Kutas and Hillyard's large-typeface endings held unexpectedness constant while restoring meaning.</li>
+          <li><b>EEG is a direct measure of neural activity</b>, unlike the blood-flow proxy fMRI relies on.</li>
+          <li><b>EEG and fMRI are complementary</b>, answering <i>when</i> and <i>where</i> respectively.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Kutas &amp; Hillyard (1980)</b> — participants read sentences word by word during EEG recording. Semantically anomalous endings ("he spread the warm bread with socks") produced a large negativity peaking near 400 ms. Sensible endings in a larger typeface, unexpected but meaningful, did not produce it. The N400 reflects processing of meaning rather than surprise, and it occurs within half a second of seeing a word.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 7.3 ---------- */
+  'b-imaging': {
+    eyebrow: 'Part II · Topic 07 · Biological Bases',
+    title: 'fMRI, PET and what "lights up" means',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/fmri-scan.png" alt="Six brain slices with coloured patches overlaid on greyscale anatomy, beside a colour scale running from t equals 0 to t equals 16">
+        <figcaption><b>An fMRI result.</b> The greyscale underneath is anatomy. The colour is not activity being seen: it marks the places where a <b>statistical test</b> passed a threshold, and the scale on the right is a <i>t</i>-value, not a brightness. Nothing in the brain glowed.
+          <span class="cred">Miller AH et al. · CC BY 4.0 · via <a href="https://commons.wikimedia.org/wiki/File:CFS-brain-scan-basal-ganglia-fMRI.png" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Brain imaging produces the most persuasive pictures in psychology, and the pictures are widely misread. This lesson covers what the scanners actually measure, how a coloured image is produced from that measurement, and what the resulting claim is entitled to say.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Structure and function are different questions</h4>
+        <span class="role">Four techniques, two purposes</span>
+
+        <div class="lesson-def">
+          <span class="term">Structural imaging</span> — techniques that show what the brain <b>looks like</b>: its anatomy, and any damage to it.<br><br>
+          <span class="term">Functional imaging</span> — techniques that show what the brain is <b>doing</b> while a person performs a task.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Technique</th><th>Type</th><th>What it measures</th><th>Main use</th></tr>
+          <tr><td><b>CT</b></td><td>Structural</td><td>X-rays taken from many angles and combined into cross-sections</td><td>Fast detection of bleeding or gross damage</td></tr>
+          <tr><td><b>MRI</b></td><td>Structural</td><td>Response of tissue to a strong magnetic field and radio pulses</td><td>Detailed anatomy, far better soft-tissue contrast than CT</td></tr>
+          <tr><td><b>DTI</b></td><td>Structural</td><td>Rate and direction of water diffusion along fibre bundles</td><td>Mapping white matter pathways — the connections between regions</td></tr>
+          <tr><td><b>PET</b></td><td>Functional</td><td>A radioactive tracer injected into the blood, followed as it accumulates</td><td>Metabolism, and the distribution of specific receptors</td></tr>
+          <tr><td><b>fMRI</b></td><td>Functional</td><td>Change in blood oxygenation, using the same scanner as MRI</td><td>Locating activity change during a task</td></tr>
+        </table>
+
+        <p>An MRI scan of a person doing nothing shows their anatomy. An fMRI uses the same machine to take fast, repeated, lower-resolution images so that <b>change over time</b> can be measured.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What fMRI actually measures</h4>
+        <span class="role">Blood, not firing</span>
+
+        <div class="lesson-def">
+          <span class="term">BOLD signal</span> — Blood Oxygen Level Dependent signal. The measurement fMRI takes, reflecting the ratio of oxygenated to deoxygenated blood in a small volume of tissue.<br><br>
+          <span class="term">Voxel</span> — the smallest volume the scan resolves, typically a cube around 2–3 mm on each side. A voxel contains on the order of a million neurons.<br><br>
+          <span class="term">Haemodynamic response</span> — the slow change in blood flow that follows neural activity, peaking around 4 to 6 seconds afterwards.
+        </div>
+
+        <p>The reasoning runs in three steps. Active neurons consume more energy. Energy is supplied by blood. The body over-supplies oxygenated blood to active regions, changing the local magnetic properties, and the scanner detects that change.</p>
+
+        <p>Every step of that chain is real, and every step is an <b>inference</b>. fMRI does not record neurons firing. It records a downstream consequence of their firing, several seconds later.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Two limits that follow directly</span>
+          <b>Timing is poor.</b> The blood response takes 4–6 seconds to peak, so two mental events a tenth of a second apart cannot be separated. This is a property of blood flow, not of the scanner (<i>7.2</i>).<br><br>
+          <b>The unit is enormous.</b> A single voxel averages roughly a million neurons, which may include both excitatory and inhibitory populations doing opposite things. An increase in the voxel means more energy was used there, not that "the region was doing the task".
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">How a picture is made</h4>
+        <span class="role">Subtraction, statistics, threshold, colour</span>
+
+        <div class="lesson-def">
+          <span class="term">Subtraction logic</span> — comparing the signal during a task with the signal during a control condition, and reporting the difference. The image shows the <b>difference between two conditions</b>, never the activity of one.
+        </div>
+
+        <p>The sequence that produces a published image runs like this.</p>
+
+        <ul>
+          <li><b>1.</b> Record the BOLD signal in every voxel while the participant alternates between a task and a control condition.</li>
+          <li><b>2.</b> For each voxel, test whether the signal differed between the two conditions. This produces a statistic — often a <i>t</i>-value — for every voxel separately.</li>
+          <li><b>3.</b> Choose a <b>threshold</b>. Voxels whose statistic exceeds it are kept; the rest are discarded.</li>
+          <li><b>4.</b> Colour the surviving voxels according to the size of their statistic, and lay them over a greyscale anatomical image.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">What the colours are, precisely</span>
+          Colour marks voxels where a <b>statistical test passed a threshold that the researcher chose</b>. It is a map of where a difference was large enough to report.<br><br>
+          Three things follow. Nothing was glowing. Uncoloured regions were not inactive — the whole brain is active all the time, and these regions simply did not differ enough between conditions. And moving the threshold changes the picture without any new data being collected.
+        </div>
+
+        <p>Subtraction also makes the choice of control condition decisive. Comparing "look at faces" with "look at a blank screen" gives a different answer from comparing it with "look at houses". The first includes everything involved in looking at any picture at all; the second removes it. The image shows whatever the control condition failed to subtract.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Ogawa et al. (1990) — the discovery of the BOLD signal</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether MRI could detect changes in blood oxygenation, and so be used to observe brain function without any injected tracer.</dd>
+            <dt>Method</dt>
+            <dd>Rodents were imaged in a high-field MRI scanner while the oxygen content of the air they breathed was varied. The appearance of blood vessels in the resulting images was compared across conditions.</dd>
+            <dt>Results</dt>
+            <dd>Deoxygenated haemoglobin altered the local magnetic field, making vessels appear as dark lines. Raising the oxygen supplied made those lines fade. The contrast tracked blood oxygenation.</dd>
+            <dt>Conclusion</dt>
+            <dd>Blood oxygenation could be measured with MRI alone. Ogawa named the effect <b>BOLD</b> contrast. Within two years it had been used to image the human brain during a task, and it remains the basis of nearly all functional MRI.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Beyond activation: connectivity</h4>
+        <span class="role">Asking which regions work together</span>
+
+        <div class="lesson-def">
+          <span class="term">Resting-state functional connectivity</span> — a technique in which participants lie still without performing any task, and the extent to which spontaneous activity in different regions rises and falls together is measured.<br><br>
+          <span class="term">Functionally connected</span> — regions whose activity is highly correlated over time are treated as belonging to the same network.
+        </div>
+
+        <p>This shifts the question from "which region does this task" to "which regions act as a group". It is the imaging technique that best matches the network account of brain organisation (<i>6.6</i>), and it is how the major brain networks have been identified.</p>
+
+        <p>The word <b>correlated</b> carries the usual warning. Two regions rising and falling together may be connected to each other, or both driven by a third region, or both responding to something outside the brain such as breathing or head movement (<i>3.3</i>).</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">What functional imaging is good for</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>Good spatial resolution.</b> Millimetre-scale localisation across the whole brain at once, including deep structures the EEG cannot reach (<i>7.2</i>).</li>
+              <li><b>Non-invasive and repeatable.</b> fMRI involves no radiation and no injection, so the same person can be scanned many times, and children can be studied.</li>
+              <li><b>It works on healthy brains.</b> Unlike lesion evidence, it does not depend on waiting for damage to occur (<i>7.1</i>).</li>
+              <li><b>Connectivity methods address networks directly</b>, rather than treating each region in isolation.</li>
+              <li><b>PET can image specific chemistry</b>, such as the distribution of dopamine receptors, which fMRI cannot do at all.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>The measure is indirect.</b> BOLD is blood oxygenation, several seconds downstream of the neural activity it is taken to indicate.</li>
+              <li><b>Timing is poor.</b> A 4–6 second haemodynamic response cannot separate mental events that occur close together.</li>
+              <li><b>It is correlational.</b> Activity accompanying a task does not show that the activity produced the behaviour (<i>3.3</i>, <i>7.4</i>).</li>
+              <li><b>The result depends on the control condition</b>, which is a design choice, and on the threshold, which is another.</li>
+              <li><b>Tens of thousands of voxels are tested at once</b>, so some will pass a threshold by chance unless the analysis corrects for it (<i>7.5</i>).</li>
+              <li><b>The setting is highly artificial</b> — lying motionless in a loud narrow tube — which limits what behaviour can be studied.</li>
+              <li><b>PET requires a radioactive tracer</b>, limiting how often a person can be scanned.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a study reports that the amygdala "lights up" more when participants view angry faces than neutral ones, and concludes that the amygdala processes anger. Identify three things the finding does not establish.</summary>
+          <div class="ans"><b>1. That the amygdala produced anything.</b> The result is <b>correlational</b>. Greater BOLD signal accompanied the angry faces; it does not follow that this activity caused the perception or the emotional response. Establishing that requires interfering with the region (<i>7.4</i>).<br><br><b>2. That the amygdala is specific to anger.</b> The comparison was angry versus neutral. The amygdala also responds to fearful, surprised and simply arousing stimuli. Concluding "this region does anger" from "this region was more active" is <b>reverse inference</b>, and it needs evidence that the region is not active for much else (<i>7.5</i>).<br><br><b>3. That other regions were uninvolved.</b> Uncoloured does not mean inactive. Other regions may have been equally engaged in both conditions and so subtracted out, or may have differed by less than the chosen threshold.<br><br>A fourth: the word "processes" is doing more work than the data support. The finding is a difference in blood oxygenation between two conditions.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Structural</b> imaging (CT, MRI, DTI) shows anatomy; <b>functional</b> imaging (PET, fMRI) shows change during a task.</li>
+          <li>fMRI measures the <b>BOLD signal</b> — blood oxygenation — which is an indirect consequence of neural activity peaking 4–6 seconds later.</li>
+          <li>A <b>voxel</b> contains roughly a million neurons, so the unit of measurement is very coarse.</li>
+          <li>Images are produced by <b>subtraction</b>: they show the difference between two conditions, never the activity of one. The control condition determines the answer.</li>
+          <li><b>Colour marks voxels passing a chosen statistical threshold.</b> Nothing glows, uncoloured is not inactive, and changing the threshold changes the picture.</li>
+          <li><b>Ogawa et al. (1990)</b> discovered BOLD contrast, making functional MRI possible without any injected tracer.</li>
+          <li>Functional imaging is <b>correlational</b>. Good spatial resolution, poor temporal resolution, and thousands of simultaneous tests.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, techniques, evaluation and studies from 7.3, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Structural imaging</td><td>Techniques showing what the brain looks like — its anatomy and any damage.</td></tr>
+          <tr><td>Functional imaging</td><td>Techniques showing what the brain is doing during a task.</td></tr>
+          <tr><td>CT</td><td>X-rays from many angles combined into cross-sections. Structural, fast, good for gross damage.</td></tr>
+          <tr><td>MRI</td><td>Tissue response to a strong magnetic field and radio pulses. Structural, high soft-tissue detail.</td></tr>
+          <tr><td>DTI</td><td>Measures water diffusion along fibre bundles to map white matter pathways.</td></tr>
+          <tr><td>PET</td><td>Follows an injected radioactive tracer. Can image specific chemistry such as receptor distribution.</td></tr>
+          <tr><td>fMRI</td><td>Measures change in blood oxygenation during a task, using an MRI scanner.</td></tr>
+          <tr><td>BOLD signal</td><td>Blood Oxygen Level Dependent signal — the ratio of oxygenated to deoxygenated blood in a small volume.</td></tr>
+          <tr><td>Voxel</td><td>The smallest volume resolved, roughly a 2–3 mm cube containing on the order of a million neurons.</td></tr>
+          <tr><td>Haemodynamic response</td><td>The blood-flow change following neural activity, peaking about 4–6 seconds later.</td></tr>
+          <tr><td>Subtraction logic</td><td>Reporting the difference between a task condition and a control condition, never the activity of one alone.</td></tr>
+          <tr><td>Resting-state functional connectivity</td><td>Measuring how far spontaneous activity in different regions rises and falls together, with no task.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>fMRI measures blood, not firing.</b> Each step from neural activity to the recorded signal is real and is an inference.</li>
+          <li><b>Two limits follow from the biology.</b> Timing is poor because blood flow is slow; the unit is coarse because a voxel holds about a million neurons.</li>
+          <li><b>The image is a difference, not a picture of activity.</b> The control condition determines what remains.</li>
+          <li><b>Colour means a statistical test passed a chosen threshold.</b> Nothing glows; uncoloured is not inactive; moving the threshold changes the picture without new data.</li>
+          <li><b>Functional imaging is correlational</b>, so it cannot show that the activity produced the behaviour.</li>
+          <li><b>Connectivity asks a different question</b> — which regions act as a group — and the usual warnings about correlation apply to it too.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Ogawa et al. (1990)</b> — rodents were imaged while the oxygen content of the air they breathed was varied. Deoxygenated haemoglobin altered the local magnetic field, making vessels appear as dark lines that faded as oxygen rose. The effect, named <b>BOLD</b> contrast, allowed blood oxygenation to be measured with MRI alone and is the basis of nearly all functional MRI.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 7.4 ---------- */
+  'b-causal': {
+    eyebrow: 'Part II · Topic 07 · Biological Bases',
+    title: 'Causal tools — TMS, tDCS and optogenetics',
+    html: `
+      <figure class="lesson-hero-img frame">
+        <img src="img/tms.jpg" alt="Illustration of a figure-of-eight TMS coil above a brain, with magnetic field lines passing through and an induced current loop in the cortex">
+        <figcaption><b>Transcranial magnetic stimulation.</b> A pulse from the coil produces a magnetic field that passes through the skull unimpeded and induces a current in the cortex beneath, briefly disrupting the neurons there. The effect wears off, which is what makes it usable on healthy volunteers.
+          <span class="cred">Eric Wassermann, M.D. · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Transcranial_magnetic_stimulation.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Lesion studies and brain imaging share one weakness: neither manipulates anything, so neither can establish that brain activity causes behaviour. This lesson covers the techniques that can — by interfering with a region briefly and reversibly, and observing what changes.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The problem these techniques solve</h4>
+        <span class="role">Why the earlier methods cannot establish cause</span>
+
+        <p>Brain damage is related to patterns of behaviour, and that relationship may or may not be causal. The damage was not assigned, the patients differ from controls in many other ways, and the lesion is never confined to the region of interest (<i>7.1</i>).</p>
+
+        <p>Functional imaging does not help. It reports that activity accompanied a task, which is a correlation. It contains no information about whether the activity produced the behaviour, or followed from it, or accompanied it for some third reason (<i>7.3</i>, <i>3.3</i>).</p>
+
+        <p>The method that establishes causation is the experiment: change one thing, hold everything else constant, and see what follows (<i>3.4</i>). Applied to the brain, this requires deliberately altering the state of a region — which cannot ethically be done by damaging it.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">What is needed</span>
+          A way of interfering with a region that is <b>temporary</b>, <b>reversible</b>, <b>targeted</b>, and <b>harmless enough to use on healthy volunteers</b>.<br><br>
+          Each technique below is an attempt to meet those four conditions, and they meet them to different degrees.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Transcranial magnetic stimulation</h4>
+        <span class="role">A brief magnetic pulse through the skull</span>
+
+        <div class="lesson-def">
+          <span class="term">Transcranial magnetic stimulation (TMS)</span> — a technique that delivers a magnetic pulse through the skull, inducing a current that briefly disrupts the activity of neurons in the cortex beneath the coil.<br><br>
+          <span class="term">Virtual lesion</span> — the temporary disruption TMS produces, so called because it mimics the effect of damage for a fraction of a second.<br><br>
+          <span class="term">Repetitive TMS (rTMS)</span> — a train of pulses rather than a single one, producing effects that outlast the stimulation by minutes.<br><br>
+          <span class="term">Sham stimulation</span> — a control condition that reproduces the sound and scalp sensation of TMS without delivering an effective pulse to the brain.
+        </div>
+
+        <p>Magnetic fields pass through insulating material, and the skull is no exception. A pulse from the coil induces an electrical current in the tissue below, disrupting whatever those neurons were doing for a short period.</p>
+
+        <p>Because the disruption is applied by the experimenter, to a chosen region, at a chosen moment, all three variables can be manipulated. That converts an observational question into an experimental one.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Barker, Jalinous &amp; Freeston (1985) — non-invasive stimulation of the human motor cortex</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether the human cortex could be stimulated through the intact skull without pain, earlier electrical methods having been too uncomfortable for general use.</dd>
+            <dt>Method</dt>
+            <dd>A coil placed against the scalp over the motor cortex discharged a brief, powerful magnetic pulse. Muscle responses in the hand were recorded, and participants reported what they felt.</dd>
+            <dt>Results</dt>
+            <dd>The pulse produced a measurable contraction in the corresponding hand muscle, occurring at a consistent delay after the pulse. Participants reported a tapping sensation on the scalp rather than pain.</dd>
+            <dt>Conclusion</dt>
+            <dd>The cortex can be stimulated non-invasively and tolerably in awake humans. This made experimental manipulation of the healthy human brain possible for the first time, and TMS is now used both as a research tool and as a treatment for depression.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the timing matters as much as the place</span>
+          A pulse can be delivered at a chosen moment after a stimulus appears — 100 milliseconds, or 200, or 300.<br><br>
+          If disrupting a region impairs performance only when the pulse arrives in a particular window, that tells you <b>when</b> the region is doing its work, not only that it is involved. This is one of the few methods giving causal evidence with fine temporal precision (<i>7.2</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">tDCS and optogenetics</h4>
+        <span class="role">One weaker, one far more precise</span>
+
+        <div class="lesson-def">
+          <span class="term">Transcranial direct current stimulation (tDCS)</span> — passing a weak constant electrical current between two electrodes on the scalp, shifting how readily neurons beneath them fire.<br><br>
+          <span class="term">Optogenetics</span> — inserting genes for light-sensitive ion channels into specific types of neuron, so that shining light through an implanted fibre switches those neurons on or off within milliseconds.
+        </div>
+
+        <p><b>tDCS</b> does not make neurons fire. It makes them somewhat more or less likely to fire, depending on the direction of the current. It is cheap, portable and easily blinded, which has made it popular. It is also far less focal than TMS, the current spreads widely, and the literature contains many small studies whose effects have not held up on replication (<i>4.6</i>).</p>
+
+        <p><b>Optogenetics</b> is the opposite case: extremely precise and not usable in humans. A virus delivers the gene for a light-sensitive channel to one genetically defined population of neurons. Light through an implanted fibre then activates or silences exactly that population, with millisecond timing.</p>
+
+        <p>This is as close to a controlled experiment on the brain as currently exists, and it is why so much causal evidence about learning, memory and reward comes from mice rather than people. It requires genetic modification and implanted hardware, so the constraint is permanent rather than technical.</p>
+
+        <table class="lesson-table">
+          <tr><th>Technique</th><th>Precision</th><th>Used in</th><th>Main limitation</th></tr>
+          <tr><td><b>TMS</b></td><td>About a centimetre, cortex only</td><td>Humans</td><td>Cannot reach deep structures; noisy and felt on the scalp</td></tr>
+          <tr><td><b>tDCS</b></td><td>Poor — current spreads widely</td><td>Humans</td><td>Weak, diffuse effects; replication record is mixed</td></tr>
+          <tr><td><b>Optogenetics</b></td><td>Specific cell types, millisecond timing</td><td>Animals only</td><td>Requires genetic modification and implanted fibres</td></tr>
+        </table>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">What manipulation buys, and what it costs</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>They support causal claims.</b> The region's state is manipulated by the experimenter, so this is an experiment rather than an observation (<i>3.4</i>).</li>
+              <li><b>Participants act as their own controls.</b> The same person can be tested with real and sham stimulation, removing differences between people entirely.</li>
+              <li><b>Effects are temporary and reversible</b>, which is what makes it ethical to use on healthy volunteers rather than waiting for accidental damage.</li>
+              <li><b>Timing can be manipulated</b>, so TMS can establish when a region contributes, not only whether.</li>
+              <li><b>Sham stimulation allows genuine blinding</b>, which lesion and imaging studies cannot achieve (<i>3.7</i>).</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>Only surface regions are reachable.</b> TMS affects cortex a few centimetres deep, so the hippocampus, amygdala and brainstem are out of range.</li>
+              <li><b>Effects spread.</b> Disrupting one region alters the network it belongs to, so a resulting deficit need not be a deficit of that region (<i>6.6</i>).</li>
+              <li><b>Blinding is imperfect.</b> Real TMS produces a distinct tapping sensation and often a muscle twitch, so participants can sometimes tell which condition they are in.</li>
+              <li><b>Effects are small and variable</b> between people, and depend on coil position, intensity and the participant's ongoing brain state.</li>
+              <li><b>Optogenetics is confined to animals</b>, so the most precise causal evidence comes from species whose relevance to human cognition must be argued rather than assumed.</li>
+              <li><b>tDCS in particular has a weak evidence base</b>, with many small positive studies and a poor record on replication.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: imaging shows a region is more active when people judge whether a face is trustworthy. Design a TMS study that would test whether the region is causally involved, and state what result would support that.</summary>
+          <div class="ans"><b>Design.</b> Each participant makes trustworthiness judgements about faces in two conditions: <b>real TMS</b> to the region of interest, and <b>sham</b> stimulation matched for sound and scalp sensation. Condition order is counterbalanced, and participants are not told which is which.<br><br><b>Two controls worth adding.</b> A <b>second brain site</b> receiving real TMS, so any effect can be attributed to that region rather than to being stimulated at all. And a <b>second task</b> of similar difficulty that should not depend on the region — judging the age of the same faces — so an effect can be attributed to trustworthiness judgement rather than to general disruption.<br><br><b>Supporting result.</b> Judgements are impaired under real TMS to the target site, and not under sham, not under TMS to the control site, and not on the control task. That pattern is a double dissociation across sites and tasks, and it is much stronger than a simple real-versus-sham difference (<i>7.1</i>).<br><br><b>What it still would not show.</b> That the region performs the judgement alone. Disruption spreads through the network it belongs to.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>Lesion and imaging evidence is <b>correlational</b>. Establishing that brain activity causes behaviour requires manipulating it.</li>
+          <li><b>TMS</b> delivers a magnetic pulse through the skull, producing a brief <b>virtual lesion</b> in the cortex beneath the coil.</li>
+          <li><b>Barker et al. (1985)</b> showed the human cortex could be stimulated through the intact skull without pain, making experiments on healthy brains possible.</li>
+          <li>Because the <b>timing</b> of the pulse can be varied, TMS can show <b>when</b> a region contributes.</li>
+          <li><b>tDCS</b> shifts how readily neurons fire; it is cheap and diffuse, and its replication record is mixed. <b>Optogenetics</b> targets specific cell types with millisecond precision, in animals only.</li>
+          <li>Limits: only surface regions, effects spread through networks, blinding is imperfect, and effects are small and variable.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, techniques, evaluation and studies from 7.4, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Transcranial magnetic stimulation (TMS)</td><td>A magnetic pulse delivered through the skull, inducing a current that briefly disrupts cortical neurons beneath the coil.</td></tr>
+          <tr><td>Virtual lesion</td><td>The temporary disruption TMS produces, mimicking damage for a fraction of a second.</td></tr>
+          <tr><td>Repetitive TMS (rTMS)</td><td>A train of pulses producing effects that outlast the stimulation by minutes. Also used to treat depression.</td></tr>
+          <tr><td>Sham stimulation</td><td>A control reproducing the sound and scalp sensation of TMS without an effective pulse to the brain.</td></tr>
+          <tr><td>Transcranial direct current stimulation (tDCS)</td><td>A weak constant current between scalp electrodes, shifting how readily neurons beneath them fire.</td></tr>
+          <tr><td>Optogenetics</td><td>Genes for light-sensitive ion channels inserted into specific neuron types, so light switches those neurons on or off within milliseconds.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The problem being solved is causal inference.</b> Lesion evidence is unassigned and untidy; imaging evidence is a correlation.</li>
+          <li><b>Four conditions are needed</b> for an ethical brain manipulation: temporary, reversible, targeted, and safe on healthy volunteers.</li>
+          <li><b>Manipulation converts observation into experiment.</b> The region, the moment and the intensity are all chosen by the experimenter.</li>
+          <li><b>Timing is as informative as place.</b> If disruption only impairs performance in a particular window, that window is when the region does its work.</li>
+          <li><b>Participants serve as their own controls</b>, which removes between-person differences entirely.</li>
+          <li><b>Disruption spreads through networks</b>, so a deficit under TMS need not be a deficit of the stimulated region alone.</li>
+          <li><b>The most precise tool is unavailable in humans</b>, so much causal evidence about cognition comes from animal work whose relevance must be argued.</li>
+        </ul>
+
+        <h5>The three techniques compared</h5>
+        <table>
+          <tr><td>TMS</td><td>About a centimetre of resolution, cortex only, used in humans. Cannot reach deep structures; noisy and felt on the scalp.</td></tr>
+          <tr><td>tDCS</td><td>Poor resolution as current spreads widely, used in humans. Weak diffuse effects and a mixed replication record.</td></tr>
+          <tr><td>Optogenetics</td><td>Specific cell types with millisecond timing, animals only. Requires genetic modification and implanted fibres.</td></tr>
+        </table>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Barker, Jalinous &amp; Freeston (1985)</b> — a coil placed against the scalp over the motor cortex discharged a brief magnetic pulse, producing a measurable contraction in the corresponding hand muscle at a consistent delay. Participants reported a tapping sensation rather than pain. Non-invasive, tolerable stimulation of the awake human cortex became possible, and with it experiments on the healthy brain.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 7.5 ---------- */
+  'b-reading': {
+    eyebrow: 'Part II · Topic 07 · Biological Bases',
+    title: 'Reverse inference and reading a brain-scan claim',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/salmon.jpg" alt="Illustration of an Atlantic salmon in side view">
+        <figcaption><b>An Atlantic salmon.</b> In 2009 a group of researchers put a dead one in an fMRI scanner, showed it photographs of people in social situations, and asked it to judge what emotion they were feeling. Analysed without correction for multiple comparisons, its brain showed significant activity.
+          <span class="cred">Timothy Knepp, U.S. Fish and Wildlife Service · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Atlantic_salmon_fish.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Brain-imaging findings reach the public more often, and in worse condition, than almost any other kind of psychological evidence. This lesson covers the two specific errors that produce most bad headlines, why brain evidence is unusually persuasive even when it is weak, and what to check before believing a claim.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Reverse inference</h4>
+        <span class="role">Running the argument backwards</span>
+
+        <div class="lesson-def">
+          <span class="term">Forward inference</span> — reasoning from a mental process to brain activity. "When people feel disgust, region X becomes more active." This is what an imaging study measures.<br><br>
+          <span class="term">Reverse inference</span> — reasoning from brain activity to a mental process. "Region X was active, therefore the person felt disgust." This is what headlines usually claim.
+        </div>
+
+        <p>The two are not equivalent, and the second does not follow from the first.</p>
+
+        <div class="worked">
+          <span class="wl">Worked example — why the direction matters</span>
+          Suppose it is well established that feeling disgust activates the insula. A new study finds the insula active while people look at a political opponent, and the headline reads: <b>"Voters feel disgust for the other side."</b><br><br>
+          The problem is that the insula is <b>also</b> active during pain, during interoception, during risky decisions, during hearing music, and in many other conditions.<br><br>
+          So the reasoning runs: disgust causes insula activity; insula activity was observed; therefore disgust. That is only sound if disgust is the <b>only</b> thing that activates the insula. It is not.<br><br>
+          The same error in ordinary terms: rain makes the pavement wet; the pavement is wet; therefore it rained. It may have been a burst pipe.
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">When reverse inference is legitimate</span>
+          It is a matter of <b>degree</b>, not a fallacy in every case. The strength of the conclusion depends on how <b>selective</b> the region is.<br><br>
+          If a region is active during one process and almost nothing else, observing its activity is real evidence for that process. Very few regions are like this, and the ones typically named in headlines — the amygdala, the insula, the anterior cingulate, the nucleus accumbens — are among the least selective in the brain.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The multiple comparisons problem</h4>
+        <span class="role">Testing thousands of places at once</span>
+
+        <div class="lesson-def">
+          <span class="term">Multiple comparisons problem</span> — when many statistical tests are run at once, some will pass the significance threshold by chance alone, even when nothing is there.<br><br>
+          <span class="term">Correction for multiple comparisons</span> — adjusting the threshold to account for how many tests were run, so that the rate of false positives across the whole analysis stays controlled.
+        </div>
+
+        <p>A whole-brain fMRI analysis tests every voxel separately. A typical scan contains tens of thousands of them.</p>
+
+        <p>At the conventional threshold of <i>p</i> &lt; .05, one test in twenty passes by chance when there is no real effect. Run 40,000 tests and roughly <b>2,000</b> voxels will pass by chance. Scattered randomly they look like noise — but they cluster, and a cluster in a plausible region looks exactly like a finding (<i>4.7</i>).</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Bennett et al. (2009) — the dead salmon</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To demonstrate what an uncorrected whole-brain fMRI analysis will produce when there is certainly no signal present.</dd>
+            <dt>Method</dt>
+            <dd>A dead Atlantic salmon, bought from a supermarket, was placed in an fMRI scanner. It was shown photographs of people in social situations and "asked" to determine what emotion each person was experiencing. The data were analysed using standard fMRI software and a standard uncorrected threshold.</dd>
+            <dt>Results</dt>
+            <dd>A cluster of voxels in the salmon's brain cavity showed a statistically significant response to the social photographs. Applying a standard correction for multiple comparisons removed it entirely.</dd>
+            <dt>Conclusion</dt>
+            <dd>Uncorrected whole-brain analyses produce significant-looking results from tissue that cannot possibly be responding. The authors' point was that a substantial proportion of published fMRI studies at the time did not report correcting, and the paper became the standard illustration of why correction is not optional. It received an Ig Nobel Prize in 2012.</dd>
+          </dl>
+        </div>
+
+        <p>The study was designed as a methodological demonstration rather than a joke, and it worked: reporting standards changed, and correction is now expected.</p>
+
+        <div class="lesson-def">
+          <span class="term">Circular analysis</span> — also called <b>double dipping</b>: selecting voxels because they showed a large effect, then reporting the size of the effect in those same voxels. The second number is guaranteed to be large, because the voxels were chosen for it.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Why brain evidence is unusually persuasive</h4>
+        <span class="role">The problem is in the reader, not only the study</span>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Weisberg et al. (2008) — the seductive allure of neuroscience explanations</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To test whether adding irrelevant neuroscience information makes a bad explanation of a psychological phenomenon seem more satisfying.</dd>
+            <dt>Method</dt>
+            <dd>Participants read descriptions of psychological phenomena, each followed by either a good explanation or a circular, uninformative one. Each version appeared either with or without an added sentence referring to brain scans, which was irrelevant to the logic of the explanation. Participants rated how satisfying each explanation was. Three groups took part: people with no training in neuroscience, students taking a neuroscience course, and neuroscience experts.</dd>
+            <dt>Results</dt>
+            <dd>Adding the irrelevant neuroscience made <b>bad</b> explanations rated as significantly more satisfying by the untrained participants and by the students. Experts were not affected, and if anything rated the padded versions slightly lower.</dd>
+            <dt>Conclusion</dt>
+            <dd>Reference to the brain makes a weak explanation more convincing to people without the training to see that it adds nothing. The effect is in the audience rather than in the evidence.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">One related claim that did not survive</span>
+          A widely cited companion finding was that adding a <b>brain image</b> to an article makes the reasoning seem more credible than a bar chart does.<br><br>
+          That specific effect has been tested repeatedly since and has not held up: large replication attempts found it to be very small or absent.<br><br>
+          It is worth knowing both facts together. The seductive-allure effect for neuroscience <b>text</b> has replicated reasonably well; the effect of the <b>picture</b> has not. Treating a finding as established because it is memorable and appealing is the same error the finding is about (<i>4.6</i>).
+        </div>
+
+        <p>The textbook adds a related point about <b>neuromyths</b> — widely believed claims about the brain that are not supported, such as "we only use 10% of our brains", or that people are left-brained or right-brained (<i>6.5</i>). These persist partly because a brain-based claim sounds like a fact about hardware rather than an interpretation.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">A checklist for reading a claim</h4>
+        <span class="role">Six questions, in order</span>
+
+        <table class="lesson-table">
+          <tr><th>Question</th><th>What a poor answer looks like</th></tr>
+          <tr><td><b>1.</b> Is the claim forward or reverse?</td><td>"Region X was active, so they were feeling Y" — reverse inference, and only as strong as the region is selective</td></tr>
+          <tr><td><b>2.</b> What was the control condition?</td><td>Not stated. The image shows a difference, so without the comparison it means nothing (<i>7.3</i>)</td></tr>
+          <tr><td><b>3.</b> Was the analysis corrected?</td><td>No mention of correction for multiple comparisons</td></tr>
+          <tr><td><b>4.</b> How many participants?</td><td>Fewer than about 20, common in fMRI for reasons of cost, and enough to make small effects unreliable (<i>4.5</i>)</td></tr>
+          <tr><td><b>5.</b> Is a causal word being used?</td><td>"Drives", "causes", "is the seat of" — for a correlational method (<i>3.3</i>)</td></tr>
+          <tr><td><b>6.</b> Does the brain finding add anything?</td><td>The behavioural result alone already established the claim, and the scan is decoration</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">The sixth question is the most useful one</span>
+          Ask what the study would have concluded <b>without</b> the scanner.<br><br>
+          If a study finds that people report craving when shown food, and also that a reward region was active, the craving was established by the report. The scan tells you where something happened in the brain; it does not make the psychological claim more secure.<br><br>
+          Brain data answers questions about <b>mechanism and location</b>. It rarely settles a question about <b>whether a psychological phenomenon exists</b>, because that was measured behaviourally in the first place.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">What brain-imaging evidence is worth</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>What it can support</h5>
+            <ul>
+              <li><b>Where in the brain something happens</b>, with millimetre resolution across the whole brain.</li>
+              <li><b>That two tasks are handled differently</b>, if they produce different patterns — which is evidence about mechanism that behaviour alone cannot give.</li>
+              <li><b>That regions form networks</b>, through connectivity analysis (<i>6.6</i>).</li>
+              <li><b>Prediction</b>. Patterns of activity can sometimes predict a later outcome, and prediction does not require knowing the cause (<i>3.3</i>).</li>
+              <li><b>Questions about people who cannot report</b> — infants, unresponsive patients — where behavioural measures are unavailable.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>What it cannot support</h5>
+            <ul>
+              <li><b>That a region caused a behaviour.</b> The method is correlational; manipulation is needed for that (<i>7.4</i>).</li>
+              <li><b>That a person was in a particular mental state</b>, unless the region is highly selective — which is rarely true.</li>
+              <li><b>That a psychological phenomenon is real</b>, since that is established behaviourally, before any scanning.</li>
+              <li><b>That an uncoloured region was uninvolved.</b> The whole brain is always active; the image shows differences that passed a threshold.</li>
+              <li><b>That a trait is fixed or biological in origin.</b> Brains change with experience, so a structural difference may be a consequence rather than a cause (<i>6.6</i>).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: "Brain scans reveal that social media activates the same reward centre as gambling — proof that these apps are addictive by design." Work through what is wrong with it.</summary>
+          <div class="ans"><b>Reverse inference, twice over.</b> The nucleus accumbens responds to food, money, music, humour, sex and social approval. Observing activity there does not establish addiction. It is among the <b>least</b> selective regions in the brain, so the inference is at its weakest here.<br><br><b>"The same region" is a weak claim.</b> Almost every rewarding thing activates it. Reading a nice message and eating a biscuit would also share it. Sharing a region does not make two things the same kind of thing.<br><br><b>"Proof" and "by design" are causal.</b> The method is correlational. It cannot show the activity caused the behaviour, still less that anyone engineered it.<br><br><b>The scan adds nothing to the addiction claim.</b> Whether use is compulsive, escalating and harmful is a <b>behavioural</b> question, answered by measuring behaviour. The scan tells you where something happened.<br><br><b>What to check next.</b> The control condition, whether correction for multiple comparisons was applied, and the sample size (<i>7.3</i>).</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Forward inference</b> goes from mental process to brain activity; <b>reverse inference</b> goes backwards, and is only as strong as the region is selective.</li>
+          <li>The regions named in headlines — amygdala, insula, anterior cingulate, nucleus accumbens — are among the <b>least</b> selective.</li>
+          <li>A whole-brain analysis runs tens of thousands of tests, so <b>correction for multiple comparisons</b> is essential.</li>
+          <li><b>Bennett et al. (2009)</b> found significant activity in a dead salmon using an uncorrected analysis; correction removed it.</li>
+          <li><b>Weisberg et al. (2008)</b> found irrelevant neuroscience makes bad explanations more satisfying to non-experts. The related claim about brain <b>images</b> has not replicated.</li>
+          <li>The most useful question is what the study would have concluded <b>without</b> the scanner.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, errors, checklist and studies from 7.5, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Forward inference</td><td>Reasoning from a mental process to brain activity. What an imaging study measures.</td></tr>
+          <tr><td>Reverse inference</td><td>Reasoning from brain activity to a mental process. Valid only to the degree the region is selective.</td></tr>
+          <tr><td>Selectivity</td><td>How few processes activate a given region. High selectivity makes reverse inference strong; low selectivity makes it worthless.</td></tr>
+          <tr><td>Multiple comparisons problem</td><td>Running many tests at once means some pass by chance even when nothing is there.</td></tr>
+          <tr><td>Correction for multiple comparisons</td><td>Adjusting the threshold for the number of tests run, so the false-positive rate stays controlled.</td></tr>
+          <tr><td>Circular analysis (double dipping)</td><td>Choosing voxels because they showed a large effect, then reporting the effect size in those same voxels.</td></tr>
+          <tr><td>Neuromyth</td><td>A widely believed claim about the brain that is not supported by evidence, such as "we only use 10% of our brains".</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The direction of the inference is the first thing to check.</b> Studies measure forward; headlines claim reverse.</li>
+          <li><b>Reverse inference is a matter of degree.</b> It is sound for a highly selective region and worthless for a region that responds to almost everything.</li>
+          <li><b>The wet-pavement analogy.</b> Rain makes pavements wet; a wet pavement does not establish rain.</li>
+          <li><b>Tens of thousands of tests guarantee false positives.</b> At <i>p</i> &lt; .05 across 40,000 voxels, about 2,000 pass by chance, and chance clusters look like findings.</li>
+          <li><b>Double dipping inflates effects by construction</b>, because the voxels were selected for the very number then reported.</li>
+          <li><b>Brain language persuades people who cannot evaluate it.</b> The effect is in the audience, not the evidence.</li>
+          <li><b>Ask what the study would conclude without the scanner.</b> Imaging answers where and how, rarely whether.</li>
+        </ul>
+
+        <h5>The six-question checklist</h5>
+        <table>
+          <tr><td>1 · Forward or reverse?</td><td>"Region active, therefore feeling X" is reverse inference.</td></tr>
+          <tr><td>2 · What was the control?</td><td>The image is a difference; without the comparison it means nothing.</td></tr>
+          <tr><td>3 · Was it corrected?</td><td>No mention of multiple-comparisons correction is a warning sign.</td></tr>
+          <tr><td>4 · How many participants?</td><td>fMRI samples are often under 20, which makes small effects unreliable.</td></tr>
+          <tr><td>5 · Is the language causal?</td><td>"Drives", "causes", "is the seat of" — for a correlational method.</td></tr>
+          <tr><td>6 · Does the scan add anything?</td><td>If the behavioural result already established the claim, the scan is decoration.</td></tr>
+        </table>
+
+        <h5>Key studies</h5>
+        <ul>
+          <li><b>Bennett et al. (2009)</b> — a dead Atlantic salmon was scanned while shown photographs of people in social situations. An uncorrected whole-brain analysis found a significant cluster in its brain cavity; standard correction removed it. Reporting standards changed as a result. Ig Nobel Prize, 2012.</li>
+          <li><b>Weisberg et al. (2008)</b> — participants rated explanations of psychological phenomena, some good and some circular, each with or without an irrelevant sentence about brain scans. The irrelevant neuroscience made <b>bad</b> explanations seem more satisfying to novices and students, but not to experts. The related claim that adding a brain <b>image</b> increases credibility has since failed to replicate.</li>
+        </ul>
+      </div>
+    `
   }
 
   };
@@ -11156,6 +12105,41 @@
       ['The main stress hormone released by the adrenal glands is ___.', 'cortisol', []],
       ['The pathway from hypothalamus to pituitary to adrenals is the ___ axis.', 'hpa', []],
       ['Metabolic rate is set by the hormone ___, released by the thyroid.', 'thyroxine', []]
+    ],
+    'b-lesion': [
+      ['An area of damaged brain tissue is called a ___.', 'lesion', []],
+      ['A lesion study shows a region was ___ for an ability, not that it was sufficient.', 'necessary', []],
+      ['Damage at one site impairing A but not B, and at another impairing B but not A, is a double ___.', 'dissociation', []],
+      ['Patient H.M. improved at ___ drawing while denying he had ever done the task.', 'mirror', []],
+      ['Studying naturally occurring damage is a ___ experiment rather than a true experiment.', 'natural', []]
+    ],
+    'b-eeg': [
+      ['The device that records electrical activity from the scalp is the ___.', 'eeg', ['electroencephalograph']],
+      ['How precisely a method locates an event in time is its ___ resolution.', 'temporal', []],
+      ['Averaging many trials aligned to an event produces an event-related ___.', 'potential', ['erp']],
+      ['The component reflecting processing of meaning peaks around 400 ms and is called the ___.', 'n400', []],
+      ['Blinks and muscle tension produce large non-brain voltages called ___.', 'artefacts', ['artifacts','artefact','artifact']]
+    ],
+    'b-imaging': [
+      ['fMRI measures the ___ signal, which reflects blood oxygenation.', 'bold', []],
+      ['The smallest volume an fMRI scan resolves is a ___.', 'voxel', []],
+      ['Comparing a task condition with a control condition is called ___ logic.', 'subtraction', []],
+      ['The blood-flow change following neural activity peaks about 4 to 6 ___ later.', 'seconds', []],
+      ['Mapping white matter pathways by water diffusion uses ___.', 'dti', []]
+    ],
+    'b-causal': [
+      ['Delivering a magnetic pulse through the skull to disrupt cortex is ___.', 'tms', []],
+      ['The temporary disruption TMS produces is called a ___ lesion.', 'virtual', []],
+      ['A control that mimics the sound and sensation of stimulation is called ___ stimulation.', 'sham', []],
+      ['Passing a weak constant current between scalp electrodes is ___.', 'tdcs', []],
+      ['Switching genetically targeted neurons on and off with light is called ___.', 'optogenetics', []]
+    ],
+    'b-reading': [
+      ['Reasoning from brain activity back to a mental process is called ___ inference.', 'reverse', []],
+      ['Running tens of thousands of voxel tests at once creates the multiple ___ problem.', 'comparisons', []],
+      ['Bennett and colleagues demonstrated the problem by scanning a dead ___.', 'salmon', []],
+      ['Selecting voxels for a large effect then reporting that effect is called ___ analysis.', 'circular', ['double dipping']],
+      ['An unsupported but widely believed claim about the brain is a ___.', 'neuromyth', []]
     ],
     'l-classical': [
       ['A stimulus that produces a response without any learning is the ___ stimulus.', 'unconditioned', ['ucs']],
