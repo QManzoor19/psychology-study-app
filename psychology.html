@@ -1228,13 +1228,13 @@
         <h3><span class="tnum">09</span><span class="ttl">Consciousness &amp; Sleep</span></h3>
         <p class="desc">A third of your life is spent unconscious. It turns out to be the most important third.</p>
         <ul class="subs">
-          <li><span class="txt"><span class="num">9.1</span> What consciousness is — awareness, attention &amp; the hard problem</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">9.2</span> Circadian rhythms &amp; the stages of sleep</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">9.3</span> Why we sleep — consolidation, clearance &amp; deprivation effects</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">9.4</span> Dreams &amp; the theories that try to explain them</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">9.5</span> Sleep disorders — insomnia, apnoea, narcolepsy, parasomnias</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">9.6</span> Hypnosis, meditation &amp; altered states</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">9.7</span> Psychoactive drugs, tolerance, withdrawal &amp; the reward system</span><span class="placeholder">notes soon</span></li>
+          <li><span class="txt"><span class="num">9.1</span> What consciousness is — awareness, attention &amp; the hard problem</span><button class="note-btn" data-note="b-conscious">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">9.2</span> Circadian rhythms &amp; the stages of sleep</span><button class="note-btn" data-note="b-sleepstages">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">9.3</span> Why we sleep — consolidation, clearance &amp; deprivation effects</span><button class="note-btn" data-note="b-whysleep">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">9.4</span> Dreams &amp; the theories that try to explain them</span><button class="note-btn" data-note="b-dreams">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">9.5</span> Sleep disorders — insomnia, apnoea, narcolepsy, parasomnias</span><button class="note-btn" data-note="b-sleepdis">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">9.6</span> Hypnosis, meditation &amp; altered states</span><button class="note-btn" data-note="b-altered">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">9.7</span> Psychoactive drugs, tolerance, withdrawal &amp; the reward system</span><button class="note-btn" data-note="b-drugsmind">📖 Notes</button></li>
         </ul>
       </div>
     </div>
@@ -12900,6 +12900,1348 @@
         </ul>
       </div>
     `
+  },
+
+  /* ---------- 9.1 ---------- */
+  'b-conscious': {
+    eyebrow: 'Part II · Topic 09 · Biological Bases',
+    title: 'What consciousness is',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/necker.png" alt="The Necker cube, a line drawing of a cube that can be seen with either face at the front">
+        <figcaption><b>The Necker cube.</b> The drawing never changes. What you experience does, flipping between two arrangements roughly every three seconds. Nothing in the stimulus explains which one you are seeing now — which is why ambiguous figures are used to study consciousness directly.
+          <span class="cred">Stevo-88 · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Necker%27s_cube.svg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Consciousness is the one thing every person has direct access to and nobody can observe in anyone else. This lesson covers what psychologists mean by the term, the four properties they use to describe it, the problem that makes it different from every other topic in the subject, and what can be studied despite that problem.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The definitions</h4>
+        <span class="role">And the two mysteries attached to them</span>
+
+        <div class="lesson-def">
+          <span class="term">Consciousness</span> — a person's subjective experience of the world and the mind.<br><br>
+          <span class="term">Phenomenology</span> — the study of how things <b>seem</b> to the conscious person, as opposed to how they are.<br><br>
+          <span class="term">Problem of other minds</span> — the fundamental difficulty of perceiving the consciousness of anyone else.<br><br>
+          <span class="term">Mind–body problem</span> — the question of how mental experience relates to physical activity in the brain (<i>1.3</i>).
+        </div>
+
+        <p>The problem of other minds is not a technical limitation. Another person can describe their experience in detail, and the description is still a report, not the experience. There is no observation that would settle whether the red you see is the red anyone else sees.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why this makes consciousness unlike every other topic here</span>
+          Memory, attention and perception can be measured through performance. A person's <b>score</b> is public even though their experience is not.<br><br>
+          For consciousness the experience <b>is</b> the thing being studied. Reports about it can be collected, and they are evidence, but the gap between a report and what it reports on never closes.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Four properties of conscious experience</h4>
+        <span class="role">What consciousness is like, described systematically</span>
+
+        <div class="lesson-def">
+          <span class="term">Intentionality</span> — consciousness is always <b>about</b> something. It is directed at an object, a thought or a feeling.<br><br>
+          <span class="term">Unity</span> — it resists division. Experience arrives as one integrated scene rather than as separate channels.<br><br>
+          <span class="term">Selectivity</span> — it includes some information and excludes the rest.<br><br>
+          <span class="term">Transience</span> — it changes constantly. Nothing stays in it for long.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Property</th><th>Everyday evidence for it</th></tr>
+          <tr><td><b>Intentionality</b></td><td>You cannot simply be conscious. You are conscious <i>of</i> the page, or of being hungry</td></tr>
+          <tr><td><b>Unity</b></td><td>You do not experience colour, shape, sound and position separately and then combine them. They arrive as one object</td></tr>
+          <tr><td><b>Selectivity</b></td><td>You were not aware of your feet in your shoes until this sentence mentioned them. The information was available throughout</td></tr>
+          <tr><td><b>Transience</b></td><td>Attempting to hold one thought fixed for sixty seconds fails within a few. Even the Necker cube reverses about every three seconds</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">Selectivity also produces a false impression of richness</span>
+          Consciousness seems to contain fine detail everywhere at once. It does not.<br><br>
+          Peripheral detail is largely <b>filled in</b> rather than represented, in the way a painting can suggest a crowd with a few brushstrokes. The impression of a complete, detailed scene is itself part of the experience being explained, not evidence that the detail is there.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Selectivity is measurable</h4>
+        <span class="role">Where the topic becomes experimental</span>
+
+        <div class="lesson-def">
+          <span class="term">Dichotic listening</span> — a task in which a person wearing headphones hears a different message in each ear.<br><br>
+          <span class="term">Shadowing</span> — repeating one of the two messages aloud, which forces attention onto that ear.<br><br>
+          <span class="term">Cocktail party effect</span> — the ability to follow one conversation among many, while remaining able to notice your own name spoken in an ignored one.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Cherry (1953) — dichotic listening</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To establish how people follow one conversation while ignoring others, and how much of the ignored material is processed.</dd>
+            <dt>Method</dt>
+            <dd>Participants wore headphones and heard a different spoken message in each ear. They were asked to <b>shadow</b> one message by repeating it aloud, which ensured attention was directed to that ear. They were then questioned about the unattended message.</dd>
+            <dt>Results</dt>
+            <dd>Participants could report almost nothing about the content of the unattended message — not its topic, and not whether it changed language. They could report its <b>physical</b> properties: whether it was speech, and whether the voice changed from a man's to a woman's.</dd>
+            <dt>Conclusion</dt>
+            <dd>Unattended information is processed for basic physical characteristics but does not reach conscious awareness in terms of meaning. Selectivity operates on content, not on whether a signal is received.</dd>
+          </dl>
+        </div>
+
+        <p>Later work qualified this. Participants frequently notice their <b>own name</b> in the unattended ear, and highly significant words break through. So the filter is not absolute: unattended material is analysed enough for personal relevance to be detected, even though it is not consciously experienced.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why the name result matters</span>
+          If the unattended channel were genuinely blocked, a name in it could not be recognised, because recognising a name requires processing meaning.<br><br>
+          So something is analysing content that never reaches consciousness. That is the first evidence in this module for the claim that most of what the mind does is not conscious.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The hard problem</h4>
+        <span class="role">What a complete brain explanation would still leave out</span>
+
+        <div class="lesson-def">
+          <span class="term">The easy problems</span> — explaining what the brain does: how it discriminates stimuli, integrates information, reports its own states, controls behaviour. Difficult, but ordinary scientific questions.<br><br>
+          <span class="term">The hard problem</span> — explaining why any of that is accompanied by <b>experience</b> at all, rather than proceeding in the dark.<br><br>
+          <span class="term">Qualia</span> — the felt quality of an experience: what red looks like, what pain feels like.
+        </div>
+
+        <p>The distinction, due to David Chalmers, separates two kinds of question that are often run together.</p>
+
+        <div class="worked">
+          <span class="wl">Worked example — where the gap appears</span>
+          Suppose neuroscience becomes complete. Every neuron involved in seeing red is mapped, the pathway is traced, the timing is known, and the resulting behaviour is predicted exactly.<br><br>
+          <b>The easy problems are then solved.</b> Discrimination, integration and report are all accounted for.<br><br>
+          <b>The hard problem is untouched.</b> Nothing in that account explains why the processing is accompanied by the experience of <b>redness</b>, rather than being carried out with no experience attached — which is what happens in the many processes that do run unconsciously.<br><br>
+          Whether the gap is a real feature of the world or a limitation of how we currently think is exactly what is disputed.
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Three positions, stated fairly</span>
+          <b>The gap is real and permanent.</b> Physical description leaves something out in principle, so consciousness will not be explained the way other phenomena are.<br><br>
+          <b>The gap will close.</b> It reflects how early we are, much as life once seemed to require a vital force and no longer does.<br><br>
+          <b>The gap is a confusion.</b> The intuition that something is left out is itself a product of how the brain represents its own states, and dissolves under analysis.<br><br>
+          None has been established. The honest position is that this is an open question rather than a solved one (<i>1.3</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">What a science of consciousness can deliver</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>What can be studied</h5>
+            <ul>
+              <li><b>The contents of consciousness</b>, through reports that can be collected systematically and compared across conditions.</li>
+              <li><b>Selectivity</b>, experimentally, using dichotic listening, inattentional blindness and change blindness.</li>
+              <li><b>Neural correlates</b> — which brain activity accompanies a stimulus being experienced rather than merely processed, using ambiguous figures where the input is held constant (<i>7.3</i>).</li>
+              <li><b>Departures from normal consciousness</b> — sleep, drugs, hypnosis — which reveal structure that ordinary waking experience hides (<i>9.2</i>, <i>9.6</i>, <i>9.7</i>).</li>
+              <li><b>The unconscious</b>, by showing what influences behaviour without being experienced.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>What remains out of reach</h5>
+            <ul>
+              <li><b>Other minds.</b> No measurement establishes that anyone else has experience, or that their experience resembles yours.</li>
+              <li><b>The hard problem.</b> Correlating experience with brain activity does not explain why the activity is experienced.</li>
+              <li><b>Reports are not experiences.</b> All the data are descriptions, and people are unreliable reporters of their own mental processes (<i>1.1</i>).</li>
+              <li><b>Absence of report is not absence of experience</b>, which is why judging consciousness in infants, animals and unresponsive patients is so difficult.</li>
+              <li><b>The vocabulary is contested.</b> Researchers use "consciousness" for awareness, wakefulness, self-awareness and reportability, which are different things.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a patient is unresponsive after brain injury. Asked to imagine playing tennis, their brain shows the same activity pattern as healthy volunteers imagining tennis. Does this establish they are conscious?</summary>
+          <div class="ans"><b>It is strong evidence, and it is not proof.</b><br><br><b>Why it is strong.</b> The response is to an <b>instruction</b>, and following an instruction requires understanding language, holding it in mind, and complying. That is much harder to explain as an automatic response than a reaction to a sound or a touch would be. Reversing the instruction, or asking questions answered by imagining tennis for yes, extends it further.<br><br><b>Why it is not proof.</b> This is <b>reverse inference</b>: the same activity accompanies imagining tennis, so imagining tennis is inferred. It does not follow unless that pattern occurs for little else (<i>7.5</i>).<br><br><b>And the deeper problem remains.</b> Even granting that they are processing the instruction, the <b>problem of other minds</b> means no measurement can establish that the processing is accompanied by experience. This applies to healthy people too; it is simply not usually noticed.<br><br><b>What it does settle</b> is the clinically decisive point: the absence of a behavioural response does not establish the absence of awareness.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Consciousness</b> is subjective experience of the world and the mind; <b>phenomenology</b> studies how things seem.</li>
+          <li>The <b>problem of other minds</b> means no observation establishes that anyone else is conscious, or that their experience resembles yours.</li>
+          <li>Four properties: <b>intentionality</b>, <b>unity</b>, <b>selectivity</b>, <b>transience</b>.</li>
+          <li><b>Cherry (1953)</b> found unattended messages are processed for physical properties but not meaning — though one's own name breaks through, so the filter is not absolute.</li>
+          <li>The <b>easy problems</b> concern what the brain does; the <b>hard problem</b> is why any of it is experienced. The three positions on it are all live.</li>
+          <li>Neural correlates, selectivity and altered states are all studiable; other minds and the hard problem are not.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, properties, evaluation and studies from 9.1, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Consciousness</td><td>A person's subjective experience of the world and the mind.</td></tr>
+          <tr><td>Phenomenology</td><td>The study of how things seem to the conscious person.</td></tr>
+          <tr><td>Problem of other minds</td><td>The fundamental difficulty of perceiving anyone else's consciousness.</td></tr>
+          <tr><td>Mind–body problem</td><td>How mental experience relates to physical activity in the brain.</td></tr>
+          <tr><td>Intentionality</td><td>Consciousness is always about something.</td></tr>
+          <tr><td>Unity</td><td>Experience arrives as one integrated scene rather than separate channels.</td></tr>
+          <tr><td>Selectivity</td><td>It includes some information and excludes the rest.</td></tr>
+          <tr><td>Transience</td><td>It changes constantly; nothing stays in it for long.</td></tr>
+          <tr><td>Dichotic listening</td><td>A task in which each ear receives a different message.</td></tr>
+          <tr><td>Shadowing</td><td>Repeating one message aloud, forcing attention to that ear.</td></tr>
+          <tr><td>Cocktail party effect</td><td>Following one conversation among many while still noticing your own name in an ignored one.</td></tr>
+          <tr><td>The easy problems</td><td>Explaining what the brain does — discrimination, integration, report, control.</td></tr>
+          <tr><td>The hard problem</td><td>Explaining why any of that is accompanied by experience at all.</td></tr>
+          <tr><td>Qualia</td><td>The felt quality of an experience: what red looks like, what pain feels like.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Consciousness is unlike other topics</b> because the experience is the object of study, and only reports are public.</li>
+          <li><b>The impression of rich detail is itself a phenomenon to explain</b>, not evidence that the detail is represented.</li>
+          <li><b>Selectivity operates on content, not on reception.</b> Unattended signals arrive and are analysed; they do not become experience.</li>
+          <li><b>The filter is not absolute.</b> Own-name detection shows meaning is analysed outside awareness.</li>
+          <li><b>Solving the easy problems would leave the hard one untouched</b>, which is what makes it a different kind of question.</li>
+          <li><b>Absence of report is not absence of experience</b>, which is why unresponsive patients are so hard to assess.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Cherry (1953)</b> — participants shadowed one of two simultaneous messages heard through headphones. They could report the unattended message's physical properties, including a change from a man's to a woman's voice, but not its content or even its language. Selectivity acts on meaning rather than on whether a signal is received. Later work showed one's own name is often noticed in the unattended ear.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 9.2 ---------- */
+  'b-sleepstages': {
+    eyebrow: 'Part II · Topic 09 · Biological Bases',
+    title: 'Circadian rhythms and the stages of sleep',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/hypnogram.png" alt="Hypnogram showing one sleep cycle passing through stages N1, N2, N3 and REM over about 90 minutes">
+        <figcaption><b>A hypnogram: one cycle of sleep.</b> Sleep is not a single state that deepens. It descends through stages, returns toward the surface, and enters <b>REM</b>, then repeats — about five times a night, with the proportions shifting as the night goes on.
+          <span class="cred">Schlafgut · CC BY-SA 3.0 · via <a href="https://commons.wikimedia.org/wiki/File:Hypro_zyklus_1_en_103.svg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Sleep is not the absence of consciousness but a sequence of distinct states, each with its own brain activity, body physiology and mental content. This lesson covers the clock that decides when sleep happens and the architecture of what happens once it does.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The body clock</h4>
+        <span class="role">Circadian rhythm and what sets it</span>
+
+        <div class="lesson-def">
+          <span class="term">Circadian rhythm</span> — a naturally occurring cycle of roughly 24 hours in physiological and behavioural processes. From Latin <i>circa diem</i>, "about a day".<br><br>
+          <span class="term">Suprachiasmatic nucleus (SCN)</span> — a small region of the hypothalamus that acts as the master clock, receiving light information directly from the eye (<i>6.3</i>).<br><br>
+          <span class="term">Melatonin</span> — a hormone released by the pineal gland when light falls, signalling darkness to the rest of the body (<i>6.7</i>).<br><br>
+          <span class="term">Zeitgeber</span> — literally "time-giver": an external cue, principally light, that resets the internal clock to match the outside world.
+        </div>
+
+        <p>The clock runs whether or not the world supplies cues. In isolation without time signals, people continue to sleep and wake on a regular cycle — but one that drifts, because its natural period is not exactly 24 hours.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">A number worth getting right</span>
+          Older accounts, including many textbooks, report the free-running human cycle as about <b>25 hours</b>. That figure came from early isolation studies in which participants <b>controlled their own lighting</b>, and switching a lamp on late shifts the clock later.<br><br>
+          When lighting was controlled by the experimenters, the human period turned out to be about <b>24.2 hours</b>. The difference matters: a 25-hour clock would be a strange design, while a 24.2-hour clock is close to the day and needs only a small daily correction from light.<br><br>
+          This is a good example of a confound producing a plausible number that survived for decades (<i>3.7</i>).
+        </div>
+
+        <p>Because light resets the clock, anything that changes light exposure changes sleep timing. Shift work, long-haul travel and evening screen use all act on the same mechanism.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The stages of sleep</h4>
+        <span class="role">What the EEG shows through the night</span>
+
+        <div class="lesson-def">
+          <span class="term">NREM sleep</span> — non-rapid-eye-movement sleep, divided into stages of increasing depth.<br><br>
+          <span class="term">REM sleep</span> — a stage characterised by rapid eye movements and a high level of brain activity.<br><br>
+          <span class="term">Sleep spindles</span> — brief bursts of fast activity in the EEG, characteristic of stage N2.<br><br>
+          <span class="term">K-complexes</span> — large single waves, also characteristic of N2.<br><br>
+          <span class="term">Slow-wave sleep</span> — the deepest NREM stage, dominated by large slow delta waves. The hardest stage to be woken from.<br><br>
+          <span class="term">Muscle atonia</span> — the near-total loss of muscle tone during REM, which prevents dreams from being acted out.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Stage</th><th>EEG</th><th>Body</th><th>Notes</th></tr>
+          <tr><td><b>N1</b></td><td>Slowing from waking rhythm</td><td>Muscles relax; may twitch</td><td>The transition into sleep. People woken here often deny they were asleep</td></tr>
+          <tr><td><b>N2</b></td><td>Sleep spindles and K-complexes</td><td>Heart rate and temperature fall</td><td>About half of total sleep time</td></tr>
+          <tr><td><b>N3</b></td><td>Large slow delta waves</td><td>Lowest heart rate and breathing</td><td>Slow-wave sleep. Concentrated in the first half of the night; hardest to wake from</td></tr>
+          <tr><td><b>REM</b></td><td>Fast, resembling waking</td><td>Eyes dart; muscles paralysed; breathing and heart rate irregular</td><td>Most vivid dreaming. Periods lengthen through the night</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">A note on stage names</span>
+          Older sources, including the textbook, describe <b>five</b> stages: 1, 2, 3, 4 and REM.<br><br>
+          Since 2007 the standard has combined the old stages 3 and 4 into a single stage <b>N3</b>, giving four stages: N1, N2, N3 and R. The physiology is unchanged; only the labelling was simplified. Both systems appear in current writing.
+        </div>
+
+        <p>The cycle repeats roughly every <b>90 minutes</b>, about five times a night. The proportions shift as the night proceeds: slow-wave sleep dominates early cycles, and REM periods lengthen toward morning. A person who sleeps only the first half of a night loses most of their REM; one who sleeps only the second half loses most of their slow-wave sleep.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">REM sleep</h4>
+        <span class="role">The stage that did not fit</span>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Aserinsky &amp; Kleitman (1953) — the discovery of REM sleep</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To record eye movements and brain activity continuously through the night, and establish whether periods of eye movement during sleep are related to anything psychological.</dd>
+            <dt>Method</dt>
+            <dd>Sleeping participants were monitored with an <b>electrooculograph</b>, recording eye movement, alongside EEG recording of brain activity. When rapid eye movements were detected, participants were woken and asked what had been going through their minds. They were also woken during periods without eye movements, for comparison.</dd>
+            <dt>Results</dt>
+            <dd>Distinct periods of rapid eye movement occurred several times a night, accompanied by brain activity resembling waking rather than sleep. Participants woken during these periods reported vivid, detailed dreams far more often than those woken at other times.</dd>
+            <dt>Conclusion</dt>
+            <dd>Sleep contains a recurring stage that is physiologically active rather than quiescent, and it is closely associated with dreaming. The finding overturned the assumption that sleep is a single state of reduced activity.</dd>
+          </dl>
+        </div>
+
+        <p>REM is sometimes called <b>paradoxical sleep</b>: the brain looks awake on the EEG while the body is at its least responsive, with the postural muscles effectively paralysed.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Two figures often stated too strongly</span>
+          <b>"Dreaming happens in REM."</b> About 80% of people woken from REM report a dream, so it is where most vivid dreaming occurs. But dreams are also reported from other stages — they are simply less frequent and typically less bizarre (<i>9.4</i>).<br><br>
+          <b>"Dreams last an instant."</b> Dement and Kleitman (1957) woke sleepers 5 or 15 minutes into a REM period and asked them to judge how long they had been dreaming. Sleepers were correct in 92 of 111 cases, which indicates dreaming runs in roughly real time.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">When the clock and the schedule disagree</h4>
+        <span class="role">Applications</span>
+
+        <ul>
+          <li><b>Jet lag.</b> Travelling across time zones leaves the internal clock set to the origin. It resets by roughly an hour a day, and adjusts faster travelling west, because lengthening a day is easier than shortening one.</li>
+          <li><b>Shift work.</b> Night workers are asked to be alert at their circadian low and to sleep at its peak, against daylight resetting the clock the other way. The associated health effects are substantial and are not fixed by getting more total sleep.</li>
+          <li><b>Adolescent phase delay.</b> The clock shifts later during adolescence, so teenagers fall asleep and wake naturally later. Early school start times therefore ask them to be alert during their biological night. Trials of later starts report longer sleep and improved attendance.</li>
+          <li><b>Evening light.</b> Light in the evening suppresses melatonin and delays the clock, which is the mechanism behind advice about screens before bed.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">The distinction the applications turn on</span>
+          <b>Sleep duration</b> is how much sleep you get. <b>Circadian timing</b> is when your body expects it.<br><br>
+          Shift work and adolescent school starts are timing problems, not duration problems. Someone can sleep eight hours at the wrong point in their cycle and still function badly, which is why "just go to bed earlier" often fails.
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: someone flies from London to New York, sleeps eight hours the first night, and still feels terrible for several days. Explain why, and why the return flight is usually worse.</summary>
+          <div class="ans"><b>Why eight hours is not enough.</b> The problem is <b>timing</b>, not duration. Their SCN is still set to London time, so it is producing melatonin and lowering body temperature for a night that, locally, is the middle of the afternoon. Sleeping eight hours at the wrong circadian phase does not undo that.<br><br><b>Why it takes days.</b> The clock resets by roughly an hour a day using light as the zeitgeber, so a five-hour shift takes several days.<br><br><b>Why the return is worse.</b> Flying west to New York <b>lengthens</b> the day, and the human clock has a natural period slightly longer than 24 hours, so it drifts later easily. Flying back east <b>shortens</b> the day, which requires the clock to advance against its natural tendency. Advancing is harder than delaying, so eastward travel produces worse and longer jet lag.<br><br><b>What helps.</b> Getting bright light at the right time of day for the direction travelled, since light is what resets the clock.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>The <b>circadian rhythm</b> is a roughly 24-hour cycle run by the <b>SCN</b>, reset by light as a <b>zeitgeber</b> and signalled by <b>melatonin</b>.</li>
+          <li>The free-running human period is about <b>24.2 hours</b>, not the 25 hours older studies reported when participants controlled their own lighting.</li>
+          <li>Sleep cycles through <b>N1, N2, N3 and REM</b> about every 90 minutes, five times a night. Slow-wave sleep dominates early; REM lengthens toward morning.</li>
+          <li><b>REM</b> shows waking-like brain activity with <b>muscle atonia</b>, and is where most vivid dreaming occurs — though not all of it.</li>
+          <li><b>Aserinsky &amp; Kleitman (1953)</b> discovered REM and its association with dream reports.</li>
+          <li>Jet lag, shift work and adolescent school times are problems of <b>timing</b>, not duration.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, stages, applications and studies from 9.2, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Circadian rhythm</td><td>A naturally occurring cycle of roughly 24 hours in physiological and behavioural processes.</td></tr>
+          <tr><td>Suprachiasmatic nucleus (SCN)</td><td>The hypothalamic master clock, receiving light information directly from the eye.</td></tr>
+          <tr><td>Melatonin</td><td>A pineal hormone released as light falls, signalling darkness to the body.</td></tr>
+          <tr><td>Zeitgeber</td><td>An external cue, principally light, that resets the internal clock.</td></tr>
+          <tr><td>NREM sleep</td><td>Non-rapid-eye-movement sleep, divided into stages of increasing depth.</td></tr>
+          <tr><td>REM sleep</td><td>A stage with rapid eye movements and high brain activity. Also called paradoxical sleep.</td></tr>
+          <tr><td>Sleep spindles</td><td>Brief bursts of fast EEG activity, characteristic of N2.</td></tr>
+          <tr><td>K-complexes</td><td>Large single EEG waves, also characteristic of N2.</td></tr>
+          <tr><td>Slow-wave sleep</td><td>The deepest NREM stage, dominated by delta waves and hardest to wake from.</td></tr>
+          <tr><td>Muscle atonia</td><td>Near-total loss of muscle tone in REM, preventing dreams from being acted out.</td></tr>
+          <tr><td>Hypnogram</td><td>A graph of sleep stage against time across a night.</td></tr>
+        </table>
+
+        <h5>The four stages</h5>
+        <table>
+          <tr><td>N1</td><td>Transition into sleep; people woken here often deny they were asleep.</td></tr>
+          <tr><td>N2</td><td>Spindles and K-complexes; about half of total sleep time.</td></tr>
+          <tr><td>N3</td><td>Slow-wave sleep; concentrated early in the night; hardest to wake from.</td></tr>
+          <tr><td>REM</td><td>Waking-like EEG, darting eyes, paralysed muscles; periods lengthen through the night.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Sleep is a sequence of states, not a single depth.</b> The cycle descends, returns and enters REM about every 90 minutes.</li>
+          <li><b>Stage proportions shift across the night</b>, so losing the first half of a night costs slow-wave sleep and losing the second costs REM.</li>
+          <li><b>The 25-hour figure was a confound.</b> Participants controlling their own lighting shifted their own clocks; with controlled light the period is about 24.2 hours.</li>
+          <li><b>Duration and timing are different problems.</b> Eight hours at the wrong circadian phase still leaves someone impaired.</li>
+          <li><b>Delaying the clock is easier than advancing it</b>, which is why westward travel is easier than eastward.</li>
+          <li><b>Stage naming changed in 2007</b>; old stages 3 and 4 became N3, and both systems remain in use.</li>
+        </ul>
+
+        <h5>Applications</h5>
+        <table>
+          <tr><td>Jet lag</td><td>Resets about an hour a day; worse travelling east because the day must be shortened.</td></tr>
+          <tr><td>Shift work</td><td>Alertness demanded at the circadian low; health effects not fixed by more total sleep.</td></tr>
+          <tr><td>Adolescent phase delay</td><td>The clock shifts later in adolescence, so early school starts fall in the biological night.</td></tr>
+          <tr><td>Evening light</td><td>Suppresses melatonin and delays the clock — the mechanism behind screen advice.</td></tr>
+        </table>
+
+        <h5>Key studies</h5>
+        <ul>
+          <li><b>Aserinsky &amp; Kleitman (1953)</b> — continuous overnight recording of eye movement and EEG. Distinct periods of rapid eye movement recurred several times a night with waking-like brain activity, and participants woken during them reported vivid dreams far more often than those woken at other times.</li>
+          <li><b>Dement &amp; Kleitman (1957)</b> — sleepers woken 5 or 15 minutes into REM judged how long they had been dreaming and were correct in 92 of 111 cases, indicating dreams run in roughly real time.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 9.3 ---------- */
+  'b-whysleep': {
+    eyebrow: 'Part II · Topic 09 · Biological Bases',
+    title: 'Why we sleep',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/glymphatic.jpg" alt="Schematic of the glymphatic pathway showing fluid entering alongside an artery, flowing through brain tissue past neurons and astrocytes, and leaving alongside a vein">
+        <figcaption><b>The glymphatic pathway.</b> Fluid enters the brain alongside arteries, flushes through the tissue carrying dissolved waste, and leaves alongside veins. The flow increases substantially during sleep, which is one of the leading answers to why sleep cannot be skipped.
+          <span class="cred">Jeffrey J. Iliff · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Glymphatic_system_schematic.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Sleep costs a third of a lifetime, prevents eating and reproducing, and leaves an animal defenceless. A cost that large implies a function large enough to justify it. This lesson covers the main candidate functions, the evidence for each, and what happens when sleep is removed.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The question, stated properly</h4>
+        <span class="role">Why the cost argument matters</span>
+
+        <p>Sleep is universal among mammals and birds, and appears in some form throughout the animal kingdom. It has persisted despite obvious disadvantages, which is the strongest general argument that it does something essential.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">The shape of the argument</span>
+          Natural selection removes costly traits that do nothing (<i>8.4</i>).<br><br>
+          Sleep is extremely costly. It has not been removed. Therefore it is doing something that could not be done more cheaply while awake.<br><br>
+          This tells you a function exists. It does not tell you what it is, and the candidates below are not mutually exclusive — sleep almost certainly does several things at once.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Four candidate functions</h4>
+        <span class="role">What the evidence supports for each</span>
+
+        <table class="lesson-table">
+          <tr><th>Function</th><th>The claim</th><th>Evidence</th><th>Problem</th></tr>
+          <tr><td><b>Restoration</b></td><td>Repair and maintenance of body and brain tissue</td><td>Growth hormone is released in slow-wave sleep; immune function is impaired by deprivation</td><td>Repair could largely proceed during quiet wakefulness, so it does not explain unconsciousness</td></tr>
+          <tr><td><b>Energy conservation</b></td><td>Reducing metabolic demand during hours when foraging is unproductive</td><td>Sleep duration across species relates to body size and metabolic rate</td><td>The saving is small — roughly the energy in a slice of bread per night</td></tr>
+          <tr><td><b>Memory consolidation</b></td><td>Stabilising and reorganising what was learned during the day</td><td>Post-learning sleep improves retention; targeted disruption of slow-wave sleep impairs it</td><td>Explains why sleep helps memory, not why it must involve losing consciousness</td></tr>
+          <tr><td><b>Clearance</b></td><td>Flushing metabolic waste products from brain tissue</td><td>Glymphatic flow increases substantially during sleep in animal studies</td><td>Recent and largely animal-based; the size of the effect in humans is contested</td></tr>
+        </table>
+
+        <div class="lesson-def">
+          <span class="term">Consolidation</span> — the process by which a newly formed memory becomes stable and is integrated with existing knowledge (<i>16.4</i>).<br><br>
+          <span class="term">Glymphatic system</span> — a fluid clearance pathway in the brain, in which fluid flows in alongside arteries, through the tissue, and out alongside veins, carrying dissolved waste with it.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Sleep and memory</h4>
+        <span class="role">The best-supported function</span>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Jenkins &amp; Dallenbach (1924) — forgetting across sleep and waking</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To determine whether forgetting is caused by the passage of time itself or by activity occurring during that time.</dd>
+            <dt>Method</dt>
+            <dd>Participants learned lists of nonsense syllables to a criterion and were tested after intervals of 1, 2, 4 or 8 hours. In one condition the interval was spent <b>asleep</b>; in the other it was spent <b>awake</b> and going about ordinary activity. Each participant served in both conditions.</dd>
+            <dt>Results</dt>
+            <dd>Recall was substantially better after intervals spent asleep than after equal intervals spent awake, and the gap widened as the interval lengthened. After eight hours, sleepers recalled roughly twice as many syllables.</dd>
+            <dt>Conclusion</dt>
+            <dd>Forgetting is not simply decay with time, since the same amount of time produced very different loss depending on what happened during it. The authors attributed the difference to reduced <b>interference</b> during sleep. Later work argued sleep also plays an active part, consolidating rather than merely protecting.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Two explanations, and how they differ</span>
+          <b>Passive protection.</b> Sleep helps because nothing else is happening to interfere with the new memory. On this account any period of quiet inactivity would do as well.<br><br>
+          <b>Active consolidation.</b> Sleep does something to the memory — replaying the neural patterns from learning and transferring them from hippocampus to cortex (<i>6.3</i>).<br><br>
+          <b>The evidence that separates them.</b> Disrupting <b>slow-wave sleep specifically</b>, while leaving total sleep time unchanged, impairs retention. Quiet wakefulness does not produce the same benefit as sleep. And direct recordings in animals show the patterns from learning being replayed during slow-wave sleep. This favours active consolidation, without ruling out that reduced interference also contributes.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What deprivation does</h4>
+        <span class="role">The effects, in order of how quickly they appear</span>
+
+        <ul>
+          <li><b>Attention goes first.</b> Sustained attention deteriorates within a single night of restriction, producing brief lapses of a few seconds — <b>microsleeps</b> — that people usually do not notice.</li>
+          <li><b>Mood follows.</b> Irritability and emotional reactivity increase, and the amygdala becomes more responsive to negative stimuli.</li>
+          <li><b>Memory is impaired both ways.</b> Learning before sleep is less effective, and consolidation afterwards is reduced.</li>
+          <li><b>Physiology shifts.</b> Glucose regulation, appetite hormones and immune function all change measurably after a few nights of restriction.</li>
+          <li><b>Selective REM deprivation matters.</b> Waking people or animals whenever REM begins, while allowing other sleep, produces memory problems and increased aggression within days.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">Self-assessment is the unreliable part</span>
+          People adapt to how <b>impaired</b> they feel while remaining objectively impaired. In restriction studies, subjective sleepiness plateaus after a few days while performance keeps declining.<br><br>
+          This is why sleep-deprived driving is dangerous in a specific way: the driver is not a good judge of their own state, and microsleeps are not experienced as sleep.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">How strong is the evidence</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths of the evidence</h5>
+            <ul>
+              <li><b>Deprivation can be experimentally assigned</b>, so this part of the field rests on genuine experiments rather than correlations (<i>3.4</i>).</li>
+              <li><b>Selective deprivation isolates stages.</b> Disrupting slow-wave sleep while holding total sleep constant identifies which stage does what.</li>
+              <li><b>Converging methods.</b> Behavioural retention, EEG, animal single-cell replay and imaging all support the consolidation account.</li>
+              <li><b>Cross-species universality</b> is strong evidence that a function exists, whatever it turns out to be.</li>
+              <li><b>Practical predictions succeed</b>, including the effect of later school start times and of sleep on skill learning.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>No single function is established.</b> Sleep probably does several things, and the evidence cannot yet say which is the reason it evolved.</li>
+              <li><b>Total deprivation studies are ethically limited</b> in humans, so extreme effects come from animals or from rare case reports.</li>
+              <li><b>Clearance evidence is mostly from mice</b>, and the magnitude of glymphatic flow in humans is actively disputed.</li>
+              <li><b>Deprivation is a blunt manipulation.</b> It also produces stress, so effects attributed to lost sleep may partly be effects of the procedure (<i>3.7</i>).</li>
+              <li><b>Much observational sleep research is correlational.</b> Short sleep is associated with poor health outcomes, and illness also causes short sleep (<i>3.3</i>).</li>
+              <li><b>Popular accounts overstate the numbers.</b> Claims about precise health consequences of specific sleep durations often rest on observational data with confounds.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a headline reports that people who sleep fewer than six hours have a higher risk of dementia, concluding that short sleep causes dementia. Assess it.</summary>
+          <div class="ans"><b>The design is correlational</b>, so all three explanations apply (<i>3.3</i>).<br><br><b>Reverse causation is especially plausible here.</b> Dementia disrupts sleep, and it does so <b>years before diagnosis</b>. So short sleep may be an early symptom rather than a cause. A study that follows people for a decade does not escape this if the disease process began before the study started.<br><br><b>Third variables are abundant.</b> Depression, sleep apnoea, medication, shift work and poor health all shorten sleep and independently raise dementia risk.<br><br><b>What would strengthen a causal reading.</b> A dose–response relationship; the association surviving exclusion of cases diagnosed in the first ten years of follow-up; a plausible mechanism, for which the clearance account provides a candidate; and ideally experimental evidence that improving sleep changes the outcome (<i>3.3</i>).<br><br><b>What is fair to say.</b> Short sleep is a marker of raised risk, which is useful for prediction even if the causal direction is unsettled (<i>3.3</i>).</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>Sleep is <b>costly and universal</b>, which argues that it serves a function that cannot be performed more cheaply while awake.</li>
+          <li>Four candidates: <b>restoration</b>, <b>energy conservation</b>, <b>memory consolidation</b> and <b>clearance</b>. They are not mutually exclusive.</li>
+          <li><b>Jenkins &amp; Dallenbach (1924)</b> found far better recall after intervals spent asleep than awake — forgetting depends on what happens in the interval, not on time alone.</li>
+          <li>Evidence favours <b>active consolidation</b> over mere protection from interference: disrupting slow-wave sleep specifically impairs retention, and learning patterns are replayed during it.</li>
+          <li>Deprivation impairs <b>attention first</b>, then mood, memory and physiology, and produces unnoticed <b>microsleeps</b>.</li>
+          <li>Self-assessment of impairment becomes unreliable while objective performance keeps declining.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Functions, evidence, evaluation and studies from 9.3, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Consolidation</td><td>The process by which a new memory becomes stable and is integrated with existing knowledge.</td></tr>
+          <tr><td>Glymphatic system</td><td>A brain fluid clearance pathway: in alongside arteries, through the tissue, out alongside veins, carrying waste.</td></tr>
+          <tr><td>Microsleep</td><td>A lapse of a few seconds into sleep during apparent wakefulness, usually not noticed by the person.</td></tr>
+          <tr><td>Selective deprivation</td><td>Waking a sleeper whenever one particular stage begins, while allowing the others.</td></tr>
+          <tr><td>Interference</td><td>New material disrupting the retention of older material — the passive explanation for sleep's memory benefit.</td></tr>
+        </table>
+
+        <h5>The four candidate functions</h5>
+        <table>
+          <tr><td>Restoration</td><td>Repair and maintenance. Supported by growth hormone release in slow-wave sleep and immune effects of deprivation; does not explain unconsciousness.</td></tr>
+          <tr><td>Energy conservation</td><td>Reduced metabolic demand. Fits cross-species patterns; the saving is small.</td></tr>
+          <tr><td>Memory consolidation</td><td>Stabilising and reorganising learning. Best supported, by converging methods.</td></tr>
+          <tr><td>Clearance</td><td>Flushing metabolic waste. Glymphatic flow rises in sleep; evidence largely from mice and contested in humans.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The cost argument shows a function exists</b>, not what it is.</li>
+          <li><b>Passive protection and active consolidation make different predictions</b>, and selective slow-wave disruption separates them.</li>
+          <li><b>Attention fails first</b> under deprivation, through brief microsleeps that go unnoticed.</li>
+          <li><b>Subjective sleepiness plateaus while performance keeps falling</b>, which is what makes drowsy driving dangerous.</li>
+          <li><b>Deprivation is a blunt manipulation</b> that also imposes stress, so not every effect is an effect of lost sleep.</li>
+          <li><b>Reverse causation is a live problem in sleep epidemiology</b>, because illness disrupts sleep years before diagnosis.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Jenkins &amp; Dallenbach (1924)</b> — participants learned nonsense syllables and were tested after 1, 2, 4 or 8 hours spent either asleep or awake, each serving in both conditions. Recall was far better after sleep, and the gap widened with the interval, roughly doubling by eight hours. Forgetting depends on what occupies the interval rather than on time passing. The authors credited reduced interference; later work established an active consolidation role as well.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 9.4 ---------- */
+  'b-dreams': {
+    eyebrow: 'Part II · Topic 09 · Biological Bases',
+    title: 'Dreams and the theories that explain them',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/goya-sleep-reason.jpg" alt="Goya's etching of a man asleep at a desk surrounded by owls and bats">
+        <figcaption><b>Goya, <i>The Sleep of Reason Produces Monsters</i> (1799).</b> The title records an old intuition: that when deliberate thought stops, something else takes over and produces material the waking mind would not. Every theory in this lesson is an attempt to say what that something is.
+          <span class="cred">Francisco Goya · public domain · via <a href="https://commons.wikimedia.org/wiki/File:Goya-Capricho-43.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Dreams are the most vivid altered state most people experience, and the hardest to study, because the only evidence is what someone reports after it has ended. This lesson covers what is reliably known about dream content, the three main theories, and how they can be told apart.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What is actually known</h4>
+        <span class="role">Findings before theories</span>
+
+        <ul>
+          <li><b>Dreams occur mostly in REM.</b> About 80% of people woken from REM report a dream. Dreams from other stages are less frequent and typically less bizarre (<i>9.2</i>).</li>
+          <li><b>They run in roughly real time.</b> Dement and Kleitman's sleepers accurately judged whether they had been dreaming for 5 or 15 minutes.</li>
+          <li><b>Content is mostly mundane.</b> Systematic collections of dream reports find familiar people, places and activities far more often than the surreal material dreams are known for.</li>
+          <li><b>Negative emotion predominates.</b> Anxiety, being chased and failing at something are more common than pleasant content.</li>
+          <li><b>Dreams draw on waking experience</b>, but rarely reproduce it directly. Recent concerns appear reworked rather than replayed.</li>
+          <li><b>Content follows sensory history.</b> People blind from birth report dreams rich in sound, touch and smell rather than vision, while people who lost sight later continue to have visual dreams.</li>
+        </ul>
+
+        <div class="lesson-plain">
+          <span class="pl">Why dream research is unusually difficult</span>
+          The dream is not the data. The <b>report</b> is the data, and it is produced by a waking mind reconstructing an experience that is already fading.<br><br>
+          Reports are also shaped by what the researcher asks and by what the dreamer thinks dreams are like. Someone who believes dreams are symbolic will produce a different report from someone who does not — before any interpretation begins (<i>3.2</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Three theories</h4>
+        <span class="role">Wish, noise, and rehearsal</span>
+
+        <div class="lesson-def">
+          <span class="term">Manifest content</span> — a dream's apparent topic or surface meaning: what happened in it.<br><br>
+          <span class="term">Latent content</span> — in Freud's account, a dream's true underlying meaning, disguised by the manifest content.<br><br>
+          <span class="term">Activation–synthesis model</span> — the theory that dreams are produced when the brain attempts to make sense of random neural activity occurring during sleep.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Theory</th><th>What a dream is</th><th>Its strongest support</th><th>Its main problem</th></tr>
+          <tr><td><b>Freud's wish fulfilment</b></td><td>A disguised expression of an unacceptable wish</td><td>Suppressed thoughts do return in dreams more often than chance</td><td>Unfalsifiable as stated: any dream can be interpreted as any wish (<i>3.1</i>)</td></tr>
+          <tr><td><b>Activation–synthesis</b></td><td>The cortex constructing a story from random brainstem activity</td><td>REM activity does originate in the brainstem; explains bizarreness and shifting scenes</td><td>Does not explain why content is so consistent in theme, or emotionally patterned</td></tr>
+          <tr><td><b>Consolidation and simulation</b></td><td>A by-product, or a function, of memory processing and threat rehearsal</td><td>Dream content draws on recent learning; sleep improves retention (<i>9.3</i>)</td><td>Correlational; hard to show dreaming itself does the work rather than the sleep it occurs in</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">The Freudian claim that does have support</span>
+          The full theory — that dreams are disguised wishes decodable by an analyst — is not supported and is not testable as stated.<br><br>
+          A narrower claim is. In experiments where volunteers are asked to <b>suppress</b> a thought about a particular person before sleeping, that person appears in their dreams <b>more</b> often than in a control condition. This is a real and replicated effect, and it is far more modest than the theory it is often used to defend: suppressed material returns in dreams, which is not the same as dreams being disguised wishes.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Wegner, Wenzlaff &amp; Kozak (2004) — dream rebound</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To test whether deliberately suppressing a thought before sleep makes it <b>more</b> likely to appear in dreams, as a version of Freud's claim that suppressed material returns in dreams.</dd>
+            <dt>Method</dt>
+            <dd>Participants named a person they knew. Before sleeping they were assigned to spend five minutes writing either about <b>suppressing</b> all thoughts of that person, about <b>thinking</b> about them deliberately, or about whatever came to mind. In the morning they recorded their dreams.</dd>
+            <dt>Results</dt>
+            <dd>The <b>suppression</b> group dreamed about the target person more often than either of the other groups — including the group instructed to think about them.</dd>
+            <dt>Conclusion</dt>
+            <dd>Attempting to keep something out of mind makes it more likely to appear in dreams. This supports a narrow version of the Freudian claim, and it does not support the broader theory: the material returned <b>undisguised</b>, rather than in symbolic form requiring interpretation.</dd>
+          </dl>
+        </div>
+
+        <p>The theories are not fully exclusive. Random activation could supply the raw material while memory processing determines which material is available and emotional systems shape its tone.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">How to test a dream theory</h4>
+        <span class="role">Predictions that could fail</span>
+
+        <div class="worked">
+          <span class="wl">Worked example — deriving testable predictions</span>
+          The theories differ in what they predict about <b>content</b>, so content is where they can be separated.<br><br>
+          <b>Activation–synthesis predicts</b> dream content should be largely unrelated to waking concerns, since the raw material is random. Content should also be more bizarre than waking thought.<br><br>
+          <b>Consolidation predicts</b> content should track <b>recent learning</b>, and dreaming about a task should be associated with better performance on it afterwards.<br><br>
+          <b>Threat simulation predicts</b> threatening content should be over-represented relative to waking life, and should be greater in people exposed to real danger.<br><br>
+          <b>What the data show.</b> Content is more mundane and more connected to waking life than pure randomness predicts. Dreaming about a learned task is associated with better later performance. Threatening content is over-represented. So the evidence goes against the strongest version of activation–synthesis and is compatible with the other two, without settling between them.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">The state of the field</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>What is secure</h5>
+            <ul>
+              <li><b>The physiology is well established.</b> When dreams mostly occur, how long they last, and what the brain is doing are all measurable (<i>9.2</i>).</li>
+              <li><b>Content can be studied systematically</b> by collecting and coding large numbers of reports, rather than interpreting single dreams.</li>
+              <li><b>Some predictions have been tested and confirmed</b>, including the suppression effect and the relationship between dreaming of a task and later performance.</li>
+              <li><b>Sensory history shapes content</b>, which is a clear, replicable finding that any theory must accommodate.</li>
+              <li><b>The mundane majority is itself informative</b>, and contradicts the assumption that dreams are characteristically bizarre.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>What is not</h5>
+            <ul>
+              <li><b>The function of dreaming is unresolved.</b> It may have none, being a by-product of sleep that does have functions.</li>
+              <li><b>Only reports are available</b>, produced after waking by a mind reconstructing a fading experience.</li>
+              <li><b>Reports are shaped by expectation</b> and by how the question is asked (<i>3.2</i>).</li>
+              <li><b>Interpretation of individual dreams has no validated method.</b> Different interpreters produce different readings of the same dream (<i>3.6</i>).</li>
+              <li><b>Recall is heavily selected.</b> Most dreams are forgotten, and the ones remembered are unusual or emotionally charged, so the sample is biased.</li>
+              <li><b>Separating dreaming from sleeping is hard.</b> Benefits attributed to dreaming may belong to the sleep stage it occurs in.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: someone says their recurring dream about losing teeth means they are anxious about ageing. What kind of claim is this, and how would you evaluate it?</summary>
+          <div class="ans"><b>It is a claim about latent content</b> — that the manifest dream disguises a different underlying meaning.<br><br><b>Why it cannot be evaluated as stated.</b> No method assigns meanings to dream symbols with demonstrated reliability. Different interpreters give different readings of the same dream, which means the interpretation is not measuring a property of the dream (<i>3.6</i>). And the claim is unfalsifiable: if the person denies feeling anxious about ageing, the denial can be attributed to the anxiety being unconscious, so no observation counts against it (<i>3.1</i>).<br><br><b>What could be tested.</b> Whether tooth-loss dreams are <b>more common</b> in people who score higher on measures of ageing-related anxiety, across a large sample. That is a prediction that could fail. It replaces interpreting one dream with testing an association across many, which is the move that makes the question researchable.<br><br><b>A simpler alternative worth ruling out.</b> Recurring dream themes are common across many people, and tooth loss is among the most frequently reported anywhere — which suggests something about how dreams are generated rather than something about this person.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>Dreams occur mostly in <b>REM</b>, run in roughly real time, and are mostly <b>mundane</b> and emotionally negative rather than surreal.</li>
+          <li>Content follows <b>sensory history</b>: people blind from birth dream in sound, touch and smell.</li>
+          <li><b>Freud</b> distinguished <b>manifest</b> from <b>latent</b> content. The full theory is unfalsifiable; the narrower suppression effect is real.</li>
+          <li><b>Activation–synthesis</b> treats dreams as the cortex making sense of random brainstem activity. It explains bizarreness but not thematic consistency.</li>
+          <li><b>Consolidation and threat-simulation</b> accounts fit the content data better, and cannot yet be separated from each other.</li>
+          <li>The data are <b>reports</b>, shaped by expectation and heavily selected by what is remembered.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Findings, theories, evaluation and tests from 9.4, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Manifest content</td><td>A dream's apparent topic or surface meaning.</td></tr>
+          <tr><td>Latent content</td><td>In Freud's account, a dream's true underlying meaning, disguised by the manifest content.</td></tr>
+          <tr><td>Activation–synthesis model</td><td>Dreams are produced when the brain attempts to make sense of random neural activity during sleep.</td></tr>
+          <tr><td>Threat simulation</td><td>The proposal that dreaming rehearses responses to danger, which would explain over-represented threatening content.</td></tr>
+        </table>
+
+        <h5>What is reliably known about content</h5>
+        <ul>
+          <li><b>About 80% of REM awakenings</b> produce a dream report; other stages produce fewer and less bizarre ones.</li>
+          <li><b>Dreams run in real time</b>, by Dement and Kleitman's timing judgements.</li>
+          <li><b>Most content is mundane</b> — familiar people, places and activities.</li>
+          <li><b>Negative emotion predominates</b>; being chased and failing are common themes.</li>
+          <li><b>Waking experience is reworked rather than replayed.</b></li>
+          <li><b>Sensory history shapes modality</b>: people blind from birth dream in sound, touch and smell.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Wegner, Wenzlaff &amp; Kozak (2004)</b> — participants spent five minutes before sleep either suppressing thoughts of a named person, thinking about them deliberately, or writing freely. The <b>suppression</b> group dreamed of that person most, including more than the group told to think about them. Suppressed material does return in dreams — undisguised, which supports the narrow claim and not the symbolic theory.</li>
+        </ul>
+
+        <h5>The three theories</h5>
+        <table>
+          <tr><td>Wish fulfilment (Freud)</td><td>A disguised expression of an unacceptable wish. Unfalsifiable as stated, though suppressed thoughts do return in dreams.</td></tr>
+          <tr><td>Activation–synthesis</td><td>The cortex constructing a story from random brainstem activity. Explains bizarreness, not thematic consistency.</td></tr>
+          <tr><td>Consolidation and simulation</td><td>A by-product or function of memory processing and threat rehearsal. Fits the content data; hard to separate from sleep itself.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The report is the data, not the dream.</b> It is produced afterwards by a waking mind, and is shaped by expectation.</li>
+          <li><b>Recall is a biased sample.</b> Remembered dreams are the unusual and emotionally charged ones.</li>
+          <li><b>Content is where theories can be separated</b>, because they predict different things about it.</li>
+          <li><b>The strongest version of activation–synthesis fails a content test</b>: dreams are more connected to waking life than randomness predicts.</li>
+          <li><b>Interpreting an individual dream has no validated method</b>; testing an association across many people does.</li>
+          <li><b>Dreaming may have no function at all</b>, being a by-product of sleep that does.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 9.5 ---------- */
+  'b-sleepdis': {
+    eyebrow: 'Part II · Topic 09 · Biological Bases',
+    title: 'Sleep disorders',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/nightmare-fuseli.jpg" alt="Fuseli's painting The Nightmare, showing a sleeping woman with a squat demon crouched on her chest">
+        <figcaption><b>Fuseli, <i>The Nightmare</i> (1781).</b> A figure crushing the chest of a sleeper who cannot move is the standard depiction of <b>sleep paralysis</b>, reported in similar terms across many cultures and centuries. The experience is real; the intruder is REM atonia persisting into waking.
+          <span class="cred">Henry Fuseli · public domain · via <a href="https://commons.wikimedia.org/wiki/File:John_Henry_Fuseli_-_The_NightmareFXD.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Sleep disorders are common, frequently undiagnosed, and often produce symptoms that are attributed to something else. This lesson covers the main ones, what distinguishes them, and why several are best understood as one component of sleep appearing at the wrong time.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Insomnia</h4>
+        <span class="role">The most common, and the one that feeds itself</span>
+
+        <div class="lesson-def">
+          <span class="term">Insomnia</span> — persistent difficulty falling asleep or staying asleep, severe enough to impair daytime functioning.
+        </div>
+
+        <p>Roughly 30–48% of people report some insomnia symptoms, 9–15% report symptoms severe enough to cause daytime problems, and about 6% meet diagnostic criteria. For most of those diagnosed it lasts at least a year.</p>
+
+        <p>Causes vary. Some cases follow directly from circumstances such as shift work; others accompany depression or anxiety; others have no obvious external cause.</p>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Ansfield, Wegner &amp; Bowser (1996) — trying to fall asleep</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To test whether being instructed to fall asleep quickly makes falling asleep take longer.</dd>
+            <dt>Method</dt>
+            <dd>Participants went to bed in a laboratory and were instructed either to fall asleep <b>as quickly as possible</b> or simply to fall asleep whenever they wished. Half of each group had relaxing music playing and half had music selected to be distracting, giving a second manipulation of mental load. Time to sleep onset was measured objectively.</dd>
+            <dt>Results</dt>
+            <dd>Participants told to hurry took <b>longer</b> to fall asleep than those given no such instruction. The delay was greatest when the instruction was combined with the distracting music.</dd>
+            <dt>Conclusion</dt>
+            <dd>Trying to sleep interferes with sleeping, and the interference is worse when attention is also loaded. Sleep is not a behaviour that responds to effort, which is why the paradoxical advice to stop trying can help.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why trying to sleep makes it worse</span>
+          Wanting to sleep produces effort, effort produces arousal, and arousal is incompatible with sleep. The pursuit defeats itself.<br><br>
+          Experiments show the effect directly: people instructed to fall asleep <b>quickly</b> take longer than people given no such instruction.<br><br>
+          This is why the standard treatment is behavioural rather than pharmacological. <b>CBT for insomnia</b> restricts time in bed, breaks the association between bed and lying awake, and targets the worry about not sleeping. It outperforms sleeping tablets in the long term, and unlike them does not produce tolerance or rebound insomnia on stopping (<i>9.7</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Sleep apnoea and narcolepsy</h4>
+        <span class="role">Two disorders whose main symptom is daytime sleepiness</span>
+
+        <div class="lesson-def">
+          <span class="term">Sleep apnoea</span> — repeated interruption of breathing during sleep, each episode ending in a brief arousal that the sleeper does not remember.<br><br>
+          <span class="term">Narcolepsy</span> — a neurological disorder involving sudden, irresistible episodes of sleep during waking hours.<br><br>
+          <span class="term">Cataplexy</span> — sudden loss of muscle tone while awake, often triggered by strong emotion. A feature of one form of narcolepsy.
+        </div>
+
+        <p><b>Sleep apnoea</b> produces hundreds of arousals a night without producing any memory of them. The person believes they slept through and cannot understand why they are exhausted. It is why the complaint is usually daytime sleepiness rather than disturbed sleep, and why a partner's report is often the route to diagnosis. Treatment with continuous positive airway pressure holds the airway open.</p>
+
+        <figure class="lesson-fig">
+          <img class="fig-img" src="img/cpap.jpg" alt="A CPAP full-face mask with headgear and hose" style="max-width:300px">
+          <figcaption>A CPAP mask. Air delivered under slight pressure holds the airway open so breathing is not interrupted, which removes the arousals rather than treating the sleepiness they cause.
+            <span class="cred">Zboralski · CC BY-SA 3.0 · via <a href="https://commons.wikimedia.org/wiki/File:CPAP-mirage-quatro-full-face-mask.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+
+        <p><b>Narcolepsy</b> is better understood as a boundary failure. The components of REM sleep — sudden onset, muscle atonia, dreaming — intrude into waking. Cataplexy is REM atonia arriving while the person is awake and alert. The dream imagery some people experience while falling asleep or waking is REM dreaming doing the same. One form is associated with loss of neurons producing <b>orexin</b>, a neurotransmitter that stabilises the boundary between sleeping and waking.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Parasomnias</h4>
+        <span class="role">Sleep and waking overlapping</span>
+
+        <div class="lesson-def">
+          <span class="term">Parasomnia</span> — an unwanted behaviour or experience occurring during sleep or at the transition into or out of it.<br><br>
+          <span class="term">Somnambulism</span> — sleepwalking. Occurs in slow-wave sleep, not during dreaming.<br><br>
+          <span class="term">Night terrors</span> — abrupt awakenings with panic and intense arousal, occurring in slow-wave sleep, with little or no dream recall afterwards.<br><br>
+          <span class="term">Sleep paralysis</span> — being unable to move while awake, as REM muscle atonia persists into or begins before waking. Often accompanied by a sense of presence and difficulty breathing.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th></th><th>Night terror</th><th>Nightmare</th></tr>
+          <tr><td><b>Sleep stage</b></td><td>Slow-wave sleep (N3)</td><td>REM</td></tr>
+          <tr><td><b>Time of night</b></td><td>Usually the first few hours</td><td>Usually later, when REM lengthens</td></tr>
+          <tr><td><b>Recall</b></td><td>Little or none</td><td>Detailed narrative recall</td></tr>
+          <tr><td><b>Arousal</b></td><td>Extreme; difficult to wake or console</td><td>Wakes fully and is oriented</td></tr>
+          <tr><td><b>Who</b></td><td>Mostly children; about 2% of adults</td><td>All ages</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">Sleepwalking is not acting out a dream</span>
+          It occurs in <b>slow-wave sleep</b>, where dreaming is least common, and during REM the postural muscles are paralysed, so acting out a dream is normally impossible.<br><br>
+          The exception proves the rule. <b>REM sleep behaviour disorder</b> is a condition in which atonia fails, and those affected do act out their dreams — sometimes violently. It is strongly associated with later development of Parkinson's disease, so it also functions as an early warning sign (<i>5.4</i>).
+        </div>
+
+        <p>Sleep paralysis is the most commonly misinterpreted of these. It is not rare, it is not dangerous, and the experience of a malevolent presence is a consistent feature reported across many cultures — recorded in folklore long before it had a name, and depicted in the painting at the top of this lesson.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">Diagnosis, treatment and the evidence</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>Objective measurement exists.</b> Overnight polysomnography records EEG, eye movement, muscle tone, breathing and oxygen, so diagnosis does not rest on self-report alone.</li>
+              <li><b>Mechanisms are understood for several disorders</b>, including apnoea and orexin-related narcolepsy, which is unusual in mental health.</li>
+              <li><b>Effective treatments exist and are testable.</b> CPAP and CBT for insomnia have both been evaluated in randomised trials (<i>3.4</i>).</li>
+              <li><b>The boundary-failure framework unifies several disorders</b>, explaining narcolepsy, cataplexy, sleep paralysis and REM behaviour disorder as one component of sleep appearing at the wrong time.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>Self-report is unreliable.</b> People misjudge how long they slept, and apnoea sufferers do not know they woke at all.</li>
+              <li><b>A sleep laboratory is an unusual environment</b>, so a single recorded night may not represent normal sleep (<i>3.6</i>).</li>
+              <li><b>Symptoms overlap heavily with depression and anxiety</b>, and causation runs in both directions, which makes attribution difficult (<i>3.3</i>).</li>
+              <li><b>Sleeping tablets are still widely prescribed</b> despite tolerance, dependence and rebound insomnia, and despite better long-term evidence for CBT.</li>
+              <li><b>Under-diagnosis is substantial</b>, particularly for apnoea, because the symptom people report is tiredness rather than disturbed sleep.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a man reports falling asleep at his desk most afternoons and being irritable and forgetful. He insists he sleeps nine hours a night. What would you want to know, and which disorders are candidates?</summary>
+          <div class="ans"><b>The key clue is the mismatch</b> between reported sleep duration and daytime sleepiness. Nine hours should not produce this, so either the sleep is not restorative or something else is happening.<br><br><b>Sleep apnoea is the leading candidate.</b> Repeated arousals leave no memory, so he would sincerely report sleeping through. What to ask: does anyone report snoring or pauses in breathing; does he wake with headaches or a dry mouth; and his weight and neck circumference, which are risk factors. A partner's account is often more informative than the patient's.<br><br><b>Narcolepsy is the other candidate.</b> What to ask: are the episodes sudden and irresistible rather than gradual; does he ever lose muscle tone when laughing or angry (<b>cataplexy</b>); does he experience dream imagery or paralysis while falling asleep or waking.<br><br><b>Also worth excluding.</b> Depression, which produces fatigue and poor concentration; medication; and circadian misalignment from shift or late schedules (<i>9.2</i>).<br><br><b>The decisive test</b> is <b>polysomnography</b>, which measures breathing, oxygen and arousals directly rather than relying on his report.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Insomnia</b> is the most common disorder; about 6% meet diagnostic criteria. Trying to sleep worsens it, and <b>CBT for insomnia</b> outperforms tablets long term.</li>
+          <li><b>Sleep apnoea</b> produces hundreds of unremembered arousals, so the complaint is daytime sleepiness rather than disturbed sleep.</li>
+          <li><b>Narcolepsy</b> is a failure of the boundary between sleeping and waking; <b>cataplexy</b> is REM atonia arriving while awake. One form involves loss of <b>orexin</b> neurons.</li>
+          <li><b>Sleepwalking and night terrors</b> occur in <b>slow-wave sleep</b>, not during dreaming, and carry little recall. Nightmares occur in REM and are recalled in detail.</li>
+          <li><b>Sleep paralysis</b> is REM atonia persisting into waking, with a sense of presence reported consistently across cultures.</li>
+          <li><b>REM sleep behaviour disorder</b> is the exception where atonia fails and dreams are acted out; it predicts later Parkinson's disease.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, disorders, comparisons and evaluation from 9.5, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Insomnia</td><td>Persistent difficulty falling or staying asleep, severe enough to impair daytime functioning.</td></tr>
+          <tr><td>Sleep apnoea</td><td>Repeated interruption of breathing in sleep, each episode ending in an unremembered arousal.</td></tr>
+          <tr><td>Narcolepsy</td><td>Sudden irresistible episodes of sleep during waking hours.</td></tr>
+          <tr><td>Cataplexy</td><td>Sudden loss of muscle tone while awake, often triggered by strong emotion.</td></tr>
+          <tr><td>Orexin</td><td>A neurotransmitter stabilising the boundary between sleeping and waking; lost in one form of narcolepsy.</td></tr>
+          <tr><td>Parasomnia</td><td>An unwanted behaviour or experience during sleep or at its boundaries.</td></tr>
+          <tr><td>Somnambulism</td><td>Sleepwalking, occurring in slow-wave sleep rather than during dreaming.</td></tr>
+          <tr><td>Night terrors</td><td>Abrupt awakenings with panic and intense arousal in slow-wave sleep, with little recall.</td></tr>
+          <tr><td>Sleep paralysis</td><td>Inability to move while awake, as REM atonia persists into or precedes waking.</td></tr>
+          <tr><td>REM sleep behaviour disorder</td><td>Failure of REM atonia, so dreams are acted out. Associated with later Parkinson's disease.</td></tr>
+          <tr><td>Polysomnography</td><td>Overnight recording of EEG, eye movement, muscle tone, breathing and oxygen.</td></tr>
+        </table>
+
+        <h5>Night terrors versus nightmares</h5>
+        <table>
+          <tr><td>Stage</td><td>Night terror in slow-wave sleep; nightmare in REM.</td></tr>
+          <tr><td>Timing</td><td>Terror in the first few hours; nightmare later, as REM lengthens.</td></tr>
+          <tr><td>Recall</td><td>Terror leaves little or none; nightmare leaves detailed narrative recall.</td></tr>
+          <tr><td>Arousal</td><td>Terror is extreme and hard to console; after a nightmare the person wakes oriented.</td></tr>
+          <tr><td>Who</td><td>Terrors mostly in children, about 2% of adults; nightmares at all ages.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Several disorders are boundary failures</b> — one component of sleep appearing at the wrong time. Narcolepsy, cataplexy, sleep paralysis and REM behaviour disorder all fit this.</li>
+          <li><b>The pursuit of sleep defeats itself.</b> Instructing people to fall asleep quickly makes them slower.</li>
+          <li><b>Apnoea's symptom is not what its mechanism is.</b> Hundreds of arousals leave no memory, so the complaint is tiredness.</li>
+          <li><b>Sleepwalking is not dream enactment</b>, since it occurs in slow-wave sleep and REM paralyses the muscles.</li>
+          <li><b>Behavioural treatment beats medication long term</b> for insomnia, and avoids tolerance and rebound.</li>
+          <li><b>Objective recording matters</b> because self-report of sleep is unreliable in exactly the cases that need diagnosis.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 9.6 ---------- */
+  'b-altered': {
+    eyebrow: 'Part II · Topic 09 · Biological Bases',
+    title: 'Hypnosis, meditation and altered states',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/charcot.jpg" alt="Brouillet's painting of Charcot demonstrating a hypnotised woman to an audience of male physicians at the Salpetriere">
+        <figcaption><b>Brouillet, <i>A Clinical Lesson at the Salpêtrière</i> (1887).</b> Charcot demonstrating a hypnotised patient to an audience. The setting is part of the evidence: the patient knew what was expected, the audience knew what they had come to see, and the demonstrations became more dramatic over time. Hypnosis is a <b>social</b> interaction before it is anything else.
+          <span class="cred">André Brouillet · Licence Ouverte · via <a href="https://commons.wikimedia.org/wiki/File:Une_le%C3%A7on_de_clinique_%C3%A0_la_Salp%C3%AAtri%C3%A8re_CIPC0011.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Some practices reliably change what people experience without changing their brain chemistry from outside. This lesson covers two of them — hypnosis and meditation — what each reliably does, what it does not do, and why both are unusually hard to study.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Hypnosis</h4>
+        <span class="role">What it is, defined carefully</span>
+
+        <div class="lesson-def">
+          <span class="term">Hypnosis</span> — a social interaction in which one person makes suggestions that lead to a change in another person's subjective experience of the world.<br><br>
+          <span class="term">Induction</span> — the procedure used to begin hypnosis: usually instructions to relax and focus attention on something.<br><br>
+          <span class="term">Hypnotic susceptibility</span> — the degree to which a person responds to hypnotic suggestion, which varies widely and is measurable and stable.<br><br>
+          <span class="term">Posthypnotic amnesia</span> — the suggested inability to remember events from the hypnotic session, lifted when a prearranged cue is given.
+        </div>
+
+        <p>The definition begins with <b>social interaction</b>, and that placement is deliberate. What follows from the suggestions is real; the state that supposedly produces them is what is disputed.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Two things the evidence separates</span>
+          <b>Hypnotic responses are real.</b> People who respond report genuinely altered experience, and behave accordingly. They are not simply lying.<br><br>
+          <b>The induction may not be doing the work.</b> Some suggested effects occur without any induction at all, in people given the same suggestions while fully alert. Susceptibility to suggestion predicts the response better than whether an induction was performed.<br><br>
+          So the disputed question is not whether hypnosis does anything. It is whether a distinct <b>state</b> exists, or whether the effects are produced by suggestion, expectation and role in a particular social setting.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Claim about hypnosis</th><th>Status</th></tr>
+          <tr><td>Can reduce experienced pain</td><td><b>Supported.</b> Effects on pain report and distress are consistent, and clinically useful</td></tr>
+          <tr><td>Can alter perception and produce compelling subjective changes</td><td><b>Supported</b> in highly susceptible people</td></tr>
+          <tr><td>Can produce posthypnotic amnesia</td><td><b>Supported</b>, though the material is recoverable, so it is not true forgetting</td></tr>
+          <tr><td>Improves memory for past events</td><td><b>Not supported.</b> It increases confidence and the amount reported, while increasing errors. This is why hypnotically refreshed testimony is inadmissible in many jurisdictions</td></tr>
+          <tr><td>Recovers repressed memories reliably</td><td><b>Not supported</b>, and actively harmful. It generates confident false memories (<i>16.7</i>)</td></tr>
+          <tr><td>Can make people act against their will</td><td><b>Not supported</b></td></tr>
+        </table>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Why hypnosis is hard to study</h4>
+        <span class="role">The control problem</span>
+
+        <p>Testing whether hypnosis has an effect requires a comparison condition. The obvious one — people not hypnotised — differs in expectation as well as in hypnosis, so any difference confounds the two (<i>3.7</i>).</p>
+
+        <div class="worked">
+          <span class="wl">Worked example — designing the comparison</span>
+          <b>The problem.</b> A hypnotised participant knows they are hypnotised and knows what is expected of them. A control participant knows they are not. Whatever differs may be expectation rather than hypnosis.<br><br>
+          <b>The simulator design.</b> Participants of <b>low</b> susceptibility are asked to <b>pretend</b> to be hypnotised, convincingly enough to fool the hypnotist. Their behaviour is compared with that of genuinely susceptible participants.<br><br>
+          <b>What it establishes.</b> If simulators reproduce a behaviour, that behaviour does not require hypnosis — it can be produced by knowing what is expected. If they cannot, something more is happening.<br><br>
+          <b>The result.</b> Simulators reproduce most hypnotic behaviours convincingly, including ones people find most impressive. That is a strong argument that expectation carries much of the effect, though it does not show the experience is the same.
+        </div>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Orne (1959) — real versus simulated hypnosis</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To separate the effects that require hypnosis from those produced by knowing what a hypnotised person is expected to do.</dd>
+            <dt>Method</dt>
+            <dd>Participants of <b>low</b> susceptibility were instructed to simulate hypnosis convincingly enough to deceive the hypnotist, who did not know which participants were which. Their responses were compared with those of genuinely susceptible participants across a range of suggestions.</dd>
+            <dt>Results</dt>
+            <dd>Simulators successfully reproduced most hypnotic behaviours, and the hypnotist could not reliably tell them apart. But the two groups differed on some responses. Genuinely hypnotised participants accepted <b>logical incompatibilities</b> without apparent discomfort — for instance, reporting that they could see a hallucinated person while also seeing the real chair through them. Simulators, reasoning about what a hypnotised person ought to do, resolved the contradiction instead.</dd>
+            <dt>Conclusion</dt>
+            <dd>Much of what looks impressive about hypnosis can be produced by expectation alone, so a demonstration is not evidence of a special state. Orne argued that the residual differences, which he called <b>trance logic</b>, indicate something beyond compliance — a claim that remains contested.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Why "they were just pretending" is the wrong conclusion</span>
+          Simulators can reproduce the <b>behaviour</b>. The design cannot compare the <b>experience</b>, because that is not observable (<i>9.1</i>).<br><br>
+          A highly susceptible person who reports that their arm felt genuinely immovable is reporting something the simulator does not report. Whether that difference is a different state or a difference in belief is exactly what remains unsettled.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Meditation</h4>
+        <span class="role">A trained skill, with a mixed evidence base</span>
+
+        <div class="lesson-def">
+          <span class="term">Meditation</span> — practices involving deliberate control of attention, typically toward a chosen object or toward present experience without judgement.<br><br>
+          <span class="term">Focused attention</span> — repeatedly returning attention to one thing, such as the breath, and noticing when it has wandered.<br><br>
+          <span class="term">Open monitoring</span> — attending to whatever arises without selecting or pursuing it.<br><br>
+          <span class="term">Mindfulness-based interventions</span> — structured programmes, usually eight weeks, that teach these practices for a clinical or wellbeing purpose.
+        </div>
+
+        <p>The strongest evidence concerns clinical outcomes rather than dramatic altered states. Structured mindfulness programmes produce moderate improvements in anxiety, depression and pain, comparable to other active treatments. Mindfulness-based cognitive therapy has good evidence for <b>preventing relapse</b> in recurrent depression specifically.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Where the literature is weakest</span>
+          Three problems recur.<br><br>
+          <b>Control conditions are often inadequate.</b> Comparing an eight-week course with a waiting list confounds meditation with attention, expectation, group contact and doing something (<i>3.7</i>).<br><br>
+          <b>Blinding is impossible.</b> Participants know whether they are meditating, and outcomes are usually self-reported.<br><br>
+          <b>Publication bias is substantial.</b> Reviews find the effect sizes shrink when studies with active control groups and preregistration are examined separately (<i>4.4</i>, <i>4.8</i>).<br><br>
+          The result is a real but more modest effect than popular accounts describe, and one that is well established mainly for the specific clinical uses where it has been properly trialled.
+        </div>
+
+        <p>Claims about brain changes require the same caution as in <i>8.5</i>. Meditation training is associated with structural and functional differences, much of that evidence is correlational, and a brain change establishes that something was learned rather than that it was beneficial (<i>7.5</i>).</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">Across both practices</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>Both produce measurable, replicable effects</b> on pain and on distress, which are clinically useful whatever the mechanism.</li>
+              <li><b>Susceptibility is measurable and stable</b>, so hypnosis research has a real individual-difference variable rather than an all-or-nothing category (<i>3.6</i>).</li>
+              <li><b>The simulator design is a genuine methodological achievement</b>, isolating expectation in a way most placebo comparisons cannot.</li>
+              <li><b>Mindfulness has been tested in randomised trials</b> for defined clinical outcomes, which is more than most wellbeing interventions can claim.</li>
+              <li><b>They illuminate consciousness itself</b>, by showing that experience can be substantially altered without any external chemical change (<i>9.1</i>).</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>Neither can be blinded.</b> Participants always know what they received, so demand characteristics cannot be removed (<i>3.7</i>).</li>
+              <li><b>Outcomes are mostly self-reported</b>, and self-report is exactly what suggestion and expectation act on.</li>
+              <li><b>Whether hypnosis is a distinct state is unresolved</b>, and may not be answerable given the problem of other minds.</li>
+              <li><b>Control conditions are frequently inadequate</b>, particularly waiting-list controls in the meditation literature.</li>
+              <li><b>Effects are routinely overstated</b> outside the research, and hypnosis in particular is credited with memory powers it does not have and actively harms.</li>
+              <li><b>Adverse effects are under-reported.</b> Meditation research has historically not asked about them, though a minority of practitioners report distressing experiences.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a police force proposes using hypnosis to help witnesses recall a car number plate. Evaluate the proposal.</summary>
+          <div class="ans"><b>It should not be used, and the reason is not that hypnosis does nothing.</b><br><br><b>What hypnosis will do.</b> It will increase the <b>amount</b> reported and the witness's <b>confidence</b> in what they report. Both look like success.<br><br><b>What it will not do.</b> Increase accuracy. Hypnosis raises errors alongside recall, so the additional material includes confidently reported details that are wrong. A hypnotically produced number plate may be a confabulation the witness now sincerely believes.<br><br><b>The compounding problem.</b> Suggestibility is heightened, so the interviewer's expectations can shape what emerges — and once a false detail is confidently held, it cannot be distinguished from a genuine one by the witness or the court (<i>16.7</i>).<br><br><b>The consequence in law.</b> Hypnotically refreshed testimony is inadmissible or heavily restricted in many jurisdictions, and a witness who has been hypnotised may be barred from testifying about the material at all.<br><br><b>What to do instead.</b> The <b>cognitive interview</b>, which uses context reinstatement and open questioning, improves recall without inflating confidence in errors.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Hypnosis</b> is defined as a <b>social interaction</b> in which suggestions change subjective experience. The responses are real; whether a distinct state exists is disputed.</li>
+          <li><b>Susceptibility</b> varies widely, is measurable and stable, and predicts response better than the induction does.</li>
+          <li>Hypnosis reliably reduces reported pain. It does <b>not</b> improve memory — it raises confidence and errors together.</li>
+          <li>The <b>simulator design</b> shows that low-susceptibility people pretending can reproduce most hypnotic behaviours, which implicates expectation.</li>
+          <li><b>Mindfulness programmes</b> produce moderate improvements in anxiety, depression and pain, with good evidence for preventing depressive relapse.</li>
+          <li>Both literatures suffer from <b>impossible blinding</b>, self-reported outcomes and weak control conditions.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, claims, evaluation and designs from 9.6, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Hypnosis</td><td>A social interaction in which one person's suggestions change another's subjective experience of the world.</td></tr>
+          <tr><td>Induction</td><td>The opening procedure: instructions to relax and focus attention.</td></tr>
+          <tr><td>Hypnotic susceptibility</td><td>How far a person responds to suggestion. Varies widely, and is measurable and stable.</td></tr>
+          <tr><td>Posthypnotic amnesia</td><td>Suggested inability to recall the session, lifted by a prearranged cue. The material is recoverable.</td></tr>
+          <tr><td>Simulator design</td><td>Low-susceptibility participants instructed to pretend convincingly, compared with genuinely susceptible ones.</td></tr>
+          <tr><td>Meditation</td><td>Practices involving deliberate control of attention.</td></tr>
+          <tr><td>Focused attention</td><td>Repeatedly returning attention to one object and noticing when it wanders.</td></tr>
+          <tr><td>Open monitoring</td><td>Attending to whatever arises without selecting or pursuing it.</td></tr>
+          <tr><td>Mindfulness-based interventions</td><td>Structured programmes, usually eight weeks, teaching these practices for a clinical purpose.</td></tr>
+        </table>
+
+        <h5>What hypnosis does and does not do</h5>
+        <table>
+          <tr><td>Reduce experienced pain</td><td><b>Supported</b> and clinically useful.</td></tr>
+          <tr><td>Alter perception in susceptible people</td><td><b>Supported.</b></td></tr>
+          <tr><td>Produce posthypnotic amnesia</td><td><b>Supported</b>, but the material is recoverable, so not true forgetting.</td></tr>
+          <tr><td>Improve memory</td><td><b>Not supported.</b> Raises confidence and errors together; testimony often inadmissible.</td></tr>
+          <tr><td>Recover repressed memories</td><td><b>Not supported</b> and harmful; generates confident false memories.</td></tr>
+          <tr><td>Compel action against will</td><td><b>Not supported.</b></td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The definition starts with "social interaction"</b>, which locates the dispute: the responses are real, the state is what is questioned.</li>
+          <li><b>Susceptibility predicts response better than induction does</b>, and some effects occur with no induction at all.</li>
+          <li><b>The simulator design isolates expectation</b> by comparing genuine responders with convincing pretenders.</li>
+          <li><b>Reproducing the behaviour is not reproducing the experience</b>, which is why the state question stays open (<i>9.1</i>).</li>
+          <li><b>Confidence and accuracy come apart</b> under hypnosis, which is what makes it dangerous for testimony.</li>
+          <li><b>Waiting-list controls confound the intervention with attention and expectation</b>, and effect sizes shrink when active controls are used.</li>
+          <li><b>Neither practice can be blinded</b>, and both are assessed largely by self-report — the measure suggestion acts on most directly.</li>
+        </ul>
+      </div>
+    `
+  },
+  /* ---------- 9.7 ---------- */
+  'b-drugsmind': {
+    eyebrow: 'Part II · Topic 09 · Biological Bases',
+    title: 'Psychoactive drugs and the reward system',
+    html: `
+      <figure class="lesson-hero-img contain">
+        <img src="img/cocaine-drops.jpg" alt="An 1885 trade card advertising Cocaine Toothache Drops at fifteen cents, illustrated with two children playing">
+        <figcaption><b>An 1885 advertisement for cocaine toothache drops, sold for children.</b> Which drugs are legal, medical or forbidden has changed repeatedly and does not track how dangerous or how addictive they are. The pharmacology stayed the same; the category did not.
+          <span class="cred">National Library of Medicine · no known restrictions · via <a href="https://commons.wikimedia.org/wiki/File:Cocaine_Toothache_Drops_(6875689573).jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Lesson 5.6 covered how drugs act at the synapse. This lesson covers what follows psychologically: how drug classes differ in their effects on experience, why repeated use changes what a drug does, and what the evidence actually supports about addiction.</p>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The main classes</h4>
+        <span class="role">Grouped by effect on consciousness</span>
+
+        <div class="lesson-def">
+          <span class="term">Psychoactive drug</span> — a substance that changes conscious experience by acting on the nervous system.<br><br>
+          <span class="term">Depressant</span> — reduces central nervous system activity.<br><br>
+          <span class="term">Stimulant</span> — increases central nervous system activity.<br><br>
+          <span class="term">Narcotic (opioid)</span> — relieves pain and induces a sense of wellbeing, acting on endorphin receptors.<br><br>
+          <span class="term">Hallucinogen</span> — alters perception and produces sensory experiences without corresponding input.
+        </div>
+
+        <table class="lesson-table">
+          <tr><th>Class</th><th>Examples</th><th>Effect on experience</th><th>Main synaptic action (<i>5.6</i>)</th></tr>
+          <tr><td><b>Depressants</b></td><td>Alcohol, benzodiazepines, barbiturates</td><td>Reduced inhibition first, then sedation and impaired coordination</td><td>Enhance GABA, the main inhibitory transmitter</td></tr>
+          <tr><td><b>Stimulants</b></td><td>Caffeine, nicotine, amphetamine, cocaine</td><td>Alertness, energy, elevated mood; at high doses anxiety and agitation</td><td>Increase dopamine and norepinephrine availability</td></tr>
+          <tr><td><b>Narcotics</b></td><td>Morphine, heroin, codeine, fentanyl</td><td>Pain relief and strong wellbeing; sedation; suppressed breathing</td><td>Activate endorphin receptors</td></tr>
+          <tr><td><b>Hallucinogens</b></td><td>LSD, psilocybin, mescaline</td><td>Altered perception, distorted time, blurred self–world boundary</td><td>Act at serotonin receptors, which LSD's structure resembles</td></tr>
+          <tr><td><b>Cannabis</b></td><td>THC</td><td>Relaxation, altered time perception, appetite; anxiety in some users</td><td>Acts at cannabinoid receptors</td></tr>
+        </table>
+
+        <div class="lesson-plain">
+          <span class="pl">Why alcohol reduces inhibition before it sedates</span>
+          Alcohol is a depressant throughout, and its early effects look like the opposite because of what it depresses first.<br><br>
+          Inhibitory control is itself an active process, carried out largely by frontal regions (<i>6.4</i>). Depressing that process removes a brake, so behaviour becomes less restrained. Nothing has been stimulated.<br><br>
+          This is the same logic as caffeine blocking a sleepiness signal rather than adding energy (<i>5.6</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The reward system</h4>
+        <span class="role">What every addictive drug has in common</span>
+
+        <div class="lesson-def">
+          <span class="term">Reward pathway</span> — the dopamine projection from the ventral tegmental area to the nucleus accumbens, active during rewarding experiences (<i>5.4</i>, <i>6.3</i>).<br><br>
+          <span class="term">Self-administration</span> — a procedure in which an animal can press a lever to receive a drug, used to measure how reinforcing that drug is.
+        </div>
+
+        <p>Laboratory animals will work to obtain cocaine, alcohol, amphetamines, barbiturates, caffeine, opiates, nicotine, PCP, MDMA and THC. What these chemically dissimilar substances share is an effect, direct or indirect, on the same dopamine pathway.</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Wanting and liking are different, and this matters</span>
+          Dopamine in this pathway tracks <b>wanting</b> — motivation to obtain something — more closely than <b>liking</b>, the pleasure obtained.<br><br>
+          Animals whose dopamine is depleted still show normal pleasure reactions to sweet tastes; what they lose is the motivation to work for them.<br><br>
+          This explains an otherwise puzzling feature of addiction: people frequently report craving a drug intensely while no longer enjoying it. Wanting can escalate as liking declines, which makes "they must be enjoying it" a misunderstanding of what is happening.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Tolerance, withdrawal and dependence</h4>
+        <span class="role">Why the same dose stops working</span>
+
+        <div class="lesson-def">
+          <span class="term">Tolerance</span> — a larger dose is needed to produce the effect an earlier dose produced.<br><br>
+          <span class="term">Withdrawal</span> — symptoms on stopping, typically <b>opposite in direction</b> to the drug's own effects.<br><br>
+          <span class="term">Physical dependence</span> — the body has adjusted such that stopping produces physiological symptoms.<br><br>
+          <span class="term">Psychological dependence</span> — a strong desire to continue using, and difficulty stopping, independent of physiological withdrawal.<br><br>
+          <span class="term">Addiction</span> — compulsive use continuing despite harm, with impaired control over use.
+        </div>
+
+        <p>Tolerance and withdrawal follow from one mechanism. A synapse repeatedly flooded compensates by reducing receptor number or sensitivity. The drug's effect diminishes, so more is needed. If the drug is then removed the compensation remains, leaving the system unbalanced in the opposite direction (<i>5.6</i>).</p>
+
+        <div class="lesson-plain">
+          <span class="pl">Why withdrawal effects are opposite to the drug's</span>
+          Alcohol enhances inhibition, so alcohol withdrawal produces agitation, tremor and in severe cases seizures.<br><br>
+          Opioids suppress pain and slow the gut, so opioid withdrawal produces pain sensitivity and diarrhoea.<br><br>
+          Stimulants elevate mood and energy, so stimulant withdrawal produces low mood and exhaustion.<br><br>
+          The pattern is a direct prediction of the compensation account, and it holds across classes.
+        </div>
+
+        <p>Dependence and addiction are not the same thing. A patient taking opioids for chronic pain can be physically dependent — stopping abruptly would produce withdrawal — without compulsive use, loss of control or harm. Treating dependence as identical to addiction has led to patients being denied pain relief.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What predicts addiction</h4>
+        <span class="role">More than the drug</span>
+
+        <p>The pharmacology of a drug is one factor among several, and on its own a poor predictor of who becomes addicted.</p>
+
+        <ul>
+          <li><b>Most people who use most drugs do not become addicted.</b> This is true even of drugs with fearsome reputations, which any adequate account has to explain.</li>
+          <li><b>Circumstances matter substantially.</b> The best-known evidence comes from US servicemen in Vietnam, a large proportion of whom used heroin there. On returning home, the great majority stopped without treatment — a rate of remission far higher than for people treated in clinics.</li>
+          <li><b>Trauma and adversity raise risk</b>, consistently and substantially.</li>
+          <li><b>Genetic variation contributes</b>, with heritability estimates for substance use disorders typically around 0.5, subject to every caution in <i>8.2</i>.</li>
+          <li><b>Availability and price</b> influence population-level rates more reliably than most individual factors.</li>
+        </ul>
+
+        <div class="keystudy">
+          <div class="ks-h">Key study <b>Robins et al. (1975) — heroin use among returning servicemen</b></div>
+          <dl>
+            <dt>Aim</dt>
+            <dd>To establish what happened to US servicemen who had used heroin in Vietnam once they returned home, at a point when widespread addiction among returning troops was expected.</dd>
+            <dt>Method</dt>
+            <dd>A large sample of enlisted men returning to the United States in 1971 was interviewed, with urine testing, and followed up over the following years. Use in Vietnam, use after return, and re-addiction were recorded.</dd>
+            <dt>Results</dt>
+            <dd>Roughly <b>one in five</b> reported having been addicted while in Vietnam. In the year after returning, only about <b>5%</b> of those men became re-addicted — a remission rate far higher than for people treated for heroin addiction in clinics.</dd>
+            <dt>Conclusion</dt>
+            <dd>Addiction is not determined by the drug's pharmacology alone. A radical change of environment changed the outcome for the great majority, without treatment. The result was so contrary to expectation that it was initially disbelieved.</dd>
+          </dl>
+        </div>
+
+        <div class="lesson-plain">
+          <span class="pl">Reading the Vietnam finding carefully</span>
+          It is often used to argue that addiction is caused by circumstances rather than by drugs. That is stronger than the evidence.<br><br>
+          What it establishes is that <b>changing the environment radically changes the outcome</b>, which rules out the view that the drug alone determines it. The returning men also left the setting, the stress and the availability at once, and returned to homes and jobs.<br><br>
+          The honest conclusion is that addiction depends on drug, person and situation together, and that the situation matters far more than the pharmacological account alone implies.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Evaluation</h4>
+        <span class="role">The state of the evidence</span>
+
+        <div class="evalgrid">
+          <div class="evalcol plus">
+            <h5>Strengths</h5>
+            <ul>
+              <li><b>The mechanisms are well understood</b> at the synapse, and predict tolerance and withdrawal accurately across drug classes (<i>5.6</i>).</li>
+              <li><b>Animal self-administration allows real experiments</b>, assigning drug access in a way human research cannot (<i>3.4</i>).</li>
+              <li><b>The wanting–liking distinction explains behaviour</b> that a simple pleasure account cannot.</li>
+              <li><b>Effective treatments exist</b>, including opioid substitution and behavioural therapies, and have been trialled properly.</li>
+              <li><b>Population-level predictions work.</b> Price and availability affect consumption in ways that have been tested repeatedly.</li>
+            </ul>
+          </div>
+          <div class="evalcol minus">
+            <h5>Limitations</h5>
+            <ul>
+              <li><b>Human research is largely correlational.</b> Nobody can be assigned to use heroin, so causal claims about who becomes addicted rest on observational data (<i>3.3</i>).</li>
+              <li><b>Animal models omit most of what matters.</b> A caged rat with a lever has no employment, relationships or meaning, and those are exactly the factors the Vietnam data implicate.</li>
+              <li><b>Self-reported use is unreliable</b>, particularly for illegal drugs, and social desirability biases it downward (<i>3.2</i>).</li>
+              <li><b>Legal categories confuse the science.</b> Which drugs are studied, funded and criminalised reflects history and politics as much as harm.</li>
+              <li><b>The disease model is contested.</b> It reduces blame and improves access to treatment, and critics argue it understates the role of choice and circumstance.</li>
+              <li><b>Dependence is routinely confused with addiction</b>, with real clinical consequences.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a heroin user who has been abstinent for a year takes their usual old dose and dies of an overdose. Explain, using tolerance.</summary>
+          <div class="ans"><b>Tolerance was lost during abstinence.</b> During regular use the body compensates for the drug — reducing receptor sensitivity and adjusting the respiratory system's response — so a large dose becomes survivable. That compensation <b>reverses</b> when use stops. The "usual dose" was survivable only to a compensated body, and after a year the body is no longer compensated.<br><br><b>Why the respiratory effect is the fatal one.</b> Opioids suppress breathing. Tolerance to the euphoric effect develops faster than tolerance to respiratory depression, so the margin between a dose that produces the desired effect and one that stops breathing is narrow even during regular use — and vanishes after abstinence.<br><br><b>Why this is a predictable public health problem.</b> Overdose risk is highest in the period immediately after release from prison or discharge from treatment, precisely because tolerance has been lost while the remembered dose has not. This is why naloxone is distributed at those transition points (<i>5.6</i>).<br><br><b>A further factor.</b> Tolerance is partly <b>situational</b>: some of the compensation is a learned response to the usual setting and cues. Taking the same dose in an unfamiliar place produces a stronger effect, because the anticipatory compensation is not triggered (<i>13.2</i>).</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>Classes: <b>depressants</b>, <b>stimulants</b>, <b>narcotics</b>, <b>hallucinogens</b>, cannabis — grouped by effect on experience, with mechanisms in <i>5.6</i>.</li>
+          <li>Alcohol reduces inhibition <b>because</b> it is a depressant: inhibitory control is an active process, and depressing it removes a brake.</li>
+          <li>Addictive drugs of every chemical type converge on the <b>dopamine reward pathway</b>.</li>
+          <li>That pathway tracks <b>wanting</b> more than <b>liking</b>, which is why craving can escalate as enjoyment declines.</li>
+          <li><b>Tolerance</b> and <b>withdrawal</b> follow from synaptic compensation, and withdrawal symptoms are opposite in direction to the drug's effects.</li>
+          <li><b>Dependence is not addiction.</b> Addiction requires compulsive use and loss of control, not merely physiological adjustment.</li>
+          <li>Most users of most drugs do not become addicted; <b>circumstances</b> matter substantially, as the Vietnam data show.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Classes, mechanisms, evaluation and evidence from 9.7, gathered for revision.</div>
+
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Psychoactive drug</td><td>A substance that changes conscious experience by acting on the nervous system.</td></tr>
+          <tr><td>Depressant</td><td>Reduces central nervous system activity. Alcohol, benzodiazepines, barbiturates.</td></tr>
+          <tr><td>Stimulant</td><td>Increases central nervous system activity. Caffeine, nicotine, amphetamine, cocaine.</td></tr>
+          <tr><td>Narcotic (opioid)</td><td>Relieves pain and induces wellbeing by acting on endorphin receptors.</td></tr>
+          <tr><td>Hallucinogen</td><td>Alters perception and produces experiences without corresponding sensory input.</td></tr>
+          <tr><td>Reward pathway</td><td>The dopamine projection from the ventral tegmental area to the nucleus accumbens.</td></tr>
+          <tr><td>Self-administration</td><td>An animal pressing a lever to receive a drug — a measure of how reinforcing it is.</td></tr>
+          <tr><td>Tolerance</td><td>A larger dose is needed for the effect an earlier dose produced.</td></tr>
+          <tr><td>Withdrawal</td><td>Symptoms on stopping, opposite in direction to the drug's own effects.</td></tr>
+          <tr><td>Physical dependence</td><td>The body has adjusted, so stopping produces physiological symptoms.</td></tr>
+          <tr><td>Psychological dependence</td><td>Strong desire to continue and difficulty stopping, independent of physiological withdrawal.</td></tr>
+          <tr><td>Addiction</td><td>Compulsive use continuing despite harm, with impaired control.</td></tr>
+        </table>
+
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Chemically unrelated addictive drugs converge on one pathway</b>, which is why animals will work for all of them.</li>
+          <li><b>Wanting and liking dissociate.</b> Dopamine tracks motivation, not pleasure, so craving can rise while enjoyment falls.</li>
+          <li><b>Tolerance and withdrawal are one mechanism seen twice</b> — compensation present with the drug, and left behind without it.</li>
+          <li><b>Withdrawal is opposite in direction to the drug</b>, which is a direct prediction of that account.</li>
+          <li><b>Dependence is not addiction</b>, and confusing them has led to patients being denied pain relief.</li>
+          <li><b>The drug is a poor predictor on its own.</b> Most users of most drugs do not become addicted.</li>
+          <li><b>Tolerance is partly situational</b>, so a familiar dose in an unfamiliar setting hits harder.</li>
+          <li><b>Legal categories do not track harm</b>, as the 1885 advertisement makes plain.</li>
+        </ul>
+
+        <h5>Key study</h5>
+        <ul>
+          <li><b>Robins et al. (1975)</b> — enlisted men returning from Vietnam in 1971 were interviewed, urine-tested and followed up. About <b>one in five</b> had been addicted to heroin in Vietnam; in the year after return only about <b>5%</b> of those became re-addicted, without treatment. Environment changes the outcome, so pharmacology alone does not determine addiction.</li>
+        </ul>
+
+        <h5>Evidence on what predicts addiction</h5>
+        <table>
+          <tr><td>Most users do not become addicted</td><td>True even of drugs with severe reputations; any account must explain it.</td></tr>
+          <tr><td>Vietnam servicemen</td><td>A large proportion used heroin in Vietnam; the great majority stopped without treatment on returning home.</td></tr>
+          <tr><td>Trauma and adversity</td><td>Consistently and substantially raise risk.</td></tr>
+          <tr><td>Genetic variation</td><td>Heritability of substance use disorders typically around 0.5, with all the cautions of 8.2.</td></tr>
+          <tr><td>Availability and price</td><td>Predict population rates more reliably than most individual factors.</td></tr>
+        </table>
+      </div>
+    `
   }
 
   };
@@ -13235,6 +14577,55 @@
       ['A window after which an outcome can no longer be achieved is a ___ period.', 'critical', []],
       ['Failure of vision to develop in a structurally normal deprived eye is called ___.', 'amblyopia', []],
       ['Whether training gains carry over to untrained abilities is the question of ___.', 'transfer', []]
+    ],
+    'b-conscious': [
+      ['A person\'s subjective experience of the world and the mind is ___.', 'consciousness', []],
+      ['The difficulty of perceiving anyone else\'s consciousness is the problem of other ___.', 'minds', []],
+      ['Consciousness being always about something is called ___.', 'intentionality', []],
+      ['Hearing a different message in each ear is a ___ listening task.', 'dichotic', []],
+      ['Explaining why brain processing is accompanied by experience is the ___ problem.', 'hard', []]
+    ],
+    'b-sleepstages': [
+      ['A naturally occurring roughly 24-hour cycle is a ___ rhythm.', 'circadian', []],
+      ['The master body clock is the ___ nucleus.', 'suprachiasmatic', ['scn']],
+      ['An external cue such as light that resets the clock is a ___.', 'zeitgeber', []],
+      ['The stage with waking-like brain activity and paralysed muscles is ___ sleep.', 'rem', []],
+      ['The near-total loss of muscle tone during REM is muscle ___.', 'atonia', []]
+    ],
+    'b-whysleep': [
+      ['Making a new memory stable and integrating it is called ___.', 'consolidation', []],
+      ['The brain fluid pathway that clears waste is the ___ system.', 'glymphatic', []],
+      ['A brief unnoticed lapse into sleep during waking is a ___.', 'microsleep', []],
+      ['Jenkins and Dallenbach found better recall after intervals spent ___.', 'asleep', ['sleeping']],
+      ['New material disrupting retention of older material is called ___.', 'interference', []]
+    ],
+    'b-dreams': [
+      ['A dream\'s apparent surface meaning is its ___ content.', 'manifest', []],
+      ['A dream\'s supposed underlying meaning is its ___ content.', 'latent', []],
+      ['Hobson and McCarley\'s theory is the ___-synthesis model.', 'activation', []],
+      ['People blind from birth report dreams rich in sound, touch and ___ rather than vision.', 'smell', []],
+      ['Most dream content is surprisingly ___ rather than bizarre.', 'mundane', ['ordinary','normal']]
+    ],
+    'b-sleepdis': [
+      ['Persistent difficulty falling or staying asleep is ___.', 'insomnia', []],
+      ['Repeated interruption of breathing during sleep is sleep ___.', 'apnoea', ['apnea']],
+      ['Sudden loss of muscle tone while awake, often triggered by emotion, is ___.', 'cataplexy', []],
+      ['Sleepwalking occurs during ___-wave sleep, not during dreaming.', 'slow', []],
+      ['The transmitter that stabilises the sleep-wake boundary is ___.', 'orexin', ['hypocretin']]
+    ],
+    'b-altered': [
+      ['Hypnosis is defined as a ___ interaction involving suggestion.', 'social', []],
+      ['How far a person responds to hypnotic suggestion is their ___.', 'susceptibility', []],
+      ['Low-susceptibility participants asked to pretend convincingly are ___.', 'simulators', ['simulator']],
+      ['Hypnosis raises the amount recalled and the ___ in it, without raising accuracy.', 'confidence', []],
+      ['Comparing an eight-week course with a ___ list confounds several things at once.', 'waiting', ['wait']]
+    ],
+    'b-drugsmind': [
+      ['Alcohol and benzodiazepines belong to the class called ___.', 'depressants', ['depressant']],
+      ['The dopamine projection from the VTA to the nucleus accumbens is the ___ pathway.', 'reward', []],
+      ['Dopamine in that pathway tracks ___ more closely than liking.', 'wanting', []],
+      ['Needing a larger dose for the same effect is ___.', 'tolerance', []],
+      ['Symptoms on stopping a drug are typically ___ in direction to its effects.', 'opposite', []]
     ],
     'l-classical': [
       ['A stimulus that produces a response without any learning is the ___ stimulus.', 'unconditioned', ['ucs']],
