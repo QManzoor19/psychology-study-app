@@ -926,6 +926,36 @@
   .quiz-score { text-align: center; padding: 20px 0; }
   .quiz-score .big { font-family: var(--display); font-size: 3.4em; font-weight: 700; background: linear-gradient(120deg, var(--accent-2), var(--accent)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
   .quiz-score .msg { font-size: 1.08em; margin: 8px 0 20px; color: var(--text-dim); }
+  /* question-type variants */
+  .quiz-kind { display: inline-block; font-size: 0.68em; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 999px; margin-bottom: 10px;
+    background: rgba(185,140,255,0.14); border: 1px solid rgba(185,140,255,0.34); color: var(--accent); }
+  .quiz-tf { display: flex; gap: 10px; }
+  .quiz-tf .quiz-opt { text-align: center; font-weight: 700; margin-bottom: 0; }
+  .quiz-fill { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .quiz-fill input {
+    flex: 1 1 220px; font: inherit; font-size: 0.98em; padding: 12px 15px; border-radius: 9px;
+    background: var(--card); border: 1px solid var(--border); color: var(--text);
+  }
+  .quiz-fill input:focus { outline: none; border-color: var(--accent); }
+  .quiz-fill input.correct { border-color: var(--good); background: rgba(110,231,168,0.14); }
+  .quiz-fill input.wrong { border-color: var(--accent-2); background: rgba(255,143,176,0.14); }
+  .quiz-hint {
+    font: inherit; font-size: 0.85em; font-weight: 700; cursor: pointer; padding: 11px 16px; border-radius: 9px;
+    background: rgba(255,212,121,0.10); border: 1px solid rgba(255,212,121,0.36); color: #ffd479;
+  }
+  .quiz-hint:hover { background: rgba(255,212,121,0.2); }
+  .quiz-hint-text { margin-top: 10px; font-size: 0.9em; color: #ffd479; display: none; }
+  .quiz-hint-text.show { display: block; }
+  .quiz-opt.picked { border-color: var(--accent); background: rgba(185,140,255,0.14); }
+  .quiz-opt .tick { float: right; opacity: 0.5; font-weight: 800; }
+  .quiz-opt.picked .tick { opacity: 1; color: var(--accent); }
+  .quiz-note { font-size: 0.86em; color: var(--text-dim); margin: -4px 0 12px; }
+  .quiz-match { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .quiz-match .col-h { font-size: 0.7em; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 6px; }
+  .quiz-match .quiz-opt { font-size: 0.88em; padding: 10px 13px; }
+  .quiz-match .quiz-opt.locked { opacity: 0.55; cursor: default; }
+  @media (max-width: 560px) { .quiz-match { grid-template-columns: 1fr; } }
   .section-quiz { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin: 22px 0 4px; padding: 16px 20px; background: rgba(185,140,255,0.07); border: 1px solid rgba(185,140,255,0.3); border-radius: 12px; }
   .section-quiz .sq-t { font-weight: 700; color: var(--text); }
   body:not(.light) .section-quiz .sq-t { color: #fff; }
@@ -1117,6 +1147,10 @@
           <li><span class="txt"><span class="num">1.5</span> What psychology is <i>not</i> — folk psychology, pop psych &amp; zombie myths</span><button class="note-btn" data-note="f-notpsych">📖 Notes</button></li>
           <li><span class="txt"><span class="num">1.6</span> The map of the field — and what psychologists actually do</span><button class="note-btn" data-note="f-field">📖 Notes</button></li>
         </ul>
+        <div class="section-quiz">
+          <span class="sq-t">🧪 Finished this topic? Test yourself — 33 questions, five formats.</span>
+          <button class="quiz-cta" data-openquiz="topic01">Take the Topic 01 quiz</button>
+        </div>
       </div>
 
       <div class="topic" id="t2" data-n="02">
@@ -17892,7 +17926,310 @@
   document.getElementById('applyBack').addEventListener('click', closeApply);
 
   /* ---------- QUIZ OVERLAY (per-Part multiple choice; empty for now) ---------- */
-  const QUIZZES = {};
+  const QUIZZES = {
+    'topic01': {
+      title: 'Quiz — Topic 01: What Psychology Is',
+      questions: [
+        /* ---------- 1.1 The science of mind and behaviour ---------- */
+        { type: 'mc',
+          q: 'Psychology is defined as the scientific study of mind and behaviour. Which pairing is correct?',
+          options: [
+            'Mind is observed directly; behaviour is inferred from it',
+            'Mind is private inner experience and is inferred; behaviour is observable action',
+            'Both mind and behaviour are directly observable',
+            'Mind is what the brain does; behaviour is what the body does'
+          ],
+          answer: 1,
+          explain: 'Behaviour is the observable part — what people and animals actually do. Mind is private inner experience, so it can only ever be <b>inferred</b>, from behaviour, physiology and self-report.' },
+
+        { type: 'tf',
+          q: 'Self-report is a reliable guide to the real causes of a person&rsquo;s own behaviour.',
+          answer: 1,
+          explain: 'False. Nisbett and Wilson showed people frequently cannot report the actual causes of their actions — they produce a plausible explanation instead. Self-report is one of three fallible sources, not a window on the mind.' },
+
+        { type: 'fill',
+          q: 'The tendency to see an outcome as having been predictable once you already know it happened is called ___ bias.',
+          accept: ['hindsight'],
+          hint: 'It is what makes a finding sound like &ldquo;common sense&rdquo; after you have been told it. Demonstrated experimentally by Fischhoff in 1975.',
+          explain: 'Hindsight bias is why psychology can seem to state the obvious. The test is to ask whether the <b>opposite</b> finding would have sounded equally obvious — it usually would.' },
+
+        { type: 'multi',
+          q: 'Which of these are the sources of evidence psychologists use to infer what is going on in the mind?',
+          options: ['Behaviour', 'Physiology', 'Self-report', 'Introspection by the researcher', 'Logical deduction from first principles'],
+          answers: [0, 1, 2],
+          explain: 'Behaviour, physiology and self-report — and all three are fallible in different ways, which is why converging evidence matters. Researcher introspection was tried in the 1800s and abandoned (<i>2.2</i>).' },
+
+        /* ---------- 1.2 Levels of explanation ---------- */
+        { type: 'match',
+          q: 'Match each level of explanation to the kind of question it answers.',
+          pairs: [
+            ['Molecular', 'Which neurotransmitters and hormones are involved?'],
+            ['Neural', 'Which brain structures and circuits are active?'],
+            ['Cognitive', 'What is the person attending to, expecting or believing?'],
+            ['Behavioural', 'What does the person actually do, and what follows?'],
+            ['Social', 'What is the situation, the culture and the other people doing?']
+          ],
+          explain: 'Each level asks its own question and uses its own methods. None is more true than the others; they are answers to different questions about the same event.' },
+
+        { type: 'mc',
+          q: 'Someone says grief is &ldquo;just a chemical imbalance&rdquo;. Which error is that?',
+          options: [
+            'Reductionism, which is always a mistake',
+            'Greedy reductionism — treating a description of the parts as the whole explanation',
+            'A level confusion between the cognitive and social levels',
+            'The Barnum effect'
+          ],
+          answer: 1,
+          explain: 'Reductionism itself is a legitimate and productive strategy. The error is <b>greedy</b> reductionism: describing the molecular level accurately and then claiming nothing else needs explaining.' },
+
+        { type: 'tf',
+          q: 'Causation between levels runs downward as well as upward.',
+          answer: 0,
+          explain: 'True. Experience reshapes brains and alters gene expression, so a social event can change biology just as biology shapes behaviour. Treating the arrow as one-way is a common error (<i>8.3</i>, <i>8.5</i>).' },
+
+        { type: 'mc',
+          q: 'Which level of explanation is usually the most useful one to work at?',
+          options: [
+            'The smallest, since it is the most fundamental',
+            'The largest, since it captures the most context',
+            'The one where change is actually available',
+            'The neural level, because brain evidence is the strongest'
+          ],
+          answer: 2,
+          explain: 'Usefulness depends on where you can intervene. A molecular account of exam anxiety is true and offers less to act on than a cognitive or behavioural one.' },
+
+        /* ---------- 1.3 The enduring debates ---------- */
+        { type: 'match',
+          q: 'Match each thinker to the position associated with them.',
+          pairs: [
+            ['Plato', 'Nativism — some knowledge is innate'],
+            ['Aristotle', 'Empiricism — the mind begins as a blank slate'],
+            ['Descartes', 'Dualism — mind and body are different substances'],
+            ['Hobbes', 'Materialism — the mind is what the brain does']
+          ],
+          explain: 'These four positions frame two of the three enduring debates. Materialism is the working assumption of modern research, though it does not by itself solve the hard problem (<i>9.1</i>).' },
+
+        { type: 'fill',
+          q: 'The proportion of the variation in a trait, within a particular population and range of environments, that is associated with genetic variation is called ___.',
+          accept: ['heritability'],
+          hint: 'It is a statistic about a <b>population</b>, never about an individual. It runs from 0 to 1.',
+          explain: 'Every clause matters. It concerns <b>variation</b>, it is tied to a particular population and set of environments, and it says nothing about any one person (<i>8.2</i>).' },
+
+        { type: 'tf',
+          q: 'A trait with high heritability cannot be changed by intervention.',
+          answer: 1,
+          explain: 'False, and this is the most consequential misreading of the statistic. Phenylketonuria has heritability close to 1 and is almost entirely prevented by removing one amino acid from the diet (<i>8.2</i>).' },
+
+        { type: 'mc',
+          q: 'What is the interaction problem that dualism creates?',
+          options: [
+            'Two people can never know whether they experience colour the same way',
+            'If the mind is non-physical, nothing explains how it exerts force on a neuron',
+            'Mental illness cannot be classified if mind and body are separate',
+            'Brain damage should not change personality, but it does'
+          ],
+          answer: 1,
+          explain: 'Descartes proposed the pineal gland as the meeting point, which does not solve it: a substance with no physical properties has no way to move anything physical. This is why nearly all current researchers assume mental states are physical states.' },
+
+        { type: 'mc',
+          q: 'What does compatibilism claim?',
+          options: [
+            'Determinism is false, so free will is possible',
+            'Free will is an illusion produced by the brain after the fact',
+            'Free will does not require being uncaused — it means acting on your own reasons without coercion',
+            'Mind and body are compatible because they are the same substance'
+          ],
+          answer: 2,
+          explain: 'Compatibilism is the mainstream position in philosophy. It redefines the requirement: what matters is whether the action flowed from your own reasons and desires, not whether it had prior causes.' },
+
+        { type: 'multi',
+          q: 'Which of these are fair criticisms of using Libet&rsquo;s readiness-potential studies as evidence against free will?',
+          options: [
+            'The decision studied — when to flick a wrist — is trivial and unlike a considered choice',
+            'The reported timing of a conscious intention is itself an unreliable measurement',
+            'The readiness potential may reflect ordinary background fluctuation rather than a decision',
+            'The studies have never been replicated by anyone',
+            'The finding shows only that some decisions have unconscious precursors, not that deliberation is an illusion'
+          ],
+          answers: [0, 1, 2, 4],
+          explain: 'All except the replication claim, which is false — the basic effect replicates. The point is that its <b>interpretation</b> is far weaker than its reputation, not that the data are fabricated.' },
+
+        /* ---------- 1.4 The four goals ---------- */
+        { type: 'match',
+          q: 'Match each of the four goals to the method that answers it.',
+          pairs: [
+            ['Describe', 'Observation, surveys and case studies'],
+            ['Explain', 'Experiments'],
+            ['Predict', 'Longitudinal and statistical models'],
+            ['Change', 'Randomised trials and field experiments']
+          ],
+          explain: 'Each goal needs its own kind of evidence. The commonest mistake is using a method suited to one goal to make a claim belonging to another — usually describing and then claiming to explain.' },
+
+        { type: 'mc',
+          q: 'Which goal requires <b>manipulating</b> a variable rather than only measuring it?',
+          options: ['Describe', 'Explain', 'Predict', 'All four equally'],
+          answer: 1,
+          explain: 'Explanation means identifying causes, and causes are established by manipulation. Description and prediction can both be achieved from observation alone (<i>3.3</i>, <i>3.4</i>).' },
+
+        { type: 'fill',
+          q: 'The exact procedure used to turn an unobservable property into a number is called an ___ definition.',
+          accept: ['operational'],
+          hint: 'Happiness cannot be measured directly. The number of times a person smiles in two hours can be.',
+          explain: 'A study tests its <b>procedure</b>, not the idea behind it. Two reasonable procedures for the same construct can give opposite answers (<i>3.1</i>).' },
+
+        { type: 'tf',
+          q: 'You must be able to explain something before you can predict it.',
+          answer: 1,
+          explain: 'False. Prediction and explanation are separable goals. A correlation predicts without explaining, which is enough to identify who is at risk even when the cause is unknown (<i>3.3</i>).' },
+
+        { type: 'mc',
+          q: 'Meehl&rsquo;s work compared expert clinical judgement with simple statistical formulas. What did it find?',
+          options: [
+            'Experts consistently outperformed formulas',
+            'Simple formulas matched or beat expert judgement in most comparisons',
+            'The two were identical in every comparison',
+            'Formulas worked only where the outcome was common'
+          ],
+          answer: 1,
+          explain: 'Simple formulas usually did at least as well, and often better. Experts are inconsistent — they weight cues differently on different days — while a formula applies the same rule every time.' },
+
+        { type: 'mc',
+          q: 'A screening test for a rare condition is 95% accurate. Most people who test positive still do not have it. Why?',
+          options: [
+            'The test is not really 95% accurate',
+            'Because the condition is rare, false positives outnumber true positives',
+            'Because accuracy and sensitivity are different things',
+            'Because the sample was unrepresentative'
+          ],
+          answer: 1,
+          explain: 'This is the <b>base rate</b> problem. If a condition affects 1 in 1,000, then in 1,000 people there is one true case and about 50 false positives. Rare events are hard to predict however good the test (<i>10.3</i>).' },
+
+        /* ---------- 1.5 What psychology is not ---------- */
+        { type: 'multi',
+          q: 'Which of these claims are <b>not</b> supported by the evidence?',
+          options: [
+            'Matching teaching to a pupil&rsquo;s learning style improves learning',
+            'We use only 10% of our brains',
+            'Venting anger reduces later aggression',
+            'Opposites attract',
+            'Similarity predicts attraction'
+          ],
+          answers: [0, 1, 2, 3],
+          explain: 'The first four are all unsupported. People do have style <b>preferences</b>; matching to them does not help. Venting tends to <b>increase</b> later aggression. Similarity, not opposition, predicts attraction — which is the one true statement here.' },
+
+        { type: 'fill',
+          q: 'The tendency to accept vague, broadly applicable personality descriptions as specifically true of oneself is the ___ effect.',
+          accept: ['barnum', 'forer'],
+          hint: 'Named after a showman said to have offered &ldquo;something for everyone&rdquo;. It is why horoscopes feel accurate.',
+          explain: 'Barnum statements are true of almost anyone — &ldquo;you have a great deal of unused capacity&rdquo; — which is exactly why they feel personal. It is also known as the Forer effect.' },
+
+        { type: 'mc',
+          q: 'Why is phrenology used as the template for pseudoscience?',
+          options: [
+            'Because it was obviously ridiculous from the start',
+            'Because it was systematic, confident and well presented — and never seriously tested',
+            'Because its practitioners knew it was false',
+            'Because it made no predictions at all'
+          ],
+          answer: 1,
+          explain: 'Pseudoscience is usually <b>science-shaped</b>. Phrenology had measurements, charts, terminology and practitioners. What it lacked was any serious attempt to find out whether it was wrong.' },
+
+        { type: 'tf',
+          q: 'Repeating a false claim in order to correct it can end up making the claim feel more believable.',
+          answer: 0,
+          explain: 'True, and it is one reason myths persist. Repetition increases familiarity, and familiarity feels like truth — so a correction can inadvertently strengthen the very claim it is trying to remove.' },
+
+        { type: 'mc',
+          q: 'Adding a sentence about brain scans to a weak psychological explanation tends to make it seem more satisfying. What should you ask?',
+          options: [
+            'Whether the brain scan used fMRI or PET',
+            'Whether the brain talk is doing any explanatory work, or is decoration',
+            'Whether the researchers were neuroscientists',
+            'Whether the effect replicated in a second scanner'
+          ],
+          answer: 1,
+          explain: 'The test is whether removing the neuroscience sentence changes the argument. If it does not, it was decoration — and it persuades people who lack the training to notice (<i>7.5</i>).' },
+
+        { type: 'multi',
+          q: 'Which questions belong on the working checklist for assessing a psychological claim?',
+          options: [
+            'Where is the primary source?',
+            'Who was in the sample?',
+            'Was there a control group?',
+            'How big is the effect?',
+            'Has it replicated?',
+            'Is the claim falsifiable?',
+            'Is the researcher well known?'
+          ],
+          answers: [0, 1, 2, 3, 4, 5],
+          explain: 'Six questions: primary source, sample, control group, effect size, replication, falsifiability. The researcher&rsquo;s fame is not one of them — several of psychology&rsquo;s most famous findings failed replication (<i>4.6</i>).' },
+
+        /* ---------- 1.6 The map of the field ---------- */
+        { type: 'match',
+          q: 'Match each research area to a question it owns.',
+          pairs: [
+            ['Cognitive', 'Why can you hold about four things in mind at once, not forty?'],
+            ['Developmental', 'When do children realise other people can hold false beliefs?'],
+            ['Social', 'Why do ordinary people do harmful things in certain situations?'],
+            ['Personality', 'Why is a difference between two people stable over decades?'],
+            ['Biological', 'How does a memory get physically stored?']
+          ],
+          explain: 'The divisions are institutional rather than natural. Real questions cut across all of them, which is why the same phenomenon appears in several places in this file.' },
+
+        { type: 'mc',
+          q: 'In the UK, which of these titles is <b>not</b> legally protected?',
+          options: ['Clinical psychologist', 'Educational psychologist', 'Psychologist', 'Forensic psychologist'],
+          answer: 2,
+          explain: '&ldquo;Psychologist&rdquo; on its own can be used by anyone. The specific titles — clinical, educational, forensic, occupational, health, counselling, sport and exercise — are protected and require HCPC registration.' },
+
+        { type: 'mc',
+          q: 'What is the main difference between a psychiatrist and a clinical psychologist in the UK?',
+          options: [
+            'Psychiatrists treat adults and psychologists treat children',
+            'A psychiatrist trained in medicine first and can prescribe; a psychologist generally cannot',
+            'Psychiatrists use therapy and psychologists use medication',
+            'There is no difference; the terms are interchangeable'
+          ],
+          answer: 1,
+          explain: 'A psychiatrist is a medical doctor who then specialised in psychiatry, so prescribing is within their scope. UK clinical psychologists come through a psychology route and generally do not prescribe.' },
+
+        { type: 'tf',
+          q: 'Most psychology graduates do not go on to become psychologists.',
+          answer: 0,
+          explain: 'True. The transferable core of the degree is <b>evidence appraisal</b> — being able to tell a good claim about people from a bad one — which is useful almost anywhere, and is why the degree is taken by far more people than the profession needs.' },
+
+        { type: 'multi',
+          q: 'Which of these are true of what psychologists actually do day to day, on both the research and applied sides?',
+          options: [
+            'A great deal of writing',
+            'Measuring things carefully',
+            'Explaining findings to people who are not specialists',
+            'Mostly running dramatic experiments',
+            'Mostly interpreting dreams'
+          ],
+          answers: [0, 1, 2],
+          explain: 'Writing, measuring and explaining. The dramatic experiment is a small and unrepresentative part of the job, and dream interpretation is a specific historical tradition rather than a general activity (<i>9.4</i>).' },
+
+        /* ---------- across the whole topic ---------- */
+        { type: 'mc',
+          q: 'A newspaper reports that a study &ldquo;proves&rdquo; that people who eat breakfast are happier. What is the single strongest objection?',
+          options: [
+            'The sample was probably too small',
+            'It is a descriptive or correlational finding being reported as a causal one',
+            'Happiness cannot be operationally defined',
+            'The result has not been replicated'
+          ],
+          answer: 1,
+          explain: 'All four are worth asking, and the causal leap is the primary error. Explaining requires manipulation; measuring two things and finding they go together does not license &ldquo;proves&rdquo; (<i>3.3</i>).' },
+
+        { type: 'fill',
+          q: 'What makes psychology a science is not its subject matter but its ___ — falsifiable claims, systematic observation, and public repeatable procedures.',
+          accept: ['method', 'methods', 'methodology'],
+          hint: 'It is the same thing that makes physics a science, and it is what pseudoscience lacks despite looking the part.',
+          explain: 'Astronomy and astrology study the same objects. What separates them is method — whether claims are stated so they could fail, and whether anyone seriously tries to make them fail (<i>3.1</i>).' }
+      ]
+    }
+  };
   const quizOverlay = document.getElementById('quizOverlay');
   const quizContent = document.getElementById('quizContent');
   let qz = null;
@@ -17903,38 +18240,173 @@
     renderQuiz();
   }
   function closeQuiz() { quizOverlay.classList.remove('open'); document.body.classList.remove('note-open'); }
+  function qNorm(v) { return String(v || '').toLowerCase().trim().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' '); }
+  const QKIND = { mc: 'Multiple choice', tf: 'True or false', fill: 'Fill the blank', multi: 'Select all that apply', match: 'Match the pairs' };
+  function quizShell(q, total) {
+    const kind = q.type || 'mc';
+    let h = '<h2>' + qz.title + '</h2>';
+    h += '<div class="quiz-prog">Question ' + (qz.i + 1) + ' of ' + total + ' &middot; Score: ' + qz.score + '</div>';
+    h += '<div class="quiz-bar"><span style="width:' + Math.round(qz.i / total * 100) + '%"></span></div>';
+    h += '<div class="quiz-q"><span class="quiz-kind">' + (QKIND[kind] || 'Question') + '</span>';
+    h += '<div class="qtext">' + q.q + '</div>';
+    return h;
+  }
+  function quizTail() {
+    return '<div class="quiz-explain" id="quizExplain"></div>' +
+      '<div class="quiz-actions"><button class="quiz-btn primary" id="quizNext" disabled>Next &rarr;</button></div></div>';
+  }
+  function wireNext() {
+    document.getElementById('quizNext').addEventListener('click', () => { qz.i++; renderQuiz(); window.scrollTo(0, 0); });
+  }
+  /* marks the question resolved, shows the explanation and enables Next */
+  function resolveQuestion(correct) {
+    qz.answered = true;
+    if (correct) qz.score++;
+    const q = qz.qs[qz.i];
+    const ex = document.getElementById('quizExplain');
+    ex.innerHTML = (correct ? '<b>&#10003; Correct.</b> ' : '<b>&#10007; Not quite.</b> ') + q.explain;
+    ex.classList.add('show');
+    const next = document.getElementById('quizNext');
+    next.disabled = false;
+    next.textContent = (qz.i === qz.qs.length - 1) ? 'See results &rarr;' : 'Next &rarr;';
+  }
   function renderQuiz() {
     const total = qz.qs.length;
     if (qz.i >= total) return renderScore();
     const q = qz.qs[qz.i];
-    let h = '<h2>' + qz.title + '</h2>';
-    h += '<div class="quiz-prog">Question ' + (qz.i + 1) + ' of ' + total + ' · Score: ' + qz.score + '</div>';
-    h += '<div class="quiz-bar"><span style="width:' + Math.round(qz.i / total * 100) + '%"></span></div>';
-    h += '<div class="quiz-q"><div class="qtext">' + q.q + '</div>';
-    q.options.forEach((opt, idx) => { h += '<button class="quiz-opt" data-i="' + idx + '">' + opt + '</button>'; });
-    h += '<div class="quiz-explain" id="quizExplain"></div>';
-    h += '<div class="quiz-actions"><button class="quiz-btn primary" id="quizNext" disabled>Next →</button></div></div>';
-    quizContent.innerHTML = h;
+    const kind = q.type || 'mc';
     qz.answered = false;
-    quizContent.querySelectorAll('.quiz-opt').forEach(btn => btn.addEventListener('click', () => selectAnswer(parseInt(btn.dataset.i, 10))));
-    document.getElementById('quizNext').addEventListener('click', () => { qz.i++; renderQuiz(); window.scrollTo(0, 0); });
+    if (kind === 'fill') return renderFill(q, total);
+    if (kind === 'multi') return renderMulti(q, total);
+    if (kind === 'match') return renderMatch(q, total);
+    return renderChoice(q, total, kind === 'tf');
   }
-  function selectAnswer(idx) {
-    if (qz.answered) return;
-    qz.answered = true;
-    const q = qz.qs[qz.i];
-    quizContent.querySelectorAll('.quiz-opt').forEach((btn, i) => {
-      btn.disabled = true;
-      if (i === q.answer) btn.classList.add('correct');
-      else if (i === idx) btn.classList.add('wrong');
+  /* ---- multiple choice and true/false ---- */
+  function renderChoice(q, total, isTf) {
+    const opts = isTf ? ['True', 'False'] : q.options;
+    let h = quizShell(q, total);
+    h += isTf ? '<div class="quiz-tf">' : '';
+    opts.forEach((opt, idx) => { h += '<button class="quiz-opt" data-i="' + idx + '">' + opt + '</button>'; });
+    h += isTf ? '</div>' : '';
+    h += quizTail();
+    quizContent.innerHTML = h;
+    quizContent.querySelectorAll('.quiz-opt').forEach(btn => btn.addEventListener('click', () => {
+      if (qz.answered) return;
+      const idx = parseInt(btn.dataset.i, 10);
+      quizContent.querySelectorAll('.quiz-opt').forEach((b, i) => {
+        b.disabled = true;
+        if (i === q.answer) b.classList.add('correct');
+        else if (i === idx) b.classList.add('wrong');
+      });
+      resolveQuestion(idx === q.answer);
+    }));
+    wireNext();
+  }
+  /* ---- fill in the blank, with an optional hint ---- */
+  function renderFill(q, total) {
+    let h = quizShell(q, total);
+    h += '<div class="quiz-fill"><input type="text" id="quizFillIn" autocomplete="off" spellcheck="false" placeholder="Type your answer">';
+    if (q.hint) h += '<button class="quiz-hint" id="quizHintBtn">&#128161; Hint</button>';
+    h += '<button class="quiz-btn" id="quizCheck">Check</button></div>';
+    if (q.hint) h += '<div class="quiz-hint-text" id="quizHintText">' + q.hint + '</div>';
+    h += quizTail();
+    quizContent.innerHTML = h;
+    const input = document.getElementById('quizFillIn');
+    const check = () => {
+      if (qz.answered) return;
+      const given = qNorm(input.value);
+      const ok = (q.accept || []).some(a => qNorm(a) === given);
+      input.classList.add(ok ? 'correct' : 'wrong');
+      input.disabled = true;
+      document.getElementById('quizCheck').disabled = true;
+      const hb = document.getElementById('quizHintBtn'); if (hb) hb.disabled = true;
+      resolveQuestion(ok);
+      if (!ok) {
+        const ex = document.getElementById('quizExplain');
+        ex.innerHTML = '<b>&#10007; Not quite.</b> The answer was <b>' + q.accept[0] + '</b>. ' + q.explain;
+      }
+    };
+    document.getElementById('quizCheck').addEventListener('click', check);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
+    if (q.hint) document.getElementById('quizHintBtn').addEventListener('click', () => {
+      document.getElementById('quizHintText').classList.add('show');
     });
-    if (idx === q.answer) qz.score++;
-    const ex = document.getElementById('quizExplain');
-    ex.innerHTML = (idx === q.answer ? '<b>✓ Correct.</b> ' : '<b>✗ Not quite.</b> ') + q.explain;
-    ex.classList.add('show');
-    const next = document.getElementById('quizNext');
-    next.disabled = false;
-    next.textContent = (qz.i === qz.qs.length - 1) ? 'See results →' : 'Next →';
+    input.focus();
+  }
+  /* ---- select all that apply ---- */
+  function renderMulti(q, total) {
+    let h = quizShell(q, total);
+    h += '<div class="quiz-note">Select every option that applies, then press Check.</div>';
+    q.options.forEach((opt, idx) => {
+      h += '<button class="quiz-opt" data-i="' + idx + '"><span class="tick">&#9634;</span>' + opt + '</button>';
+    });
+    h += '<div class="quiz-actions" style="justify-content:flex-start"><button class="quiz-btn" id="quizCheck">Check</button></div>';
+    h += quizTail();
+    quizContent.innerHTML = h;
+    const picked = new Set();
+    quizContent.querySelectorAll('.quiz-opt').forEach(btn => btn.addEventListener('click', () => {
+      if (qz.answered) return;
+      const i = parseInt(btn.dataset.i, 10);
+      if (picked.has(i)) { picked.delete(i); btn.classList.remove('picked'); btn.querySelector('.tick').innerHTML = '&#9634;'; }
+      else { picked.add(i); btn.classList.add('picked'); btn.querySelector('.tick').innerHTML = '&#9635;'; }
+    }));
+    document.getElementById('quizCheck').addEventListener('click', () => {
+      if (qz.answered) return;
+      const want = new Set(q.answers);
+      let ok = picked.size === want.size;
+      want.forEach(i => { if (!picked.has(i)) ok = false; });
+      quizContent.querySelectorAll('.quiz-opt').forEach((b, i) => {
+        b.disabled = true;
+        if (want.has(i)) b.classList.add('correct');
+        else if (picked.has(i)) b.classList.add('wrong');
+      });
+      document.getElementById('quizCheck').disabled = true;
+      resolveQuestion(ok);
+    });
+    wireNext();
+  }
+  /* ---- match the pairs ---- */
+  function renderMatch(q, total) {
+    const lefts = q.pairs.map((p, i) => ({ t: p[0], i: i }));
+    const rights = q.pairs.map((p, i) => ({ t: p[1], i: i }));
+    /* deterministic shuffle of the right column so the order is not the answer */
+    for (let k = rights.length - 1; k > 0; k--) {
+      const j = (k * 7 + 3) % (k + 1);
+      const tmp = rights[k]; rights[k] = rights[j]; rights[j] = tmp;
+    }
+    let h = quizShell(q, total);
+    h += '<div class="quiz-note">Click a term, then click its match. All pairs must be right to score.</div>';
+    h += '<div class="quiz-match"><div><div class="col-h">Term</div>';
+    lefts.forEach(l => { h += '<button class="quiz-opt m-l" data-i="' + l.i + '">' + l.t + '</button>'; });
+    h += '</div><div><div class="col-h">Match</div>';
+    rights.forEach(r => { h += '<button class="quiz-opt m-r" data-i="' + r.i + '">' + r.t + '</button>'; });
+    h += '</div></div>';
+    h += quizTail();
+    quizContent.innerHTML = h;
+    let sel = null, done = 0, wrongTries = 0;
+    const total_pairs = q.pairs.length;
+    quizContent.querySelectorAll('.m-l').forEach(btn => btn.addEventListener('click', () => {
+      if (qz.answered || btn.classList.contains('locked')) return;
+      quizContent.querySelectorAll('.m-l').forEach(b => b.classList.remove('picked'));
+      btn.classList.add('picked'); sel = btn;
+    }));
+    quizContent.querySelectorAll('.m-r').forEach(btn => btn.addEventListener('click', () => {
+      if (qz.answered || btn.classList.contains('locked') || !sel) return;
+      if (btn.dataset.i === sel.dataset.i) {
+        [sel, btn].forEach(b => { b.classList.remove('picked'); b.classList.add('correct', 'locked'); });
+        sel = null; done++;
+        if (done === total_pairs) {
+          quizContent.querySelectorAll('.quiz-opt').forEach(b => b.disabled = true);
+          resolveQuestion(wrongTries === 0);
+        }
+      } else {
+        wrongTries++;
+        btn.classList.add('wrong');
+        setTimeout(() => btn.classList.remove('wrong'), 450);
+        sel.classList.remove('picked'); sel = null;
+      }
+    }));
+    wireNext();
   }
   function renderScore() {
     const total = qz.qs.length, score = qz.score, pct = Math.round(score / total * 100);
@@ -17962,6 +18434,7 @@
     quizContent.innerHTML = h;
     quizContent.querySelectorAll('.quiz-opt[data-quiz]').forEach(b => b.addEventListener('click', () => openQuiz(b.dataset.quiz)));
   }
+  document.querySelectorAll('[data-openquiz]').forEach(b => b.addEventListener('click', () => openQuiz(b.dataset.openquiz)));
   document.getElementById('quizBtn').addEventListener('click', openQuizMenu);
   document.getElementById('quizBack').addEventListener('click', closeQuiz);
 
