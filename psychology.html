@@ -18276,10 +18276,11 @@
     const q = qz.qs[qz.i];
     const kind = q.type || 'mc';
     qz.answered = false;
-    if (kind === 'fill') return renderFill(q, total);
-    if (kind === 'multi') return renderMulti(q, total);
-    if (kind === 'match') return renderMatch(q, total);
-    return renderChoice(q, total, kind === 'tf');
+    if (kind === 'fill') renderFill(q, total);
+    else if (kind === 'multi') renderMulti(q, total);
+    else if (kind === 'match') renderMatch(q, total);
+    else renderChoice(q, total, kind === 'tf');
+    wireNext();   /* wired here, once, so no renderer can forget it */
   }
   /* ---- multiple choice and true/false ---- */
   function renderChoice(q, total, isTf) {
@@ -18300,7 +18301,6 @@
       });
       resolveQuestion(idx === q.answer);
     }));
-    wireNext();
   }
   /* ---- fill in the blank, with an optional hint ---- */
   function renderFill(q, total) {
@@ -18363,7 +18363,6 @@
       document.getElementById('quizCheck').disabled = true;
       resolveQuestion(ok);
     });
-    wireNext();
   }
   /* ---- match the pairs ---- */
   function renderMatch(q, total) {
@@ -18406,7 +18405,6 @@
         sel.classList.remove('picked'); sel = null;
       }
     }));
-    wireNext();
   }
   function renderScore() {
     const total = qz.qs.length, score = qz.score, pct = Math.round(score / total * 100);
