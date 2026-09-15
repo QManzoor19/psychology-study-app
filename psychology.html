@@ -839,6 +839,17 @@
   .lesson-why { margin: 14px 0 2px; padding: 14px 17px; border-radius: 10px; background: rgba(185,140,255,0.11); border: 1px solid rgba(185,140,255,0.34); border-left: 3px solid var(--accent); color: #d9d2e8; }
   .lesson-why .whl { display: block; font-weight: 800; font-size: 0.72em; text-transform: uppercase; letter-spacing: 0.09em; color: #d9c2ff; margin-bottom: 6px; }
   .lesson-why b { color: #d9c2ff; }
+  #versionToggle.active { color: #17102a; background: #7fd6ff; border-color: transparent; }
+  #versionToggle:disabled { opacity: 0.4; cursor: not-allowed; }
+  .tb-source { margin: 0 0 18px; padding: 9px 14px; border-radius: 9px; font-size: 0.8em; font-weight: 700;
+    color: #7fd6ff; background: rgba(127,214,255,0.08); border: 1px solid rgba(127,214,255,0.3); }
+  .tb-source { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .tb-jump { font: inherit; font-weight: 700; color: #17102a; background: #7fd6ff; border: 0; border-radius: 7px;
+    padding: 4px 10px; cursor: pointer; }
+  .tb-jump:hover { filter: brightness(1.1); }
+  .tb-frame { width: 100%; }
+  .tb-pdf { display: block; width: 100%; height: calc(100vh - 190px); min-height: 480px; border: 0;
+    border-radius: 10px; background: #fff; }
   .watch { margin: 18px 0 4px; padding: 13px 16px; border-radius: 11px;
     background: rgba(255,143,176,0.07); border: 1px solid rgba(255,143,176,0.28); }
   .watch-h { font-size: 0.7em; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
@@ -1392,13 +1403,13 @@
         <p class="desc">Two mechanisms — one for what predicts what, one for what pays off.</p>
         <ul class="subs">
           <li><span class="txt"><span class="num">13.1</span> Pavlov — UCS, UCR, CS, CR &amp; acquisition</span><button class="note-btn" data-note="l-classical">📖 Notes</button></li>
-          <li><span class="txt"><span class="num">13.2</span> Extinction, spontaneous recovery, generalisation &amp; discrimination</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">13.3</span> Conditioned emotion — Little Albert &amp; how phobias form</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">13.4</span> Thorndike's law of effect &amp; Skinner's operant chamber</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">13.5</span> Reinforcement &amp; punishment — the four quadrants</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">13.6</span> Schedules of reinforcement &amp; why variable ratio is addictive</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">13.7</span> Shaping, chaining &amp; successive approximation</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">13.8</span> Escape, avoidance &amp; learned helplessness</span><span class="placeholder">notes soon</span></li>
+          <li><span class="txt"><span class="num">13.2</span> Extinction, spontaneous recovery, generalisation &amp; discrimination</span><button class="note-btn" data-note="l-extinction">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">13.3</span> Conditioned emotion — Little Albert &amp; how phobias form</span><button class="note-btn" data-note="l-emotion">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">13.4</span> Thorndike's law of effect &amp; Skinner's operant chamber</span><button class="note-btn" data-note="l-effect">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">13.5</span> Reinforcement &amp; punishment — the four quadrants</span><button class="note-btn" data-note="l-quadrants">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">13.6</span> Schedules of reinforcement &amp; why variable ratio is addictive</span><button class="note-btn" data-note="l-schedules">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">13.7</span> Shaping, chaining &amp; successive approximation</span><button class="note-btn" data-note="l-shaping">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">13.8</span> Escape, avoidance &amp; learned helplessness</span><button class="note-btn" data-note="l-helpless">📖 Notes</button></li>
         </ul>
       </div>
 
@@ -1406,11 +1417,11 @@
         <h3><span class="tnum">14</span><span class="ttl">Beyond Conditioning</span></h3>
         <p class="desc">The cracks in behaviourism — biology, cognition and other people.</p>
         <ul class="subs">
-          <li><span class="txt"><span class="num">14.1</span> Biological constraints — taste aversion &amp; preparedness</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">14.2</span> Latent learning &amp; cognitive maps (Tolman)</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">14.3</span> Observational learning &amp; the Bobo doll (Bandura)</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">14.4</span> The Rescorla–Wagner idea — learning is about prediction error</span><span class="placeholder">notes soon</span></li>
-          <li><span class="txt"><span class="num">14.5</span> Applying it — habits, cues, rewards &amp; real behaviour change</span><span class="placeholder">notes soon</span></li>
+          <li><span class="txt"><span class="num">14.1</span> Biological constraints — taste aversion &amp; preparedness</span><button class="note-btn" data-note="l-prepared">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">14.2</span> Latent learning &amp; cognitive maps (Tolman)</span><button class="note-btn" data-note="l-latent">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">14.3</span> Observational learning &amp; the Bobo doll (Bandura)</span><button class="note-btn" data-note="l-observe">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">14.4</span> The Rescorla–Wagner idea — learning is about prediction error</span><button class="note-btn" data-note="l-prediction">📖 Notes</button></li>
+          <li><span class="txt"><span class="num">14.5</span> Applying it — habits, cues, rewards &amp; real behaviour change</span><button class="note-btn" data-note="l-habits">📖 Notes</button></li>
         </ul>
       </div>
     </div>
@@ -3200,6 +3211,7 @@
         </span>
         <button class="fig-btn" id="figToggle" title="Show or hide the drawn diagrams (photographs stay)">📐 Diagrams</button>
         <button class="fig-btn" id="ksToggle" title="Open or collapse every case study in this lesson">🔬 Case studies</button>
+        <button class="fig-btn" id="versionToggle" hidden title="Switch between these notes and the textbook's own text">📘 Textbook</button>
         <button class="recall-btn" id="recallToggle" title="Show or hide your recall questions">🧠 Recall</button>
       </div>
     </div>
@@ -8253,6 +8265,11 @@
       </figure>
 
       <p class="lesson-lead">Classical conditioning is one of the two basic forms of learning studied in psychology. It explains how a stimulus that originally means nothing comes to produce a reaction on its own, through nothing more than being repeatedly paired with something that already produces that reaction. It accounts for responses that occur without any decision being made, including many phobias, food aversions and part of drug tolerance.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=qG2SwE_6uVM" target="_blank" rel="noopener">How to Train a Brain: Crash Course Psychology #11</a> <span class="vby">Crash Course</span><span class="vs">Pavlov and Skinner in ten minutes — an overview of both halves of Topic 13.</span></li><li><a href="https://www.youtube.com/watch?v=E6Qs0Az2au4" target="_blank" rel="noopener">Learning Theory &amp; Classical Conditioning (Intro Psych Tutorial #59)</a><span class="vs">UCS, UCR, CS and CR worked through one at a time.</span></li></ul>
+      </div>
 
       <h4 class="lesson-h">Definition</h4>
 
@@ -17816,6 +17833,1775 @@
         <p><b>Blakemore &amp; Cooper (1970)</b> — kittens reared seeing only vertical or only horizontal stripes. Each was behaviourally blind to the unseen orientation, and cortical recordings showed almost no cells tuned to it. Early experience builds the machinery. The study would be unlikely to gain ethical approval today, and is taught with that noted.</p>
       </div>
     `
+  },
+
+  'l-extinction': {
+    eyebrow: 'Part IV · Topic 13 · Learning',
+    title: 'Extinction, spontaneous recovery, generalisation and discrimination',
+    html: `
+      <p class="lesson-lead">Lesson 13.1 introduced these four processes in a sentence each. This lesson takes them apart, because each one turns out to say something that the simple picture of conditioning gets wrong: extinction does not erase anything, generalisation follows a measurable curve, and discrimination can be pushed until the animal breaks down.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=OSwH175hMoE" target="_blank" rel="noopener">Extinction, Generalization, &amp; Discrimination (Intro Psych Tutorial #60)</a><span class="vs">The processes this lesson covers, with an example of each.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The textbook definitions</h4>
+        <span class="role">Schacter's wording, quoted exactly</span>
+        <div class="lesson-def">
+          <span class="term">Extinction</span> — "The gradual elimination of a learned response that occurs when the CS is repeatedly presented without the US."<br><br>
+          <span class="term">Spontaneous recovery</span> — "The tendency of a learned behavior to recover from extinction after a rest period."<br><br>
+          <span class="term">Generalization</span> — "The CR is observed even though the CS is slightly different from the CS used during acquisition."<br><br>
+          <span class="term">Discrimination</span> — "The capacity to distinguish between similar but distinct stimuli."
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">A note on the abbreviations</span>
+          Schacter writes <b>US</b> and <b>UR</b> for the unconditioned stimulus and response. This site uses <b>UCS</b> and <b>UCR</b>, following 13.1. They mean the same thing, and both appear in exam papers.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Extinction is new learning, not forgetting</h4>
+        <span class="role">Four findings that rule out erasure</span>
+        <div class="lesson-plain">
+          <span class="pl">The tempting reading</span>
+          If a response disappears when the CS stops predicting the UCS, the obvious conclusion is that the association has been deleted. If that were true, the response should stay gone. It does not, and the ways it comes back are specific enough to be predicted.
+        </div>
+        <table class="lesson-table">
+          <tr><th>Phenomenon</th><th>What happens</th><th>What it shows</th></tr>
+          <tr><td>Spontaneous recovery</td><td>The extinguished response returns after a rest, with no further pairings</td><td>Time weakens the extinction learning faster than the original learning</td></tr>
+          <tr><td>Renewal</td><td>Extinguish in context B, test back in context A, and the response returns</td><td>Extinction is tied to the place it was learned; the original association is not</td></tr>
+          <tr><td>Reinstatement</td><td>A single unsignalled UCS after extinction brings the response back</td><td>The old association was intact and needed only a reminder</td></tr>
+          <tr><td>Rapid reacquisition</td><td>Re-pairing the CS and UCS restores the response faster than it was first learned</td><td>Something was saved from the first round of learning</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">What replaced erasure</span>
+          Mark Bouton's account, now the standard one, holds that extinction creates a <b>second, competing association</b>: the CS now means "UCS" in some circumstances and "no UCS" in others. The organism uses context to decide which applies. The first learning generalises readily across contexts; the second is tied closely to where it happened. Every one of the four findings above follows from that single idea.
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Guttman &amp; Kalish (1956) — the generalisation gradient</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To measure how responding to a conditioned stimulus changes as a test stimulus becomes less similar to it.</dd>
+          <dt>Method</dt>
+          <dd>Pigeons were reinforced for pecking a key lit with light of a single wavelength, on an intermittent schedule so that responding would persist without food. They were then tested in extinction with the key lit at a range of other wavelengths, presented in random order, and pecks to each were counted.</dd>
+          <dt>Results</dt>
+          <dd>Responding was highest at the training wavelength and fell away smoothly and symmetrically on either side of it. The further a wavelength was from the trained value, the fewer pecks it produced, giving a peaked curve.</dd>
+          <dt>Conclusion</dt>
+          <dd>Generalisation is not all-or-none. It is graded by similarity along the stimulus dimension, and it can be measured as a <b>gradient</b>. That turned a vague notion into a quantity that could be compared across species, stimuli and training histories.</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Discrimination, and what happens when it becomes impossible</h4>
+        <span class="role">Narrowing the gradient</span>
+        <div class="lesson-plain">
+          <span class="pl">Discrimination training</span>
+          If one stimulus is paired with the UCS and a similar one is presented without it, the gradient sharpens: responding stays high to the first and falls to the second. Discrimination is therefore the <b>product of training on both</b>, not simply the absence of generalisation. It is how a dog learns that one doorbell means a visitor and a similar tone on television does not.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Experimental neurosis</span>
+          In Pavlov's laboratory, Shenger-Krestovnikova trained a dog that a circle meant food and an ellipse meant none. The ellipse was then made progressively rounder. When the axes reached a ratio of about 9 to 8, discrimination collapsed — and the dog did not simply respond at chance. It became agitated, struggled in the harness, barked and bit the apparatus, and lost discriminations it had previously held.<br><br>
+          Pavlov called this <b>experimental neurosis</b>. The finding is ethically uncomfortable and would not be repeated today, but it established that forcing an organism to discriminate beyond its capacity, while the stakes stay high, produces disturbance rather than guessing.
+        </div>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — why phobia treatment sometimes wears off</span>
+        A person with a fear of dogs completes exposure therapy in a clinic. By the final session they can stroke a calm dog without distress.<br><br>
+        <b>A month later</b>, a dog runs at them in the park and the fear is back at full strength.<br><br>
+        <b>What the erasure account says.</b> Treatment failed, or was not thorough enough.<br><br>
+        <b>What the new-learning account says.</b> Treatment worked, and did exactly what extinction does: it created a second association, "dogs are safe", that is tied to the clinic. The park is context A. That is <b>renewal</b>, and it was predictable.<br><br>
+        <b>What follows in practice.</b> Conduct exposure in several settings, with several dogs, and include cues that will be present in daily life. Clinicians now build this in deliberately, because it is the direct application of Bouton's account (<i>35.3</i>).
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>The phenomena replicate across species</b>, from rats and pigeons to humans in fear-conditioning studies.</li>
+            <li><b>One account explains four findings</b> — spontaneous recovery, renewal, reinstatement and reacquisition all follow from extinction being context-bound new learning.</li>
+            <li><b>Generalisation is measurable</b>, so claims about it can be tested rather than asserted.</li>
+            <li><b>Direct clinical payoff</b>: relapse after therapy stopped being a mystery and became something to design against.</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>"Context" is loosely specified.</b> Room, time, internal state and recent events all count, which makes the concept hard to falsify.</li>
+            <li><b>Much of the evidence is animal</b>, and human relapse involves beliefs and avoidance that the laboratory models omit (<i>13.3</i>).</li>
+            <li><b>Experimental neurosis is historical</b> and its interpretation depends on anthropomorphic description of the dog's behaviour.</li>
+            <li><b>Generalisation gradients depend on training</b>, so a single gradient is not a fixed property of an animal or a stimulus.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a smoker quits, has not smoked for months, then has a single cigarette at a party and is soon back to a pack a day. Which phenomena explain this?</summary>
+          <div class="ans"><b>Reinstatement, first.</b> The cues of smoking — the smell, the hand movement, the nicotine hit — are the CS and the reinforcing outcome together. Months of not smoking were extinction. A single cigarette is the equivalent of an unsignalled UCS after extinction, and in the laboratory that alone is enough to bring an extinguished response back.<br><br><b>Renewal, second.</b> Quitting was learned mostly at home and at work. A party, with alcohol and other smokers, is a context in which the new "no smoking" learning was never practised, so the original association reasserts itself.<br><br><b>Rapid reacquisition, third.</b> Returning to a pack a day happens much faster than the habit first developed, because the original learning was never deleted.<br><br><b>The practical lesson.</b> "Just one" is not a neutral event; it is the specific manipulation that reinstates an extinguished response. That is why relapse-prevention programmes treat a single lapse as a high-risk moment to plan for rather than a harmless exception.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Extinction</b> is the gradual elimination of a CR when the CS is repeatedly presented without the UCS — but it is <b>new learning</b>, not erasure.</li>
+          <li>Evidence against erasure: <b>spontaneous recovery</b>, <b>renewal</b>, <b>reinstatement</b> and <b>rapid reacquisition</b>.</li>
+          <li><b>Bouton</b>: extinction creates a competing, context-bound association; the original one generalises across contexts.</li>
+          <li><b>Guttman &amp; Kalish (1956)</b> showed generalisation follows a smooth gradient by similarity.</li>
+          <li><b>Discrimination</b> is produced by training on both stimuli; pushed past capacity it produced <b>experimental neurosis</b> in Pavlov's laboratory.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, findings and studies from 13.2, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Extinction</td><td>"The gradual elimination of a learned response that occurs when the CS is repeatedly presented without the US." (Schacter)</td></tr>
+          <tr><td>Spontaneous recovery</td><td>"The tendency of a learned behavior to recover from extinction after a rest period." (Schacter)</td></tr>
+          <tr><td>Generalization</td><td>"The CR is observed even though the CS is slightly different from the CS used during acquisition." (Schacter)</td></tr>
+          <tr><td>Discrimination</td><td>"The capacity to distinguish between similar but distinct stimuli." (Schacter)</td></tr>
+          <tr><td>Renewal</td><td>Return of an extinguished response when tested outside the context where extinction took place.</td></tr>
+          <tr><td>Reinstatement</td><td>Return of an extinguished response after an unsignalled presentation of the UCS.</td></tr>
+          <tr><td>Generalisation gradient</td><td>The curve showing responding falling as a stimulus becomes less similar to the CS.</td></tr>
+          <tr><td>Experimental neurosis</td><td>Disturbed behaviour produced by forcing a discrimination beyond an animal's capacity.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Extinction suppresses; it does not delete.</b></li>
+          <li><b>Extinction is context-bound</b>, the original learning is not — the asymmetry behind relapse.</li>
+          <li><b>Generalisation is graded</b>, and training shapes the gradient.</li>
+          <li><b>Discrimination requires training on both stimuli.</b></li>
+          <li><b>Treat exposure across contexts</b> to guard against renewal.</li>
+        </ul>
+        <h5>Key study</h5>
+        <p><b>Guttman &amp; Kalish (1956)</b> — pigeons trained to peck a key lit with one wavelength were tested in extinction across many wavelengths. Pecking peaked at the training wavelength and fell smoothly with distance from it, producing a measurable generalisation gradient.</p>
+      </div>
+    `
+  },
+  'l-emotion': {
+    eyebrow: 'Part IV · Topic 13 · Learning',
+    title: 'Conditioned emotion — Little Albert and how phobias form',
+    html: `
+      <p class="lesson-lead">Watson and Rayner's Little Albert study is the most famous demonstration that fear can be learned, and one of the most misreported studies in psychology. This lesson reads it carefully, sets it beside the study that showed fear could be unlearned, and asks how well conditioning actually explains real phobias.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=aEYjdlZ6yCE" target="_blank" rel="noopener">The Truth and Myth of Little Albert</a><span class="vs">Takes the famous version of the study apart, as this lesson does.</span></li><li><a href="https://www.youtube.com/watch?v=z1ihzucprZo" target="_blank" rel="noopener">Watson &amp; Rayner — Little Albert</a><span class="vs">Watson's own film of the procedure. Watch how inconsistent Albert's reactions actually are.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What the study actually showed</h4>
+        <span class="role">Reading past the textbook version</span>
+        <div class="lesson-plain">
+          <span class="pl">The procedure, as reported</span>
+          Albert was tested at about nine months and showed no fear of a white rat, a rabbit, a dog or masks. At eleven months, a steel bar was struck loudly behind him as he reached for the rat — twice in a first session and five times a week later. He then cried and withdrew when shown the rat alone, and similar reactions were reported to a rabbit, a dog, a fur coat and a Santa Claus mask (<i>13.1</i>).
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">What the report itself undermines</span>
+          <b>One child.</b> No comparison infant, and no independent observer.<br><br>
+          <b>No measurement.</b> "Fear" was Watson's description of Albert's behaviour, with no rating scale or blind coding.<br><br>
+          <b>Inconsistent reactions.</b> The response weakened between sessions and was "freshened" with further pairings. Albert's distress could be stopped by letting him suck his thumb, and the experimenters repeatedly had to remove his thumb to observe crying.<br><br>
+          <b>Weak generalisation.</b> Responses to the other objects were mixed, not the clean spread later textbooks describe.<br><br>
+          <b>Never reversed.</b> Albert left the hospital before any deconditioning was attempted.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">How the story grew</span>
+          Ben Harris (1979), in "Whatever happened to Little Albert?", traced how textbook accounts progressively added details that were not in the original — generalisation to more objects, stronger reactions, and even claims that Albert was later deconditioned. Two later investigations proposed different real identities for the child, reaching incompatible conclusions; which, if either, is correct remains unresolved. None of that changes the central problem: this is a single, poorly controlled case that became a founding result.
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Jones (1924) — Peter and the rabbit</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To test whether a child's existing fear could be removed using conditioning principles — the reverse of Watson and Rayner's procedure.</dd>
+          <dt>Method</dt>
+          <dd>Mary Cover Jones, supervised by Watson, worked with Peter, a boy of nearly three with a strong fear of rabbits and other furry objects. While Peter ate food he enjoyed, a caged rabbit was brought gradually closer across many sessions, never close enough to cause distress. On some occasions he also watched other children playing happily with the rabbit.</dd>
+          <dt>Results</dt>
+          <dd>Peter's tolerance increased step by step, from accepting the rabbit in the room to letting it nibble his fingers and holding it on his lap. His fear of related furry objects also declined.</dd>
+          <dt>Conclusion</dt>
+          <dd>A conditioned fear can be weakened by pairing the feared stimulus with a pleasant, incompatible response — <b>counterconditioning</b> — introduced gradually. This is the forerunner of systematic desensitisation (<i>35.3</i>). Note that it too is a single case, and that modelling by other children was mixed into the procedure.</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">From acquisition to a lasting phobia</h4>
+        <span class="role">Why fears do not simply extinguish</span>
+        <div class="lesson-def">
+          <span class="term">Counterconditioning</span> — replacing a conditioned response with an incompatible one by pairing the CS with a new, pleasant UCS.<br><br>
+          <span class="term">Two-factor theory</span> — Mowrer: a phobia is <b>acquired</b> through classical conditioning and <b>maintained</b> through operant conditioning, because avoiding the feared object reduces anxiety and so is negatively reinforced.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">The puzzle two-factor theory solves</span>
+          By 13.2, a fear that is never followed by harm should extinguish. Many phobias last decades. Mowrer's answer is that the person never lets extinction happen: each time they avoid the feared object, anxiety drops, which strengthens the avoidance, and they never stay long enough to learn the object is harmless. The avoidance is rewarded precisely because it prevents the disconfirming experience (<i>13.8</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">How well does conditioning explain real phobias?</h4>
+        <span class="role">Three pathways, and a biological bias</span>
+        <table class="lesson-table">
+          <tr><th>Problem for a pure conditioning account</th><th>What was found</th></tr>
+          <tr><td>Many phobic people recall no frightening event</td><td>Rachman (1977) proposed three pathways: <b>direct conditioning</b>, <b>vicarious</b> learning by watching others' fear, and <b>informational</b> learning from warnings</td></tr>
+          <tr><td>Many people have frightening experiences and develop no phobia</td><td>Prior safe experience, controllability and temperament all protect, so pairing alone does not predict who becomes phobic</td></tr>
+          <tr><td>Phobias cluster around snakes, spiders, heights and blood, not cars or sockets</td><td>Seligman's <b>preparedness</b>: evolution biases which fears are acquired easily (<i>14.1</i>)</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">The balanced verdict</span>
+          Conditioning is one real route to fear, and it is the route that exposure therapy reliably reverses. It is not the only route, it does not explain why some people are vulnerable and others are not, and the famous demonstration that launched the idea is far weaker evidence than its reputation suggests.
+        </div>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — a dog phobia, from the bite onward</span>
+        A child is bitten by a dog at age six. At thirty she crosses the road whenever she sees one.<br><br>
+        <b>Acquisition (classical).</b> UCS = the bite; UCR = pain and fear; CS = the sight of a dog; CR = fear at the sight of a dog. It generalised from that dog to dogs in general (<i>13.2</i>).<br><br>
+        <b>Maintenance (operant).</b> Crossing the road removes the anxiety. Removal of an unpleasant state following a behaviour is <b>negative reinforcement</b> (<i>13.5</i>), so crossing the road becomes more likely every time she does it.<br><br>
+        <b>Why it has not extinguished.</b> She has avoided close contact for twenty-four years, so she has never experienced the CS without harm. Extinction has had no opportunity to occur.<br><br>
+        <b>What treatment must do.</b> Block the avoidance and arrange contact with dogs without harm — graded, as Jones did with Peter.
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>Conditioned fear is well established</b> in controlled animal and human laboratory studies, independent of Little Albert.</li>
+            <li><b>Two-factor theory explains persistence</b>, which acquisition alone cannot.</li>
+            <li><b>It produced effective treatment</b>: exposure and systematic desensitisation descend directly from Jones.</li>
+            <li><b>Rachman's pathways fit the data</b> better than direct conditioning alone.</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>Little Albert is a single uncontrolled case</b> with subjective measures, inconsistent reactions and no follow-up.</li>
+            <li><b>Serious ethical problems</b>: fear was deliberately induced in an infant and never removed (<i>3.8</i>).</li>
+            <li><b>Textbook accounts distorted the study</b> for decades, as Harris documented.</li>
+            <li><b>Conditioning does not predict vulnerability</b> — who develops a phobia after a frightening event.</li>
+            <li><b>Many phobias have no traceable conditioning event.</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: someone says the Little Albert study proves phobias are learned. Give three reasons that is too strong, and say what better evidence exists.</summary>
+          <div class="ans"><b>1. One participant.</b> A single case can show something is possible, not how phobias usually arise (<i>3.2</i>).<br><br><b>2. Weak measurement.</b> Fear was judged by the experimenter, unblinded, and the response was inconsistent — it faded, was re-strengthened, and could be stopped by thumb-sucking.<br><br><b>3. It would not generalise to most phobias.</b> Many phobic people recall no conditioning event, many people with frightening experiences never develop phobias, and phobias concentrate on evolutionarily relevant objects in a way pairing alone does not predict.<br><br><b>Better evidence.</b> Controlled human fear-conditioning experiments with physiological measures such as skin conductance; animal studies with comparison groups; and the success of exposure therapy, which tests the reverse prediction. Together these support the narrower claim that fear <i>can</i> be conditioned and <i>can</i> be extinguished — which is the defensible version of what Watson wanted to show.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Watson &amp; Rayner (1920)</b> conditioned fear of a rat in one infant — but with no controls, subjective measures, inconsistent responses and no deconditioning.</li>
+          <li><b>Harris (1979)</b> showed textbooks embellished the study; the child's identity is still disputed.</li>
+          <li><b>Jones (1924)</b> removed Peter's fear of rabbits by gradual <b>counterconditioning</b> — the forerunner of systematic desensitisation.</li>
+          <li><b>Two-factor theory</b>: phobias are acquired by classical conditioning and maintained by avoidance, which is negatively reinforced and blocks extinction.</li>
+          <li><b>Rachman</b>: direct, vicarious and informational pathways. <b>Preparedness</b> explains which fears are common.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, studies and critiques from 13.3, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Conditioned emotional response</td><td>An emotional reaction, such as fear, produced by a CS after pairing with an aversive UCS.</td></tr>
+          <tr><td>Counterconditioning</td><td>Replacing a CR with an incompatible response by pairing the CS with a pleasant stimulus.</td></tr>
+          <tr><td>Two-factor theory</td><td>Mowrer: acquisition by classical conditioning, maintenance by negatively reinforced avoidance.</td></tr>
+          <tr><td>Rachman's three pathways</td><td>Direct conditioning, vicarious learning, informational learning.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>A famous study can be weak evidence</b> — fame and quality are different things.</li>
+          <li><b>Avoidance prevents extinction</b>, which is why fears persist.</li>
+          <li><b>Counterconditioning reverses the pairing</b> gradually.</li>
+          <li><b>Conditioning is one route to fear, not the route.</b></li>
+        </ul>
+        <h5>Key studies</h5>
+        <p><b>Watson &amp; Rayner (1920)</b> — a loud noise paired with a white rat; Albert later showed distress at the rat and some similar objects. A single, uncontrolled, ethically unacceptable case.</p>
+        <p><b>Jones (1924)</b> — Peter's fear of rabbits reduced by bringing the rabbit gradually closer while he ate, sometimes with other children modelling calm play.</p>
+      </div>
+    `
+  },
+  'l-effect': {
+    eyebrow: 'Part IV · Topic 13 · Learning',
+    title: 'Thorndike&rsquo;s law of effect and Skinner&rsquo;s operant chamber',
+    html: `
+      <figure class="lesson-hero-img">
+        <img src="img/skinner-box.jpg" alt="An operant conditioning chamber: a clear box with a grid floor, levers and feeding mechanism">
+        <figcaption><b>An operant conditioning chamber.</b> One lever, one food dispenser, and nothing else to do. Making the response easy to define and automatic to record is what let Skinner describe learning as a rate that changes over time.
+          <span class="cred">Bd008 · CC BY-SA 3.0 · via <a href="https://commons.wikimedia.org/wiki/File:Skinner_box_photo_02.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>
+
+      <p class="lesson-lead">Classical conditioning is learning what predicts what, and the organism does not have to do anything. Operant conditioning is learning what your own actions lead to. This lesson covers where that second form of learning was discovered, how Skinner turned it into a precise science, and how the two kinds of conditioning differ.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=uszdpFoALQk" target="_blank" rel="noopener">Operant Conditioning: Behavior &amp; Consequences (Intro Psych Tutorial #62)</a><span class="vs">Operant conditioning, and how it differs from classical.</span></li><li><a href="https://www.youtube.com/watch?v=VTuwMCJjslc" target="_blank" rel="noopener">Thorndike and the Law of Effect</a><span class="vs">The puzzle boxes, and why the learning curve was gradual rather than sudden.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The textbook definitions</h4>
+        <span class="role">Schacter's wording, quoted exactly</span>
+        <div class="lesson-def">
+          <span class="term">Operant conditioning</span> — "A type of learning in which the consequences of an organism's behavior determine whether it will repeat that behavior in the future."<br><br>
+          <span class="term">Law of effect</span> — "The principle that behaviors that are followed by a 'satisfying state of affairs' tend to be repeated, and those that produce an 'unpleasant state of affairs' are less likely to be repeated."<br><br>
+          <span class="term">Operant behavior</span> — "Behavior that an organism performs that has some impact on the environment."
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Thorndike (1898) — cats in puzzle boxes</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To establish how animals learn to solve a problem — by insight and reasoning, or by gradually strengthening whatever happened to work.</dd>
+          <dt>Method</dt>
+          <dd>Hungry cats were placed in wooden puzzle boxes with food visible outside. Escape required a specific action, such as pulling a loop of string or pressing a lever. Each cat was returned to the box repeatedly, and the time taken to escape was recorded on every trial.</dd>
+          <dt>Results</dt>
+          <dd>On early trials cats scratched, clawed and moved about at random until they hit the correct action by accident. Escape times then fell across trials — but <b>gradually and irregularly</b>, not suddenly. A cat that had escaped quickly on one trial was often slow on the next.</dd>
+          <dt>Conclusion</dt>
+          <dd>The shape of the curve was the evidence. Insight would produce a sudden drop once the solution was understood. A slow, bumpy decline instead fits the idea that successful responses are <b>stamped in</b> by their consequences and unsuccessful ones are stamped out. Thorndike formulated this as the law of effect.</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What Skinner added</h4>
+        <span class="role">From escape times to response rates</span>
+        <div class="lesson-def">
+          <span class="term">Free operant</span> — a response the animal can make at any time and as often as it likes, such as pressing a lever, rather than once per trial.<br><br>
+          <span class="term">Cumulative recorder</span> — a device that draws a line which steps upward with every response, so its slope shows response rate at a glance.<br><br>
+          <span class="term">Discriminative stimulus</span> — a cue signalling that a particular response will now be reinforced.<br><br>
+          <span class="term">Three-term contingency</span> — antecedent, behaviour, consequence: the unit of operant analysis, often written <b>A–B–C</b>.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Why the chamber mattered more than any single finding</span>
+          Thorndike measured one escape per trial. Skinner's rats and pigeons could respond continuously, so the measure became <b>rate</b>: how often, and how that changes. The cumulative recorder made changes visible the moment they happened, and the chamber held everything else constant. That combination is why operant findings are among the most precise and replicable in psychology (<i>2.5</i>).<br><br>
+          Skinner also replaced Thorndike's "satisfying state of affairs", which refers to what an animal feels, with a definition based only on what is observed: a <b>reinforcer</b> is whatever increases the behaviour it follows (<i>13.5</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Classical and operant conditioning compared</h4>
+        <span class="role">The distinction exam questions test</span>
+        <table class="lesson-table">
+          <tr><th></th><th>Classical</th><th>Operant</th></tr>
+          <tr><td>What is learned</td><td>An association between two stimuli</td><td>An association between a behaviour and its consequence</td></tr>
+          <tr><td>Role of the organism</td><td>Passive — the pairing happens to it</td><td>Active — its behaviour produces the outcome</td></tr>
+          <tr><td>Kind of response</td><td>Mostly reflexive and involuntary: salivation, fear</td><td>Mostly voluntary: pressing, walking, speaking</td></tr>
+          <tr><td>Timing</td><td>The stimulus comes <b>before</b> the response</td><td>The consequence comes <b>after</b> the response</td></tr>
+          <tr><td>Key figures</td><td>Pavlov</td><td>Thorndike, Skinner</td></tr>
+          <tr><td>Everyday case</td><td>Anxiety at the dentist's drill sound</td><td>Returning to a café because the coffee was good</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">In practice they run together</span>
+          Real behaviour almost always involves both. In 13.3 a phobia was acquired classically and maintained operantly. A discriminative stimulus is itself something the animal has learned to associate with reinforcement. The distinction is useful for analysis, not a claim that the two occur separately in life.
+        </div>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — an A–B–C analysis at the checkout</span>
+        A four-year-old screams at the supermarket checkout until a parent buys sweets. It happens every week.<br><br>
+        <b>A — antecedent.</b> The checkout, with sweets at eye level. This is a discriminative stimulus: it signals that screaming has paid off here before.<br><br>
+        <b>B — behaviour.</b> Screaming.<br><br>
+        <b>C — consequence.</b> Sweets arrive. The child's screaming is <b>positively reinforced</b>. And the parent's giving-in is <b>negatively reinforced</b>, because it stops the screaming.<br><br>
+        <b>Why that matters.</b> Both people are being conditioned at once, and the parent's behaviour is maintained just as strongly as the child's. Changing only one side rarely works.<br><br>
+        <b>What an intervention changes.</b> Remove the reinforcer for screaming, and reinforce an alternative — waiting quietly earns a choice at the end. Expect the screaming to get worse briefly first, which is the ordinary pattern when a reinforced behaviour stops paying (<i>13.2</i>).
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>Highly controlled and replicable</b> — the chamber isolates one response and one consequence.</li>
+            <li><b>Objective measurement</b>: response rate is recorded automatically, removing observer judgement.</li>
+            <li><b>The law of effect generalises widely</b>, across species and from laboratories to classrooms and clinics.</li>
+            <li><b>A–B–C analysis is practical</b> and underpins behaviour-change programmes (<i>14.5</i>).</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>Thorndike's wording was subjective</b>, and Skinner's fix risks circularity: a reinforcer is defined as whatever increases behaviour.</li>
+            <li><b>The chamber is deliberately impoverished</b>, so behaviour in rich environments may not follow the same rules.</li>
+            <li><b>It leaves out cognition</b>, which latent learning later showed was needed (<i>14.2</i>).</li>
+            <li><b>Biology constrains what can be learned</b>, as the Brelands found with trained animals (<i>13.7</i>, <i>14.1</i>).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a student feels sick with nerves before exams, and has learned that pretending to be ill gets them sent home. Which parts are classical conditioning and which are operant?</summary>
+          <div class="ans"><b>Classical.</b> The nausea is the conditioned emotional response. The exam hall and exam papers are the CS; past experiences of failure or pressure were the UCS. Nobody decides to feel sick — the response is involuntary and triggered by the stimulus, which is the mark of classical conditioning (<i>13.1</i>, <i>13.3</i>).<br><br><b>Operant.</b> Pretending to be ill is a voluntary behaviour, and it is maintained by its consequence: being sent home removes the dreaded exam. Removal of an unpleasant situation following a behaviour is <b>negative reinforcement</b>, so the behaviour grows more likely (<i>13.5</i>).<br><br><b>How they interact.</b> This is two-factor theory in a school setting: fear acquired classically, avoidance maintained operantly — and the avoidance prevents the student ever discovering that sitting the exam is survivable.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Operant conditioning</b>: the consequences of behaviour determine whether it is repeated.</li>
+          <li><b>Thorndike (1898)</b>: cats' escape times from puzzle boxes fell gradually, not suddenly — evidence for the <b>law of effect</b> rather than insight.</li>
+          <li><b>Skinner</b> introduced the free operant, the <b>cumulative recorder</b> and response rate as the measure, and defined reinforcers by their effects.</li>
+          <li>The <b>three-term contingency</b>: antecedent, behaviour, consequence.</li>
+          <li><b>Classical</b> links stimuli and involves involuntary responses; <b>operant</b> links behaviour to consequences and involves voluntary responses. Real behaviour usually involves both.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, comparisons and studies from 13.4, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Operant conditioning</td><td>"A type of learning in which the consequences of an organism's behavior determine whether it will repeat that behavior in the future." (Schacter)</td></tr>
+          <tr><td>Law of effect</td><td>Behaviours followed by a "satisfying state of affairs" tend to be repeated; those producing an "unpleasant state of affairs" are less likely to be. (Schacter)</td></tr>
+          <tr><td>Operant behavior</td><td>"Behavior that an organism performs that has some impact on the environment." (Schacter)</td></tr>
+          <tr><td>Free operant</td><td>A response that can be made at any time and any number of times.</td></tr>
+          <tr><td>Cumulative recorder</td><td>A record whose slope shows response rate.</td></tr>
+          <tr><td>Discriminative stimulus</td><td>A cue signalling that a response will now be reinforced.</td></tr>
+          <tr><td>Three-term contingency</td><td>Antecedent – behaviour – consequence.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>The curve's shape was the evidence</b> — gradual, not sudden.</li>
+          <li><b>Rate, not trials</b>, became the measure of learning.</li>
+          <li><b>Stimulus before</b> in classical; <b>consequence after</b> in operant.</li>
+          <li><b>Both people in an interaction are being conditioned.</b></li>
+        </ul>
+        <h5>Key study</h5>
+        <p><b>Thorndike (1898)</b> — hungry cats escaping puzzle boxes for food. Escape times declined gradually and irregularly across trials, supporting the stamping-in of successful responses rather than sudden insight.</p>
+      </div>
+    `
+  },
+  'l-quadrants': {
+    eyebrow: 'Part IV · Topic 13 · Learning',
+    title: 'Reinforcement and punishment — the four quadrants',
+    html: `
+      <p class="lesson-lead">Four terms describe every consequence in operant conditioning, and two of them are misused constantly — including by teachers, parents and newspapers. This lesson sets out the grid, the one rule that sorts any example into it, and what the evidence says about whether punishment works.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=Un1Weap2e60" target="_blank" rel="noopener">Positive vs. Negative Reinforcement (and Punishment) Clearly Explained</a><span class="vs">Sorting examples into the four quadrants, including the negative-reinforcement trap.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The textbook definitions</h4>
+        <span class="role">Schacter's wording, quoted exactly</span>
+        <div class="lesson-def">
+          <span class="term">Reinforcer</span> — "Any stimulus or event that increases the likelihood of the behavior that led to it."<br><br>
+          <span class="term">Punisher</span> — "Any stimulus or event that decreases the likelihood of the behavior that led to it."
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">The rule that prevents every common mistake</span>
+          Schacter is explicit: "the words positive and negative mean, respectively, something that is added or something that is taken away, but do not mean 'good' or 'bad' as they do in everyday speech."<br><br>
+          So ask two questions, in this order. <b>Did the behaviour become more or less likely?</b> That decides reinforcement or punishment. <b>Was something added or removed?</b> That decides positive or negative.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The grid</h4>
+        <span class="role">Two questions, four answers</span>
+        <table class="lesson-table">
+          <tr><th></th><th>Behaviour becomes MORE likely</th><th>Behaviour becomes LESS likely</th></tr>
+          <tr><td><b>Something is added</b></td><td><b>Positive reinforcement</b><br>Praise after finishing homework</td><td><b>Positive punishment</b><br>A fine for speeding</td></tr>
+          <tr><td><b>Something is removed</b></td><td><b>Negative reinforcement</b><br>Taking a painkiller removes a headache</td><td><b>Negative punishment</b><br>Losing phone privileges for lying</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">The single most common error</span>
+          "Negative reinforcement" is routinely used to mean punishment. It never means that. Negative reinforcement <b>increases</b> a behaviour, by removing something unpleasant. The car seatbelt chime is the standard case: fastening the belt stops the noise, so belt-fastening becomes more likely.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Where reinforcers get their power</h4>
+        <span class="role">Primary, secondary, and relative value</span>
+        <div class="lesson-def">
+          <span class="term">Primary reinforcer</span> — satisfies a biological need: food, water, warmth, comfort.<br><br>
+          <span class="term">Secondary (conditioned) reinforcer</span> — gains its value through association with primary reinforcers. Schacter's example is money, which "starts out as a neutral CS" and takes on value through association with food and shelter.<br><br>
+          <span class="term">Premack principle</span> — a more preferred activity can reinforce a less preferred one: dessert after vegetables, games after homework.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Why this matters</span>
+          Most reinforcers in human life are secondary — approval, grades, money, likes. That links operant conditioning straight back to classical conditioning: a secondary reinforcer is a CS whose value was learned (<i>13.1</i>). And Premack shows that "reinforcing" is not a fixed property of a thing but a relationship between activities, which is why the same reward works on one child and not another.
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Gershoff (2002) — corporal punishment meta-analysis</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To combine decades of research on the outcomes associated with parental corporal punishment such as spanking.</dd>
+          <dt>Method</dt>
+          <dd>A meta-analysis of 88 studies, together covering tens of thousands of children, examining associations between corporal punishment and eleven child behaviours and experiences in childhood and adulthood.</dd>
+          <dt>Results</dt>
+          <dd>Corporal punishment was associated with one desirable outcome: <b>immediate compliance</b>. It was associated with ten undesirable outcomes, including increased aggression, more antisocial behaviour, poorer quality of the parent–child relationship, poorer mental health, and a greater risk of being physically abused.</dd>
+          <dt>Conclusion</dt>
+          <dd>Punishment can stop a behaviour in the moment while being associated with worse long-term outcomes. The data are correlational, and children who misbehave more may attract more punishment — later work controlling for earlier behaviour found the associations largely persisted, but the design cannot establish cause on its own (<i>3.3</i>).</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">When punishment does and does not work</h4>
+        <span class="role">Conditions, and side effects</span>
+        <table class="lesson-table">
+          <tr><th>Punishment is more effective when it is</th><th>Why</th></tr>
+          <tr><td>Immediate</td><td>A delayed consequence is linked to whatever happened just before it, not the target behaviour</td></tr>
+          <tr><td>Consistent</td><td>Occasional punishment teaches that the behaviour sometimes pays</td></tr>
+          <tr><td>Paired with an alternative</td><td>Punishment says what not to do, never what to do instead</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">The side effects</span>
+          Punishment suppresses a behaviour while the punisher is present, so children often learn <b>not to get caught</b> rather than not to do it. It pairs the punisher with fear, which can generalise to the person and the setting (<i>13.1</i>). And it models aggression as a way to control others. Negative punishment — removing privileges — avoids the fear and modelling problems and is usually recommended over physical punishment for exactly those reasons.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">A reward can backfire too: the overjustification effect</span>
+          Lepper, Greene and Nisbett (1973) worked with nursery children who already enjoyed drawing. Those told in advance they would receive a "Good Player" award for drawing later chose to draw in free play roughly half as much as children who received no award or an unexpected one. An expected reward for something already enjoyed can shift the reason for doing it from interest to payment — so when the payment stops, so does the activity.
+        </div>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — sorting four cases with the two questions</span>
+        <b>1. A teenager's curfew is extended after a month of good grades.</b> More likely? Yes. Added? Yes — more freedom. <b>Positive reinforcement.</b><br><br>
+        <b>2. A driver slows down to stop a beeping speed alarm.</b> Slowing down becomes more likely; the beeping is removed. <b>Negative reinforcement.</b><br><br>
+        <b>3. A child touches a hot oven and is burned.</b> Touching becomes less likely; pain is added. <b>Positive punishment.</b><br><br>
+        <b>4. A footballer is sent off for a foul.</b> Fouling becomes less likely; playing time is removed. <b>Negative punishment.</b><br><br>
+        <b>The check.</b> Case 2 is the one people get wrong, calling it punishment because the alarm is unpleasant. But the behaviour being measured — slowing down — increased, so it cannot be punishment.
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>A complete, simple classification</b> that covers any consequence.</li>
+            <li><b>Defined by effects on behaviour</b>, so it is observable rather than based on what feels pleasant.</li>
+            <li><b>Large, consistent evidence base</b> on punishment outcomes, including meta-analysis.</li>
+            <li><b>Directly useful</b> for parenting, teaching and clinical programmes.</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>Circularity risk</b>: something is a reinforcer because behaviour increased, and behaviour increased because it was reinforced.</li>
+            <li><b>Punishment research is mostly correlational</b>, so causal claims are limited.</li>
+            <li><b>Human rewards interact with motivation</b> in ways the grid does not capture, as the overjustification effect shows.</li>
+            <li><b>The same event can fall in different quadrants</b> for different people, depending on what they value.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a manager publicly criticises an employee who arrives late, and the employee starts arriving late less often — but also starts avoiding the manager. Classify the consequence and explain the side effect.</summary>
+          <div class="ans"><b>Classification.</b> Lateness became less likely, so this is punishment. Criticism was added, so it is <b>positive punishment</b>.<br><br><b>The side effect.</b> The criticism is aversive, and it is reliably paired with the manager. Through classical conditioning the manager becomes a CS for discomfort (<i>13.1</i>). Avoiding the manager then removes that discomfort, which is <b>negative reinforcement</b> of avoidance (<i>13.3</i>).<br><br><b>What this illustrates.</b> Punishment rarely acts on one behaviour alone. It changes how the person feels about the punisher and the setting, and it can reinforce escape and avoidance. A more effective approach pairs a mild, private consequence for lateness with reinforcement for arriving on time — so the employee learns what to do, and the relationship does not become the thing being avoided.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Reinforcers</b> increase the behaviour they follow; <b>punishers</b> decrease it. Positive means <b>added</b>, negative means <b>removed</b> — never good or bad.</li>
+          <li><b>Negative reinforcement is not punishment</b>: it increases behaviour by removing something unpleasant.</li>
+          <li><b>Primary</b> reinforcers meet biological needs; <b>secondary</b> reinforcers such as money gain value by association. The <b>Premack principle</b> uses preferred activities as reinforcers.</li>
+          <li><b>Gershoff (2002)</b>: corporal punishment is associated with immediate compliance and ten undesirable outcomes — correlational evidence.</li>
+          <li>Punishment works best when immediate, consistent and paired with an alternative. Expected rewards can undermine enjoyed activities — the <b>overjustification effect</b>.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, the grid, evidence and cautions from 13.5, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Reinforcer</td><td>"Any stimulus or event that increases the likelihood of the behavior that led to it." (Schacter)</td></tr>
+          <tr><td>Punisher</td><td>"Any stimulus or event that decreases the likelihood of the behavior that led to it." (Schacter)</td></tr>
+          <tr><td>Positive reinforcement</td><td>Adding something, behaviour increases.</td></tr>
+          <tr><td>Negative reinforcement</td><td>Removing something unpleasant, behaviour increases.</td></tr>
+          <tr><td>Positive punishment</td><td>Adding something unpleasant, behaviour decreases.</td></tr>
+          <tr><td>Negative punishment</td><td>Removing something valued, behaviour decreases.</td></tr>
+          <tr><td>Primary / secondary reinforcer</td><td>Meets a biological need / gains value through association.</td></tr>
+          <tr><td>Premack principle</td><td>A preferred activity reinforces a less preferred one.</td></tr>
+          <tr><td>Overjustification effect</td><td>An expected reward reduces later interest in an activity already enjoyed.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Ask about the behaviour first</b>, then about adding or removing.</li>
+          <li><b>Punishment says what not to do</b>, never what to do instead.</li>
+          <li><b>Punishment conditions feelings about the punisher.</b></li>
+          <li><b>Rewards interact with motivation.</b></li>
+        </ul>
+        <h5>Key studies</h5>
+        <p><b>Gershoff (2002)</b> — meta-analysis of 88 studies: corporal punishment associated with immediate compliance and with ten undesirable outcomes including aggression and poorer parent–child relationships.</p>
+        <p><b>Lepper, Greene &amp; Nisbett (1973)</b> — nursery children who expected an award for drawing later drew about half as much in free play as those who did not.</p>
+      </div>
+    `
+  },
+  'l-schedules': {
+    eyebrow: 'Part IV · Topic 13 · Learning',
+    title: 'Schedules of reinforcement and why variable ratio is addictive',
+    html: `
+      <p class="lesson-lead">Whether a behaviour is reinforced matters. How often, and on what pattern, matters just as much — it determines how fast the behaviour is performed and how long it survives when the reinforcement stops. This lesson covers the four basic schedules, the counter-intuitive finding that partial reward builds stronger habits, and why the most persistent schedule is the one built into slot machines and phones.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=4op4jb31-y8" target="_blank" rel="noopener">Reinforcement Schedules (4 Types Explained)</a><span class="vs">Fixed and variable, interval and ratio, and the response pattern each one produces.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Continuous and intermittent reinforcement</h4>
+        <span class="role">Schacter's definitions, quoted exactly</span>
+        <div class="lesson-def">
+          <span class="term">Continuous reinforcement</span> — every correct response is reinforced. The fastest way to establish a new behaviour.<br><br>
+          <span class="term">Intermittent reinforcement</span> — "An operant conditioning principle whereby only some of the responses made are followed by reinforcement."<br><br>
+          <span class="term">Intermittent reinforcement effect</span> — "The fact that operant behaviors that are maintained under intermittent reinforcement schedules resist extinction better than those maintained under continuous reinforcement."
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Why partial reward makes behaviour harder to stop</span>
+          After continuous reinforcement, the first unrewarded response is a clear change: something has stopped. After intermittent reinforcement, unrewarded responses were already normal, so a long run without reward looks exactly like the ordinary situation. The organism has learned to keep going through failures. Discrimination between "reward is coming" and "reward has stopped" is hard, so extinction is slow (<i>13.2</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The four basic schedules</h4>
+        <span class="role">Interval versus ratio, fixed versus variable</span>
+        <table class="lesson-table">
+          <tr><th>Schedule</th><th>Textbook description</th><th>Typical response pattern</th><th>Everyday case</th></tr>
+          <tr><td><b>Fixed interval (FI)</b></td><td>"Reinforcers are presented at fixed time periods, provided that the appropriate response is made."</td><td>Little responding after a reward, accelerating as the next one becomes due — the <b>scallop</b></td><td>Studying intensely only just before a scheduled exam</td></tr>
+          <tr><td><b>Variable interval (VI)</b></td><td>"A behavior is reinforced on the basis of an average time that has expired since the last reinforcement."</td><td>Slow, steady responding</td><td>Checking for a reply to an email</td></tr>
+          <tr><td><b>Fixed ratio (FR)</b></td><td>"Reinforcement is delivered after a specific number of responses have been made."</td><td>Fast responding, then a pause after each reward</td><td>Piecework pay — paid per ten shirts</td></tr>
+          <tr><td><b>Variable ratio (VR)</b></td><td>"The delivery of reinforcement is based on a particular average number of responses."</td><td><b>High, steady responding with almost no pauses</b>, and very slow extinction</td><td>Gambling machines; fishing; sales calls</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">The two distinctions, stated plainly</span>
+          <b>Interval</b> schedules reward the first response after time has passed, so responding faster gains nothing. <b>Ratio</b> schedules reward a number of responses, so responding faster brings reward sooner — which is why ratio schedules produce higher rates.<br><br>
+          <b>Fixed</b> schedules are predictable, so the organism learns when reward is not available and pauses. <b>Variable</b> schedules are unpredictable, so any response might be the one that pays, and there is never a safe moment to stop.
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Skinner (1948) — "superstition" in the pigeon</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To see what happens when reinforcement is delivered on a schedule that has no connection with the animal's behaviour at all.</dd>
+          <dt>Method</dt>
+          <dd>Eight hungry pigeons were placed individually in a chamber where a food hopper operated every 15 seconds, regardless of what the bird was doing. After some time Skinner observed and described each bird's behaviour.</dd>
+          <dt>Results</dt>
+          <dd>Six of the eight birds developed distinctive, repetitive actions: one turned anticlockwise in the cage between feeds, another repeatedly thrust its head into an upper corner, others tossed their heads or bobbed.</dd>
+          <dt>Conclusion</dt>
+          <dd>Skinner argued that whatever a bird happened to be doing when food arrived was accidentally reinforced, so it was repeated, and was therefore more likely to coincide with the next delivery. He proposed this as a model of human superstition. Staddon and Simmelhag (1971) later repeated the study with more careful recording and found much of the behaviour was species-typical activity related to anticipating food, not accidentally reinforced habits — so the superstition interpretation is weaker than Skinner's report implies.</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Why variable ratio is the "addictive" schedule</h4>
+        <span class="role">What the schedule explains, and what it does not</span>
+        <div class="lesson-plain">
+          <span class="pl">What the schedule contributes</span>
+          A slot machine pays out after an unpredictable number of plays. That is a variable-ratio schedule, and it produces the highest, most persistent responding and the greatest resistance to extinction of any basic schedule. Every play could be the winning one, and a long losing run does not signal that winning has become impossible.<br><br>
+          The same structure appears in loot boxes, social media feeds and notifications, where interesting content arrives after an unpredictable number of refreshes (<i>2.5</i>, <i>38.3</i>).
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">What else is involved</span>
+          The schedule is not the whole story. Machines are also designed to produce <b>near-misses</b>, which feel close to a win and recruit reward-related brain activity. Unpredictable rewards generate large <b>prediction-error</b> signals in dopamine systems (<i>14.4</i>, <i>5.4</i>). And most people who gamble do not develop gambling disorder, so individual vulnerability matters. "Variable ratio is addictive" is shorthand for "variable ratio produces unusually persistent behaviour" — a real effect, but not a complete explanation of addiction (<i>9.7</i>).
+        </div>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — identifying the schedule on your phone</span>
+        <b>Checking a messaging app.</b> Messages arrive at unpredictable times, and checking is rewarded only if one has arrived since you last looked. Reward depends on time passing, not on how many times you check — <b>variable interval</b>. Checking more often does not produce more messages.<br><br>
+        <b>Refreshing a social feed.</b> Each refresh may or may not produce something interesting, and more refreshes produce more hits — <b>variable ratio</b>. Here, checking more often does pay.<br><br>
+        <b>Why the second is harder to stop.</b> On the ratio schedule, every refresh has a chance of payoff, so there is no moment when stopping costs nothing. That is the schedule most associated with compulsive, high-rate use.<br><br>
+        <b>What reduces it.</b> Batch notifications to fixed times, turning a variable schedule into a fixed one with predictable dead periods — which is exactly the change that introduces pauses in responding.
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>Schedules produce characteristic, reproducible patterns</b> across species, visible directly on cumulative records.</li>
+            <li><b>The intermittent reinforcement effect is robust</b> and has clear practical consequences.</li>
+            <li><b>It explains why some behaviours persist</b> long after rewards become rare.</li>
+            <li><b>It suggests concrete interventions</b>, such as converting variable schedules to fixed ones.</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>Real environments mix schedules</b>, so clean laboratory patterns rarely appear in pure form.</li>
+            <li><b>Human behaviour is affected by instructions and beliefs</b> about the schedule, not only the schedule itself.</li>
+            <li><b>Skinner's superstition account was challenged</b> by more careful replication.</li>
+            <li><b>Schedules alone do not explain addiction</b>, which also involves near-misses, prediction error and vulnerability.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a parent gives in to a child's whining about one time in five. The parent then decides never to give in again. Predict what happens, using the schedule.</summary>
+          <div class="ans"><b>The schedule.</b> Whining has been reinforced on roughly a <b>variable-ratio</b> schedule: an unpredictable number of whines eventually pays off.<br><br><b>The prediction.</b> When the parent stops giving in, the behaviour is in extinction. Because it was maintained intermittently, it will <b>resist extinction strongly</b> — the child has learned that many unrewarded whines can come before a success. Expect whining to continue for a long time and, typically, to <b>increase</b> in intensity before it declines, as a burst of effort is the normal first response when a reinforced behaviour stops paying.<br><br><b>The trap.</b> If the parent gives in during that burst, they have reinforced an even longer, louder bout of whining on an even leaner schedule — making the behaviour more persistent than before.<br><br><b>The lesson.</b> Consistency matters more than intensity. Occasional giving-in is the most effective way to make whining permanent.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Continuous</b> reinforcement builds behaviour fastest; <b>intermittent</b> reinforcement makes it more resistant to extinction — the <b>intermittent reinforcement effect</b>.</li>
+          <li><b>Interval</b> schedules reward the first response after time passes; <b>ratio</b> schedules reward a number of responses.</li>
+          <li><b>FI</b> produces a scallop; <b>FR</b> fast responding with pauses; <b>VI</b> slow steady responding; <b>VR</b> the highest, most persistent responding.</li>
+          <li><b>Skinner (1948)</b> reported "superstitious" rituals in pigeons fed on a fixed-time schedule; <b>Staddon &amp; Simmelhag (1971)</b> challenged the interpretation.</li>
+          <li><b>Variable ratio</b> underlies gambling and feed-refreshing, but addiction also involves near-misses, prediction error and vulnerability.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, schedules, studies and applications from 13.6, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Intermittent reinforcement</td><td>"An operant conditioning principle whereby only some of the responses made are followed by reinforcement." (Schacter)</td></tr>
+          <tr><td>Intermittent reinforcement effect</td><td>Behaviours maintained intermittently "resist extinction better than those maintained under continuous reinforcement." (Schacter)</td></tr>
+          <tr><td>Fixed interval</td><td>Reinforcement for the first response after a fixed time.</td></tr>
+          <tr><td>Variable interval</td><td>Reinforcement after an average time has passed.</td></tr>
+          <tr><td>Fixed ratio</td><td>Reinforcement after a set number of responses.</td></tr>
+          <tr><td>Variable ratio</td><td>Reinforcement after an average number of responses.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Partial reward builds persistence.</b></li>
+          <li><b>Ratio schedules reward speed</b>; interval schedules do not.</li>
+          <li><b>Fixed schedules produce pauses</b>; variable schedules do not.</li>
+          <li><b>Occasional giving-in is the strongest way to maintain a behaviour.</b></li>
+          <li><b>A schedule is not a full explanation of addiction.</b></li>
+        </ul>
+        <h5>Key study</h5>
+        <p><b>Skinner (1948)</b> — eight pigeons given food every 15 seconds regardless of behaviour; six developed repetitive rituals, which Skinner attributed to accidental reinforcement. Staddon and Simmelhag (1971) found much of this was species-typical food-anticipation behaviour.</p>
+      </div>
+    `
+  },
+  'l-shaping': {
+    eyebrow: 'Part IV · Topic 13 · Learning',
+    title: 'Shaping, chaining and successive approximation',
+    html: `
+      <p class="lesson-lead">A behaviour that never occurs cannot be reinforced. A pigeon will not spontaneously play table tennis, and a child will not spontaneously read a paragraph. Shaping solves this by reinforcing steps toward the goal. This lesson covers how shaping and chaining work, the discovery that trained animals drift back toward their instincts, and how the techniques are used — and argued about — with people.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=M4VUBiaqS1A" target="_blank" rel="noopener">B.F. Skinner Demonstrates Shaping a Pigeon</a><span class="vs">Skinner shaping a turn in real time — successive approximation you can watch happen.</span></li><li><a href="https://www.youtube.com/watch?v=vGazyH6fQQ4" target="_blank" rel="noopener">Pigeon Ping Pong Clip</a> <span class="vby">B.F. Skinner Foundation</span><span class="vs">Where shaping and chaining lead: pigeons trained to play table tennis.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Shaping</h4>
+        <span class="role">Building behaviour that was never there</span>
+        <div class="lesson-def">
+          <span class="term">Shaping</span> — "Learning that results from the reinforcement of successive steps to a final desired behavior." (Schacter)<br><br>
+          <span class="term">Successive approximations</span> — the sequence of behaviours, each a little closer to the target, that are reinforced in turn.<br><br>
+          <span class="term">Conditioned reinforcer</span> — a signal, such as a click, that has been paired with food and marks the exact moment of the correct response.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">How the criterion moves</span>
+          Start by reinforcing anything in the right direction — a rat turning toward the lever. Once that happens reliably, stop reinforcing it and reinforce only a closer version — moving toward the lever. Then touching it, then pressing it.<br><br>
+          The key is the change in criterion. Reinforcement is withheld from the old step, so behaviour varies, and the variation includes responses a little closer to the target, which are then reinforced. Shaping uses extinction of the earlier step as the source of new behaviour (<i>13.2</i>).
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Why the click matters</span>
+          A treat takes a second or two to arrive, and by then the animal is doing something else. A click delivered at the instant of the correct movement bridges the gap. It works because it has been paired with food, so it is a <b>secondary reinforcer</b> (<i>13.5</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Chaining</h4>
+        <span class="role">Linking behaviours into a sequence</span>
+        <div class="lesson-def">
+          <span class="term">Chaining</span> — linking a series of behaviours so that each step produces the cue for the next, and the whole sequence ends in reinforcement.<br><br>
+          <span class="term">Backward chaining</span> — teaching the last step first, then adding earlier steps one at a time.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Why backward chaining often works best</span>
+          Teaching a child to tie shoelaces, the teacher does every step except the final pull, which the child completes and is praised for. Next time the child does the last two steps. Then three.<br><br>
+          The advantage is that the child always finishes the task and experiences success immediately. Each newly learned step leads straight into steps already mastered, so completing them becomes reinforcing in itself. This is widely used in teaching self-care skills and in rehabilitation.
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Breland &amp; Breland (1961) — "The misbehavior of organisms"</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>Keller and Marian Breland, former students of Skinner, used operant methods to train thousands of animals for commercial displays. They reported cases where trained behaviour broke down despite continued reinforcement.</dd>
+          <dt>Method</dt>
+          <dd>Animals were shaped to perform sequences for food. A raccoon was trained to pick up a coin and drop it into a container. Pigs were trained to carry large wooden tokens and deposit them in a "piggy bank".</dd>
+          <dt>Results</dt>
+          <dd>The raccoon learned with one coin, but given two it began rubbing them together and dipping them in and out of the container instead of releasing them — for minutes at a time. The pigs increasingly dropped the tokens and pushed them along the ground with their snouts, tossing and rooting them, even though this delayed the food and reinforcement stayed exactly the same.</dd>
+          <dt>Conclusion</dt>
+          <dd>The Brelands called this <b>instinctive drift</b>: learned behaviour drifts toward the animal's natural food-related behaviour — washing and manipulating food for raccoons, rooting for pigs. The laws of reinforcement do not operate on a blank slate; biology constrains and competes with what is trained (<i>14.1</i>).</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Shaping people</h4>
+        <span class="role">Effective techniques, contested applications</span>
+        <table class="lesson-table">
+          <tr><th>Application</th><th>How shaping is used</th></tr>
+          <tr><td>Physiotherapy</td><td>Reinforcing gradually larger ranges of movement after injury or stroke</td></tr>
+          <tr><td>Teaching</td><td>Praising partial answers, then requiring more complete ones</td></tr>
+          <tr><td>Token economies</td><td>Tokens exchanged for rewards, delivered for steadily more demanding target behaviours</td></tr>
+          <tr><td>Speech therapy</td><td>Reinforcing sounds closer and closer to the target word</td></tr>
+          <tr><td>Autism interventions</td><td>Intensive behavioural programmes teaching communication and self-care skills</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">The contested case, stated fairly</span>
+          Lovaas (1987) reported that young autistic children receiving around 40 hours a week of intensive behavioural intervention made large gains compared with a less intensive group. The study was influential and is also widely criticised: groups were not randomly assigned, outcome measures were questioned, and early versions of the approach used aversive methods.<br><br>
+          Many autistic adults argue that some behavioural programmes aim to suppress harmless autistic behaviour for others' comfort rather than to build skills the person wants. Current practice has moved away from aversives, and the debate over goals is ongoing. The techniques themselves are well supported; which behaviours should be targeted is an ethical question the techniques cannot answer.
+        </div>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — shaping a study habit</span>
+        <b>Goal.</b> A student who currently studies for about five minutes before giving up wants to work for 45 minutes.<br><br>
+        <b>Step 1.</b> Reinforce ten minutes of work — a short break with something enjoyable. Once ten minutes is reliable, move on. (Premack: the preferred activity reinforces the less preferred one, <i>13.5</i>.)<br><br>
+        <b>Step 2.</b> Raise the criterion to fifteen minutes. Ten no longer earns the break.<br><br>
+        <b>Step 3.</b> Continue in five-minute steps. If a step fails repeatedly, the jump was too large: drop back and use a smaller increment.<br><br>
+        <b>Step 4.</b> Once 45 minutes is reliable, thin the reinforcement so the habit is maintained intermittently and resists extinction (<i>13.6</i>).<br><br>
+        <b>The common mistake.</b> Starting with the target of 45 minutes. A behaviour that never occurs is never reinforced, so it never develops.
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>Builds genuinely new behaviour</b> that simple reinforcement cannot produce.</li>
+            <li><b>Precise and teachable</b>: step size and criterion can be set and adjusted.</li>
+            <li><b>Wide practical success</b> in animal training, rehabilitation and education.</li>
+            <li><b>The Brelands' findings improved the theory</b> by revealing its biological limits.</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>Instinctive drift</b> shows reinforcement cannot override species-typical behaviour.</li>
+            <li><b>Time-consuming</b> for complex human skills, and step size requires judgement.</li>
+            <li><b>Humans can be told the goal</b>, so shaping is often less efficient than instruction for people.</li>
+            <li><b>Ethical disputes about goals</b>, particularly in interventions with autistic children.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a dog trainer wants a dog to ring a bell to be let outside. The dog has never touched the bell. Design the shaping sequence, and say what could go wrong.</summary>
+          <div class="ans"><b>Sequence.</b> (1) Click and treat for looking at the bell. (2) Once reliable, only for moving toward it. (3) Only for nose contact. (4) Only for contact hard enough to make it ring. (5) Only for ringing while standing at the door. (6) Open the door as the consequence, so going outside replaces the treat as the reinforcer.<br><br><b>Why the click.</b> It marks the exact instant of the correct movement; a treat arriving a second later could reinforce whatever the dog did next (<i>13.5</i>).<br><br><b>What could go wrong.</b> <b>Step too large</b> — the dog never meets the new criterion and gives up; drop back. <b>Accidental reinforcement</b> — opening the door when the dog barks instead teaches barking. <b>Over-success</b> — the dog learns ringing always opens the door and rings constantly for attention, because the consequence has become too reliable; the owner must only respond when going out is appropriate.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Shaping</b> reinforces successive approximations toward a behaviour that does not yet occur, by gradually raising the criterion.</li>
+          <li>A <b>conditioned reinforcer</b> such as a click marks the exact correct moment.</li>
+          <li><b>Chaining</b> links behaviours into sequences; <b>backward chaining</b> teaches the last step first so every attempt ends in success.</li>
+          <li><b>Breland &amp; Breland (1961)</b>: trained raccoons and pigs drifted toward instinctive food behaviours — <b>instinctive drift</b>.</li>
+          <li>Shaping is effective with people, but applications such as intensive autism interventions raise ethical disputes about goals.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, techniques, studies and debates from 13.7, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Shaping</td><td>"Learning that results from the reinforcement of successive steps to a final desired behavior." (Schacter)</td></tr>
+          <tr><td>Successive approximations</td><td>Steps increasingly close to the target behaviour, reinforced in turn.</td></tr>
+          <tr><td>Conditioned reinforcer</td><td>A stimulus paired with a primary reinforcer, used to mark correct responses.</td></tr>
+          <tr><td>Chaining</td><td>Linking behaviours so each cues the next, ending in reinforcement.</td></tr>
+          <tr><td>Backward chaining</td><td>Teaching the final step first.</td></tr>
+          <tr><td>Instinctive drift</td><td>Trained behaviour reverting toward species-typical behaviour.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>You cannot reinforce what never happens</b> — so reinforce what is nearly there.</li>
+          <li><b>Raising the criterion creates the variation</b> shaping needs.</li>
+          <li><b>Biology limits reinforcement.</b></li>
+          <li><b>Technique and goal are separate questions.</b></li>
+        </ul>
+        <h5>Key study</h5>
+        <p><b>Breland &amp; Breland (1961)</b> — raccoons trained to deposit coins began rubbing them together, and pigs trained to deposit tokens began rooting them, despite unchanged reinforcement. Learned behaviour drifts toward instinct.</p>
+      </div>
+    `
+  },
+  'l-helpless': {
+    eyebrow: 'Part IV · Topic 13 · Learning',
+    title: 'Escape, avoidance and learned helplessness',
+    html: `
+      <p class="lesson-lead">Some of the most consequential behaviour is not about getting rewards but about getting away from harm. This lesson covers escape and avoidance learning, why avoidance is so hard to extinguish, and the discovery that when harm cannot be escaped, animals and people may stop trying — a finding that shaped theories of depression and was substantially revised fifty years later.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=JARdj2ikFyw" target="_blank" rel="noopener">Learned Helplessness | Seligman's Theory</a><span class="vs">The dog studies and the link to depression. Most explainers predate the 2016 revision covered below.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Escape and avoidance</h4>
+        <span class="role">Two forms of negative reinforcement</span>
+        <div class="lesson-def">
+          <span class="term">Escape learning</span> — learning a response that ends an aversive stimulus already present, such as leaving a noisy room.<br><br>
+          <span class="term">Avoidance learning</span> — learning a response that prevents an aversive stimulus from occurring at all, usually in response to a warning signal.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">How avoidance develops</span>
+          In a shuttle box, a light comes on shortly before the floor on one side is electrified. At first the animal crosses only after the shock starts — escape. Soon it crosses as soon as the light appears, and never receives a shock — avoidance. Both are <b>negative reinforcement</b>: the behaviour increases because it removes or prevents something unpleasant (<i>13.5</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Why avoidance is so persistent</h4>
+        <span class="role">The behaviour that prevents its own extinction</span>
+        <div class="lesson-plain">
+          <span class="pl">The shuttle-box evidence</span>
+          Solomon and Wynne (1953) trained dogs to jump a barrier at a warning signal to avoid a strong shock. After learning, the shock was disconnected. Many dogs continued jumping at the signal for hundreds of trials without ever receiving another shock, and some showed little sign of stopping.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Why this happens</span>
+          To extinguish, the animal would have to stay put when the signal comes on and discover that no shock follows. A successful avoider never does that, so it never collects the evidence that would change its behaviour. Every successful jump is also followed by relief as the fear signal ends, which negatively reinforces the jump again. This is exactly Mowrer's account of why phobias last (<i>13.3</i>), and it is why treatment has to prevent the avoidance response rather than simply wait (<i>35.3</i>).
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Seligman &amp; Maier (1967) — learned helplessness</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To test whether experience of uncontrollable aversive events would interfere with later learning to escape, and whether it was the lack of control, rather than the shocks themselves, that mattered.</dd>
+          <dt>Method</dt>
+          <dd>Dogs were assigned to three groups. The <b>escape</b> group received shocks they could end by pressing a panel. The <b>yoked</b> group received exactly the same shocks at the same times, but nothing they did could stop them — shocks ended when the paired escape dog pressed its panel. A third group received no shocks. Later, all dogs were placed in a shuttle box where they could escape shock simply by jumping a low barrier.</dd>
+          <dt>Results</dt>
+          <dd>Dogs from the escape and no-shock groups quickly learned to jump. Most of the yoked dogs failed to learn: they lay down, whimpered and passively endured shocks they could easily have escaped.</dd>
+          <dt>Conclusion</dt>
+          <dd>Because the escape and yoked dogs received identical shocks, the difference must come from <b>controllability</b>. Seligman and Maier proposed that the yoked dogs had learned that their responses made no difference, and carried that expectation into the new situation — <b>learned helplessness</b>. The procedure caused serious distress to animals and would face major ethical objections today (<i>3.8</i>).</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">From dogs to depression</h4>
+        <span class="role">The model, its reformulation, and its revision</span>
+        <div class="lesson-plain">
+          <span class="pl">The helplessness model of depression</span>
+          The passivity, lack of initiative and weight loss of helpless animals resemble features of depression, and people exposed to uncontrollable events in the laboratory — such as unsolvable problems or inescapable noise — later perform worse on solvable tasks (Hiroto &amp; Seligman, 1975). Seligman proposed that depression involves a learned expectation that one's actions do not affect outcomes.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">The attributional reformulation</span>
+          Not everyone exposed to uncontrollable events becomes depressed. Abramson, Seligman and Teasdale (1978) proposed that what matters is how a person <b>explains</b> the lack of control. Explanations that are <b>internal</b> ("it's me"), <b>stable</b> ("it will always be like this") and <b>global</b> ("it affects everything") are linked to helplessness and depression. This moved the theory from conditioning toward cognition (<i>33.4</i>).
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">The 2016 revision</span>
+          Fifty years on, Maier and Seligman reviewed the neuroscience and concluded that the original account had the direction wrong. <b>Passivity is the default response</b> to prolonged aversive events; animals do not have to learn it. What animals learn in the escape condition is <b>control</b>, detected by the prefrontal cortex, which then dampens the brainstem systems that produce passivity and fear. On this view, "learned helplessness" is really <b>unlearned control</b> — and the practical focus shifts to building experiences of control.
+        </div>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — a student who stops trying at maths</span>
+        A student fails several maths tests despite studying hard. Now they no longer study for maths at all, even when a test is easy.<br><br>
+        <b>The learning analysis.</b> Their effort did not change the outcome, so effort was not reinforced. Like the yoked dogs, they experienced aversive outcomes they could not control, and passivity followed.<br><br>
+        <b>The attributional analysis.</b> Ask how they explain it. "I'm just bad at maths" is internal, stable and global — the pattern linked to helplessness. "That teacher's tests were unusually hard" is external and unstable, and predicts much less giving up.<br><br>
+        <b>What helps.</b> Arrange tasks where effort <i>does</i> produce success, starting small (<i>13.7</i>), so the student experiences control. The 2016 revision makes this the core of the intervention: not removing a learned belief, but building the learning of control.
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>The yoked design is elegant</b>: identical shocks, different control, so controllability is isolated as the cause.</li>
+            <li><b>Avoidance persistence is well replicated</b> and explains the durability of phobias and anxiety.</li>
+            <li><b>Real-world relevance</b> to depression, education, institutional care and poverty.</li>
+            <li><b>The theory was revised by evidence</b>, including by its own originators.</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>Serious ethical problems</b> with inescapable shock in animals.</li>
+            <li><b>Generalising from dogs to human depression</b> is a large step; depression has many causes.</li>
+            <li><b>Human helplessness depends on attributions</b>, which the original conditioning account omitted.</li>
+            <li><b>The original mechanism was wrong</b> according to later neuroscience: passivity is default, control is learned.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: why did Seligman and Maier need a yoked group, and what would the study show without it?</summary>
+          <div class="ans"><b>Without the yoked group</b>, the comparison would be dogs given inescapable shock against dogs given no shock. If the shocked dogs later failed to escape, the cause could be the <b>shocks themselves</b> — pain, exhaustion, fear — rather than the lack of control over them. Controllability would be confounded with receiving shock (<i>3.7</i>).<br><br><b>What the yoked design does.</b> Each yoked dog received exactly the same number, intensity, timing and duration of shocks as a partner in the escape group. The only difference was whether the dog's own behaviour could end them. So when the escape dogs learned the shuttle box and the yoked dogs did not, the difference could only be attributed to <b>control</b>.<br><br><b>Why this matters.</b> It is a model of how to isolate one variable when two usually occur together. The same logic — match everything except the factor of interest — is used in controlled experiments throughout psychology (<i>3.4</i>).</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Escape</b> ends an aversive stimulus; <b>avoidance</b> prevents it. Both are negative reinforcement.</li>
+          <li><b>Solomon &amp; Wynne (1953)</b>: avoidance persisted for hundreds of trials after shock was disconnected, because avoiding prevents discovering safety.</li>
+          <li><b>Seligman &amp; Maier (1967)</b>: yoked dogs given uncontrollable shock later failed to escape — <b>learned helplessness</b>.</li>
+          <li><b>Abramson et al. (1978)</b>: internal, stable, global explanations predict helplessness in people.</li>
+          <li><b>Maier &amp; Seligman (2016)</b>: passivity is the default; what is learned is <b>control</b>.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, studies and theory changes from 13.8, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Escape learning</td><td>Learning a response that ends an aversive stimulus already present.</td></tr>
+          <tr><td>Avoidance learning</td><td>Learning a response that prevents an aversive stimulus.</td></tr>
+          <tr><td>Learned helplessness</td><td>Passivity and failure to escape after experience of uncontrollable aversive events.</td></tr>
+          <tr><td>Yoked control</td><td>A comparison group receiving identical events without control over them.</td></tr>
+          <tr><td>Attributional style</td><td>How a person explains events: internal/external, stable/unstable, global/specific.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Avoidance prevents the evidence that would extinguish it.</b></li>
+          <li><b>Controllability, not shock, produced helplessness.</b></li>
+          <li><b>Explanations matter in humans.</b></li>
+          <li><b>Control is learned; passivity is the default</b> — the 2016 revision.</li>
+        </ul>
+        <h5>Key study</h5>
+        <p><b>Seligman &amp; Maier (1967)</b> — dogs given escapable, yoked inescapable, or no shock were later tested in a shuttle box. Escape and no-shock dogs learned to jump; most yoked dogs passively endured shock.</p>
+      </div>
+    `
+  },
+  'l-prepared': {
+    eyebrow: 'Part IV · Topic 14 · Learning',
+    title: 'Biological constraints — taste aversion and preparedness',
+    html: `
+      <p class="lesson-lead">Early behaviourists assumed any stimulus could be linked with any consequence, and any response trained with any reward. Lessons 2.5 and 13.7 showed two cracks in that assumption. This lesson follows them through: evolution biases what each species learns easily, and it does so in ways specific enough to predict.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=D91H_sbC9zE" target="_blank" rel="noopener">John Garcia's Conditioned Taste Aversion: The Bright, Noisy Water Experiment</a><span class="vs">The design that broke the assumption of equipotentiality.</span></li><li><a href="https://www.youtube.com/watch?v=VVuAC_rLrr4" target="_blank" rel="noopener">Conditioned Taste Aversion (Garcia Effect) with Wolves and Sheep</a><span class="vs">Taste aversion put to work: stopping predators attacking livestock.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The textbook definition</h4>
+        <span class="role">Schacter's wording, quoted exactly</span>
+        <div class="lesson-def">
+          <span class="term">Biological preparedness</span> — "A propensity for learning particular kinds of associations over others."<br><br>
+          <span class="term">Equipotentiality</span> — the behaviourist assumption that any stimulus can be associated with any consequence equally well, given the same pairings. Preparedness is the finding that it is false.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Taste aversion, and what makes it unusual</h4>
+        <span class="role">Three features that break the standard rules</span>
+        <div class="lesson-plain">
+          <span class="pl">What Garcia found</span>
+          As Schacter describes it, Garcia and his colleagues paired a range of CSs — visual, auditory, tactile, taste and smell — with USs such as a toxic injection or radiation that caused nausea hours later. Conditioning was weak or absent when the CS was a sight, sound or touch, but a strong aversion developed when it was a taste or smell. The classic bright-noisy-water version is described in <i>2.5</i>.
+        </div>
+        <table class="lesson-table">
+          <tr><th>Standard conditioning</th><th>Taste aversion</th></tr>
+          <tr><td>Needs many pairings</td><td>Often forms after <b>one</b> pairing</td></tr>
+          <tr><td>CS and UCS must be seconds apart</td><td>Forms across delays of <b>several hours</b></td></tr>
+          <tr><td>Any CS works about as well as any other</td><td>Taste links to illness; sights and sounds do not</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">Why the exceptions make sense</span>
+          In an animal's natural history, poisoning follows eating by hours, not seconds, and what it ate is the thing that predicts it. A learning system tuned to catch that one relationship fast, from a single experience, would have kept its owner alive. Schacter notes that rats are notoriously hard to poison for exactly this reason: a sick rat avoids the bait afterwards.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Seligman's preparedness continuum</h4>
+        <span class="role">Not just possible or impossible, but a gradient</span>
+        <table class="lesson-table">
+          <tr><th>Category</th><th>Learning is</th><th>Example</th></tr>
+          <tr><td><b>Prepared</b></td><td>Fast, sometimes one-trial, resistant to extinction</td><td>Taste–illness in rats; fear of snakes in primates</td></tr>
+          <tr><td><b>Unprepared</b></td><td>Possible with many ordinary pairings</td><td>A lever press for food</td></tr>
+          <tr><td><b>Contraprepared</b></td><td>Very hard or impossible</td><td>Rats linking a light with nausea; pigeons pecking to avoid shock</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">The link to phobias</span>
+          Seligman applied the idea to human fear. People develop phobias of snakes, spiders, heights and blood far more often than of cars, electric sockets or guns — although the latter kill far more people today. His explanation was that ancestral threats are prepared fears: learned easily and extinguished slowly (<i>13.3</i>, <i>8.4</i>).
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Cook &amp; Mineka (1989, 1990) — prepared fear in rhesus monkeys</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To test whether primates acquire fear of evolutionarily relevant objects more readily than of irrelevant ones, when the learning experience is identical.</dd>
+          <dt>Method</dt>
+          <dd>Laboratory-raised rhesus monkeys, which had never encountered snakes and showed no fear of them, watched videotapes of wild-reared monkeys reacting fearfully. The tapes were edited so that the same fearful reactions appeared to be directed either at a toy snake or at an irrelevant object such as flowers. The observers were then tested with the objects themselves.</dd>
+          <dt>Results</dt>
+          <dd>Monkeys that watched fear apparently directed at the toy snake acquired a fear of snakes. Monkeys that watched exactly the same fear reactions apparently directed at flowers did not acquire a fear of flowers.</dd>
+          <dt>Conclusion</dt>
+          <dd>Because the model's fear display was identical in both conditions, the difference must come from the object. Primates are prepared to learn fear of snakes from others but not fear of flowers. Schacter adds that the lab-raised monkeys' fear was pronounced enough for them to serve as models for further monkeys — an observational learning chain (<i>14.3</i>).</dd>
+        </dl>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — the scapegoat flavour in chemotherapy</span>
+        Chemotherapy causes nausea, and patients often develop aversions to foods eaten before treatment — a textbook taste aversion, and a serious problem when a patient needs to keep eating.<br><br>
+        <b>The prediction from preparedness.</b> Taste is the prepared CS for illness, and a novel, distinctive taste should be the one most strongly blamed.<br><br>
+        <b>The intervention.</b> As Schacter describes, Broberg and Bernstein (1987) gave patients an unusual food — coconut- or root-beer-flavoured sweets — at the end of the last meal before treatment.<br><br>
+        <b>The result.</b> The aversions that developed were overwhelmingly to the unusual flavour, not to the everyday foods in the meal. Patients were spared aversions to foods they would need to keep eating.<br><br>
+        <b>Why it is a good test.</b> It uses the theory's specific predictions — taste, novelty, one pairing, delay — to redirect learning that would happen anyway, rather than trying to stop it.
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>Taste aversion is extremely robust</b> and replicates across species.</li>
+            <li><b>Cook and Mineka's design isolates the object</b>: identical model behaviour, different learning.</li>
+            <li><b>It explains the distribution of phobias</b>, which pure conditioning cannot.</li>
+            <li><b>Practical applications work</b>, as the scapegoat technique shows.</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>Human evidence for prepared phobias is mixed</b>; laboratory advantages for fear-relevant pictures are often modest.</li>
+            <li><b>Alternative explanations exist</b>, such as people simply expecting snakes to be linked with harm because of culture and warnings.</li>
+            <li><b>Risk of post-hoc stories</b>: any easily learned association can be called "prepared" after the fact (<i>8.4</i>).</li>
+            <li><b>Animal procedures</b> such as radiation-induced illness raise ethical concerns.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: you get food poisoning after a meal where you ate prawns and listened to a new album. Afterwards you feel sick at the smell of prawns but not when the album plays. Explain using this lesson.</summary>
+          <div class="ans"><b>Both were paired with the illness.</b> In a pure contiguity account of conditioning, both the prawns and the album should become CSs for nausea, since both preceded the UCS by the same interval.<br><br><b>Why only the prawns became aversive.</b> Taste and smell are <b>prepared</b> CSs for illness; sounds are, at best, unprepared or contraprepared. That is precisely what Garcia found with rats: nausea conditioned to taste and smell, not to visual, auditory or tactile stimuli.<br><br><b>Why the delay did not matter.</b> Food poisoning follows eating by hours, yet taste aversion forms across long delays and often from a single pairing — two more departures from standard conditioning that make sense for a system evolved to detect poisoned food.<br><br><b>What this rules out.</b> Equipotentiality: the assumption that any stimulus can be linked with any consequence equally well.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Biological preparedness</b>: "a propensity for learning particular kinds of associations over others." Equipotentiality is false.</li>
+          <li><b>Taste aversion</b> forms after one pairing, across hours, and to taste and smell but not sights or sounds.</li>
+          <li><b>Seligman</b>: associations range from prepared through unprepared to contraprepared; prepared fears explain why phobias cluster on ancestral threats.</li>
+          <li><b>Cook &amp; Mineka</b>: monkeys learned fear of snakes from others' fear, but not of flowers when shown identical fear reactions.</li>
+          <li><b>Broberg &amp; Bernstein (1987)</b>: a novel "scapegoat" flavour protected chemotherapy patients from aversions to ordinary foods.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, findings and studies from 14.1, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Biological preparedness</td><td>"A propensity for learning particular kinds of associations over others." (Schacter)</td></tr>
+          <tr><td>Equipotentiality</td><td>The false assumption that all stimulus–consequence pairings are learned equally well.</td></tr>
+          <tr><td>Taste aversion</td><td>Avoidance of a flavour paired with illness, often after one pairing and long delays.</td></tr>
+          <tr><td>Prepared / unprepared / contraprepared</td><td>Learned easily / with ordinary effort / with great difficulty or not at all.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Evolution tunes learning to ecology.</b></li>
+          <li><b>Delay and single trials are features</b> of taste aversion, not flaws.</li>
+          <li><b>Identical experience, different object, different learning</b> — the core evidence.</li>
+          <li><b>Redirect prepared learning</b> rather than fight it.</li>
+        </ul>
+        <h5>Key study</h5>
+        <p><b>Cook &amp; Mineka (1989, 1990)</b> — lab-raised rhesus monkeys watched edited videos of fearful monkeys; they acquired fear of toy snakes but not of flowers when shown the same reactions.</p>
+      </div>
+    `
+  },
+  'l-latent': {
+    eyebrow: 'Part IV · Topic 14 · Learning',
+    title: 'Latent learning and cognitive maps (Tolman)',
+    html: `
+      <p class="lesson-lead">Lesson 2.5 described Tolman and Honzik's rats, who learned a maze without reward and showed it only when food appeared. This lesson asks what they actually learned. Tolman's answer — an internal map of the environment, not a chain of turns — was the first serious cognitive account of learning, and it has held up better than its critics expected.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=CoKusFPAp0c" target="_blank" rel="noopener">Latent Learning &amp; Cognitive Maps (Intro Psych Tutorial #68)</a><span class="vs">Tolman's rats, latent learning and cognitive maps.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The textbook definitions</h4>
+        <span class="role">Schacter's wording, quoted exactly</span>
+        <div class="lesson-def">
+          <span class="term">Latent learning</span> — "A process in which something is learned, but it is not manifested as a behavioral change until sometime in the future."<br><br>
+          <span class="term">Cognitive map</span> — "A mental representation of the physical features of the environment."
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Tolman's challenge to Skinner</span>
+          Schacter presents Tolman as "the strongest early advocate of a cognitive approach to operant learning". Where Skinner described learning as a change in response produced by reinforcement, Tolman proposed that animals form a <b>means–ends relationship</b>: knowledge or a belief that, in a particular situation, a specific reward will follow a specific response. Reinforcement, on this view, affects whether knowledge is <i>used</i>, not whether it is <i>acquired</i>.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The latent learning evidence, in brief</h4>
+        <span class="role">Learning and performance separated</span>
+        <div class="lesson-plain">
+          <span class="pl">Two results that make the point</span>
+          <b>Blodgett (1929)</b> first reported that rats explored a maze for several days without food, then, once food was introduced at the goal, their errors dropped far faster than those of rats rewarded from the start would predict.<br><br>
+          <b>Tolman and Honzik (1930)</b> made it decisive with three groups: always rewarded, never rewarded, and rewarded only from day eleven. The late-rewarded group jumped almost at once to the performance of the always-rewarded group (<i>2.5</i>). They had learned the layout while wandering; food gave them a reason to show it.
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Tolman, Ritchie &amp; Kalish (1946) — the sunburst maze</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To test whether rats that learn a route to food learn only the sequence of movements, or a representation of where the food is — which would let them take a shortcut they had never used.</dd>
+          <dt>Method</dt>
+          <dd>Rats were trained on an indirect route: across a circular table, into an alley, round a series of turns, and eventually to food. Then the original alley was blocked, and many new alleys radiated out from the table in different directions, like the rays of the sun. Researchers recorded which new alley each rat chose.</dd>
+          <dt>Results</dt>
+          <dd>Rats did not choose randomly, and did not favour alleys next to the blocked one. The alley chosen most often pointed roughly in the direction of the place where food had been, even though no rat had travelled that path before.</dd>
+          <dt>Conclusion</dt>
+          <dd>The rats had learned something about the spatial location of the goal, not only a chain of responses. Tolman took this as evidence for a <b>cognitive map</b>. Later replications found the result depends heavily on landmarks outside the maze — in the original there was a light near the goal — which weakens the strong interpretation but not the core point that rats learn about places.</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Place learning versus response learning</h4>
+        <span class="role">What exactly gets stored</span>
+        <table class="lesson-table">
+          <tr><th></th><th>Response learning</th><th>Place learning</th></tr>
+          <tr><td>What is learned</td><td>A movement: "turn left at the junction"</td><td>A location: "the food is by the window"</td></tr>
+          <tr><td>Account</td><td>Behaviourist stimulus–response chain</td><td>Tolman's cognitive map</td></tr>
+          <tr><td>Test</td><td>Start from a new position: a response learner turns the same way and misses</td><td>A place learner heads to the same location by a different turn</td></tr>
+          <tr><td>Modern view</td><td>Relies on the striatum; becomes dominant with extensive repetition</td><td>Relies on the hippocampus; flexible and used early in learning</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">Both, not either</span>
+          Tolman's experiments often found place learning easier, but later work showed animals use both systems, and which wins depends on the environment and the amount of practice. Early in learning, flexible place knowledge dominates; after many repetitions of the same route, a habitual response takes over — the neural version of the shift from deliberate to automatic behaviour described in <i>2.3</i> and <i>14.5</i>.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Where cognitive maps are now</h4>
+        <span class="role">From metaphor to measurement</span>
+        <div class="lesson-plain">
+          <span class="pl">What neuroscience added</span>
+          <b>Place cells</b> in the rat hippocampus fire when the animal is in a particular location, and together they form something close to a literal map. During rest and sleep, sequences of place cells replay routes the animal has run (<i>9.3</i>). In humans, London taxi drivers who memorise the city's layout show enlarged posterior hippocampi (<i>6.6</i>). The idea Tolman proposed on behavioural evidence alone now has a physical basis he could not have observed.
+        </div>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — a road closure on your way home</span>
+        You have driven the same route home for a year. One evening the usual turn is closed.<br><br>
+        <b>If you had only response learning,</b> you would have a chain of turns and no way forward when one link breaks. You would have to find a new route by trial and error.<br><br>
+        <b>What actually happens.</b> You know roughly where home is relative to where you are, and you take a street you have never driven that heads in that direction. That is the sunburst maze.<br><br>
+        <b>Where response learning shows up.</b> On an ordinary evening, lost in thought, you may drive past a shop you meant to stop at, because the habitual route ran on without deliberate control.<br><br>
+        <b>The lesson.</b> Everyday navigation uses both: a flexible map for new problems, and automatic routes for familiar ones.
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>Separates learning from performance</b>, which pure reinforcement accounts could not.</li>
+            <li><b>Predicts novel behaviour</b> — shortcuts never reinforced.</li>
+            <li><b>Supported by neuroscience</b>: place cells, hippocampal replay, and structural change with navigation.</li>
+            <li><b>Launched cognitive accounts of learning</b> decades before the cognitive revolution (<i>2.6</i>).</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>"Cognitive map" was vague</b> in Tolman's use, and hard to specify precisely.</li>
+            <li><b>Sunburst results depend on landmarks</b>, and some replications controlling cues were weaker.</li>
+            <li><b>Associative accounts can explain some findings</b> without a map.</li>
+            <li><b>Mostly rat mazes</b>, though human navigation research has since broadened the base.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a new student wanders round campus for a week with no particular goal. When they need to find the library quickly for an exam, they get there straight away. What does this show, and why would a strict behaviourist struggle with it?</summary>
+          <div class="ans"><b>It is latent learning.</b> During the week, the student acquired knowledge of the layout, but because nothing required finding the library, that knowledge did not show in behaviour. When a goal appeared, it was expressed immediately — as with Tolman and Honzik's rats rewarded from day eleven.<br><br><b>It likely involves a cognitive map.</b> If the student takes a direct route they had not walked before, they are using a representation of where things are, not a remembered chain of turns — the sunburst-maze result.<br><br><b>Why strict behaviourism struggles.</b> It defines learning as a change in behaviour produced by reinforcement. The wandering produced no change in behaviour and no reinforcement, so on that definition no learning happened. Yet the sudden efficient performance shows it did. The account needs Tolman's distinction: reinforcement governs performance, while learning can happen without it.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Latent learning</b>: something is learned but not shown in behaviour until later. A <b>cognitive map</b> is "a mental representation of the physical features of the environment."</li>
+          <li><b>Blodgett (1929)</b> and <b>Tolman &amp; Honzik (1930)</b> showed rats learn mazes without reward.</li>
+          <li><b>Tolman, Ritchie &amp; Kalish (1946)</b>: in the sunburst maze, rats chose novel paths pointing toward the goal's location.</li>
+          <li><b>Place learning</b> (hippocampus) and <b>response learning</b> (striatum) both occur; repetition shifts control toward habit.</li>
+          <li><b>Place cells</b> and hippocampal replay give cognitive maps a neural basis.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, studies and distinctions from 14.2, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Latent learning</td><td>"A process in which something is learned, but it is not manifested as a behavioral change until sometime in the future." (Schacter)</td></tr>
+          <tr><td>Cognitive map</td><td>"A mental representation of the physical features of the environment." (Schacter)</td></tr>
+          <tr><td>Means–ends relationship</td><td>Tolman: knowledge that a specific response in a situation leads to a specific reward.</td></tr>
+          <tr><td>Place learning</td><td>Learning a location, allowing flexible routes.</td></tr>
+          <tr><td>Response learning</td><td>Learning a fixed movement sequence.</td></tr>
+          <tr><td>Place cells</td><td>Hippocampal neurons active in particular locations.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Reinforcement governs performance</b>, not acquisition.</li>
+          <li><b>Shortcuts are the test</b> of a map.</li>
+          <li><b>Flexible maps early, habits after repetition.</b></li>
+          <li><b>A behavioural idea later found a neural basis.</b></li>
+        </ul>
+        <h5>Key study</h5>
+        <p><b>Tolman, Ritchie &amp; Kalish (1946)</b> — rats trained on an indirect route; when it was blocked and radiating alleys were offered, the most chosen alley pointed toward where food had been. Results depend on external landmarks.</p>
+      </div>
+    `
+  },
+  'l-observe': {
+    eyebrow: 'Part IV · Topic 14 · Learning',
+    title: 'Observational learning and the Bobo doll (Bandura)',
+    html: `
+      <p class="lesson-lead">Much of what people know how to do was never reinforced and never tried — it was watched. Lesson 2.5 used Bandura's Bobo doll study to show conditioning was incomplete. This lesson looks at the follow-up study that revealed what observation actually teaches, how learned behaviour spreads through groups, and what the neuroscience of imitation can and cannot claim.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=XnnzjAnUae8" target="_blank" rel="noopener">Observational Learning: Bandura&rsquo;s Bobo Doll Study (Intro Psych Tutorial #67)</a><span class="vs">The Bobo doll study and what watching actually teaches.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The textbook definitions</h4>
+        <span class="role">Schacter's wording, quoted exactly</span>
+        <div class="lesson-def">
+          <span class="term">Observational learning</span> — "A condition in which an organism learns by watching the actions of others."<br><br>
+          <span class="term">Diffusion chain</span> — "A process in which individuals initially learn a behavior by observing another individual perform that behavior, and then become models from which other individuals learn the behavior."
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Why it matters</span>
+          Schacter notes that "in all societies, appropriate social behavior is passed on from generation to generation largely through observation". Using chopsticks, operating a remote control, and even performing surgery are learned in part by watching. Observation is fast, and it avoids the cost of learning dangerous things by trial and error.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The original Bobo doll study, briefly</h4>
+        <span class="role">Covered in detail in 2.5</span>
+        <div class="lesson-plain">
+          Bandura, Ross and Ross (1961) showed preschool children an adult either attacking an inflatable Bobo doll or playing quietly. Children who saw aggression later reproduced the specific acts and phrases they had watched, although they had never performed or been reinforced for them. The behaviour was acquired purely by observation.
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Bandura (1965) — learning versus performance</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To test whether the consequences a model receives affect what children <b>learn</b> from watching, or only what they choose to <b>do</b>.</dd>
+          <dt>Method</dt>
+          <dd>Children watched a film of an adult behaving aggressively toward a Bobo doll, with novel actions and phrases. In one version the model was rewarded afterwards, in another punished, and in a third received no consequences. Each child was then left in a room with the same toys and their aggressive behaviour was recorded. Afterwards, all children were offered attractive incentives for reproducing as much of the model's behaviour as they could.</dd>
+          <dt>Results</dt>
+          <dd>In free play, children who saw the model punished imitated fewer aggressive acts than the other two groups. But once incentives were offered, the differences largely disappeared: children in all three conditions could reproduce the model's aggression about equally well.</dd>
+          <dt>Conclusion</dt>
+          <dd>The model's consequences affected <b>performance</b>, not <b>learning</b>. Every child had learned the aggressive behaviour by watching; seeing the model punished only made them less willing to show it. This is the same learning–performance distinction Tolman found in rats (<i>14.2</i>), now demonstrated in children learning social behaviour.</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">How observed behaviour spreads</h4>
+        <span class="role">Chains, cultures and copying too faithfully</span>
+        <div class="lesson-plain">
+          <span class="pl">Diffusion chains in children</span>
+          Schacter describes experiments in which a child (B) watches an adult model (A) use a novel tool to get a reward; child B then models for child C, C for D, and so on (Flynn &amp; Whiten, 2008). Methods pass along the chain with considerable fidelity, which is a small-scale model of how cultural practices spread.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Diffusion in chimpanzees</span>
+          Whiten, Horner and de Waal (2005) taught one chimpanzee in each of two groups a different method of extracting food from the same apparatus. Each method spread through its own group, and many chimpanzees who discovered the other method still reverted to the one common in their group — evidence of something like cultural conformity in another species.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Over-imitation</span>
+          Horner and Whiten (2005) showed children and young chimpanzees an adult retrieving a reward from a box using some necessary and some pointless actions. When the box was transparent, so the pointless actions were visibly useless, chimpanzees skipped them — but children kept copying them. Humans appear to copy <i>how</i> something is done, not just <i>what</i> it achieves, which is inefficient in one case and ideal for learning cultural rules whose purpose is not obvious.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Learning fear by watching</span>
+          Observation transmits emotion as well as actions. Laboratory-raised rhesus monkeys that had never seen a snake developed a fear of snakes simply by watching other monkeys react fearfully (Cook &amp; Mineka, 1990) — and then served as models for others (<i>14.1</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Mirror neurons: the claim and its limits</h4>
+        <span class="role">Stated carefully</span>
+        <div class="lesson-plain">
+          As Schacter describes, mirror neurons fire both when a primate performs an action and when it watches another perform the same action (Rizzolatti &amp; Craighero, 2004). They were quickly proposed as a basis for imitation, understanding others' intentions, empathy, language and autism.<br><br>
+          <b>The caution.</b> Single mirror neurons have been recorded directly in monkeys. In humans the evidence is mostly indirect, from imaging, which shows overlapping activity rather than individual cells (<i>7.3</i>). The broader claims — that mirror neurons explain empathy, or that faults in them cause autism — have not held up well. The defensible claim is narrower: perceiving and performing actions share neural machinery, which may support imitation.
+        </div>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — a teenager and violent video content</span>
+        A parent worries that watching aggressive online videos will make their teenager aggressive.<br><br>
+        <b>What Bandura's work supports.</b> Viewers can <b>learn</b> specific aggressive actions and phrases from watching, whether or not the model is rewarded.<br><br>
+        <b>What it adds.</b> Whether that learning is <b>performed</b> depends on consequences: whether aggression is shown as rewarded, punished or consequence-free, and whether the viewer expects it to pay off in their own life.<br><br>
+        <b>What it does not settle.</b> Laboratory studies of immediate imitation do not establish long-term effects on real violence, where evidence is correlational and effect sizes are disputed (<i>3.3</i>).<br><br>
+        <b>A fair conclusion.</b> Watching can teach behaviour; whether it changes what someone does depends on context, consequences and much else.
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>Explains learning without reinforcement or practice</b>, which conditioning cannot.</li>
+            <li><b>Bandura (1965) isolated learning from performance</b> with the incentive test.</li>
+            <li><b>Diffusion studies connect individual learning to culture</b>, in humans and chimpanzees.</li>
+            <li><b>Important applications</b>: modelling in therapy, training, and understanding media influence.</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>Laboratory imitation is short-term</b> and may not predict real-world behaviour.</li>
+            <li><b>Bobo doll aggression is play</b>, not harm to a person.</li>
+            <li><b>Mirror neuron claims have been overstated</b>, especially for humans.</li>
+            <li><b>Who is imitated depends on many factors</b> — status, similarity, relationship — not captured by a single mechanism.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a child watches an older sibling get told off for swearing, and never swears at home. At a friend's house, the child swears freely using the sibling's exact words. Explain using Bandura (1965).</summary>
+          <div class="ans"><b>The child learned the words by observation.</b> They reproduce the sibling's exact phrases without ever having been reinforced for swearing — observational learning.<br><br><b>Home: learning without performance.</b> The child saw the model punished. In Bandura's study, children who saw the model punished imitated less in free play. The child has the knowledge but has learned that performing it at home carries a cost.<br><br><b>At the friend's house: the consequences changed.</b> The punishment was tied to the home context and the parent. In a new setting with no such consequences — or with friends who find it funny, which would reinforce it — the already-learned behaviour is performed. This is Bandura's incentive test in everyday form: once the consequences change, learning that was hidden becomes visible.<br><br><b>The general point.</b> Seeing a behaviour punished does not stop it being learned; it only stops it being shown where punishment is expected.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Observational learning</b>: "a condition in which an organism learns by watching the actions of others."</li>
+          <li><b>Bandura, Ross &amp; Ross (1961)</b>: children reproduced aggression toward a Bobo doll after watching it.</li>
+          <li><b>Bandura (1965)</b>: seeing a model punished reduced imitation, but incentives revealed all children had learned it — consequences affect <b>performance</b>, not <b>learning</b>.</li>
+          <li><b>Diffusion chains</b> spread behaviour through children and chimpanzee groups; children also <b>over-imitate</b> pointless actions.</li>
+          <li><b>Mirror neurons</b> link perceiving and performing actions, but broader claims about empathy and autism are not well supported.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, studies and cautions from 14.3, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Observational learning</td><td>"A condition in which an organism learns by watching the actions of others." (Schacter)</td></tr>
+          <tr><td>Diffusion chain</td><td>Individuals learn by observing, then become models for others. (Schacter)</td></tr>
+          <tr><td>Learning–performance distinction</td><td>Knowing a behaviour is separate from choosing to perform it.</td></tr>
+          <tr><td>Over-imitation</td><td>Copying actions that are visibly unnecessary to the goal.</td></tr>
+          <tr><td>Mirror neurons</td><td>Neurons active both when performing and when observing an action.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Watching teaches without reinforcement.</b></li>
+          <li><b>Consequences to the model control performance.</b></li>
+          <li><b>Chains carry behaviour through groups</b> — a basis for culture.</li>
+          <li><b>Overlapping activity is not the same as explanation.</b></li>
+        </ul>
+        <h5>Key study</h5>
+        <p><b>Bandura (1965)</b> — children watched an aggressive model who was rewarded, punished or unaffected. The punished-model group imitated least in free play, but all groups reproduced the aggression equally when offered incentives.</p>
+      </div>
+    `
+  },
+  'l-prediction': {
+    eyebrow: 'Part IV · Topic 14 · Learning',
+    title: 'The Rescorla–Wagner idea — learning is about prediction error',
+    html: `
+      <p class="lesson-lead">Conditioning was long thought to depend on contiguity: pair two things often enough, close enough together, and they become associated. A set of findings in the late 1960s showed that pairing is not enough — what matters is whether the pairing is <b>surprising</b>. This lesson covers those findings, the simple equation that explained them, and the discovery that dopamine neurons compute the same quantity.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=pYyUSh1veoo" target="_blank" rel="noopener">The Rescorla-Wagner Model (Intro Psych Tutorial #66)</a><span class="vs">The equation walked through. Best watched after the worked table in this lesson.</span></li><li><a href="https://www.youtube.com/watch?v=erRxnc5cEP0" target="_blank" rel="noopener">Dopamine, Motivation, and Reward (prediction error signaling) — Level 2</a><span class="vs">How dopamine neurons signal surprise rather than pleasure.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The core idea</h4>
+        <span class="role">Learning happens when the world surprises you</span>
+        <div class="lesson-def">
+          <span class="term">Prediction error</span> — the difference between the outcome that occurred and the outcome that was expected.<br><br>
+          <span class="term">Reward prediction error</span> — as Schacter puts it, "the difference between the actual reward received and the amount of predicted or expected reward".
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Rescorla and Wagner's proposal</span>
+          Schacter describes Rescorla and Wagner (1972) as the first to theorise "that classical conditioning occurs when an animal has learned to set up an expectation". His example: Pavlov's dogs came to salivate to the bell, not to Pavlov himself, because Pavlov was present in all sorts of situations without food — the bell reliably predicted it, Pavlov did not.<br><br>
+          The key step is this: <b>an association strengthens only in proportion to how unexpected the outcome is</b>. Early in learning, food after the tone is surprising, so learning is fast. Once the tone fully predicts food, there is no surprise left, so learning stops.
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Kamin (1969) — blocking</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To test whether pairing a stimulus with an outcome is sufficient for learning, or whether the outcome must also be unpredicted.</dd>
+          <dt>Method</dt>
+          <dd>Rats pressing a lever for food were given shocks, and learning was measured by how much a stimulus suppressed lever pressing. In phase 1, the experimental group received a noise paired with shock until the noise fully predicted it. In phase 2, both the experimental group and a control group with no phase 1 received a <b>noise and a light together</b>, followed by shock. Finally, all rats were tested with the light alone.</dd>
+          <dt>Results</dt>
+          <dd>The control rats had learned to fear the light: it strongly suppressed their lever pressing. The experimental rats showed almost no fear of the light, although they had received exactly the same number of light–shock pairings.</dd>
+          <dt>Conclusion</dt>
+          <dd>Prior learning about the noise <b>blocked</b> learning about the light. Because the noise already predicted the shock, the shock in phase 2 was not surprising, so the light added nothing and was not learned. Pairing alone did not produce conditioning.</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Two more findings that contiguity cannot explain</h4>
+        <span class="role">Contingency, not coincidence</span>
+        <div class="lesson-plain">
+          <span class="pl">Rescorla (1968) — contingency</span>
+          Two groups of rats received the same number of tone–shock pairings. For one group, shocks also occurred frequently when the tone was absent. That group learned little about the tone, although its pairings were identical. What matters is whether the tone makes shock <b>more likely than it otherwise is</b> — its contingency — not how often they co-occur.
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">Why this fits 13.1</span>
+          13.1 showed backward conditioning barely works: a stimulus after the UCS predicts nothing. Blocking and contingency are the same principle more generally. Organisms learn about stimuli that carry information about what will happen next.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">The equation, without fear</h4>
+        <span class="role">One line, worked through with numbers</span>
+        <div class="lesson-plain">
+          <span class="pl">The rule</span>
+          <b>ΔV = αβ(λ − ΣV)</b><br><br>
+          <b>V</b> is the strength of the association. <b>ΔV</b> is how much it changes on a trial. <b>λ</b> (lambda) is the maximum learning the outcome can support — 1 if the outcome occurs, 0 if it does not. <b>ΣV</b> is the total prediction from all stimuli present. <b>αβ</b> is a learning rate set by how noticeable the stimulus and outcome are.<br><br>
+          The part in brackets, <b>(λ − ΣV)</b>, is the prediction error. Everything else scales it.
+        </div>
+        <table class="lesson-table">
+          <tr><th>Trial</th><th>Prediction before (V)</th><th>Error (1 − V)</th><th>Change (0.3 × error)</th><th>Prediction after</th></tr>
+          <tr><td>1</td><td>0.00</td><td>1.00</td><td>0.30</td><td>0.30</td></tr>
+          <tr><td>2</td><td>0.30</td><td>0.70</td><td>0.21</td><td>0.51</td></tr>
+          <tr><td>3</td><td>0.51</td><td>0.49</td><td>0.15</td><td>0.66</td></tr>
+          <tr><td>4</td><td>0.66</td><td>0.34</td><td>0.10</td><td>0.76</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">What the numbers show</span>
+          Learning is fast at first and slows as the prediction improves — the negatively accelerated curve seen in acquisition (<i>13.1</i>). <b>Blocking</b> follows directly: if the noise has already reached V ≈ 1, then on noise-plus-light trials ΣV ≈ 1, the error is about zero, and the light gains almost nothing. <b>Extinction</b> follows too: when the outcome stops, λ = 0, the error is negative, and V falls.
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Dopamine computes the error</h4>
+        <span class="role">A model from behaviour, found in neurons</span>
+        <div class="lesson-plain">
+          <span class="pl">Schultz's recordings</span>
+          As Schacter describes, Wolfram Schultz and colleagues recorded dopamine neurons in monkeys' reward centres. The neurons showed <b>increased activity</b> when a juice reward was unexpected, and <b>decreased activity</b> when an expected reward failed to arrive. After learning, the burst shifted from the juice to the cue that predicted it, and an expected reward produced little response. That is the pattern of a prediction-error signal, not a pleasure signal (<i>5.4</i>, <i>9.7</i>).
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">The Parkinson's case</span>
+          Schacter reports that some people with Parkinson's disease taking dopamine-stimulating drugs develop compulsive gambling or shopping, and in imaging studies show increased learning from gains and an increased positive prediction-error signal in the striatum. Altering the chemical that carries the error signal changes what is learned from rewards.
+        </div>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — why a surprise bonus motivates more than an expected one</span>
+        An employee receives a £200 bonus every December.<br><br>
+        <b>The first year,</b> it is unexpected. Large positive prediction error: the behaviour preceding it, and the job itself, gain value.<br><br>
+        <b>By the fifth year,</b> it is fully predicted. Prediction error ≈ 0. The bonus is no longer teaching anything, although it costs the same.<br><br>
+        <b>The year it is cancelled,</b> the outcome is worse than predicted. Negative prediction error, felt as disappointment and loss of motivation — the same drop Schultz saw when expected juice did not arrive.<br><br>
+        <b>The lesson.</b> A reward's effect depends on expectation, not size alone. It also explains why variable, unpredictable rewards stay effective: they keep producing prediction errors (<i>13.6</i>).
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>Explains blocking and contingency</b>, which contiguity accounts cannot.</li>
+            <li><b>Precise and quantitative</b>: it makes testable numerical predictions.</li>
+            <li><b>Converges with neuroscience</b>: dopamine neurons encode prediction error.</li>
+            <li><b>Foundational for modern AI</b> and computational models of learning (<i>39.2</i>).</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>Treats extinction as unlearning</b>, so it cannot explain spontaneous recovery, renewal or reinstatement (<i>13.2</i>).</li>
+            <li><b>Cannot explain latent inhibition</b> — prior exposure to a stimulus without consequences slows later conditioning, though no error was involved.</li>
+            <li><b>Fixed learning rates</b> ignore how attention to stimuli changes with experience.</li>
+            <li><b>Dopamine does more than prediction error</b>, so the neural story is incomplete.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a child already fears thunder. During a storm, a new kind of flash also appears before each thunderclap. Later, the flash alone produces little fear. Explain using this lesson.</summary>
+          <div class="ans"><b>This is blocking.</b> The thunder-related cues — the darkening sky, the rumble — already fully predict the frightening thunderclap. Their prediction strength is close to maximum.<br><br><b>The error calculation.</b> When the flash is added, the total prediction from all stimuli (ΣV) already equals what the thunderclap supports (λ). So the prediction error, λ − ΣV, is close to zero, and the flash's association strength barely changes — even though it was paired with the thunderclap every time.<br><br><b>Why contiguity fails here.</b> A contiguity account says the flash, repeatedly paired with a frightening event, should become frightening. Kamin's rats showed it does not, when another cue already predicts the event.<br><br><b>The test that would show it is blocking.</b> A child with no prior fear of thunder, experiencing the same flash–thunder pairings, should learn to fear the flash. The difference between the two children would be due to prior learning — exactly Kamin's control group.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li><b>Rescorla &amp; Wagner (1972)</b>: conditioning involves setting up expectations; associations change in proportion to <b>prediction error</b>.</li>
+          <li><b>Kamin (1969)</b>: prior learning about a noise <b>blocked</b> learning about a light paired identically with shock.</li>
+          <li><b>Rescorla (1968)</b>: contingency, not the number of pairings, determines learning.</li>
+          <li><b>ΔV = αβ(λ − ΣV)</b> predicts negatively accelerated acquisition, blocking and extinction.</li>
+          <li><b>Schultz</b>: dopamine neurons fire to unexpected rewards, dip when expected rewards are omitted, and shift to predictive cues. The model cannot explain recovery after extinction or latent inhibition.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, findings, the model and its limits from 14.4, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Prediction error</td><td>The difference between the outcome that occurred and the outcome expected.</td></tr>
+          <tr><td>Reward prediction error</td><td>"The difference between the actual reward received and the amount of predicted or expected reward." (Schacter)</td></tr>
+          <tr><td>Blocking</td><td>Prior learning about one cue prevents learning about a second cue paired with the same outcome.</td></tr>
+          <tr><td>Contingency</td><td>How much a stimulus changes the likelihood of an outcome.</td></tr>
+          <tr><td>Latent inhibition</td><td>Slower conditioning to a stimulus previously experienced without consequences.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Surprise drives learning</b>; predicted outcomes teach nothing new.</li>
+          <li><b>Pairing is not enough.</b></li>
+          <li><b>The bracket is the error</b>: λ − ΣV.</li>
+          <li><b>Dopamine tracks error, not pleasure.</b></li>
+          <li><b>The model conflicts with 13.2</b> on extinction.</li>
+        </ul>
+        <h5>Key study</h5>
+        <p><b>Kamin (1969)</b> — rats pre-trained on noise→shock, then given noise+light→shock, learned almost nothing about the light; rats without pre-training learned strong fear of it.</p>
+      </div>
+    `
+  },
+  'l-habits': {
+    eyebrow: 'Part IV · Topic 14 · Learning',
+    title: 'Applying it — habits, cues, rewards and real behaviour change',
+    html: `
+      <p class="lesson-lead">Everything in Part IV was discovered in laboratories with rats, pigeons and small children. This lesson turns it round: given what is known about cues, reinforcement, schedules and prediction error, what actually changes behaviour in daily life — and which popular advice the evidence does not support.</p>
+
+      <div class="watch">
+        <div class="watch-h">▶ Watch</div>
+        <ul><li><a href="https://www.youtube.com/watch?v=0aZwqnn9qbQ" target="_blank" rel="noopener">How habits can help us keep New Year's resolutions, with Wendy Wood, PhD</a> <span class="vby">APA · Speaking of Psychology</span><span class="vs">The leading habit researcher on cues, context, and why willpower is the wrong tool.</span></li></ul>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What a habit is</h4>
+        <span class="role">Cue and response, with the goal left behind</span>
+        <div class="lesson-def">
+          <span class="term">Habit</span> — a behaviour triggered automatically by a context cue, as a result of repeated performance in that context, with little need for deliberate intention.<br><br>
+          <span class="term">Implicit learning</span> — "Learning that takes place largely independent of awareness of both the process and the products of information acquisition." (Schacter)
+        </div>
+        <div class="lesson-plain">
+          <span class="pl">How a goal becomes a habit</span>
+          At first a behaviour is goal-directed: you make coffee because you want to feel awake. With repetition in the same context — same kitchen, same time — the cue begins to trigger the response directly. Eventually you make coffee on a morning when you don't want any. Control has shifted from flexible, goal-based systems to automatic cue–response ones, the same shift as place learning giving way to response learning (<i>14.2</i>).<br><br>
+          Diary studies suggest a large share of everyday behaviour, roughly 40 percent in one well-known study, is repeated almost daily in the same setting. Much of daily life runs on cues rather than decisions.
+        </div>
+      </div>
+
+      <div class="keystudy">
+        <div class="ks-h">Key study <b>Lally, van Jaarsveld, Potts &amp; Wardle (2010) — how long habits take</b></div>
+        <dl>
+          <dt>Aim</dt>
+          <dd>To measure how long it takes for a new everyday behaviour to become automatic.</dd>
+          <dt>Method</dt>
+          <dd>Ninety-six volunteers each chose a simple eating, drinking or activity behaviour — such as drinking water after breakfast or going for a run before dinner — to perform once daily in the same context for twelve weeks. Each day they rated how automatic the behaviour felt, using a self-report habit index.</dd>
+          <dt>Results</dt>
+          <dd>Automaticity rose steeply at first and then levelled off. The median time to reach near-maximum automaticity was <b>66 days</b>, but it ranged from <b>18 to 254 days</b> between people and behaviours. More complex behaviours, such as exercise, took longer. Missing a single day did not meaningfully set progress back.</dd>
+          <dt>Conclusion</dt>
+          <dd>Habit formation follows a curve, not a fixed timetable. The popular "21 days" claim is not supported. Consistency in the same context matters, and occasional lapses are not fatal — which revises one of William James's rules (<i>2.3</i>). Automaticity was self-reported, and many participants did not complete the study, so the precise figures should be treated cautiously.</dd>
+        </dl>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">Part IV applied: a toolkit</h4>
+        <span class="role">Each technique tied to the lesson it comes from</span>
+        <table class="lesson-table">
+          <tr><th>Technique</th><th>How it works</th><th>From</th></tr>
+          <tr><td><b>Fix the context</b></td><td>Perform the behaviour in the same place and time, so a stable cue can form</td><td>13.1, 14.2</td></tr>
+          <tr><td><b>If–then plans</b></td><td>"If it is 7 am and I've made coffee, then I'll stretch for five minutes" — links the behaviour to an existing cue</td><td>13.4</td></tr>
+          <tr><td><b>Shape it</b></td><td>Start with a version small enough to succeed, then raise the criterion</td><td>13.7</td></tr>
+          <tr><td><b>Reward immediately</b></td><td>Delayed consequences, like health months away, reinforce poorly</td><td>13.5</td></tr>
+          <tr><td><b>Remove or add friction</b></td><td>Hide the phone in another room; put running shoes by the door</td><td>13.4</td></tr>
+          <tr><td><b>Change the schedule</b></td><td>Turn notifications into fixed times to break variable-ratio checking</td><td>13.6</td></tr>
+          <tr><td><b>Use context changes</b></td><td>Moving house, starting a job or a new term disrupts old cues — a window for new habits</td><td>13.2</td></tr>
+        </table>
+        <div class="lesson-plain">
+          <span class="pl">Two with especially good evidence</span>
+          <b>If–then planning</b>: asking people to write down when and where they will act increases follow-through on behaviours from vaccination to exercise.<br><br>
+          <b>Contingency management</b>: in treatment for stimulant use, giving vouchers or prizes for drug-free urine samples is one of the most effective interventions available — reinforcement applied directly, with immediate, reliable rewards (<i>35.3</i>).
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h4 class="numbered">What the evidence does not support</h4>
+        <span class="role">Popular advice, checked</span>
+        <table class="lesson-table">
+          <tr><th>Claim</th><th>Status</th></tr>
+          <tr><td>"It takes 21 days to form a habit"</td><td><b>Not supported.</b> Lally et al. found a median of 66 days and a very wide range</td></tr>
+          <tr><td>"Missing one day breaks the habit"</td><td><b>Not supported.</b> Single lapses had little effect on habit formation</td></tr>
+          <tr><td>"Willpower is a limited resource that runs out"</td><td><b>Weakly supported at best.</b> A large preregistered multi-laboratory replication of the ego-depletion effect found close to no effect (<i>4.6</i>)</td></tr>
+          <tr><td>"Rewards always help"</td><td><b>Not always.</b> Expected rewards for already-enjoyed activities can reduce interest — the overjustification effect (<i>13.5</i>)</td></tr>
+          <tr><td>"Just try harder"</td><td><b>Weaker than changing cues.</b> Stable contexts and removed temptations outperform effort</td></tr>
+        </table>
+      </div>
+
+      <div class="worked">
+        <span class="wl">Worked example — breaking the late-night scrolling habit</span>
+        <b>Analyse it first (A–B–C, 13.4).</b> A = in bed, lights off, phone on the pillow. B = scrolling. C = unpredictable interesting posts, a variable-ratio reward (13.6), plus avoiding the discomfort of lying awake — negative reinforcement (13.5).<br><br>
+        <b>Remove the cue.</b> Charge the phone outside the bedroom. Without the antecedent, the automatic response has nothing to trigger it.<br><br>
+        <b>Replace, don't just remove.</b> Put a book on the pillow where the phone was, giving the same context a new response to attach to.<br><br>
+        <b>Expect resistance.</b> A behaviour on a variable schedule resists extinction and may briefly get worse — reaching for the phone repeatedly — before it fades (13.6).<br><br>
+        <b>Expect renewal.</b> In a hotel room, on holiday, the old habit may return, because the new learning is tied to the home context (13.2). Plan for it rather than treating it as failure.
+      </div>
+
+      <div class="evalgrid">
+        <div class="evalcol plus">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>Built on a century of replicated learning principles.</b></li>
+            <li><b>Several techniques have trial evidence</b>, including if–then planning and contingency management.</li>
+            <li><b>Shifts focus from blame to design</b>: change the environment, not the character.</li>
+            <li><b>Explains relapse</b> as a predictable learning phenomenon rather than weakness.</li>
+          </ul>
+        </div>
+        <div class="evalcol minus">
+          <h5>Limitations</h5>
+          <ul>
+            <li><b>Habit research relies heavily on self-report</b> of automaticity.</li>
+            <li><b>Large individual differences</b>, so population averages give poor individual timelines.</li>
+            <li><b>Popular accounts oversimplify</b> and sometimes rest on effects that failed to replicate.</li>
+            <li><b>Social and economic conditions constrain behaviour</b> in ways individual techniques do not address (<i>2.8</i>).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lesson-quiz">
+        <details>
+          <summary>Check yourself: a friend has tried to start exercising every January for five years, relying on motivation, and always stops by February. Using this Part, redesign their plan.</summary>
+          <div class="ans"><b>Diagnose why it fails.</b> Motivation is a goal state, and goal states fade; nothing was built to trigger the behaviour once motivation dropped. There was probably no stable cue, the target was too large to reinforce early success, and the rewards — fitness, weight loss — are delayed by weeks.<br><br><b>Redesign.</b><br>• <b>Fix a cue</b>: same time, same place — "straight after work, before sitting down" (13.1, 14.2).<br>• <b>If–then plan</b>: "If I walk in the door at 6, I change into kit" (13.4).<br>• <b>Shape it</b>: start with ten minutes, not an hour (13.7).<br>• <b>Immediate reward</b>: a favourite podcast only while exercising — Premack (13.5).<br>• <b>Reduce friction</b>: kit laid out in advance (13.4).<br><br><b>Set realistic expectations.</b> Automaticity may take two months or much longer (Lally et al., 2010), and a missed day is not a reset. The aim is not to feel motivated every day, but to build a cue that triggers the behaviour when motivation is absent.</div>
+        </details>
+      </div>
+
+      <div class="recap">
+        <h4>Summary</h4>
+        <ul>
+          <li>A <b>habit</b> is a behaviour triggered automatically by a context cue after repetition; control shifts from goals to cues.</li>
+          <li><b>Lally et al. (2010)</b>: median <b>66 days</b> to near-maximum automaticity, ranging <b>18–254</b>; single lapses did not matter.</li>
+          <li>Effective techniques: fixed contexts, <b>if–then plans</b>, shaping, immediate rewards, friction, schedule changes, and using context changes.</li>
+          <li><b>Contingency management</b> is among the most effective treatments for stimulant use.</li>
+          <li>Not supported: the <b>21-day rule</b>, lapses breaking habits, and strong <b>ego depletion</b> claims.</li>
+        </ul>
+      </div>
+
+      <div class="roundup">
+        <div class="ru-h">Everything in this lesson</div>
+        <div class="ru-sub">Definitions, evidence and techniques from 14.5, gathered for revision.</div>
+        <h5>Definitions</h5>
+        <table>
+          <tr><td>Habit</td><td>A behaviour triggered automatically by a context cue after repeated performance.</td></tr>
+          <tr><td>Implicit learning</td><td>"Learning that takes place largely independent of awareness of both the process and the products of information acquisition." (Schacter)</td></tr>
+          <tr><td>If–then plan</td><td>A plan linking a behaviour to a specific cue: when X happens, I will do Y.</td></tr>
+          <tr><td>Contingency management</td><td>Delivering immediate rewards contingent on verified target behaviour.</td></tr>
+          <tr><td>Friction</td><td>Effort required to perform a behaviour, which can be increased or reduced.</td></tr>
+        </table>
+        <h5>Key concepts</h5>
+        <ul>
+          <li><b>Cues outlast motivation.</b></li>
+          <li><b>Habits form on a curve</b>, with wide individual variation.</li>
+          <li><b>Design the environment</b> rather than relying on effort.</li>
+          <li><b>Relapse is renewal</b>, and can be planned for.</li>
+          <li><b>Check popular claims</b> against replication.</li>
+        </ul>
+        <h5>Key study</h5>
+        <p><b>Lally, van Jaarsveld, Potts &amp; Wardle (2010)</b> — 96 volunteers performed a chosen daily behaviour in a consistent context for 12 weeks. Automaticity plateaued after a median of 66 days (range 18–254), and missing a day had little effect.</p>
+      </div>
+    `
   }
 
   };
@@ -18207,6 +19993,90 @@
       ['A shift in willingness to report rather than in sensitivity is response ___.', 'bias', []],
       ['Blakemore and Cooper reared kittens seeing only one ___.', 'orientation', ['orientations']],
       ['Chess masters lose their advantage when the pieces are placed at ___.', 'random', []]
+    ],
+    'l-extinction': [
+      ["The gradual elimination of a CR when the CS is repeatedly presented without the UCS is ___.", "extinction", []],
+      ["Return of an extinguished response when tested outside the extinction context is ___.", "renewal", []],
+      ["Return of an extinguished response after one unsignalled UCS is ___.", "reinstatement", []],
+      ["Guttman and Kalish showed responding falls along a generalisation ___.", "gradient", []],
+      ["Forcing a discrimination beyond a dog's capacity produced experimental ___.", "neurosis", []]
+    ],
+    'l-emotion': [
+      ["Replacing a fear response with an incompatible pleasant one is ___.", "counterconditioning", ["counter-conditioning"]],
+      ["Mowrer's account of how phobias persist is ___-factor theory.", "two", ["2"]],
+      ["Mary Cover Jones reduced Peter's fear of ___.", "rabbits", ["rabbit"]],
+      ["Rachman proposed direct, vicarious and ___ pathways to fear.", "informational", ["information"]],
+      ["Watson and Rayner paired a loud noise with a white ___.", "rat", []]
+    ],
+    'l-effect': [
+      ["Thorndike studied cats escaping from puzzle ___.", "boxes", ["box"]],
+      ["Behaviours followed by a satisfying state of affairs are repeated: the law of ___.", "effect", []],
+      ["Skinner's device whose slope shows response rate is the cumulative ___.", "recorder", []],
+      ["A cue signalling that a response will be reinforced is a ___ stimulus.", "discriminative", []],
+      ["Antecedent, behaviour, consequence is the three-term ___.", "contingency", []]
+    ],
+    'l-quadrants': [
+      ["Removing something unpleasant so a behaviour increases is ___ reinforcement.", "negative", []],
+      ["Adding something unpleasant so a behaviour decreases is ___ punishment.", "positive", []],
+      ["Money is a ___ reinforcer.", "secondary", ["conditioned"]],
+      ["Using a preferred activity to reinforce a less preferred one is the ___ principle.", "premack", []],
+      ["An expected reward reducing interest in an enjoyed activity is the ___ effect.", "overjustification", []]
+    ],
+    'l-schedules': [
+      ["Reinforcing only some responses is ___ reinforcement.", "intermittent", ["partial"]],
+      ["Reinforcement after an average number of responses is a variable-___ schedule.", "ratio", []],
+      ["Reinforcement for the first response after a set time is a fixed-___ schedule.", "interval", []],
+      ["The accelerating response pattern on a fixed-interval schedule is a ___.", "scallop", []],
+      ["Skinner's pigeons fed regardless of behaviour developed ___ rituals.", "superstitious", ["superstition"]]
+    ],
+    'l-shaping': [
+      ["Reinforcing successive approximations to a target behaviour is ___.", "shaping", []],
+      ["Teaching the final step of a sequence first is backward ___.", "chaining", []],
+      ["A click paired with food is a conditioned ___.", "reinforcer", []],
+      ["Trained behaviour reverting toward instinct is instinctive ___.", "drift", []],
+      ["The Brelands' pigs kept ___ their tokens along the ground.", "rooting", ["rooted"]]
+    ],
+    'l-helpless': [
+      ["A response that prevents an aversive stimulus is ___ learning.", "avoidance", []],
+      ["A response that ends an aversive stimulus already present is ___ learning.", "escape", []],
+      ["Dogs given uncontrollable shock later failed to escape: learned ___.", "helplessness", []],
+      ["The dogs given identical shocks without control were the ___ group.", "yoked", []],
+      ["Maier and Seligman (2016) concluded that what animals learn is ___.", "control", []]
+    ],
+    'l-prepared': [
+      ["A propensity for learning some associations over others is biological ___.", "preparedness", []],
+      ["The false assumption that all pairings are learned equally well is ___.", "equipotentiality", []],
+      ["Associations that are very hard to learn are ___.", "contraprepared", ["contra-prepared"]],
+      ["Cook and Mineka's monkeys learned to fear snakes but not ___.", "flowers", ["flower"]],
+      ["A novel flavour given before chemotherapy is a ___ flavour.", "scapegoat", []]
+    ],
+    'l-latent': [
+      ["Learning that is not shown in behaviour until later is ___ learning.", "latent", []],
+      ["A mental representation of the physical environment is a cognitive ___.", "map", []],
+      ["Tolman, Ritchie and Kalish tested shortcuts in the ___ maze.", "sunburst", []],
+      ["Hippocampal neurons active in particular locations are ___ cells.", "place", []],
+      ["Learning a fixed sequence of movements is ___ learning.", "response", []]
+    ],
+    'l-observe': [
+      ["Learning by watching the actions of others is ___ learning.", "observational", []],
+      ["Behaviour passing from model to learner to a new learner forms a diffusion ___.", "chain", []],
+      ["Bandura (1965) showed a model's consequences affect performance, not ___.", "learning", []],
+      ["Copying visibly unnecessary actions is ___-imitation.", "over", []],
+      ["Neurons active both when performing and observing an action are ___ neurons.", "mirror", []]
+    ],
+    'l-prediction': [
+      ["The difference between the outcome received and the outcome expected is prediction ___.", "error", []],
+      ["Prior learning about one cue preventing learning about a second cue is ___.", "blocking", []],
+      ["Rescorla (1968) showed learning depends on ___, not the number of pairings.", "contingency", []],
+      ["Slower conditioning to a stimulus experienced earlier without consequence is latent ___.", "inhibition", []],
+      ["Schultz found that ___ neurons encode reward prediction error.", "dopamine", []]
+    ],
+    'l-habits': [
+      ["Lally et al. found a median of ___ days to reach near-maximum automaticity.", "66", ["sixty six", "sixty-six"]],
+      ["A plan of the form 'when X happens, I will do Y' is an if-___ plan.", "then", []],
+      ["Rewarding verified drug-free samples is contingency ___.", "management", []],
+      ["Learning largely independent of awareness is ___ learning.", "implicit", []],
+      ["The effort needed to perform a behaviour, which can be raised or lowered, is ___.", "friction", []]
     ],
     'b-conscious': [
       ['A person\'s subjective experience of the world and the mind is ___.', 'consciousness', []],
@@ -18744,19 +20614,136 @@
     });
   }
 
+  /* ---------- NOTES / TEXTBOOK VERSION ----------
+     Shows the matching pages of your own schacter-psychology.pdf (git-ignored, sits next to
+     this file). Nothing from the book is copied into the site, and the button only appears
+     when the page is opened locally, where the PDF exists.
+     Map: lesson key -> [[first PDF page, last PDF page, label], ...] (viewer page numbers). */
+  const TEXTBOOK_PAGES = {
+    'f-what': [[85, 87, 'Ch. 1 opening']],
+    'f-field': [[152, 162, 'The Profession of Psychology']],
+    'h-roots': [[87, 92, 'Psychology’s Roots']],
+    'h-wundt': [[93, 99, 'Structuralism']],
+    'h-james': [[100, 105, 'Functionalism']],
+    'h-freud': [[106, 110, 'Freud Develops Psychoanalytic Theory']],
+    'h-humanistic': [[111, 112, 'The Rise of Humanistic Psychology']],
+    'h-behav': [[113, 123, 'Behaviorism Takes Center Stage']],
+    'h-cognitive': [[124, 136, 'Return of the Mind']],
+    'm-theory': [[176, 183, 'Empiricism']],
+    'm-descriptive': [[184, 204, 'Observation']],
+    'm-corr': [[205, 209, 'Correlation']],
+    'm-experiment': [[210, 229, 'Causation']],
+    'm-confounds': [[212, 216, 'The Third-Variable Problem']],
+    'm-validity': [[230, 233, 'Representative Variables']],
+    'm-sampling': [[234, 240, 'Representative People']],
+    'm-ethics': [[250, 261, 'The Ethics of Science']],
+    's-describe': [[196, 204, 'Description']],
+    's-pvalue': [[227, 229, 'Statistical Testing']],
+    'b-neuron': [[274, 281, 'Neurons: The Origin of Behavior']],
+    'b-action': [[282, 287, 'Electric Signaling']],
+    'b-synapse': [[288, 290, 'Chemical Signaling']],
+    'b-neurotrans': [[291, 293, 'Types and Functions of Neurotransmitters']],
+    'b-drugs': [[294, 298, 'How Drugs Mimic Neurotransmitters']],
+    'b-nervous': [[299, 309, 'The Organization of the Nervous System']],
+    'b-brainstem': [[311, 315, 'The Hindbrain and Midbrain']],
+    'b-limbic': [[316, 320, 'Subcortical Structures']],
+    'b-endocrine': [[321, 324, 'The Endocrine System']],
+    'b-cortex': [[325, 332, 'The Cerebral Cortex']],
+    'b-lateral': [[359, 364, 'The Left and Right Hemispheres']],
+    'b-lesion': [[357, 364, 'Studying the Damaged Brain']],
+    'b-eeg': [[365, 367, 'Studying the Brain’s Electrical Activity']],
+    'b-imaging': [[368, 376, 'Brain Imaging']],
+    'b-causal': [[375, 376, 'Transcranial Magnetic Stimulation']],
+    'b-behgen': [[345, 347, 'What Are Genes?']],
+    'b-geneenv': [[348, 355, 'Epigenetics and the Environment']],
+    'b-evopsych': [[137, 141, 'Evolutionary Psychology'], [342, 344, 'Evolution of the Nervous System']],
+    'b-plasticity': [[333, 338, 'Brain Plasticity']],
+    'b-conscious': [[509, 536, 'Mysteries and Nature of Consciousness']],
+    'b-sleepstages': [[547, 552, 'Sleep Cycle']],
+    'b-whysleep': [[553, 555, 'Sleep Needs and Deprivation']],
+    'b-sleepdis': [[556, 559, 'Sleep Disorders']],
+    'b-dreams': [[560, 571, 'Dreams']],
+    'b-altered': [[599, 605, 'Hypnosis']],
+    'b-drugsmind': [[572, 597, 'Drugs and Consciousness']],
+    'b-subliminal': [[542, 545, 'Factors Outside of Consciousness']],
+    'b-transduce': [[396, 397, 'Sensation and Perception Are Distinct']],
+    'b-thresholds': [[398, 401, 'Psychophysics and Thresholds']],
+    'b-sdt': [[402, 406, 'Signal Detection']],
+    'b-adapt': [[407, 409, 'Sensory Adaptation']],
+    'sn-eye': [[410, 418, 'Sensing Light']],
+    'sn-vispath': [[418, 418, 'The Optic Nerve'], [425, 429, 'The Visual Brain']],
+    'sn-colour': [[419, 424, 'Perceiving Color']],
+    'sn-hearing': [[458, 471, 'Audition']],
+    'sn-touch': [[472, 479, 'Touch and Pain']],
+    'sn-balance': [[480, 483, 'Body Position, Movement, and Balance']],
+    'sn-chemical': [[484, 494, 'Smell and Taste']],
+    'pc-updown': [[434, 442, 'Recognizing Objects by Sight']],
+    'pc-gestalt': [[437, 440, 'Perceptual Organization']],
+    'pc-depth': [[443, 447, 'Perceiving Depth and Size']],
+    'pc-constancy': [[443, 447, 'Perceiving Depth and Size']],
+    'pc-motion': [[448, 450, 'Motion Perception']],
+    'pc-illusion': [[447, 448, 'Illusions of Depth and Size']],
+    'pc-attention': [[430, 433, 'Attention: The Glue'], [451, 454, 'Change and Inattentional Blindness']],
+    'l-classical': [[734, 743, 'Classical Conditioning']],
+    'l-extinction': [[741, 743, 'Acquisition, Extinction, Spontaneous Recovery']],
+    'l-emotion': [[744, 746, 'The Case of Little Albert']],
+    'l-prepared': [[751, 754, 'Evolutionary Elements of Classical Conditioning']],
+    'l-effect': [[755, 757, 'The Law of Effect']],
+    'l-quadrants': [[758, 765, 'Reinforcement and Punishment']],
+    'l-schedules': [[769, 775, 'Schedules of Reinforcement']],
+    'l-shaping': [[776, 779, 'Shaping and Superstitious Behavior']],
+    'l-latent': [[781, 786, 'Cognitive Elements of Operant Conditioning']],
+    'l-prediction': [[787, 796, 'Neural and Evolutionary Elements']],
+    'l-observe': [[797, 810, 'Observational Learning']]
+  };
+  const TB_LOCAL = location.protocol === 'file:' || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+  let noteVersion = 'notes';
+  try { if (localStorage.getItem('psych-note-version') === 'textbook') noteVersion = 'textbook'; } catch (e) {}
+  function tbFrame(page) {
+    return '<iframe class="tb-pdf" title="Textbook pages" src="schacter-psychology.pdf#page=' + page + '&view=FitH"></iframe>';
+  }
+  function textbookHtml(tb) {
+    const jumps = tb.map(r => '<button class="tb-jump" data-page="' + r[0] + '">' + r[2] + ' · pp. ' + r[0] +
+      (r[1] > r[0] ? '–' + r[1] : '') + '</button>').join('');
+    return '<div class="tb-source">📘 Schacter, word for word · ' + jumps + '</div><div class="tb-frame">' + tbFrame(tb[0][0]) + '</div>';
+  }
+  function wireTextbook(body) {
+    body.querySelectorAll('.tb-jump').forEach(b => b.addEventListener('click', () => {
+      body.querySelector('.tb-frame').innerHTML = tbFrame(b.dataset.page);
+    }));
+  }
+  function syncVersionButton(tb) {
+    const b = document.getElementById('versionToggle');
+    if (!b) return;
+    b.hidden = !TB_LOCAL;
+    b.disabled = !tb;
+    const on = !!tb && noteVersion === 'textbook';
+    b.classList.toggle('active', on);
+    b.textContent = on ? '📘 Textbook ✓' : '📘 Textbook';
+    b.title = tb ? (on ? 'Showing the textbook — click to go back to the notes' : 'Show the textbook\u2019s own text for this lesson')
+                 : 'This lesson has no matching section in the textbook';
+  }
   function openNote(key) {
     const note = NOTES[key];
     if (!note) return;
+    const tb = (TB_LOCAL && TEXTBOOK_PAGES[key]) || null;
+    const useTb = !!tb && noteVersion === 'textbook';
+    syncVersionButton(tb);
     document.getElementById("noteEyebrow").innerHTML = note.eyebrow;
     document.getElementById("noteTitle").innerHTML = note.title;
-    document.getElementById("noteBody").innerHTML = note.html;
-    tagDrawnFigs();
-    applyKsState();
-    prepHeroes();
-    prepRoundups();
+    document.getElementById("noteBody").innerHTML = useTb ? textbookHtml(tb) : note.html;
+    if (useTb) wireTextbook(document.getElementById('noteBody'));
+    if (!useTb) {
+      tagDrawnFigs();
+      applyKsState();
+      prepHeroes();
+      prepRoundups();
+    }
     buildLessonToc(document.getElementById('noteBody'));
-    initWidgets(document.getElementById('noteBody'));
-    buildFillIn(document.getElementById('noteBody'), key);
+    if (!useTb) {
+      initWidgets(document.getElementById('noteBody'));
+      buildFillIn(document.getElementById('noteBody'), key);
+    }
     curNoteKey = key;
     recallBox.value = recall[key] || '';
     recallStatus.textContent = '';
@@ -18777,6 +20764,11 @@
     btn.addEventListener("click", () => openNote(btn.dataset.note));
   });
   document.getElementById("noteBack").addEventListener("click", closeNote);
+  document.getElementById("versionToggle").addEventListener("click", () => {
+    noteVersion = noteVersion === 'textbook' ? 'notes' : 'textbook';
+    try { localStorage.setItem('psych-note-version', noteVersion); } catch (e) {}
+    if (curNoteKey) openNote(curNoteKey);
+  });
   document.getElementById("notePrev").addEventListener("click", e => { if (e.target.dataset.key) openNote(e.target.dataset.key); });
   document.getElementById("noteNext").addEventListener("click", e => { if (e.target.dataset.key) openNote(e.target.dataset.key); });
   document.addEventListener("keydown", e => {
